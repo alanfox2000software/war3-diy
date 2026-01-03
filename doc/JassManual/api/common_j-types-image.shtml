@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type image</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type image</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> image</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#95">95</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">image</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf">
+<p><a href="Blizzard_j-variables.shtml">Blizzard.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#faffbf"></td><td bgcolor="#faffbf">
+<strong><a href="Blizzard_j-variables.shtml#bj_lastCreatedImage">bj_lastCreatedImage</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">image</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateImage">CreateImage</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> file, <a href="BUILT_IN-types-real.shtml">real</a> sizeX, <a href="BUILT_IN-types-real.shtml">real</a> sizeY, <a href="BUILT_IN-types-real.shtml">real</a> sizeZ, <a href="BUILT_IN-types-real.shtml">real</a> posX, <a href="BUILT_IN-types-real.shtml">real</a> posY, <a href="BUILT_IN-types-real.shtml">real</a> posZ, <a href="BUILT_IN-types-real.shtml">real</a> originX, <a href="BUILT_IN-types-real.shtml">real</a> originY, <a href="BUILT_IN-types-real.shtml">real</a> originZ, <a href="BUILT_IN-types-integer.shtml">integer</a> imageType<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-image.shtml">image</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CreateImageBJ">CreateImageBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> file, <a href="BUILT_IN-types-real.shtml">real</a> size, <a href="common_j-types-location.shtml">location</a> where, <a href="BUILT_IN-types-real.shtml">real</a> zOffset, <a href="BUILT_IN-types-integer.shtml">integer</a> imageType<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-image.shtml">image</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetLastCreatedImage">GetLastCreatedImage</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-image.shtml">image</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LoadImageHandle">LoadImageHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-image.shtml">image</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LoadImageHandleBJ">LoadImageHandleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-image.shtml">image</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">image</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#DestroyImage">DestroyImage</a></strong> <strong>(</strong><a href="common_j-types-image.shtml">image</a> whichImage<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SaveImageHandle">SaveImageHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey, <a href="common_j-types-image.shtml">image</a> whichImage<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SaveImageHandleBJ">SaveImageHandleBJ</a></strong> <strong>(</strong><a href="common_j-types-image.shtml">image</a> whichImage, <a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetImageAboveWater">SetImageAboveWater</a></strong> <strong>(</strong><a href="common_j-types-image.shtml">image</a> whichImage, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag, <a href="BUILT_IN-types-boolean.shtml">boolean</a> useWaterAlpha<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetImageColor">SetImageColor</a></strong> <strong>(</strong><a href="common_j-types-image.shtml">image</a> whichImage, <a href="BUILT_IN-types-integer.shtml">integer</a> red, <a href="BUILT_IN-types-integer.shtml">integer</a> green, <a href="BUILT_IN-types-integer.shtml">integer</a> blue, <a href="BUILT_IN-types-integer.shtml">integer</a> alpha<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetImageColorBJ">SetImageColorBJ</a></strong> <strong>(</strong><a href="common_j-types-image.shtml">image</a> whichImage, <a href="BUILT_IN-types-real.shtml">real</a> red, <a href="BUILT_IN-types-real.shtml">real</a> green, <a href="BUILT_IN-types-real.shtml">real</a> blue, <a href="BUILT_IN-types-real.shtml">real</a> alpha<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetImageConstantHeight">SetImageConstantHeight</a></strong> <strong>(</strong><a href="common_j-types-image.shtml">image</a> whichImage, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag, <a href="BUILT_IN-types-real.shtml">real</a> height<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetImagePosition">SetImagePosition</a></strong> <strong>(</strong><a href="common_j-types-image.shtml">image</a> whichImage, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="BUILT_IN-types-real.shtml">real</a> z<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetImagePositionBJ">SetImagePositionBJ</a></strong> <strong>(</strong><a href="common_j-types-image.shtml">image</a> whichImage, <a href="common_j-types-location.shtml">location</a> where, <a href="BUILT_IN-types-real.shtml">real</a> zOffset<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetImageRender">SetImageRender</a></strong> <strong>(</strong><a href="common_j-types-image.shtml">image</a> whichImage, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetImageRenderAlways">SetImageRenderAlways</a></strong> <strong>(</strong><a href="common_j-types-image.shtml">image</a> whichImage, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetImageType">SetImageType</a></strong> <strong>(</strong><a href="common_j-types-image.shtml">image</a> whichImage, <a href="BUILT_IN-types-integer.shtml">integer</a> imageType<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ShowImage">ShowImage</a></strong> <strong>(</strong><a href="common_j-types-image.shtml">image</a> whichImage, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ShowImageBJ">ShowImageBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> flag, <a href="common_j-types-image.shtml">image</a> whichImage<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

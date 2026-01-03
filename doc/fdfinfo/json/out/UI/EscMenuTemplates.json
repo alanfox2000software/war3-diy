@@ -1,0 +1,2383 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "BACKDROP",
+            "name": "EscMenuButtonBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "EscMenuButtonBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.0125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.005",
+                        "0.005",
+                        "0.005",
+                        "0.005,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "EscMenuButtonBorder,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "BACKDROP",
+            "name": "EscMenuButtonPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "EscMenuButtonPushedBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.0125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.005",
+                        "0.005",
+                        "0.005",
+                        "0.005,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "EscMenuButtonPushedBorder,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 2,
+            "type": "BACKDROP",
+            "name": "EscMenuButtonDisabledBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "EscMenuButtonDisabledBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.0125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.005",
+                        "0.005",
+                        "0.005",
+                        "0.005,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "EscMenuButtonDisabledBorder,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 3,
+            "type": "BACKDROP",
+            "name": "EscMenuButtonDisabledPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "EscMenuButtonDisabledPushedBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.0125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.005",
+                        "0.005",
+                        "0.005",
+                        "0.005,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "EscMenuButtonDisabledPushedBorder,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 4,
+            "type": "BACKDROP",
+            "name": "EscMenuControlBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "EscMenuEditBoxBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.0125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.005",
+                        "0.005",
+                        "0.005",
+                        "0.005,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "EscMenuEditBoxBorder,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 5,
+            "type": "HIGHLIGHT",
+            "name": "EscMenuButtonMouseOverHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "EscMenuButtonMouseOverHighlight,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 6,
+            "type": "GLUETEXTBUTTON",
+            "name": "EscMenuButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.228,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.035,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonPushedTextOffset",
+                    "child": [
+                        "0.002f",
+                        "-0.002f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "ButtonBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "ButtonPushedBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "ButtonDisabledBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledPushedBackdrop",
+                    "child": [
+                        "ButtonDisabledPushedBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "ButtonMouseOverHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 7,
+                    "type": "BACKDROP",
+                    "name": "ButtonBackdropTemplate",
+                    "inherits": "EscMenuButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 8,
+                    "type": "BACKDROP",
+                    "name": "ButtonPushedBackdropTemplate",
+                    "inherits": "EscMenuButtonPushedBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 9,
+                    "type": "BACKDROP",
+                    "name": "ButtonDisabledBackdropTemplate",
+                    "inherits": "EscMenuButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 10,
+                    "type": "BACKDROP",
+                    "name": "ButtonDisabledPushedBackdropTemplate",
+                    "inherits": "EscMenuButtonDisabledPushedBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 11,
+                    "type": "HIGHLIGHT",
+                    "name": "ButtonMouseOverHighlightTemplate",
+                    "inherits": "EscMenuButtonMouseOverHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 12,
+            "type": "TEXT",
+            "name": "EscMenuButtonTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "EscMenuTextFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYCENTER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationOffset",
+                    "child": [
+                        "0.0",
+                        "-0.002,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 13,
+            "type": "TEXT",
+            "name": "EscMenuInfoTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "EscMenuTextFont,",
+                        "0.011,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYCENTER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 14,
+            "type": "TEXT",
+            "name": "EscMenuTitleTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "EscMenuTextFont,",
+                        "0.015,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 15,
+            "type": "TEXT",
+            "name": "EscMenuLabelTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "EscMenuTextFont,",
+                        "0.011,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 16,
+            "type": "SLIDER",
+            "name": "EscMenuSliderTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.012,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.139,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "SliderLayoutHorizontal,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "EscMenuScrollBarBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "EscMenuScrollBarDisabledBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "SliderThumbButtonFrame",
+                    "child": [
+                        "EscMenuThumbButtonTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 17,
+                    "type": "BACKDROP",
+                    "name": "EscMenuScrollBarBackdropTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuSliderBackground,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.006,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.006,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.0025",
+                                "0.0025",
+                                "0.0025",
+                                "0.0025,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "EscMenuSliderBorder,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 18,
+                    "type": "BACKDROP",
+                    "name": "EscMenuScrollBarDisabledBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuSliderBackground,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.006,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.006,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.0025",
+                                "0.0025",
+                                "0.0025",
+                                "0.0025,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "EscMenuSliderDisabledBorder,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 19,
+                    "type": "BUTTON",
+                    "name": "EscMenuThumbButtonTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "EscMenuThumbButtonBackdropTemplate,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlDisabledBackdrop",
+                            "child": [
+                                "EscMenuThumbButtonDisabledBackdrop,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 20,
+                            "type": "BACKDROP",
+                            "name": "EscMenuThumbButtonBackdropTemplate",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "EscMenuSliderThumbButton,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 21,
+                            "type": "BACKDROP",
+                            "name": "EscMenuThumbButtonDisabledBackdrop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "EscMenuSliderDisabledThumbButton,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 22,
+            "type": "SCROLLBAR",
+            "name": "EscMenuScrollBarTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.012,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "SliderLayoutVertical,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "EscMenuScrollBarBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ScrollBarIncButtonFrame",
+                    "child": [
+                        "EscMenuScrollBarIncButton,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ScrollBarDecButtonFrame",
+                    "child": [
+                        "EscMenuScrollBarDecButton,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "SliderThumbButtonFrame",
+                    "child": [
+                        "EscMenuScrollThumbButton,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 23,
+                    "type": "BACKDROP",
+                    "name": "EscMenuScrollBarBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuSliderBackground,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.006,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.006,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.0025",
+                                "0.0025",
+                                "0.0025",
+                                "0.0025,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "EscMenuSliderBorder,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 24,
+                    "type": "BUTTON",
+                    "name": "EscMenuScrollBarIncButton",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "EscMenuScrollBarIncButtonBackdrop,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 25,
+                            "type": "BACKDROP",
+                            "name": "EscMenuScrollBarIncButtonBackdrop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\SinglePlayerSkirmish-ScrollBarUpButton.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 26,
+                    "type": "BUTTON",
+                    "name": "EscMenuScrollBarDecButton",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "EscMenuScrollBarDecButtonBackdrop,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 27,
+                            "type": "BACKDROP",
+                            "name": "EscMenuScrollBarDecButtonBackdrop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\SinglePlayerSkirmish-ScrollBarDownButton.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 28,
+                    "type": "BUTTON",
+                    "name": "EscMenuScrollThumbButton",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "EscMenuScrollThumbButtonBackdrop,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 29,
+                            "type": "BACKDROP",
+                            "name": "EscMenuScrollThumbButtonBackdrop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "EscMenuSliderThumbButton,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 30,
+            "type": "MENU",
+            "name": "EscMenuPopupMenuMenuTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.03,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "EscMenuTextFont,0.011,,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "MenuTextHighlightColor",
+                    "child": [
+                        "1.0",
+                        "0.0",
+                        "0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "MenuItemHeight",
+                    "child": [
+                        "0.014,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "MenuBorder",
+                    "child": [
+                        "0.009,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "EscMenuPopupMenuMenuBackdropTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 31,
+                    "type": "BACKDROP",
+                    "name": "EscMenuPopupMenuMenuBackdropTemplate",
+                    "inherits": "EscMenuButtonBackdropTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuEditBoxBackground,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 32,
+            "type": "GLUETEXTBUTTON",
+            "name": "EscMenuPopupMenuTitleTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "EscMenuTextFont,0.011,,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonText",
+                    "child": [
+                        "EscMenuPopupMenuTitleTextTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 33,
+                    "type": "TEXT",
+                    "name": "EscMenuPopupMenuTitleTextTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationOffset",
+                            "child": [
+                                "0.01",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontFlags",
+                            "child": [
+                                "FIXEDSIZE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 34,
+            "type": "BUTTON",
+            "name": "EscMenuPopupMenuArrowTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.011,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.011,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "EscMenuPopupMenuArrowBackdropTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 35,
+                    "type": "BACKDROP",
+                    "name": "EscMenuPopupMenuArrowBackdropTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuPopupMenuArrow,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 36,
+            "type": "POPUPMENU",
+            "name": "EscMenuPopupMenuTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.111875,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.03,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupButtonInset",
+                    "child": [
+                        "0.01,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "EscMenuPopupMenuBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "EscMenuPopupMenuDisabledBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupTitleFrame",
+                    "child": [
+                        "PopupMenuTitleTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupArrowFrame",
+                    "child": [
+                        "PopupMenuArrowTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupMenuFrame",
+                    "child": [
+                        "PopupMenuMenuTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 37,
+                    "type": "BACKDROP",
+                    "name": "EscMenuPopupMenuBackdropTemplate",
+                    "inherits": "EscMenuButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 38,
+                    "type": "BACKDROP",
+                    "name": "EscMenuPopupMenuDisabledBackdropTemplate",
+                    "inherits": "EscMenuButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 39,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "PopupMenuTitleTemplate",
+                    "inherits": "EscMenuPopupMenuTitleTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 40,
+                    "type": "BUTTON",
+                    "name": "PopupMenuArrowTemplate",
+                    "inherits": "EscMenuPopupMenuArrowTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 41,
+                    "type": "MENU",
+                    "name": "PopupMenuMenuTemplate",
+                    "inherits": "EscMenuPopupMenuMenuTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 42,
+            "type": "GLUECHECKBOX",
+            "name": "EscMenuCheckBoxTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.024,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.024,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "EscMenuCheckBoxBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "EscMenuDisabledCheckBoxBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "EscMenuCheckBoxPushedBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "CheckBoxCheckHighlight",
+                    "child": [
+                        "EscMenuCheckHighlightTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "CheckBoxDisabledCheckHighlight",
+                    "child": [
+                        "EscMenuDisabledCheckHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 43,
+                    "type": "BACKDROP",
+                    "name": "EscMenuCheckBoxBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuCheckBoxBackground,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 44,
+                    "type": "BACKDROP",
+                    "name": "EscMenuDisabledCheckBoxBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuDisabledCheckBoxBackground,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 45,
+                    "type": "BACKDROP",
+                    "name": "EscMenuCheckBoxPushedBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuCheckBoxPushedBackground,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 46,
+                    "type": "HIGHLIGHT",
+                    "name": "EscMenuCheckHighlightTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "EscMenuCheckBoxCheckHighlight,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "BLEND,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 47,
+                    "type": "HIGHLIGHT",
+                    "name": "EscMenuDisabledCheckHighlightTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "EscMenuDisabledCheckHighlight,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "BLEND,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 48,
+            "type": "GLUECHECKBOX",
+            "name": "EscMenuRadioButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "EscMenuRadioButtonBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "EscMenuRadioButtonDisabledBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "EscMenuRadioButtonPushedBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "CheckBoxCheckHighlight",
+                    "child": [
+                        "EscMenuRadioButtonHighlightTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "CheckBoxDisabledCheckHighlight",
+                    "child": [
+                        "EscMenuDisabledRadioButtonHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 49,
+                    "type": "BACKDROP",
+                    "name": "EscMenuRadioButtonBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuRadioButtonBackground,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 50,
+                    "type": "BACKDROP",
+                    "name": "EscMenuRadioButtonDisabledBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuRadioButtonDisabledBackground,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 51,
+                    "type": "BACKDROP",
+                    "name": "EscMenuRadioButtonPushedBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuRadioButtonPushedBackground,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 52,
+                    "type": "HIGHLIGHT",
+                    "name": "EscMenuRadioButtonHighlightTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "EscMenuRadioButtonSelectedHighlight,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "BLEND,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 53,
+                    "type": "HIGHLIGHT",
+                    "name": "EscMenuDisabledRadioButtonHighlightTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "EscMenuDisabledRadioButtonSelectedHighlight,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "BLEND,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 54,
+            "type": "TEXT",
+            "name": "EscMenuEditBoxTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.015,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 55,
+            "type": "BACKDROP",
+            "name": "EscMenuEditBoxBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "EscMenuEditBoxBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.0125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.005",
+                        "0.005",
+                        "0.005",
+                        "0.005,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "EscMenuEditBoxBorder,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 56,
+            "type": "EDITBOX",
+            "name": "EscMenuEditBoxTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.04,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "EditBorderSize",
+                    "child": [
+                        "0.009,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "EditCursorColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "EscMenuEditBoxBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 57,
+                    "type": "BACKDROP",
+                    "name": "EscMenuEditBoxBackdrop",
+                    "inherits": "EscMenuEditBoxBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 58,
+            "type": "TEXTAREA",
+            "name": "EscMenuTextAreaTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "TextAreaLineHeight",
+                    "child": [
+                        "0.015,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "TextAreaLineGap",
+                    "child": [
+                        "0.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "TextAreaInset",
+                    "child": [
+                        "0.01,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "TextAreaScrollBar",
+                    "child": [
+                        "EscMenuTextAreaScrollBarTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "EscMenuTextAreaBackdropTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 59,
+                    "type": "SCROLLBAR",
+                    "name": "EscMenuTextAreaScrollBarTemplate",
+                    "inherits": "EscMenuScrollBarTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 60,
+                    "type": "BACKDROP",
+                    "name": "EscMenuTextAreaBackdropTemplate",
+                    "inherits": "EscMenuControlBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,24 @@
+!(function ($, window, document, _undefined) {
+	'use strict';
+
+	XF.TriggerTag = XF.Element.newHandler({
+		options: {},
+
+		init: function () {
+			this.$target.find('.expander').each(function (i, el) {
+				var $el = $(el);
+				var container = $el.closest('li').find('ul').first();
+				$el.click(function () {
+					$(container).slideToggle(100, function () {
+						var alt = $el.data('alternative');
+						var cur = $el.attr('src');
+						$el.attr('src', alt);
+						$el.data('alternative', cur);
+					});
+				});
+			});
+		},
+	});
+
+	XF.Element.register('trigger-tag', 'XF.TriggerTag');
+})(jQuery, window, document);

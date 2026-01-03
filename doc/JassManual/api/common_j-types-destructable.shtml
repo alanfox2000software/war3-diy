@@ -1,0 +1,183 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type destructable</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type destructable</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> <a href="common_j-types-agent.shtml">agent</a> <strong>&gt;</strong> <a href="common_j-types-widget.shtml">widget</a> <strong>&gt;</strong> destructable</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#10">10</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">destructable</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf">
+<p><a href="Blizzard_j-variables.shtml">Blizzard.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#faffbf"></td><td bgcolor="#faffbf">
+<strong><a href="Blizzard_j-variables.shtml#bj_destRandomCurrentPick">bj_destRandomCurrentPick</a>,
+<a href="Blizzard_j-variables.shtml#bj_elevatorNeighbor">bj_elevatorNeighbor</a>,
+<a href="Blizzard_j-variables.shtml#bj_elevatorWallBlocker">bj_elevatorWallBlocker</a>,
+<a href="Blizzard_j-variables.shtml#bj_lastCreatedDestructable">bj_lastCreatedDestructable</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">destructable</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateDeadDestructable">CreateDeadDestructable</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> objectid, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="BUILT_IN-types-real.shtml">real</a> face, <a href="BUILT_IN-types-real.shtml">real</a> scale, <a href="BUILT_IN-types-integer.shtml">integer</a> variation<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CreateDeadDestructableLocBJ">CreateDeadDestructableLocBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> objectid, <a href="common_j-types-location.shtml">location</a> loc, <a href="BUILT_IN-types-real.shtml">real</a> facing, <a href="BUILT_IN-types-real.shtml">real</a> scale, <a href="BUILT_IN-types-integer.shtml">integer</a> variation<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateDeadDestructableZ">CreateDeadDestructableZ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> objectid, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="BUILT_IN-types-real.shtml">real</a> z, <a href="BUILT_IN-types-real.shtml">real</a> face, <a href="BUILT_IN-types-real.shtml">real</a> scale, <a href="BUILT_IN-types-integer.shtml">integer</a> variation<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateDestructable">CreateDestructable</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> objectid, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="BUILT_IN-types-real.shtml">real</a> face, <a href="BUILT_IN-types-real.shtml">real</a> scale, <a href="BUILT_IN-types-integer.shtml">integer</a> variation<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CreateDestructableLoc">CreateDestructableLoc</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> objectid, <a href="common_j-types-location.shtml">location</a> loc, <a href="BUILT_IN-types-real.shtml">real</a> facing, <a href="BUILT_IN-types-real.shtml">real</a> scale, <a href="BUILT_IN-types-integer.shtml">integer</a> variation<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateDestructableZ">CreateDestructableZ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> objectid, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="BUILT_IN-types-real.shtml">real</a> z, <a href="BUILT_IN-types-real.shtml">real</a> face, <a href="BUILT_IN-types-real.shtml">real</a> scale, <a href="BUILT_IN-types-integer.shtml">integer</a> variation<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetDyingDestructable">GetDyingDestructable</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetEnumDestructable">GetEnumDestructable</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetFilterDestructable">GetFilterDestructable</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetLastCreatedDestructable">GetLastCreatedDestructable</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetOrderTargetDestructable">GetOrderTargetDestructable</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetSpellTargetDestructable">GetSpellTargetDestructable</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetTriggerDestructable">GetTriggerDestructable</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetUnitRallyDestructable">GetUnitRallyDestructable</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LoadDestructableHandle">LoadDestructableHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LoadDestructableHandleBJ">LoadDestructableHandleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RandomDestructableInRectBJ">RandomDestructableInRectBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RandomDestructableInRectSimpleBJ">RandomDestructableInRectSimpleBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">destructable</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ChangeElevatorHeight">ChangeElevatorHeight</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-integer.shtml">integer</a> newHeight<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ChangeElevatorWalls">ChangeElevatorWalls</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> open, <a href="BUILT_IN-types-integer.shtml">integer</a> walls, <a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#DestructableAddIndicatorBJ">DestructableAddIndicatorBJ</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> whichDestructable, <a href="BUILT_IN-types-real.shtml">real</a> red, <a href="BUILT_IN-types-real.shtml">real</a> green, <a href="BUILT_IN-types-real.shtml">real</a> blue, <a href="BUILT_IN-types-real.shtml">real</a> transparency<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#DestructableRestoreLife">DestructableRestoreLife</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-real.shtml">real</a> life, <a href="BUILT_IN-types-boolean.shtml">boolean</a> birth<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetDestructableLife">GetDestructableLife</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetDestructableLoc">GetDestructableLoc</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> whichDestructable<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-location.shtml">location</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetDestructableMaxLife">GetDestructableMaxLife</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetDestructableName">GetDestructableName</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-string.shtml">string</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetDestructableOccluderHeight">GetDestructableOccluderHeight</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetDestructableTypeId">GetDestructableTypeId</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetDestructableX">GetDestructableX</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetDestructableY">GetDestructableY</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetElevatorHeight">GetElevatorHeight</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#IsDestructableAliveBJ">IsDestructableAliveBJ</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#IsDestructableDeadBJ">IsDestructableDeadBJ</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IsDestructableInvulnerable">IsDestructableInvulnerable</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#IsDestructableInvulnerableBJ">IsDestructableInvulnerableBJ</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#KillDestructable">KillDestructable</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ModifyGateBJ">ModifyGateBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> gateOperation, <a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#QueueDestructableAnimation">QueueDestructableAnimation</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-string.shtml">string</a> whichAnimation<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#QueueDestructableAnimationBJ">QueueDestructableAnimationBJ</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-string.shtml">string</a> whichAnimation<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#RemoveDestructable">RemoveDestructable</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SaveDestructableHandle">SaveDestructableHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey, <a href="common_j-types-destructable.shtml">destructable</a> whichDestructable<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SaveDestructableHandleBJ">SaveDestructableHandleBJ</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> whichDestructable, <a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetDestAnimationSpeedPercent">SetDestAnimationSpeedPercent</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-real.shtml">real</a> percentScale<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetDestructableAnimation">SetDestructableAnimation</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-string.shtml">string</a> whichAnimation<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetDestructableAnimationBJ">SetDestructableAnimationBJ</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-string.shtml">string</a> whichAnimation<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetDestructableAnimationSpeed">SetDestructableAnimationSpeed</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-real.shtml">real</a> speedFactor<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetDestructableInvulnerable">SetDestructableInvulnerable</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetDestructableInvulnerableBJ">SetDestructableInvulnerableBJ</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetDestructableLife">SetDestructableLife</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-real.shtml">real</a> life<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetDestructableLifePercentBJ">SetDestructableLifePercentBJ</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-real.shtml">real</a> percent<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetDestructableMaxLife">SetDestructableMaxLife</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-real.shtml">real</a> max<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetDestructableMaxLifeBJ">SetDestructableMaxLifeBJ</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-real.shtml">real</a> max<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetDestructableOccluderHeight">SetDestructableOccluderHeight</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-real.shtml">real</a> height<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetUnitRallyDestructable">SetUnitRallyDestructable</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-destructable.shtml">destructable</a> targDest<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ShowDestructable">ShowDestructable</a></strong> <strong>(</strong><a href="common_j-types-destructable.shtml">destructable</a> d, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ShowDestructableBJ">ShowDestructableBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> flag, <a href="common_j-types-destructable.shtml">destructable</a> d<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

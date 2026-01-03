@@ -1,0 +1,492 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>属性 Attr</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../favicon.svg">
+                        <link rel="shortcut icon" href="../favicon.png">
+                <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+                <link rel="stylesheet" href="../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 快速开始</a></li><li class="chapter-item expanded "><a href="../quick/struct.html"><strong aria-hidden="true">2.</strong> 项目结构</a></li><li class="chapter-item expanded "><a href="../quick/command.html"><strong aria-hidden="true">3.</strong> SDK命令指引</a></li><li class="chapter-item expanded "><a href="../quick/update.html"><strong aria-hidden="true">4.</strong> 更新日志</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 功能库</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../lib/api.html"><strong aria-hidden="true">5.1.</strong> API</a></li><li class="chapter-item expanded "><a href="../lib/attr.html" class="active"><strong aria-hidden="true">5.2.</strong> 属性 Attr</a></li><li class="chapter-item expanded "><a href="../lib/japi.html"><strong aria-hidden="true">5.3.</strong> JAPI</a></li><li class="chapter-item expanded "><a href="../lib/hslk1.html"><strong aria-hidden="true">5.4.</strong> Slk入门</a></li><li class="chapter-item expanded "><a href="../lib/hslk2.html"><strong aria-hidden="true">5.5.</strong> Slk进阶</a></li><li class="chapter-item expanded "><a href="../lib/hslk_f6.html"><strong aria-hidden="true">5.6.</strong> Slk原生物编字段</a></li><li class="chapter-item expanded "><a href="../lib/hslk_misc.html"><strong aria-hidden="true">5.7.</strong> Slk与MISC数据</a></li><li class="chapter-item expanded "><a href="../lib/sync.html"><strong aria-hidden="true">5.8.</strong> Sync同步</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 例子</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../example/leaderBoard.html"><strong aria-hidden="true">6.1.</strong> 使用排行榜</a></li><li class="chapter-item expanded "><a href="../example/multiBoard.html"><strong aria-hidden="true">6.2.</strong> 使用多面板</a></li><li class="chapter-item expanded "><a href="../example/dialog.html"><strong aria-hidden="true">6.3.</strong> 难度选择对话框</a></li><li class="chapter-item expanded "><a href="../example/pickHero.html"><strong aria-hidden="true">6.4.</strong> 常见两种选英雄</a></li><li class="chapter-item expanded "><a href="../example/attack.html"><strong aria-hidden="true">6.5.</strong> 简单刷兵</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> 其他学习</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../other/jetbrain.html"><strong aria-hidden="true">7.1.</strong> Jetbrain设置</a></li><li class="chapter-item expanded "><a href="../other/q_a.html"><strong aria-hidden="true">7.2.</strong> 询问的技巧</a></li><li class="chapter-item expanded "><a href="../other/dz.html"><strong aria-hidden="true">7.3.</strong> 平台上线须知</a></li><li class="chapter-item expanded "><a href="../other/war3_tec.html"><strong aria-hidden="true">7.4.</strong> 魔兽作图小技巧</a></li><li class="chapter-item expanded "><a href="../other/war3_terrainArt.html"><strong aria-hidden="true">7.5.</strong> 魔兽地形贴图路径</a></li><li class="chapter-item expanded "><a href="../other/lua_engine.html"><strong aria-hidden="true">7.6.</strong> YDLua引擎</a></li><li class="chapter-item expanded "><a href="../other/ui_fdf.html"><strong aria-hidden="true">7.7.</strong> UI &amp; FDF</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> 小小专栏</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../xxqq/BV1nV411J7FB.html"><strong aria-hidden="true">8.1.</strong> 基础指令介绍</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1TK4y1Z7eB.html"><strong aria-hidden="true">8.2.</strong> hslk高级用法演示1</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1M64y117sB.html"><strong aria-hidden="true">8.3.</strong> hslk高级用法演示2</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1ZV411J7JJ.html"><strong aria-hidden="true">8.4.</strong> hslk高级用法演示3</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1iv411L7CP.html"><strong aria-hidden="true">8.5.</strong> UI之sync演示</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1Hy4y1s7cj.html"><strong aria-hidden="true">8.6.</strong> 构建酒馆与小地图UI显示头像</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1Lh411v7pR.html"><strong aria-hidden="true">8.7.</strong> 伤害排行榜</a></li><li class="chapter-item expanded "><a href="../xxqq/upscale.html"><strong aria-hidden="true">8.8.</strong> 高端演示</a></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                                                <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="属性系统"><a class="header" href="#属性系统">属性系统</a></h2>
+<p>h-lua 有强大的属性系统</p>
+<p>能轻松几行代码就实现绝大多数属性的实时改动</p>
+<h3 id="hattributesetrelation"><a class="header" href="#hattributesetrelation">hattribute.setRelation</a></h3>
+<p>属性每1单位映射 可以模拟三围加成等</p>
+<h3 id="gold_ratio--lumber_ratio--exp_ratio--sell_ratio"><a class="header" href="#gold_ratio--lumber_ratio--exp_ratio--sell_ratio">gold_ratio / lumber_ratio / exp_ratio / sell_ratio</a></h3>
+<p>黄金率 / 木头率 / 经验率 / 售卖率（%）</p>
+<ul>
+<li>影响资源获取率 售卖率以默认的50%为准，假如某玩家作者设置TA的售卖率不等于50，那么会自动算出差值，给予扣款或补偿</li>
+</ul>
+<h3 id="life--life_back"><a class="header" href="#life--life_back">life / life_back</a></h3>
+<p>生命 / 生命恢复</p>
+<ul>
+<li>单位的最大生命值 / 每秒对生命恢复的量 最小值 1</li>
+</ul>
+<h3 id="mana--mana_back"><a class="header" href="#mana--mana_back">mana / mana_back</a></h3>
+<p>魔法 / 魔法恢复</p>
+<ul>
+<li>单位的最大魔法值 / 每秒对魔法恢复的量 最小值 1</li>
+</ul>
+<h3 id="move"><a class="header" href="#move">move</a></h3>
+<p>移动力</p>
+<ul>
+<li>[范围] 0～?取决于地图的平衡常数设置(一般设为522)
+每秒移动最大距离</li>
+<li>数值无上限，但地图移动上限为522</li>
+<li>假设移动力为2000，则实际移动仍为522，而其他由移动力影响的技能属性将以2000点计算</li>
+</ul>
+<h3 id="defend--defend_white--defend_green"><a class="header" href="#defend--defend_white--defend_green">defend / defend_white / defend_green</a></h3>
+<p>护甲（总/白/绿）</p>
+<ul>
+<li>你可以使用hattr.set改动defend,实际改的是defend_green</li>
+</ul>
+<h3 id="damage_reduction--damage_decrease"><a class="header" href="#damage_reduction--damage_decrease">damage_reduction / damage_decrease</a></h3>
+<p>固定值减伤 / 百分比减伤</p>
+<ul>
+<li>可以直接抵消伤害</li>
+<li>减伤最低为0，也就是不能反增伤</li>
+</ul>
+<h3 id="sight--sight_day-sight_night"><a class="header" href="#sight--sight_day-sight_night">sight / sight_day /sight_night</a></h3>
+<p>视野(变化) / 白天视野 / 黑夜视野</p>
+<ul>
+<li>单位的视野 sight指的是变化值，attr设定=时不是终点值而是“变化”的目标值</li>
+<li>你可以使用hattr.set设置sight_day /sight_night,但并不能真的设置分别的视野，实际改动的变化值</li>
+</ul>
+<h3 id="avoid"><a class="header" href="#avoid">avoid</a></h3>
+<p>回避（%）</p>
+<ul>
+<li>当英雄受到的是“攻击”造成的伤害时会有一定几率闪避抵抗，并且使攻击特效失效</li>
+<li>闪避效果只有当英雄回避属性大于0%时才会开始生效 回避可以无限堆，回避率达到100%时一般情况下回避所有伤害 回避率=(回避-命中)（%）</li>
+<li>如果该次伤害为无视回避，则回避失效（breakArmorType）</li>
+</ul>
+<h3 id="aim"><a class="header" href="#aim">aim</a></h3>
+<p>命中（%）</p>
+<ul>
+<li>aim 命中直接抵消回避生效的效果值 回避率=(回避-命中)（%）</li>
+</ul>
+<h3 id="punish--punish_current"><a class="header" href="#punish--punish_current">punish / punish_current</a></h3>
+<p>僵直 / 当前硬直</p>
+<ul>
+<li>僵直的单位移动攻速会被限制 硬直扣减量与受到伤害相关</li>
+<li>受到快速多段伤害或高伤害时，将很容易被击破而僵直 硬直被破坏时会僵直5秒,并重置硬直条，期间受到伤害可能会再次僵直</li>
+<li>硬直的僵直5秒的体现是攻击速度和移动速度被极大地减少 硬直未被击破时每隔5秒恢复100点</li>
+</ul>
+<h3 id="punish_oppose"><a class="header" href="#punish_oppose">punish_oppose</a></h3>
+<p>僵直抵抗（%）</p>
+<ul>
+<li>不造成伤害时，不减少硬直</li>
+<li>硬直抵抗按百分比减少硬直的减速效果(减的是攻速及移速)</li>
+<li>硬直抵抗的效果最高只能减少90% 力量（总/白/绿）</li>
+</ul>
+<h3 id="str--str_white--str_green"><a class="header" href="#str--str_white--str_green">str / str_white / str_green</a></h3>
+<p>力量（总/白/绿）</p>
+<ul>
+<li>你可以使用hattr.set设置str,但实际改动的是str_green</li>
+</ul>
+<h3 id="agi--agi_white--agi_green"><a class="header" href="#agi--agi_white--agi_green">agi / agi_white / agi_green</a></h3>
+<p>敏捷（总/白/绿）</p>
+<ul>
+<li>你可以使用hattr.set设置str,但实际改动的是agi_green</li>
+</ul>
+<h3 id="int--int_white--int_green"><a class="header" href="#int--int_white--int_green">int / int_white / int_green</a></h3>
+<p>智力（总/白/绿）</p>
+<ul>
+<li>你可以使用hattr.set设置int,但实际改动的是int_green</li>
+</ul>
+<h3 id="attack--attack_white--attack_green"><a class="header" href="#attack--attack_white--attack_green">attack / attack_white / attack_green</a></h3>
+<p>攻击</p>
+<ul>
+<li>一个单位的当前攻击浮动+白+绿</li>
+<li>由于存在区间浮动，所以这个值每次get都会不一样</li>
+<li>你可以使用hattr.set设置attack,但实际改动的是attack_green</li>
+<li>在h-lua下所有单位造成的伤害都视为攻击attack（包括原生技能）</li>
+<li>在调用攻击附魔后，攻击可以附带元素 单位进行攻击的能力，一般分为近战或者远程 攻击间隔</li>
+</ul>
+<h3 id="attack_space"><a class="header" href="#attack_space">attack_space</a></h3>
+<p>攻击间隔</p>
+<ul>
+<li>根据原始攻速和攻击速度计算出的间隔值</li>
+<li>但是set的时候实际设置的是原始间隔(attack_space_origin)</li>
+</ul>
+<h3 id="attack_range"><a class="header" href="#attack_range">attack_range</a></h3>
+<p>攻击范围</p>
+<ul>
+<li>单位进行攻击的最大距离</li>
+</ul>
+<h3 id="attack_speed"><a class="header" href="#attack_speed">attack_speed</a></h3>
+<p>攻击速度（%）</p>
+<ul>
+<li>攻击一次的间隔 假设当前攻速增益为 x% ： 攻击间隔公式：(基本间隔*100) / (100+x) [单位：击/秒]</li>
+</ul>
+<h3 id="reborn"><a class="header" href="#reborn">reborn</a></h3>
+<p>复活时间（秒）</p>
+<ul>
+<li>此值默认-999，无复活效果 当这个值大于等于0时，且单位是英雄，单位会拥有复活的效果 复活的流程执行是一个默认函数，有需要可修改 hevent_default_actions.hero.reborn</li>
+</ul>
+<h3 id="cure"><a class="header" href="#cure">cure</a></h3>
+<p>治疗效果（%）</p>
+<ul>
+<li>增强治疗的效果 影响hunit.addLife/Mana的效果 life_back/mana_back已自动生效</li>
+</ul>
+<h3 id="hemophagia--hemophagia_skill"><a class="header" href="#hemophagia--hemophagia_skill">hemophagia / hemophagia_skill</a></h3>
+<p>吸血（%） / 技能吸血（%）</p>
+<ul>
+<li>攻击 / 技能造成伤害时触发吸血 以实际伤害及吸血百分比为计算</li>
+</ul>
+<h3 id="damage_amplitude"><a class="header" href="#damage_amplitude">damage_amplitude</a></h3>
+<p>伤害增幅（%）</p>
+<ul>
+<li>增幅属性可以提高所有的伤害（包括真实伤害）</li>
+<li>如增幅100%，则攻击、物品、技能等所有伤害都会提高100% 伤害增幅在暴击分裂等之前 负重（Kg）</li>
+</ul>
+<h3 id="weight--weight_current"><a class="header" href="#weight--weight_current">weight / weight_current</a></h3>
+<p>负重（Kg）</p>
+<ul>
+<li>负重决定你身上能够佩戴多少重量的物品装备</li>
+<li>常规地图物品都设为0kg，所以负重是无效的</li>
+</ul>
+<h3 id="invincible"><a class="header" href="#invincible">invincible</a></h3>
+<p>无敌（%）</p>
+<ul>
+<li>收到伤害时瞬间无敌抵消的的几率</li>
+</ul>
+<h3 id="damage_rebound--damage_rebound_oppose"><a class="header" href="#damage_rebound--damage_rebound_oppose">damage_rebound / damage_rebound_oppose</a></h3>
+<p>伤害反射（%） / 反伤抵抗（%）</p>
+<ul>
+<li>可反射受到的一切伤害</li>
+<li>反伤数值机制精度为0.01,小于0.01无效 默认最低为0%（无反射）最高无限定</li>
+<li>以最终伤害值计算反射，反射的伤害不会再次成为反射源</li>
+</ul>
+<h3 id="knocking_odds--knocking_extent--knocking_oppose"><a class="header" href="#knocking_odds--knocking_extent--knocking_oppose">knocking_odds / knocking_extent / knocking_oppose</a></h3>
+<p>暴击几率（%）/ 暴击伤害加成（%） / 暴击抵抗（%）</p>
+<ul>
+<li>这是单位本体的暴击，与xtras的无关，可线性叠加</li>
+<li>本体暴击自动无视回避（模拟原生魔兽效果）</li>
+<li>暴击抵抗阻碍物理暴击发生，包括本体的和xtras</li>
+</ul>
+<h3 id="split_oppose"><a class="header" href="#split_oppose">split_oppose</a></h3>
+<p>分裂抵抗（%）</p>
+<ul>
+<li>阻碍分裂发生</li>
+</ul>
+<h3 id="hemophagia_oppose--hemophagia_skill_oppose"><a class="header" href="#hemophagia_oppose--hemophagia_skill_oppose">hemophagia_oppose / hemophagia_skill_oppose</a></h3>
+<p>吸血抵抗（%） / 技能吸血抵抗（%）</p>
+<ul>
+<li>抵抗攻击吸血 / 技能吸血效果</li>
+</ul>
+<h3 id="punish_oppose-1"><a class="header" href="#punish_oppose-1">punish_oppose</a></h3>
+<p>僵直抵抗（%）</p>
+<ul>
+<li>抵抗僵直效果</li>
+</ul>
+<h3 id="split_oppose-1"><a class="header" href="#split_oppose-1">split_oppose</a></h3>
+<p>分裂抵抗（%）</p>
+<ul>
+<li>阻碍分裂发生</li>
+</ul>
+<h3 id="swim_oppose"><a class="header" href="#swim_oppose">swim_oppose</a></h3>
+<p>眩晕抵抗（%）</p>
+<ul>
+<li>眩晕抵抗同时减少受到眩晕的几率及眩晕时间 眩晕几率=原眩晕几率%-眩晕抵抗（%）,最小0%即无效</li>
+<li>眩晕时间=原眩晕时间*(100%-眩晕抵抗%)（s）,最小0秒即无效 沉默抵抗（%）</li>
+</ul>
+<h3 id="silent_oppose"><a class="header" href="#silent_oppose">silent_oppose</a></h3>
+<p>沉默抵抗（%）</p>
+<ul>
+<li>阻碍沉默发生</li>
+</ul>
+<h3 id="unarm_oppose"><a class="header" href="#unarm_oppose">unarm_oppose</a></h3>
+<p>缴械抵抗（%）</p>
+<ul>
+<li>阻碍缴械发生</li>
+</ul>
+<h3 id="fetter_oppose"><a class="header" href="#fetter_oppose">fetter_oppose</a></h3>
+<p>定身抵抗（%）</p>
+<ul>
+<li>阻碍定身发生</li>
+</ul>
+<h3 id="bomb_oppose"><a class="header" href="#bomb_oppose">bomb_oppose</a></h3>
+<p>爆破抵抗（%）</p>
+<ul>
+<li>阻碍爆破发生</li>
+</ul>
+<h3 id="lightning_chain_oppose"><a class="header" href="#lightning_chain_oppose">lightning_chain_oppose</a></h3>
+<p>闪电链抵抗（%）</p>
+<ul>
+<li>阻碍闪电链发生</li>
+</ul>
+<h3 id="crack_fly_oppose"><a class="header" href="#crack_fly_oppose">crack_fly_oppose</a></h3>
+<p>击飞抵抗（%）</p>
+<ul>
+<li>阻碍击飞发生</li>
+</ul>
+<h3 id="buff_oppose"><a class="header" href="#buff_oppose">buff_oppose</a></h3>
+<p>强化阻碍（%）</p>
+<ul>
+<li>当xtras使用attr增强单位时，效果会被此值减轻</li>
+</ul>
+<h3 id="debuff_oppose"><a class="header" href="#debuff_oppose">debuff_oppose</a></h3>
+<p>负面抵抗（%）</p>
+<ul>
+<li>当xtras使用attr削弱单位时，效果会被此值减轻</li>
+</ul>
+<h3 id="break_armor_type"><a class="header" href="#break_armor_type">BREAK_ARMOR_TYPE</a></h3>
+<p>无视装甲</p>
+<ul>
+<li>详情请看const</li>
+<li>无视护甲 defend</li>
+<li>无视回避 avoid</li>
+<li>无视无敌 invincible</li>
+<li>无视附魔 enchant</li>
+<li>无视只对正数值有效 额外特效</li>
+</ul>
+<h3 id="xtras"><a class="header" href="#xtras">xtras</a></h3>
+<p>以事件作驱动，引发额外限定效果的操作</p>
+<ul>
+<li>由于非常复杂，请查看attr的xtras源码段注释说明 常见例子：</li>
+</ul>
+<pre><code class="language-lua">{ on = CONST_EVENT.attack, action = &quot;triggerUnit.attr.attack_speed&quot;, odds = 20.0, val = 1.5, during = 3.0, effect = nil },
+{ on = CONST_EVENT.attack, action = &quot;attackUnit.attr.attack_speed&quot;, odds = 20.0, val = 1.5, during = 3.0, effect = nil },
+{ on = CONST_EVENT.skill, action = &quot;castUnit.attr.attack_green&quot;, odds = 20.0, val = 2, during = 3.0, effect = nil },
+{ on = CONST_EVENT.item, action = &quot;useUnit.attr.int_white&quot;, odds = 20.0, val = 2, during = 3.0, effect = nil },
+{ on = CONST_EVENT.attack, action = &quot;targetUnit.spec.knocking&quot;, odds = 100, percent = 100, effect = nil },
+{ on = CONST_EVENT.skill, action = &quot;targetUnit.spec.knocking&quot;, odds = 100, percent = 100, effect = nil },
+{ on = CONST_EVENT.attack, action = &quot;targetUnit.spec.split&quot;, odds = 100, percent = {30,50}, radius = 250 },
+{ on = CONST_EVENT.attack, action = &quot;targetUnit.spec.swim&quot;,odds = 0.0, val = 0.0, during = 0.0, effect = nil},
+{ on = CONST_EVENT.attack, action = &quot;targetUnit.spec.broken&quot;,odds = 0.0, val = 0.0, effect = nil},
+{ on = CONST_EVENT.attack, action = &quot;targetUnit.spec.silent&quot;,odds = 0.0, val = 0.0, during = 0.0, effect = nil},
+{ on = CONST_EVENT.attack, action = &quot;targetUnit.spec.unarm&quot;,odds = 0.0, val = 0.0, during = 0.0, effect = nil},
+{ on = CONST_EVENT.attack, action = &quot;targetUnit.spec.fetter&quot;,odds = 0.0, val = 0.0, during = 0.0, effect = nil},
+{ on = CONST_EVENT.attack, action = &quot;targetUnit.spec.bomb&quot;,odds = 0.0, radius = 0.0, val = 0.0, effect = nil},
+{ on = CONST_EVENT.damage, action = &quot;targetUnit.spec.lightning_chain&quot;, odds = 50, val = 100, qty = 0, rate = 0.0 },
+{ on = CONST_EVENT.beDamage, action = &quot;sourceUnit.spec.crack_fly&quot;, odds = 50, val = 100, distance = 300, height = 200, during = 0.5 },
+{ on = CONST_EVENT.attack, action = &quot;sourceUnit.spec.paw&quot;, odds = 50, val = 'damage', effect = 'Abilities\\Weapons\\GargoyleMissile\\GargoyleMissile.mdl', radius = 50, odds = 50, speed = 10, deg = 30, distance = 500, qty = 3 }
+</code></pre>
+<h3 id="enchant"><a class="header" href="#enchant">enchant</a></h3>
+<p>附魔系统介绍</p>
+<ul>
+<li>e_开头的系列设定 如：e_fire / e_fire_attack / e_fire_oppose 附魔，是框架内定义的一种概念 附魔带出元素集合，它们有：物理、魔法、火、焰、水、风、雷、木、毒等等很多种
+附魔被伤害类型和attr引用，独立存在，仅呈现辅助式伤害</li>
+<li>每个属性在造成对应的伤害时，会获得百分比加成，无上限，而抵抗则直接减少加成比例</li>
+<li>下列例子不考虑其他因素： 默认+10%参考henchant.INTRINSIC_ADDITION 原伤100%，类型包含火。火加成为100%，火抵抗为40%，最终伤害170%（默认会+10%）
+原伤100%，类型包含火。火加成为40%，火抵抗为40%，最终伤害110%（默认会+10%） 原伤100%，类型包含火。火加成为0%，火抵抗为40%，最终伤害70%（反而不如无类型了）
+原伤100%，类型不包含火。火加成为40%，火抵抗为40%，最终伤害100%（类型无火，则火加成/抵抗皆无效） 伤害类型(伤害类型绑定附魔的元素)</li>
+</ul>
+<h3 id="damage_type"><a class="header" href="#damage_type">DAMAGE_TYPE</a></h3>
+<p>伤害类型一般指伤害的类型，类型之间可以随意的重复叠加</p>
+<ul>
+<li>详情请看const</li>
+<li>例如一个伤害类型：可以是{physical,fire,fire}物理+火，而且火占到了三分之二的比例。 一般情况下，一次伤害总是各种类型混合的，各个类型会按照各自的规则来计算削弱和加强，不必担心混乱
+例如{magic,fire}这种类型，这次伤害是200点，他们会各自平分伤害：magic100，fire100，如果魔法就按魔抗计算被抵消，火伤害依然是有100点的 伤害来源</li>
+</ul>
+<h3 id="damage_src"><a class="header" href="#damage_src">DAMAGE_SRC</a></h3>
+<p>伤害方式共 4 种</p>
+<ul>
+<li>详情请看const</li>
+<li>[未知方式]没有被定义的都会是未知来源，一种概念</li>
+<li>[攻击方式]普通攻击、魔兽原生技能造成的伤害</li>
+<li>[技能方式]技能设定（触发技能buff、技能debuff、技能特效）</li>
+<li>[物品方式]物品伤害，一种概念</li>
+<li>伤害一般计算优先级：原生护甲伤害计算-&gt;方式类型判定-&gt;无视判定-&gt;附魔数值整合-&gt;暴击及抵抗-&gt;回避、命中-&gt;减伤-&gt;造成伤害-&gt;分裂、吸血、技能吸血-&gt;僵直、反伤-&gt;额外特效</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../lib/api.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="../lib/japi.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../lib/api.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="../lib/japi.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+                <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>

@@ -1,0 +1,25 @@
+1. 下载[h-lua-sdk](https://gitee.com/hunzsig/h-lua-sdk) 
+2. 复制[\h-lua-sdk\depend\w3x2lni\bin\w3x2lni-lua.exe]修改为[lua.exe]
+3. 添加[lua.exe]到环境变量PATH
+4. 下载[0_lua程序设计.pdf]
+5. 编写第一个helloworld 
+    1. 建立目录d:\luademo\
+    2. 新建文件hello.lua 
+    3. hello.lua文件写`print("hello world")`
+    4. \luademo\ shift+右键打开命令行
+    5. 输入`lua.exe hello.lua`
+6. vscode编写
+    1. vscode打开目录\luademo\
+    2. 打开终端
+    3. 输入`lua.exe hello.lua`
+7. vscode编写第二个程序
+    1. 新建文件test.lua 
+    2. test.lua输入内容
+    ```
+    function add(a,b)
+        return a + b;
+    end
+    local c = add(1,2);
+    print(c);
+    ```
+    3. 终端输入`lua.exe test.lua`

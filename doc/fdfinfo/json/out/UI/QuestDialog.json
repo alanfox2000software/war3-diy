@@ -1,0 +1,1805 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "BACKDROP",
+            "name": "QuestButtonBaseTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "QuestDialogNormalBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.0125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.128,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.005",
+                        "0.005",
+                        "0.005",
+                        "0.005,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "QuestDialogNormalBorder,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "BACKDROP",
+            "name": "QuestButtonBackdropTemplate",
+            "inherits": "QuestButtonBaseTemplate",
+            "fields": [],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 2,
+            "type": "BACKDROP",
+            "name": "QuestButtonPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "QuestDialogCompletedBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "QuestDialogCompletedBorder,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.0125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.128,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.005",
+                        "0.005",
+                        "0.005",
+                        "0.005,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 3,
+            "type": "BACKDROP",
+            "name": "QuestButtonDisabledBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "EscMenuEditBoxBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "EscMenuButtonBorder,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.0125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.128,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.005",
+                        "0.005",
+                        "0.005",
+                        "0.005,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 4,
+            "type": "BACKDROP",
+            "name": "QuestButtonDisabledPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "QuestDialogFailedBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "QuestDialogFailedBorder,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.0125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.128,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.005",
+                        "0.005",
+                        "0.005",
+                        "0.005,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 5,
+            "type": "HIGHLIGHT",
+            "name": "QuestButtonMouseOverHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "QuestDialogButtonMouseOverHighlight,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 6,
+            "type": "GLUEBUTTON",
+            "name": "QuestButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.18,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.06,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "ButtonBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "ButtonPushedBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "ButtonDisabledBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledPushedBackdrop",
+                    "child": [
+                        "ButtonDisabledPushedBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "ButtonMouseOverHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 7,
+                    "type": "BACKDROP",
+                    "name": "ButtonBackdropTemplate",
+                    "inherits": "QuestButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 8,
+                    "type": "BACKDROP",
+                    "name": "ButtonPushedBackdropTemplate",
+                    "inherits": "QuestButtonPushedBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 9,
+                    "type": "BACKDROP",
+                    "name": "ButtonDisabledBackdropTemplate",
+                    "inherits": "QuestButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 10,
+                    "type": "BACKDROP",
+                    "name": "ButtonDisabledPushedBackdropTemplate",
+                    "inherits": "QuestButtonDisabledPushedBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 11,
+                    "type": "HIGHLIGHT",
+                    "name": "ButtonMouseOverHighlightTemplate",
+                    "inherits": "QuestButtonMouseOverHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 12,
+            "type": "GLUECHECKBOX",
+            "name": "QuestCheckBox",
+            "inherits": "EscMenuCheckBoxTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.024,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.024,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 13,
+            "type": "FRAME",
+            "name": "QuestDialog",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.48f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.41875f,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 14,
+                    "type": "BACKDROP",
+                    "name": "QuestBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuBackground,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.048,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.256,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.01",
+                                "0.01",
+                                "0.01",
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "EscMenuBorder,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 15,
+                    "type": "TEXT",
+                    "name": "QuestTitleValue",
+                    "inherits": "EscMenuLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "QuestDialog,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "0.99",
+                                "0.827",
+                                "0.0705",
+                                "1.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 16,
+                    "type": "TEXT",
+                    "name": "QuestSubtitleValue",
+                    "inherits": "EscMenuTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "QuestTitleValue,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 17,
+                    "type": "TEXT",
+                    "name": "QuestMainTitle",
+                    "inherits": "EscMenuTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.2,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "QuestBackdrop,",
+                                "TOPLEFT,",
+                                "0.033,",
+                                "-0.06475,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontFlags",
+                            "child": [
+                                "FIXEDSIZE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "QUESTSMAIN,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 18,
+                    "type": "FRAME",
+                    "name": "QuestMainContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.11f,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.21f,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "QuestMainTitle,",
+                                "BOTTOMLEFT,",
+                                "-0.003,",
+                                "-0.002,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 19,
+                    "type": "TEXT",
+                    "name": "QuestOptionalTitle",
+                    "inherits": "EscMenuTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.2,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "QuestMainTitle,",
+                                "TOPLEFT,",
+                                "0.212,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "QUESTSOPTIONAL,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 20,
+                    "type": "FRAME",
+                    "name": "QuestOptionalContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.11f,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.21f,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "QuestMainContainer,",
+                                "TOPRIGHT,",
+                                "0.003,",
+                                "0.00,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 21,
+                    "type": "BACKDROP",
+                    "name": "QuestDisplayBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.15f,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.417f,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "QuestMainContainer,",
+                                "BOTTOMLEFT,",
+                                "0.001,",
+                                "-0.015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuEditBoxBackground,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.0125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.256,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.005",
+                                "0.005",
+                                "0.005",
+                                "0.005,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "EscMenuEditBoxBorder,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 22,
+                            "type": "TEXT",
+                            "name": "QuestDetailsTitle",
+                            "inherits": "EscMenuTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.25,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMLEFT,",
+                                        "QuestDisplayBackdrop,",
+                                        "TOPLEFT,",
+                                        "0.002f,",
+                                        "-0.001,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FrameFont",
+                                    "child": [
+                                        "MasterFont,",
+                                        "0.013,,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYLEFT,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontFlags",
+                                    "child": [
+                                        "FIXEDSIZE,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "A",
+                                        "Quest,",
+                                        "//",
+                                        "should",
+                                        "be",
+                                        "filled",
+                                        "in",
+                                        "by",
+                                        "game",
+                                        "code..."
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 23,
+                            "type": "FRAME",
+                            "name": "QuestItemListContainer",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "QuestDetailsTitle,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.013,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.057,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.39,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 24,
+                            "type": "TEXTAREA",
+                            "name": "QuestDisplay",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "QuestItemListContainer,",
+                                        "BOTTOMLEFT,",
+                                        "0.003,",
+                                        "0.000,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMRIGHT,",
+                                        "QuestDisplayBackdrop,",
+                                        "BOTTOMRIGHT,",
+                                        "-0.01,",
+                                        "0.02,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FrameFont",
+                                    "child": [
+                                        "MasterFont,",
+                                        "0.011,,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaLineGap",
+                                    "child": [
+                                        "0.001,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaMaxLines",
+                                    "child": [
+                                        "32,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaLineHeight",
+                                    "child": [
+                                        "0.011,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaInset",
+                                    "child": [
+                                        "0.005,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaScrollBar",
+                                    "child": [
+                                        "QuestDisplayScrollBar,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 25,
+                                    "type": "SCROLLBAR",
+                                    "name": "QuestDisplayScrollBar",
+                                    "inherits": "EscMenuScrollBarTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,",
+                                                "QuestDisplay,",
+                                                "TOPRIGHT,",
+                                                "0.015,",
+                                                "0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 26,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "QuestAcceptButton",
+                    "inherits": "EscMenuButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.15f,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.03f,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "QuestDialog,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "QuestAcceptButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 27,
+                            "type": "TEXT",
+                            "name": "QuestAcceptButtonText",
+                            "inherits": "EscMenuButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "QUESTACCEPT,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 28,
+            "type": "FRAME",
+            "name": "QuestListItem",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.033,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.08,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 29,
+                    "type": "BACKDROP",
+                    "name": "QuestListItemIconContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.035,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.035,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "QuestListItem,",
+                                "TOPLEFT,",
+                                "0,",
+                                "0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuBackground,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.005",
+                                "0.005",
+                                "0.005",
+                                "0.005,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 30,
+                            "type": "BACKDROP",
+                            "name": "QuestListItemBorder",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "UseActiveContext,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "EscMenuBlankBackground,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropCornerFlags",
+                                    "child": [
+                                        "UL|UR|BL|BR|T|L|B|R,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropCornerSize",
+                                    "child": [
+                                        "0.0125,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundSize",
+                                    "child": [
+                                        "0.032,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropEdgeFile",
+                                    "child": [
+                                        "EscMenuButtonBorder,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundInsets",
+                                    "child": [
+                                        "0.005",
+                                        "0.005",
+                                        "0.005",
+                                        "0.005,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 31,
+                    "type": "GLUEBUTTON",
+                    "name": "QuestListItemButton",
+                    "inherits": "QuestButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "QuestListItemIconContainer,",
+                                "TOPRIGHT,",
+                                "-0.003,",
+                                "0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,",
+                                "QuestListItem,",
+                                "BOTTOMRIGHT,",
+                                "-0.003,",
+                                "0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlStyle",
+                            "child": [
+                                "AUTOTRACK,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 32,
+                            "type": "HIGHLIGHT",
+                            "name": "QuestListItemFailedHighlight",
+                            "inherits": "QuestButtonMouseOverHighlightTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "UseActiveContext,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "HighlightAlphaFile",
+                                    "child": [
+                                        "QuestDialogFailedMouseOverHighlight,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "HighlightAlphaMode",
+                                    "child": [
+                                        "ADD,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 33,
+                            "type": "HIGHLIGHT",
+                            "name": "QuestListItemCompletedHighlight",
+                            "inherits": "QuestButtonMouseOverHighlightTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "UseActiveContext,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "HighlightAlphaFile",
+                                    "child": [
+                                        "QuestDialogCompletedMouseOverHighlight,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "HighlightAlphaMode",
+                                    "child": [
+                                        "ADD,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 34,
+                            "type": "HIGHLIGHT",
+                            "name": "QuestListItemSelectedHighlight",
+                            "inherits": "QuestButtonMouseOverHighlightTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "UseActiveContext,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 35,
+                    "type": "TEXT",
+                    "name": "QuestListItemComplete",
+                    "inherits": "EscMenuInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.009,,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.06,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "QuestListItemButton,",
+                                "BOTTOMLEFT,",
+                                "0.012,",
+                                "0.005,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 36,
+                    "type": "TEXT",
+                    "name": "QuestListItemTitle",
+                    "inherits": "EscMenuButtonTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "QuestListItemButton,",
+                                "LEFT,",
+                                "0.002,",
+                                "0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontHighlightColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontDisabledColor",
+                            "child": [
+                                "0.4",
+                                "0.5",
+                                "0.6",
+                                "0.7,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationOffset",
+                            "child": [
+                                "0.01",
+                                "0.001,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "QuestListItemTitle,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 37,
+            "type": "FRAME",
+            "name": "QuestItemListItem",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.012,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.15,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 38,
+                    "type": "TEXT",
+                    "name": "QuestItemListItemTitle",
+                    "inherits": "EscMenuButtonTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "QuestItemListItem,",
+                                "LEFT,",
+                                "0.002,",
+                                "0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "RIGHT,",
+                                "QuestItemListItem,",
+                                "RIGHT,",
+                                "-0.002,",
+                                "0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.013,,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontHighlightColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontDisabledColor",
+                            "child": [
+                                "0.4",
+                                "0.5",
+                                "0.6",
+                                "0.7,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationOffset",
+                            "child": [
+                                "0.01",
+                                "0.001,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "QuestItemListItemTitle,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 39,
+            "type": "GLUECHECKBOX",
+            "name": "QuestCheckBox2",
+            "inherits": "EscMenuCheckBoxTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.012,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.012,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 40,
+            "type": "GLUECHECKBOX",
+            "name": "QuestCheckBox3",
+            "inherits": "EscMenuCheckBoxTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.012,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.012,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 41,
+            "type": "SCROLLBAR",
+            "name": "QuestMainListScrollBar",
+            "inherits": "EscMenuScrollBarTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetPoint",
+                    "child": [
+                        "TOPRIGHT,",
+                        "QuestMainContainer,",
+                        "TOPRIGHT,",
+                        "0.005,",
+                        "0,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 42,
+            "type": "SCROLLBAR",
+            "name": "QuestOptionalListScrollBar",
+            "inherits": "EscMenuScrollBarTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetPoint",
+                    "child": [
+                        "TOPRIGHT,",
+                        "QuestOptionalContainer,",
+                        "TOPRIGHT,",
+                        "0.005,",
+                        "0,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 43,
+            "type": "SCROLLBAR",
+            "name": "QuestItemListScrollBar",
+            "inherits": "EscMenuScrollBarTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetPoint",
+                    "child": [
+                        "TOPRIGHT,",
+                        "QuestItemListContainer,",
+                        "TOPRIGHT,",
+                        "0.005,",
+                        "0,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 44,
+            "type": "SCROLLBAR",
+            "name": "QuestConditionListScrollBar",
+            "inherits": "EscMenuScrollBarTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetPoint",
+                    "child": [
+                        "TOPRIGHT,",
+                        "QuestConditionListContainer,",
+                        "TOPRIGHT,",
+                        "0.005,",
+                        "0,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ]
+]

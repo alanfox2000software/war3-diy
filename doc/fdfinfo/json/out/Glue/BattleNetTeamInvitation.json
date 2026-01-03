@@ -1,0 +1,607 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "BattleNetTeamInvitation",
+            "inherits": "",
+            "fields": [],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "HIGHLIGHT",
+                    "name": "DebugTestFrame",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightColor",
+                            "child": [
+                                "1.0",
+                                "0.0",
+                                "0.0",
+                                "0.2,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "SHADE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "TEXT",
+                    "name": "InvitationTitle",
+                    "inherits": "BattleNetTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetTeamInvitation,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "-0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_INVITEE_TITLE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "TEXT",
+                    "name": "InvitationValue",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.26475,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InvitationTitle,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.0105,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 4,
+                    "type": "TEXT",
+                    "name": "InvitationTeamMemberLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InvitationValue,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_TEAM_MEMBERS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 5,
+                    "type": "BACKDROP",
+                    "name": "InvitationTeamMemberBackdrop1",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.2575,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InvitationTeamMemberLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.005,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-userlist-back.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 6,
+                            "type": "TEXT",
+                            "name": "InvitationTeamMemberValue1",
+                            "inherits": "BattleNetValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "InvitationTeamMemberBackdrop1,",
+                                        "LEFT,",
+                                        "0.012,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 7,
+                    "type": "BACKDROP",
+                    "name": "InvitationTeamMemberBackdrop2",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.2575,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InvitationTeamMemberBackdrop1,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "0.001875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-userlist-back.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 8,
+                            "type": "TEXT",
+                            "name": "InvitationTeamMemberValue2",
+                            "inherits": "BattleNetValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "InvitationTeamMemberBackdrop2,",
+                                        "LEFT,",
+                                        "0.012,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 9,
+                    "type": "BACKDROP",
+                    "name": "InvitationTeamMemberBackdrop3",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.2575,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InvitationTeamMemberBackdrop2,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "0.001875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-userlist-back.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 10,
+                            "type": "TEXT",
+                            "name": "InvitationTeamMemberValue3",
+                            "inherits": "BattleNetValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "InvitationTeamMemberBackdrop3,",
+                                        "LEFT,",
+                                        "0.012,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 11,
+                    "type": "BACKDROP",
+                    "name": "InvitationTeamMemberBackdrop4",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.2575,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InvitationTeamMemberBackdrop3,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "0.001875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-userlist-back.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 12,
+                            "type": "TEXT",
+                            "name": "InvitationTeamMemberValue4",
+                            "inherits": "BattleNetValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "InvitationTeamMemberBackdrop4,",
+                                        "LEFT,",
+                                        "0.012,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 13,
+                    "type": "TEXT",
+                    "name": "InvitationInfoText",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.26475,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InvitationTeamMemberBackdrop4,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.0075,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_INVITEE_INFO,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 14,
+                    "type": "TEXT",
+                    "name": "InvitationTimeoutLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InvitationInfoText,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.011,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_INVITEE_TIMOUT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "0.0",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 15,
+                    "type": "TEXT",
+                    "name": "InvitationTimeoutValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "InvitationTimeoutLabel,",
+                                "RIGHT,",
+                                "0.006,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 16,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "InviteAcceptButton",
+                    "inherits": "BattleNetBorderedButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.12,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "BattleNetTeamInvitation,",
+                                "BOTTOMLEFT,",
+                                "0.006,",
+                                "0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlShortcutKey",
+                            "child": [
+                                "A,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "InviteAcceptButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 17,
+                            "type": "TEXT",
+                            "name": "InviteAcceptButtonText",
+                            "inherits": "BattleNetButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "KEY_ACCEPT,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 18,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "InviteDeclineButton",
+                    "inherits": "BattleNetBorderedButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.12,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,BattleNetTeamInvitation,BOTTOMRIGHT,",
+                                "-0.006,",
+                                "0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlShortcutKey",
+                            "child": [
+                                "D,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "InviteDeclineButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 19,
+                            "type": "TEXT",
+                            "name": "InviteDeclineButtonText",
+                            "inherits": "BattleNetButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "KEY_DECLINE,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type unittype</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type unittype</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> unittype</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#49">49</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">unittype</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8">
+<p><a href="common_j-variables.shtml">common.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#7FEFE8"></td><td bgcolor="#7FEFE8">
+<strong><a href="common_j-variables.shtml#UNIT_TYPE_ANCIENT">UNIT_TYPE_ANCIENT</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_ATTACKS_FLYING">UNIT_TYPE_ATTACKS_FLYING</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_ATTACKS_GROUND">UNIT_TYPE_ATTACKS_GROUND</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_DEAD">UNIT_TYPE_DEAD</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_ETHEREAL">UNIT_TYPE_ETHEREAL</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_FLYING">UNIT_TYPE_FLYING</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_GIANT">UNIT_TYPE_GIANT</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_GROUND">UNIT_TYPE_GROUND</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_HERO">UNIT_TYPE_HERO</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_MAGIC_IMMUNE">UNIT_TYPE_MAGIC_IMMUNE</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_MECHANICAL">UNIT_TYPE_MECHANICAL</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_MELEE_ATTACKER">UNIT_TYPE_MELEE_ATTACKER</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_PEON">UNIT_TYPE_PEON</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_PLAGUED">UNIT_TYPE_PLAGUED</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_POISONED">UNIT_TYPE_POISONED</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_POLYMORPHED">UNIT_TYPE_POLYMORPHED</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_RANGED_ATTACKER">UNIT_TYPE_RANGED_ATTACKER</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_RESISTANT">UNIT_TYPE_RESISTANT</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_SAPPER">UNIT_TYPE_SAPPER</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_SLEEPING">UNIT_TYPE_SLEEPING</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_SNARED">UNIT_TYPE_SNARED</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_STRUCTURE">UNIT_TYPE_STRUCTURE</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_STUNNED">UNIT_TYPE_STUNNED</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_SUMMONED">UNIT_TYPE_SUMMONED</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_TAUREN">UNIT_TYPE_TAUREN</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_TOWNHALL">UNIT_TYPE_TOWNHALL</a>,
+<a href="common_j-variables.shtml#UNIT_TYPE_UNDEAD">UNIT_TYPE_UNDEAD</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">unittype</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#ConvertUnitType">ConvertUnitType</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> i<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-unittype.shtml">unittype</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">unittype</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#IsUnitIdType">IsUnitIdType</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> unitId, <a href="common_j-types-unittype.shtml">unittype</a> whichUnitType<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#IsUnitType">IsUnitType</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-unittype.shtml">unittype</a> whichUnitType<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitAddType">UnitAddType</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-unittype.shtml">unittype</a> whichUnitType<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitAddTypeBJ">UnitAddTypeBJ</a></strong> <strong>(</strong><a href="common_j-types-unittype.shtml">unittype</a> whichType, <a href="common_j-types-unit.shtml">unit</a> whichUnit<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitRemoveType">UnitRemoveType</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-unittype.shtml">unittype</a> whichUnitType<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitRemoveTypeBJ">UnitRemoveTypeBJ</a></strong> <strong>(</strong><a href="common_j-types-unittype.shtml">unittype</a> whichType, <a href="common_j-types-unit.shtml">unit</a> whichUnit<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

@@ -1,0 +1,1936 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "String",
+            "name": "SimpleInfoPanelTitleTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Font",
+                    "child": [
+                        "InfoPanelTextFont,0.013,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "String",
+            "name": "SimpleInfoPanelTitleTextDisabledTemplate",
+            "inherits": "SimpleInfoPanelTitleTextTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 2,
+            "type": "String",
+            "name": "SimpleInfoPanelDescriptionTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Font",
+                    "child": [
+                        "InfoPanelTextFont,0.01,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 3,
+            "type": "String",
+            "name": "SimpleInfoPanelDescriptionHighlightTextTemplate",
+            "inherits": "SimpleInfoPanelDescriptionTextTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 4,
+            "type": "String",
+            "name": "SimpleInfoPanelDescriptionDisabledTextTemplate",
+            "inherits": "SimpleInfoPanelDescriptionTextTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 5,
+            "type": "String",
+            "name": "SimpleInfoPanelLabelTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYTOP,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Font",
+                    "child": [
+                        "InfoPanelTextFont,0.0085,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 6,
+            "type": "String",
+            "name": "SimpleInfoPanelLabelHighlightTextTemplate",
+            "inherits": "SimpleInfoPanelLabelTextTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 7,
+            "type": "String",
+            "name": "SimpleInfoPanelLabelDisabledTextTemplate",
+            "inherits": "SimpleInfoPanelLabelTextTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 8,
+            "type": "String",
+            "name": "SimpleInfoPanelValueTextTemplate",
+            "inherits": "SimpleInfoPanelLabelTextTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 9,
+            "type": "String",
+            "name": "SimpleInfoPanelAttributeTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Font",
+                    "child": [
+                        "InfoPanelTextFont,0.009,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 10,
+            "type": "String",
+            "name": "SimpleInfoPanelAttributeDisabledTextTemplate",
+            "inherits": "SimpleInfoPanelAttributeTextTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 11,
+            "type": "Texture",
+            "name": "InfoPanelIconTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Anchor",
+                    "child": [
+                        "TOPLEFT,",
+                        "0.004,",
+                        "-0.001,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 12,
+            "type": "Texture",
+            "name": "ResourceIconTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.014,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.014,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 13,
+            "type": "String",
+            "name": "ResourceTextTemplate",
+            "inherits": "SimpleInfoPanelValueTextTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Font",
+                    "child": [
+                        "InfoPanelTextFont,",
+                        "0.0085,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 14,
+            "type": "SIMPLEFRAME",
+            "name": "SimpleInfoPanelUnitDetail",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 15,
+                    "type": "String",
+                    "name": "SimpleNameValue",
+                    "inherits": "SimpleInfoPanelTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOP,0,0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 16,
+                    "type": "SIMPLESTATUSBAR",
+                    "name": "SimpleHeroLevelBar",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "SimpleNameValue,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.0015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.015625,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 17,
+                    "type": "SIMPLESTATUSBAR",
+                    "name": "SimpleProgressIndicator",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "SimpleNameValue,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.0015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.015625,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 18,
+                    "type": "SIMPLEFRAME",
+                    "name": "SimpleUnitStatsPanel",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "UI\\Glues\\BattleNet\\ProgressBar\\BattlenetProgressBar.mdl",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 19,
+                            "type": "String",
+                            "name": "SimpleClassValue",
+                            "inherits": "SimpleInfoPanelValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "SimpleNameValue,",
+                                        "BOTTOM,",
+                                        "0.0,",
+                                        "-0.0055,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYCENTER,JUSTIFYMIDDLE"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 20,
+            "type": "SIMPLEFRAME",
+            "name": "SimpleInfoPanelCargoDetail",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 21,
+                    "type": "String",
+                    "name": "SimpleHoldNameValue",
+                    "inherits": "SimpleInfoPanelTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOP,0,0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 22,
+                    "type": "String",
+                    "name": "SimpleHoldDescriptionValue",
+                    "inherits": "SimpleInfoPanelDescriptionTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "SimpleHoldNameValue,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.007,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.188,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 23,
+            "type": "SIMPLEFRAME",
+            "name": "SimpleInfoPanelBuildingDetail",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 24,
+                    "type": "String",
+                    "name": "SimpleBuildingNameValue",
+                    "inherits": "SimpleInfoPanelTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOP,0,0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 25,
+                    "type": "String",
+                    "name": "SimpleBuildingDescriptionValue",
+                    "inherits": "SimpleInfoPanelDescriptionTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "SimpleBuildingNameValue,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.007,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.188,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 26,
+                    "type": "SIMPLESTATUSBAR",
+                    "name": "SimpleBuildTimeIndicator",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "SimpleInfoPanelBuildingDetail,",
+                                "TOPLEFT,",
+                                "0.061250,",
+                                "-0.038125,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 27,
+                    "type": "String",
+                    "name": "SimpleBuildingActionLabel",
+                    "inherits": "SimpleInfoPanelDescriptionTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "CENTER,",
+                                "SimpleInfoPanelBuildingDetail,",
+                                "TOPLEFT,",
+                                "0.11375,",
+                                "-0.029875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "Retarded",
+                                "text,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 28,
+                    "type": "Layer",
+                    "name": "ARTWORK",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 29,
+                            "type": "Texture",
+                            "name": "SimpleBuildQueueBackdrop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMLEFT,",
+                                        "SimpleInfoPanelBuildingDetail,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMRIGHT,",
+                                        "SimpleInfoPanelBuildingDetail,",
+                                        "BOTTOMRIGHT,",
+                                        "0.0,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.1,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "File",
+                                    "child": [
+                                        "BuildQueueBackdrop,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 30,
+            "type": "SIMPLEFRAME",
+            "name": "SimpleInfoPanelItemDetail",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 31,
+                    "type": "String",
+                    "name": "SimpleItemNameValue",
+                    "inherits": "SimpleInfoPanelTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOP,0,0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 32,
+                    "type": "String",
+                    "name": "SimpleItemDescriptionValue",
+                    "inherits": "SimpleInfoPanelDescriptionTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.188,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "SimpleItemNameValue,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 33,
+            "type": "SIMPLEFRAME",
+            "name": "SimpleInfoPanelIconDamage",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "UseActiveContext,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.03125,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 34,
+                    "type": "Texture",
+                    "name": "InfoPanelIconBackdrop",
+                    "inherits": "InfoPanelIconTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "HeroStrengthIcon,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 35,
+                    "type": "String",
+                    "name": "InfoPanelIconLevel",
+                    "inherits": "SimpleInfoPanelAttributeTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "CENTER,",
+                                "InfoPanelIconBackdrop,",
+                                "BOTTOMRIGHT,",
+                                "-0.007625,",
+                                "0.006875,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 36,
+                    "type": "String",
+                    "name": "InfoPanelIconLabel",
+                    "inherits": "SimpleInfoPanelLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InfoPanelIconBackdrop,",
+                                "TOPRIGHT,",
+                                "0.0,",
+                                "-0.003,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_DAMAGE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 37,
+                    "type": "String",
+                    "name": "InfoPanelIconValue",
+                    "inherits": "SimpleInfoPanelValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InfoPanelIconLabel,",
+                                "BOTTOMLEFT,",
+                                "0.005,",
+                                "-0.003,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 38,
+            "type": "SIMPLEFRAME",
+            "name": "SimpleInfoPanelIconArmor",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "UseActiveContext,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.03125,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 39,
+                    "type": "Texture",
+                    "name": "InfoPanelIconBackdrop",
+                    "inherits": "InfoPanelIconTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "HeroStrengthIcon,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 40,
+                    "type": "String",
+                    "name": "InfoPanelIconLevel",
+                    "inherits": "SimpleInfoPanelAttributeTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "CENTER,",
+                                "InfoPanelIconBackdrop,",
+                                "BOTTOMRIGHT,",
+                                "-0.007625,",
+                                "0.006875,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 41,
+                    "type": "String",
+                    "name": "InfoPanelIconLabel",
+                    "inherits": "SimpleInfoPanelLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InfoPanelIconBackdrop,",
+                                "TOPRIGHT,",
+                                "0.0,",
+                                "-0.003,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_ARMOR,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 42,
+                    "type": "String",
+                    "name": "InfoPanelIconValue",
+                    "inherits": "SimpleInfoPanelValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InfoPanelIconLabel,",
+                                "BOTTOMLEFT,",
+                                "0.005,",
+                                "-0.003,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 43,
+            "type": "SIMPLEFRAME",
+            "name": "SimpleInfoPanelIconRank",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "UseActiveContext,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.03125,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 44,
+                    "type": "Texture",
+                    "name": "InfoPanelIconBackdrop",
+                    "inherits": "InfoPanelIconTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "HeroStrengthIcon,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 45,
+                    "type": "String",
+                    "name": "InfoPanelIconLevel",
+                    "inherits": "SimpleInfoPanelAttributeTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "CENTER,",
+                                "InfoPanelIconBackdrop,",
+                                "BOTTOMRIGHT,",
+                                "-0.007625,",
+                                "0.006875,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 46,
+                    "type": "String",
+                    "name": "InfoPanelIconLabel",
+                    "inherits": "SimpleInfoPanelLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InfoPanelIconBackdrop,",
+                                "TOPRIGHT,",
+                                "0.0,",
+                                "-0.003,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_RANK,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 47,
+                    "type": "String",
+                    "name": "InfoPanelIconValue",
+                    "inherits": "SimpleInfoPanelValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InfoPanelIconLabel,",
+                                "BOTTOMLEFT,",
+                                "0.005,",
+                                "-0.003,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 48,
+            "type": "SIMPLEFRAME",
+            "name": "SimpleInfoPanelIconFood",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "UseActiveContext,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.03125,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 49,
+                    "type": "Texture",
+                    "name": "InfoPanelIconBackdrop",
+                    "inherits": "InfoPanelIconTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "InfoPanelIconFood,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 50,
+                    "type": "String",
+                    "name": "InfoPanelIconLevel",
+                    "inherits": "SimpleInfoPanelAttributeTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "CENTER,",
+                                "InfoPanelIconBackdrop,",
+                                "BOTTOMRIGHT,",
+                                "-0.007625,",
+                                "0.006875,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 51,
+                    "type": "String",
+                    "name": "InfoPanelIconLabel",
+                    "inherits": "SimpleInfoPanelLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InfoPanelIconBackdrop,",
+                                "TOPRIGHT,",
+                                "0.0,",
+                                "-0.003,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_FOOD,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 52,
+                    "type": "String",
+                    "name": "InfoPanelIconValue",
+                    "inherits": "SimpleInfoPanelValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InfoPanelIconLabel,",
+                                "BOTTOMLEFT,",
+                                "0.005,",
+                                "-0.003,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 53,
+            "type": "SIMPLEFRAME",
+            "name": "SimpleInfoPanelIconGold",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "UseActiveContext,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.03125,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 54,
+                    "type": "Texture",
+                    "name": "InfoPanelIconBackdrop",
+                    "inherits": "InfoPanelIconTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "InfoPanelIconGold,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 55,
+                    "type": "String",
+                    "name": "InfoPanelIconLevel",
+                    "inherits": "SimpleInfoPanelAttributeTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "CENTER,",
+                                "InfoPanelIconBackdrop,",
+                                "BOTTOMRIGHT,",
+                                "-0.007625,",
+                                "0.006875,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 56,
+                    "type": "String",
+                    "name": "InfoPanelIconLabel",
+                    "inherits": "SimpleInfoPanelLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InfoPanelIconBackdrop,",
+                                "TOPRIGHT,",
+                                "0.0,",
+                                "-0.003,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_GOLD,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 57,
+                    "type": "String",
+                    "name": "InfoPanelIconValue",
+                    "inherits": "SimpleInfoPanelValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InfoPanelIconLabel,",
+                                "BOTTOMLEFT,",
+                                "0.005,",
+                                "-0.003,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 58,
+            "type": "SIMPLEFRAME",
+            "name": "SimpleInfoPanelIconHero",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "UseActiveContext,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.0625,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 59,
+                    "type": "Texture",
+                    "name": "InfoPanelIconHeroIcon",
+                    "inherits": "InfoPanelIconTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "HeroStrengthIcon,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "LEFT,",
+                                "0.004,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 60,
+                    "type": "SIMPLEFRAME",
+                    "name": "SimpleInfoPanelIconHeroText",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "InfoPanelIconHeroIcon,",
+                                "RIGHT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "RIGHT,",
+                                "SimpleInfoPanelIconHero,",
+                                "RIGHT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "SimpleInfoPanelIconHero,",
+                                "TOP,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "SimpleInfoPanelIconHero,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 61,
+                            "type": "String",
+                            "name": "InfoPanelIconHeroStrengthLabel",
+                            "inherits": "SimpleInfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Anchor",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "0.0,",
+                                        "-0.003,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_STRENGTH,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 62,
+                            "type": "String",
+                            "name": "InfoPanelIconHeroStrengthValue",
+                            "inherits": "SimpleInfoPanelValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "InfoPanelIconHeroStrengthLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.005,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 63,
+                            "type": "String",
+                            "name": "InfoPanelIconHeroAgilityLabel",
+                            "inherits": "SimpleInfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "InfoPanelIconHeroStrengthValue,",
+                                        "BOTTOMLEFT,",
+                                        "-0.005,",
+                                        "-0.004,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_AGILITY,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 64,
+                            "type": "String",
+                            "name": "InfoPanelIconHeroAgilityValue",
+                            "inherits": "SimpleInfoPanelValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "InfoPanelIconHeroAgilityLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.005,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 65,
+                            "type": "String",
+                            "name": "InfoPanelIconHeroIntellectLabel",
+                            "inherits": "SimpleInfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "InfoPanelIconHeroAgilityValue,",
+                                        "BOTTOMLEFT,",
+                                        "-0.005,",
+                                        "-0.004,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_INTELLECT,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 66,
+                            "type": "String",
+                            "name": "InfoPanelIconHeroIntellectValue",
+                            "inherits": "SimpleInfoPanelValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "InfoPanelIconHeroIntellectLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.005,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 67,
+            "type": "SIMPLEFRAME",
+            "name": "SimpleInfoPanelIconAlly",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "UseActiveContext,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.0625,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 68,
+                    "type": "String",
+                    "name": "InfoPanelIconAllyTitle",
+                    "inherits": "SimpleInfoPanelLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "SimpleInfoPanelIconAlly,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "ALLY_RESOURCES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 69,
+                    "type": "Texture",
+                    "name": "InfoPanelIconAllyGoldIcon",
+                    "inherits": "ResourceIconTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "SimpleInfoPanelIconAlly,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "-0.009,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "GoldIcon,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 70,
+                    "type": "String",
+                    "name": "InfoPanelIconAllyGoldValue",
+                    "inherits": "ResourceTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "InfoPanelIconAllyGoldIcon,",
+                                "RIGHT,",
+                                "0.005,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 71,
+                    "type": "Texture",
+                    "name": "InfoPanelIconAllyWoodIcon",
+                    "inherits": "ResourceIconTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InfoPanelIconAllyGoldIcon,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "LumberIcon,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 72,
+                    "type": "String",
+                    "name": "InfoPanelIconAllyWoodValue",
+                    "inherits": "ResourceTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "InfoPanelIconAllyWoodIcon,",
+                                "RIGHT,",
+                                "0.005,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 73,
+                    "type": "Texture",
+                    "name": "InfoPanelIconAllyFoodIcon",
+                    "inherits": "ResourceIconTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InfoPanelIconAllyWoodIcon,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "SupplyIcon,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 74,
+                    "type": "String",
+                    "name": "InfoPanelIconAllyFoodValue",
+                    "inherits": "ResourceTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "InfoPanelIconAllyFoodIcon,",
+                                "RIGHT,",
+                                "0.005,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 75,
+                    "type": "String",
+                    "name": "InfoPanelIconAllyUpkeep",
+                    "inherits": "SimpleInfoPanelValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InfoPanelIconAllyFoodValue,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.005,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "Upkeep,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,374 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "LogDialog",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.384f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.432f,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "BACKDROP",
+                    "name": "LogBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuBackground,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.048,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.128,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.01",
+                                "0.01",
+                                "0.01",
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "EscMenuBorder,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "TEXT",
+                    "name": "LogTitle",
+                    "inherits": "EscMenuTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "LogDialog,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "MESSAGE_LOG,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "LogOkButton",
+                    "inherits": "EscMenuButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.13,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "LogDialog,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "LogOkButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 4,
+                            "type": "TEXT",
+                            "name": "LogOkButtonText",
+                            "inherits": "EscMenuButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "OK,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 5,
+                    "type": "BACKDROP",
+                    "name": "LogAreaBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.32,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.295,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "LogOkButton,",
+                                "TOP,",
+                                "0.0,",
+                                "0.01125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuEditBoxBackground,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.0125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.256,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.005",
+                                "0.005",
+                                "0.005",
+                                "0.005,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "EscMenuEditBoxBorder,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 6,
+                            "type": "TEXTAREA",
+                            "name": "LogArea",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.265,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.30675,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "LogAreaBackdrop,",
+                                        "LEFT,",
+                                        "0.00725,",
+                                        "-0.000625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FrameFont",
+                                    "child": [
+                                        "MasterFont,",
+                                        "0.011,",
+                                        ","
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaLineGap",
+                                    "child": [
+                                        "0.0015,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaMaxLines",
+                                    "child": [
+                                        "128,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaLineHeight",
+                                    "child": [
+                                        "0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaInset",
+                                    "child": [
+                                        "0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaScrollBar",
+                                    "child": [
+                                        "LogAreaScrollBar,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 7,
+                                    "type": "SCROLLBAR",
+                                    "name": "LogAreaScrollBar",
+                                    "inherits": "EscMenuScrollBarTemplate",
+                                    "fields": [],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

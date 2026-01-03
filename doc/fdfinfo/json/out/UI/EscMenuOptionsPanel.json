@@ -1,0 +1,3159 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "EscMenuOptionsPanel",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "FRAME",
+                    "name": "OptionsPanel",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "TabFocusPush,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 2,
+                            "type": "TEXT",
+                            "name": "OptionsTitleText",
+                            "inherits": "EscMenuTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "EscMenuOptionsPanel,",
+                                        "TOP,",
+                                        "0.0,",
+                                        "-0.03,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "OPTIONS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 3,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "GameplayButton",
+                            "inherits": "EscMenuButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "EscMenuOptionsPanel,",
+                                        "TOP,",
+                                        "0.0,",
+                                        "-0.067,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusDefault,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "VideoButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "G,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "GameplayButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 4,
+                                    "type": "TEXT",
+                                    "name": "GameplayButtonText",
+                                    "inherits": "EscMenuButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_GAMEPLAY,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 5,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "VideoButton",
+                            "inherits": "EscMenuButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "GameplayButton,",
+                                        "BOTTOM,",
+                                        "0.0,",
+                                        "-0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "SoundButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "V,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "VideoButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 6,
+                                    "type": "TEXT",
+                                    "name": "VideoButtonText",
+                                    "inherits": "EscMenuButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_VIDEO,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 7,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "SoundButton",
+                            "inherits": "EscMenuButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "VideoButton,",
+                                        "BOTTOM,",
+                                        "0.0,",
+                                        "-0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "OptionsPreviousButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "S,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "SoundButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 8,
+                                    "type": "TEXT",
+                                    "name": "SoundButtonText",
+                                    "inherits": "EscMenuButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_SOUND,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 9,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "OptionsPreviousButton",
+                            "inherits": "EscMenuButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOM,",
+                                        "EscMenuOptionsPanel,",
+                                        "BOTTOM,",
+                                        "0.0,",
+                                        "0.03,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "P,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "OptionsPreviousButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 10,
+                                    "type": "TEXT",
+                                    "name": "OptionsPreviousButtonText",
+                                    "inherits": "EscMenuButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_PREVIOUS_MENU,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 11,
+                    "type": "FRAME",
+                    "name": "GameplayPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 12,
+                            "type": "TEXT",
+                            "name": "GameplayTitleText",
+                            "inherits": "EscMenuTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "EscMenuOptionsPanel,",
+                                        "TOP,",
+                                        "0.0,",
+                                        "-0.03,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "GAMEPLAY_OPTIONS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 13,
+                            "type": "TEXT",
+                            "name": "GameSpeedLabel",
+                            "inherits": "EscMenuInfoTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "EscMenuOptionsPanel,",
+                                        "TOPLEFT,",
+                                        "0.035,",
+                                        "-0.05,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_GAME_SPEED,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 14,
+                            "type": "SLIDER",
+                            "name": "GameSpeedSlider",
+                            "inherits": "EscMenuSliderTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.209,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "GameSpeedLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.00375,",
+                                        "-0.0025,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderMinValue",
+                                    "child": [
+                                        "0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderMaxValue",
+                                    "child": [
+                                        "2,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderInitialValue",
+                                    "child": [
+                                        "1,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderStepSize",
+                                    "child": [
+                                        "1,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 15,
+                            "type": "TEXT",
+                            "name": "GameSpeedValue",
+                            "inherits": "EscMenuInfoTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMRIGHT,",
+                                        "GameSpeedSlider,",
+                                        "TOPRIGHT,",
+                                        "0.0,",
+                                        "0.0025,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "Fastest,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 16,
+                            "type": "TEXT",
+                            "name": "MouseScrollLabel",
+                            "inherits": "EscMenuInfoTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "GameSpeedLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.025,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_MOUSE_SCROLL,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 17,
+                            "type": "SLIDER",
+                            "name": "MouseScrollSlider",
+                            "inherits": "EscMenuSliderTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "MouseScrollLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.04275,",
+                                        "-0.0025,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderMinValue",
+                                    "child": [
+                                        "0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderMaxValue",
+                                    "child": [
+                                        "100,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderInitialValue",
+                                    "child": [
+                                        "0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderStepSize",
+                                    "child": [
+                                        "1,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 18,
+                            "type": "TEXT",
+                            "name": "MouseScrollSlowLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "RIGHT,",
+                                        "MouseScrollSlider,",
+                                        "LEFT,",
+                                        "-0.00375,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "SLOW,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 19,
+                            "type": "TEXT",
+                            "name": "MouseScrollFastLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "MouseScrollSlider,",
+                                        "RIGHT,",
+                                        "0.00375,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "FAST,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 20,
+                            "type": "GLUECHECKBOX",
+                            "name": "MouseScrollDisable",
+                            "inherits": "EscMenuCheckBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "MouseScrollSlowLabel,",
+                                        "BOTTOMLEFT,",
+                                        "-0.00375,",
+                                        "-0.01,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 21,
+                            "type": "TEXT",
+                            "name": "MouseScrollDisableLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "MouseScrollDisable,",
+                                        "RIGHT,",
+                                        "0.005,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "GAMEPLAY_MOUSE_SCROLL_DISABLE,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 22,
+                            "type": "TEXT",
+                            "name": "KeyScrollLabel",
+                            "inherits": "EscMenuInfoTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "MouseScrollLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.05,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_KEYBOARD_SCROLL,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 23,
+                            "type": "SLIDER",
+                            "name": "KeyScrollSlider",
+                            "inherits": "EscMenuSliderTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "KeyScrollLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.04275,",
+                                        "-0.0025,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderMinValue",
+                                    "child": [
+                                        "0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderMaxValue",
+                                    "child": [
+                                        "100,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderInitialValue",
+                                    "child": [
+                                        "0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderStepSize",
+                                    "child": [
+                                        "1,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 24,
+                            "type": "TEXT",
+                            "name": "KeyScrollSlowLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "RIGHT,",
+                                        "KeyScrollSlider,",
+                                        "LEFT,",
+                                        "-0.00375,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "SLOW,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 25,
+                            "type": "TEXT",
+                            "name": "KeyScrollFastLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "KeyScrollSlider,",
+                                        "RIGHT,",
+                                        "0.00375,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "FAST,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 26,
+                            "type": "GLUECHECKBOX",
+                            "name": "TooltipsCheckBox",
+                            "inherits": "EscMenuCheckBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "KeyScrollLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.035,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 27,
+                            "type": "TEXT",
+                            "name": "TooltipsLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "TooltipsCheckBox,",
+                                        "RIGHT,",
+                                        "0.003,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "ENHANCED_TOOLTIPS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 28,
+                            "type": "GLUECHECKBOX",
+                            "name": "InputSprocketCheckBox",
+                            "inherits": "EscMenuCheckBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "TooltipsCheckBox,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.01125,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 29,
+                            "type": "TEXT",
+                            "name": "InputSprocketLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "InputSprocketCheckBox,",
+                                        "RIGHT,",
+                                        "0.003,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "ENABLE_MULTIBUTTON_MOUSE,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 30,
+                            "type": "TEXT",
+                            "name": "DifficultyLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "InputSprocketCheckBox,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.01125,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_DIFFICULTY,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 31,
+                            "type": "TEXT",
+                            "name": "DifficultyValue",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,",
+                                        "DifficultyLabel,",
+                                        "TOPLEFT,",
+                                        "0.216,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYRIGHT,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 32,
+                            "type": "TEXT",
+                            "name": "NetworkLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "InputSprocketCheckBox,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.01125,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "NETWORK_LATENCY,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 33,
+                            "type": "TEXT",
+                            "name": "LatencyInfo1",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.225,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "NetworkLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.0025,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "LATENCY_INFO1,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 34,
+                            "type": "TEXT",
+                            "name": "LatencyInfo2",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.225,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "LatencyInfo1,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.007,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "LATENCY_INFO2,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 35,
+                    "type": "FRAME",
+                    "name": "VideoPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 36,
+                            "type": "TEXT",
+                            "name": "VideoTitleText",
+                            "inherits": "EscMenuTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "EscMenuOptionsPanel,",
+                                        "TOP,",
+                                        "0.0,",
+                                        "-0.03,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "VIDEO_OPTIONS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 37,
+                            "type": "TEXT",
+                            "name": "GammaLabel",
+                            "inherits": "EscMenuInfoTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "EscMenuOptionsPanel,",
+                                        "TOPLEFT,",
+                                        "0.035,",
+                                        "-0.05,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_GAMMA,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 38,
+                            "type": "SLIDER",
+                            "name": "GammaSlider",
+                            "inherits": "EscMenuSliderTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.125,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "GammaLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.04275,",
+                                        "-0.0025,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderMinValue",
+                                    "child": [
+                                        "0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderMaxValue",
+                                    "child": [
+                                        "100,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderInitialValue",
+                                    "child": [
+                                        "0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderStepSize",
+                                    "child": [
+                                        "1,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 39,
+                            "type": "BACKDROP",
+                            "name": "GammaNotch",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMLEFT,",
+                                        "GammaSlider,",
+                                        "TOPLEFT,",
+                                        "0.027125,",
+                                        "0.00225,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\GlueScreen-PullDown-Arrow.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.007,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.007,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 40,
+                                    "type": "TEXT",
+                                    "name": "GammaNotchLabel",
+                                    "inherits": "EscMenuLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "GammaNotch,",
+                                                "RIGHT,",
+                                                "0.00375,",
+                                                "0.001,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "1.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 41,
+                            "type": "TEXT",
+                            "name": "GammaDarkLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "RIGHT,",
+                                        "GammaSlider,",
+                                        "LEFT,",
+                                        "-0.00375,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "DARK,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 42,
+                            "type": "TEXT",
+                            "name": "GammaBrightLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "GammaSlider,",
+                                        "RIGHT,",
+                                        "0.00375,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "BRIGHT,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 43,
+                            "type": "TEXT",
+                            "name": "ParticlesLabel",
+                            "inherits": "EscMenuInfoTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "GammaLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.03,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_PARTICLES,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 44,
+                            "type": "TEXT",
+                            "name": "LightsLabel",
+                            "inherits": "EscMenuInfoTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "ParticlesLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.017625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_LIGHTS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 45,
+                            "type": "TEXT",
+                            "name": "ShadowsLabel",
+                            "inherits": "EscMenuInfoTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "LightsLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.017625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_SHADOWS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 46,
+                            "type": "TEXT",
+                            "name": "OcclusionLabel",
+                            "inherits": "EscMenuInfoTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "ShadowsLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.017625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_OCCLUSION,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 47,
+                            "type": "TEXT",
+                            "name": "ResolutionLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "OcclusionLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.03125,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_RESOLUTION,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 48,
+                            "type": "TEXT",
+                            "name": "ResolutionValue",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,",
+                                        "ResolutionLabel,",
+                                        "TOPLEFT,",
+                                        "0.216,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYRIGHT,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 49,
+                            "type": "TEXT",
+                            "name": "ModelDetailLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "ResolutionLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.0125,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_MODEL_DETAIL,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 50,
+                            "type": "TEXT",
+                            "name": "ModelDetailValue",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,",
+                                        "ModelDetailLabel,",
+                                        "TOPLEFT,",
+                                        "0.216,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYRIGHT,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 51,
+                            "type": "TEXT",
+                            "name": "AnimQualityLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "ModelDetailLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.0125,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_ANIM_QUALITY,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 52,
+                            "type": "TEXT",
+                            "name": "AnimQualityValue",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,",
+                                        "AnimQualityLabel,",
+                                        "TOPLEFT,",
+                                        "0.216,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYRIGHT,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 53,
+                            "type": "TEXT",
+                            "name": "TextureQualityLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "AnimQualityLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.0125,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_TEXTURE_QUALITY,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 54,
+                            "type": "TEXT",
+                            "name": "TextureQualityValue",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,",
+                                        "TextureQualityLabel,",
+                                        "TOPLEFT,",
+                                        "0.216,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYRIGHT,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 55,
+                            "type": "POPUPMENU",
+                            "name": "EscOptionsParticlesMenu",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.1375,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.0245,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupButtonInset",
+                                    "child": [
+                                        "0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "ParticlesLabel,",
+                                        "RIGHT,",
+                                        "0.037,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlBackdrop",
+                                    "child": [
+                                        "EscOptionsParticlesPopupMenuBackdrop,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlDisabledBackdrop",
+                                    "child": [
+                                        "EscOptionsParticlesPopupMenuDisabledBackdrop,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupTitleFrame",
+                                    "child": [
+                                        "EscOptionsParticlesPopupMenuTitle,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupArrowFrame",
+                                    "child": [
+                                        "EscOptionsParticlesPopupMenuArrow,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupMenuFrame",
+                                    "child": [
+                                        "EscOptionsParticlesPopupMenuMenu,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 56,
+                                    "type": "BACKDROP",
+                                    "name": "EscOptionsParticlesPopupMenuBackdrop",
+                                    "inherits": "EscMenuButtonBackdropTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 57,
+                                    "type": "BACKDROP",
+                                    "name": "EscOptionsParticlesPopupMenuDisabledBackdrop",
+                                    "inherits": "EscMenuButtonDisabledBackdropTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 58,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "EscOptionsParticlesPopupMenuTitle",
+                                    "inherits": "EscMenuPopupMenuTitleTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 59,
+                                    "type": "BUTTON",
+                                    "name": "EscOptionsParticlesPopupMenuArrow",
+                                    "inherits": "EscMenuPopupMenuArrowTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 60,
+                                    "type": "MENU",
+                                    "name": "EscOptionsParticlesPopupMenuMenu",
+                                    "inherits": "EscMenuPopupMenuMenuTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "LOW,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "MEDIUM,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "HIGH,",
+                                                "-2,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 61,
+                            "type": "POPUPMENU",
+                            "name": "EscOptionsLightsMenu",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.1375,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.0245,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupButtonInset",
+                                    "child": [
+                                        "0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "EscOptionsParticlesMenu,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.004,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlBackdrop",
+                                    "child": [
+                                        "EscOptionsLightsPopupMenuBackdrop,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlDisabledBackdrop",
+                                    "child": [
+                                        "EscOptionsLightsPopupMenuDisabledBackdrop,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupTitleFrame",
+                                    "child": [
+                                        "EscOptionsLightsPopupMenuTitle,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupArrowFrame",
+                                    "child": [
+                                        "EscOptionsLightsPopupMenuArrow,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupMenuFrame",
+                                    "child": [
+                                        "EscOptionsLightsPopupMenuMenu,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 62,
+                                    "type": "BACKDROP",
+                                    "name": "EscOptionsLightsPopupMenuBackdrop",
+                                    "inherits": "EscMenuButtonBackdropTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 63,
+                                    "type": "BACKDROP",
+                                    "name": "EscOptionsLightsPopupMenuDisabledBackdrop",
+                                    "inherits": "EscMenuButtonDisabledBackdropTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 64,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "EscOptionsLightsPopupMenuTitle",
+                                    "inherits": "EscMenuPopupMenuTitleTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 65,
+                                    "type": "BUTTON",
+                                    "name": "EscOptionsLightsPopupMenuArrow",
+                                    "inherits": "EscMenuPopupMenuArrowTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 66,
+                                    "type": "MENU",
+                                    "name": "EscOptionsLightsPopupMenuMenu",
+                                    "inherits": "EscMenuPopupMenuMenuTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "LOW,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "MEDIUM,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "HIGH,",
+                                                "-2,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 67,
+                            "type": "POPUPMENU",
+                            "name": "EscOptionsShadowsMenu",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.1375,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.0245,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupButtonInset",
+                                    "child": [
+                                        "0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "EscOptionsLightsMenu,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.004,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlBackdrop",
+                                    "child": [
+                                        "EscOptionsShadowsPopupMenuBackdrop,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlDisabledBackdrop",
+                                    "child": [
+                                        "EscOptionsShadowsPopupMenuDisabledBackdrop,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupTitleFrame",
+                                    "child": [
+                                        "EscOptionsShadowsPopupMenuTitle,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupArrowFrame",
+                                    "child": [
+                                        "EscOptionsShadowsPopupMenuArrow,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupMenuFrame",
+                                    "child": [
+                                        "EscOptionsShadowsPopupMenuMenu,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 68,
+                                    "type": "BACKDROP",
+                                    "name": "EscOptionsShadowsPopupMenuBackdrop",
+                                    "inherits": "EscMenuButtonBackdropTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 69,
+                                    "type": "BACKDROP",
+                                    "name": "EscOptionsShadowsPopupMenuDisabledBackdrop",
+                                    "inherits": "EscMenuButtonDisabledBackdropTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 70,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "EscOptionsShadowsPopupMenuTitle",
+                                    "inherits": "EscMenuPopupMenuTitleTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 71,
+                                    "type": "BUTTON",
+                                    "name": "EscOptionsShadowsPopupMenuArrow",
+                                    "inherits": "EscMenuPopupMenuArrowTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 72,
+                                    "type": "MENU",
+                                    "name": "EscOptionsShadowsPopupMenuMenu",
+                                    "inherits": "EscMenuPopupMenuMenuTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "OFF,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "ON,",
+                                                "-2,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 73,
+                            "type": "POPUPMENU",
+                            "name": "EscOptionsOcclusionMenu",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.1375,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.0245,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupButtonInset",
+                                    "child": [
+                                        "0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "EscOptionsShadowsMenu,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.004,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlBackdrop",
+                                    "child": [
+                                        "EscOptionsOcclusionPopupMenuBackdrop,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlDisabledBackdrop",
+                                    "child": [
+                                        "EscOptionsOcclusionPopupMenuDisabledBackdrop,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupTitleFrame",
+                                    "child": [
+                                        "EscOptionsOcclusionPopupMenuTitle,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupArrowFrame",
+                                    "child": [
+                                        "EscOptionsOcclusionPopupMenuArrow,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupMenuFrame",
+                                    "child": [
+                                        "EscOptionsOcclusionPopupMenuMenu,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 74,
+                                    "type": "BACKDROP",
+                                    "name": "EscOptionsOcclusionPopupMenuBackdrop",
+                                    "inherits": "EscMenuButtonBackdropTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 75,
+                                    "type": "BACKDROP",
+                                    "name": "EscOptionsOcclusionPopupMenuDisabledBackdrop",
+                                    "inherits": "EscMenuButtonDisabledBackdropTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 76,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "EscOptionsOcclusionPopupMenuTitle",
+                                    "inherits": "EscMenuPopupMenuTitleTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 77,
+                                    "type": "BUTTON",
+                                    "name": "EscOptionsOcclusionPopupMenuArrow",
+                                    "inherits": "EscMenuPopupMenuArrowTemplate",
+                                    "fields": [],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 78,
+                                    "type": "MENU",
+                                    "name": "EscOptionsOcclusionPopupMenuMenu",
+                                    "inherits": "EscMenuPopupMenuMenuTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "OFF,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "ON,",
+                                                "-2,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 79,
+                    "type": "FRAME",
+                    "name": "SoundPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 80,
+                            "type": "TEXT",
+                            "name": "SoundTitleText",
+                            "inherits": "EscMenuTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "EscMenuOptionsPanel,",
+                                        "TOP,",
+                                        "0.0,",
+                                        "-0.03,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "SOUND_OPTIONS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 81,
+                            "type": "GLUECHECKBOX",
+                            "name": "SoundCheckBox",
+                            "inherits": "EscMenuCheckBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "EscMenuOptionsPanel,",
+                                        "TOPLEFT,",
+                                        "0.035,",
+                                        "-0.05,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 82,
+                            "type": "TEXT",
+                            "name": "SoundVolumeLabel",
+                            "inherits": "EscMenuInfoTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "SoundCheckBox,",
+                                        "RIGHT,",
+                                        "0.005,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_SOUND_EFFECTS_VOLUME,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 83,
+                            "type": "SLIDER",
+                            "name": "SoundVolumeSlider",
+                            "inherits": "EscMenuSliderTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "SoundCheckBox,",
+                                        "BOTTOMLEFT,",
+                                        "0.04275,",
+                                        "-0.003,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderMinValue",
+                                    "child": [
+                                        "0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderMaxValue",
+                                    "child": [
+                                        "100,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderInitialValue",
+                                    "child": [
+                                        "0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderStepSize",
+                                    "child": [
+                                        "1,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 84,
+                            "type": "TEXT",
+                            "name": "SoundVolumeLowLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "RIGHT,",
+                                        "SoundVolumeSlider,",
+                                        "LEFT,",
+                                        "-0.00375,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "LOW,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 85,
+                            "type": "TEXT",
+                            "name": "SoundVolumeHighLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "SoundVolumeSlider,",
+                                        "RIGHT,",
+                                        "0.00375,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "HIGH,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 86,
+                            "type": "GLUECHECKBOX",
+                            "name": "MusicCheckBox",
+                            "inherits": "EscMenuCheckBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "SoundCheckBox,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.025,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 87,
+                            "type": "TEXT",
+                            "name": "MusicVolumeLabel",
+                            "inherits": "EscMenuInfoTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "MusicCheckBox,",
+                                        "RIGHT,",
+                                        "0.005,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_MUSIC_VOLUME,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 88,
+                            "type": "SLIDER",
+                            "name": "MusicVolumeSlider",
+                            "inherits": "EscMenuSliderTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "MusicCheckBox,",
+                                        "BOTTOMLEFT,",
+                                        "0.04275,",
+                                        "-0.003,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderMinValue",
+                                    "child": [
+                                        "0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderMaxValue",
+                                    "child": [
+                                        "100,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderInitialValue",
+                                    "child": [
+                                        "0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderStepSize",
+                                    "child": [
+                                        "1,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 89,
+                            "type": "TEXT",
+                            "name": "MusicVolumeLowLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "RIGHT,",
+                                        "MusicVolumeSlider,",
+                                        "LEFT,",
+                                        "-0.00375,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "LOW,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 90,
+                            "type": "TEXT",
+                            "name": "MusicVolumeHighLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "MusicVolumeSlider,",
+                                        "RIGHT,",
+                                        "0.00375,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "HIGH,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 91,
+                            "type": "GLUECHECKBOX",
+                            "name": "AmbientCheckBox",
+                            "inherits": "EscMenuCheckBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "MusicCheckBox,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.023,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 92,
+                            "type": "TEXT",
+                            "name": "AmbientLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "AmbientCheckBox,",
+                                        "RIGHT,",
+                                        "0.005,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "AMBIENT_SOUNDS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 93,
+                            "type": "GLUECHECKBOX",
+                            "name": "MovementCheckBox",
+                            "inherits": "EscMenuCheckBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "AmbientCheckBox,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 94,
+                            "type": "TEXT",
+                            "name": "MovementLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "MovementCheckBox,",
+                                        "RIGHT,",
+                                        "0.005,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "MOVEMENT_SOUNDS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 95,
+                            "type": "GLUECHECKBOX",
+                            "name": "UnitCheckBox",
+                            "inherits": "EscMenuCheckBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "MovementCheckBox,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 96,
+                            "type": "TEXT",
+                            "name": "UnitLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "UnitCheckBox,",
+                                        "RIGHT,",
+                                        "0.005,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "UNIT_SOUNDS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 97,
+                            "type": "GLUECHECKBOX",
+                            "name": "SubtitlesCheckBox",
+                            "inherits": "EscMenuCheckBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "UnitCheckBox,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 98,
+                            "type": "TEXT",
+                            "name": "SubtitlesLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "SubtitlesCheckBox,",
+                                        "RIGHT,",
+                                        "0.005,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "SUBTITLES,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 99,
+                            "type": "TEXT",
+                            "name": "ProviderLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "SubtitlesCheckBox,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.004,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_SOUND_PROVIDER,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 100,
+                            "type": "TEXT",
+                            "name": "ProviderValue",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,",
+                                        "ProviderLabel,",
+                                        "TOPLEFT,",
+                                        "0.218,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYRIGHT,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 101,
+                            "type": "GLUECHECKBOX",
+                            "name": "EnviroCheckBox",
+                            "inherits": "EscMenuCheckBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "ProviderLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.005,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 102,
+                            "type": "TEXT",
+                            "name": "EnviroLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "EnviroCheckBox,",
+                                        "RIGHT,",
+                                        "0.005,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "ENVIRONMENTAL_EFFECTS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 103,
+                            "type": "GLUECHECKBOX",
+                            "name": "PositionalCheckBox",
+                            "inherits": "EscMenuCheckBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "EnviroCheckBox,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 104,
+                            "type": "TEXT",
+                            "name": "PositionalLabel",
+                            "inherits": "EscMenuLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "PositionalCheckBox,",
+                                        "RIGHT,",
+                                        "0.005,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "POSITIONAL_AUDIO,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 105,
+                    "type": "FRAME",
+                    "name": "BottomButtonPanel",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "TabFocusPush,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 106,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "OptionsOKButton",
+                            "inherits": "EscMenuButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMLEFT,",
+                                        "EscMenuOptionsPanel,",
+                                        "BOTTOMLEFT,",
+                                        "0.028125,",
+                                        "0.03,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.112,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusDefault,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "OptionsCancelButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "O,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "OKButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 107,
+                                    "type": "TEXT",
+                                    "name": "OKButtonText",
+                                    "inherits": "EscMenuButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_OK,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 108,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "OptionsCancelButton",
+                            "inherits": "EscMenuButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "OptionsOKButton,",
+                                        "RIGHT,",
+                                        "0.00625,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.112,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "A,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "CancelButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 109,
+                                    "type": "TEXT",
+                                    "name": "CancelButtonText",
+                                    "inherits": "EscMenuButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_CANCEL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

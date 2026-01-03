@@ -1,0 +1,60 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "CONTROL",
+            "name": "ListBoxWar3",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "ListBoxBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "BACKDROP",
+                    "name": "ListBoxBackdrop",
+                    "inherits": "StandardEditBoxBackdropTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "SCROLLBAR",
+                    "name": "ListScrollBar",
+                    "inherits": "StandardScrollBarTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ListBoxWar3,",
+                                "TOPRIGHT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

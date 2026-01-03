@@ -1,0 +1,8 @@
+1. 下载对战平台(https://dz.blizzard.cn/)
+2. 安装对战平台 下载1.27客户端
+3. 下载h-lua-sdk
+4. vscode打开h-lua-sdk的目录
+5. 打开终端 
+5. 新建地图 输入`sdk.exe new demo`
+6. 测试地图 输入`sdl.exe test demo`
+7. 更多命令 查看`README.md`

@@ -1,0 +1,213 @@
+
+<html>
+<head>
+<title>JASS Manual: Statements</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+
+
+<p><strong>Statements</strong>
+
+<p>Each function body contains a series of statements; one statement per
+line. This section describes what each statement does.
+
+<p><strong>Set</strong>
+
+<pre class="source">
+<span class="keyword">     set</span> <span class="hi">variable</span> = <span class="hi">expression</span>              <span class="comment">// (1)</span>
+
+<span class="keyword">     set</span> <span class="hi">array_variable</span>[<span class="hi">index</span>] = <span class="hi">expression</span> <span class="comment">// (2)</span>
+</pre>
+
+<p>The <code>set</code> statement assigns a new value to a variable. 
+In case (1), the variable is of a basic type (not an array). The expression 
+must evaluate to a value of a type that conforms to the variable's declared 
+type. 
+
+<p>In case (2), the variable is an array. <code>index</code> may be any 
+arbitrary expression that evaluates to an <code>integer</code> value, which
+will the the index into the array to reference. The expression must evaluate
+to a value of type that conforms to the array's basic type. E.G., if the
+variable was declared as a <code>unit array</code> then the expression must
+conform to the type <code>unit</code>.
+
+<p><strong>Call</strong>
+
+<pre class="source">
+<span class="keyword">     call</span> <span class="hi">func_name</span>(<span class="hi">arguments</span>)
+</pre>
+
+The <code>call</code> statement is used to call a function (native or 
+user-defined). <code>arguments</code> is a comma separated list of expressions
+which are passed to the function as its respective parameters. 
+If the function is declared to take <code>nothing</code> as parameters, then
+the argument list is empty (e.g., <code>call func_name()</code>).
+The types of
+each argument expression must conform to the corresponding parameter type
+in the function's declaration. For example, a function with the prototype:
+
+<pre class="source">
+<span class="keyword">function</span> MakeUnitsDance <span class="keyword">takes</span> region where, <span class="type">integer</span> num, 
+                              <span class="type">string</span> nameOfDance <span class="keyword">returns</span> <span class="type">nothing</span>
+</pre>
+
+<p>Can be called like this:
+
+<pre class="source">
+<span class="keyword">     call</span> MakeUnitsDance(GetTriggeringRegion(), numGrunts*2, <span class="str">"salsa"</span>)
+     <span class="comment">// Or</span>
+<span class="keyword">     call</span> MakeUnitsDance(myRegion, 100, MyChooseDanceFunction())
+     <span class="comment">// Etc.</span>
+</pre>
+
+<p>The return value of the function is discarded.
+
+<p><strong>If Then Else</strong>
+
+<pre class="source">
+<span class="keyword">     if</span> <span class="hi">predicate</span> <span class="keyword">then</span>
+          <span class="hi">statement</span>
+	  <span class="hi">statement</span>
+	  <span class="hi">...</span>
+<span class="keyword">     elseif</span> <span class="hi">predicate</span> <span class="keyword">then</span>
+          <span class="hi">statement</span>
+	  <span class="hi">statement</span>
+	  <span class="hi">...</span>
+<span class="keyword">     elseif</span> <span class="hi">predicate</span> <span class="keyword">then</span>
+     <span class="hi">...</span>
+<span class="keyword">     else</span>
+          <span class="hi">statement</span>
+	  <span class="hi">statement</span>
+	  <span class="hi">...</span>
+<span class="keyword">     endif</span>
+</pre>
+
+<p>An if-then-else statement is a conditional branch that spans multiple lines.
+In each condition block (begun with an <code>if</code> and ended with a
+<code>endif</code>), each predicate expression is evaluated in turn (first the
+one in the <code>if</code>, then the one in the next <code>elseif</code>, 
+etc.). Each must return a boolean value. The first predicate which evaluates
+to true causes its associated statements to be executed (the statements in 
+the immediately proceeding sub-block). The remainder of the statements in
+the other sub-blocks are ignored.
+
+<p>If none of the predicates return true, then the <code>else</code> statements
+are executed. There may be zero or more <code>elseif</code>s and the 
+<code>else</code> is optional (if it is ommitted, then nothing is executed
+if no predicates are satisfied). For 例子
+
+<pre class="source">
+     <span class="comment">// (1)</span>
+<span class="keyword">     if</span> <span class="hi">predicate</span> <span class="keyword">then</span>
+	  <span class="hi">...</span>
+<span class="keyword">     elseif</span> <span class="hi">predicate</span> <span class="keyword">then</span>
+          <span class="hi">...</span>
+<span class="keyword">     endif</span>
+
+     <span class="comment">// (2)</span>
+<span class="keyword">     if</span> <span class="hi">predicate</span> <span class="keyword">then</span>
+	  <span class="hi">...</span>
+<span class="keyword">     else</span>
+          <span class="hi">...</span>
+<span class="keyword">     endif</span>
+
+     <span class="comment">// (3)</span>
+<span class="keyword">     if</span> <span class="hi">predicate</span> <span class="keyword">then</span>
+	  <span class="hi">...</span>
+<span class="keyword">     endif</span>
+</pre>
+
+<p><strong>Loop</strong>
+
+<pre class="source">
+<span class="keyword">     loop</span>
+          <span class="hi">statement</span>
+	  <span class="hi">statement</span>
+	  <span class="hi">...</span>
+<span class="keyword">     endloop</span>
+</pre>
+
+<p>A <code>loop</code> statement contains a block of statements that are
+executed continuously. When execution reaches the end of the loop block,
+we return to the top of the loop and begin again.
+
+<p>To exit a loop block, one of the enclosed statements must be an
+<code>exitwhen</code> statement. It is legal to have an infinite loop
+(one that never exits; for example, a main-execution loop in an AI).
+
+<p><strong>Exitwhen</strong>
+
+<pre class="source">
+<span class="keyword">     loop</span>
+          <span class="hi">...</span>
+<span class="keyword">	  exitwhen</span> <span class="hi">expression</span>
+	  <span class="hi">...</span>
+<span class="keyword">     endloop</span>
+</pre>
+
+<p>The <code>exitwhen</code> statement is used within a loop. The expression
+must evaluate to a boolean value. If it evaluates to true, then execution
+immediately exits the inner-most loop that the <code>exitwhen</code> is in.
+The <code>exitwhen</code> may be within an if-then-else block inside the
+loop and there may be multiple <code>exitwhen</code>s within a single loop; 
+for 例子
+
+<pre class="source">
+<span class="keyword">     local</span> <span class="type">integer</span> iterations = 10
+<span class="keyword">     loop</span>
+<span class="keyword">          if</span> DidTheThingEnoughTimes() <span class="keyword">then</span>
+<span class="keyword">               call</span> DisplayText(<span class="str">"Exiting Early"</span>)
+<span class="keyword">               exitwhen</span> true
+<span class="keyword">          endif</span>
+<span class="keyword">          call</span> DoSomething()
+<span class="keyword">          set</span> iterations = iterations - 1
+<span class="keyword">          exitwhen</span> iterations == 0
+<span class="keyword">     endloop</span>
+</pre>
+
+<p><strong>Return</strong>
+
+<pre class="source">
+<span class="keyword">     return</span>            <span class="comment">// (1)</span>
+
+<span class="keyword">     return</span> <span class="hi">expression</span> <span class="comment">// (2)</span>
+</pre>
+
+<p>The <code>return</code> statement causes execution to exit from the function
+and return to the point after it was called. If the function is declared to
+return a value, then the return statement must be used with an expression,
+which is the value that is returned to the caller. The expression must evaluate
+to a value that conforms to the function's declared type. There may be
+multiple <code>return</code>s within a function. All execution paths within
+a function must lead to a valid return (unless the function returns
+<code>nothing</code>, in which case there is an implicit return when execution
+reaches the end of the function).
+
+<p><em>Important Note</em>: currently, the return value only needs to conform
+to the native base type of the declared return type, not the declared return
+type itself (E.G., if the declared type is <code>unit</code>, the value only
+needs to conform to <code>handle</code>). This is a <strong>bug</strong> in
+Blizzard's type checker. However, because this bug shows up in Blizzard's own
+JASS code, the current version of the syntax checker purposely contains
+this behavior also. You should avoid exploiting this because there is 
+almost no scenario where it is correct.
+
+<p><strong>Debug</strong>
+
+<pre class="source">
+<span class="keyword">     debug</span> <span class="hi">statement</span>
+</pre>
+
+<p>Any <code>set</code>, <code>call</code>,
+<code>if then else</code>, and <code>loop</code> 
+statement can be prefixed with <code>debug</code>. This
+implies the statement is only executed if an game-internal debug flag is
+enabled. You probably can't turn it on unless you work for Blizzard.
+
+
+
+</body>
+</html>

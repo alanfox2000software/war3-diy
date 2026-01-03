@@ -1,0 +1,2521 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "BACKDROP",
+            "name": "TeamPopupMenuBackdropTemplate",
+            "inherits": "BattleNetMenuButtonBaseBackdrop",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.231,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "POPUPMENU",
+            "name": "TeamPopupMenuTemplate",
+            "inherits": "BattleNetPopupMenuTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.1615,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "TeamPopupMenuBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "TeamPopupMenuDisabledBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupTitleFrame",
+                    "child": [
+                        "TeamPopupMenuTitle,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupArrowFrame",
+                    "child": [
+                        "TeamPopupMenuArrow,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 2,
+                    "type": "BACKDROP",
+                    "name": "TeamPopupMenuBackdrop",
+                    "inherits": "BattleNetButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "BACKDROP",
+                    "name": "TeamPopupMenuDisabledBackdrop",
+                    "inherits": "BattleNetButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 4,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "TeamPopupMenuTitle",
+                    "inherits": "BattleNetPopupMenuTitleTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 5,
+                    "type": "BUTTON",
+                    "name": "TeamPopupMenuArrow",
+                    "inherits": "BattleNetPopupMenuArrowTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 6,
+            "type": "POPUPMENU",
+            "name": "TeamMemberPopupMenu",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.109,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.027,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupButtonInset",
+                    "child": [
+                        "0.01,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "TeamMemberPopupMenuBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "TeamMemberPopupMenuDisabledBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "TeamMemberPopupMenuPushedBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupTitleFrame",
+                    "child": [
+                        "TeamMemberPopupMenuTitle,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupArrowFrame",
+                    "child": [
+                        "TeamMemberPopupMenuArrow,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 7,
+                    "type": "BACKDROP",
+                    "name": "TeamMemberPopupMenuBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.004",
+                                "0.004",
+                                "0.004",
+                                "0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderedBackdropBorder.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 8,
+                    "type": "BACKDROP",
+                    "name": "TeamMemberPopupMenuDisabledBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground-Disabled.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.004",
+                                "0.004",
+                                "0.004",
+                                "0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderedBackdropBorder-Disabled.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 9,
+                    "type": "BACKDROP",
+                    "name": "TeamMemberPopupMenuPushedBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.004",
+                                "0.004",
+                                "0.004",
+                                "0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderedBackdropBorder-Down.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 10,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "TeamMemberPopupMenuTitle",
+                    "inherits": "BattleNetPopupMenuTitleTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 11,
+                    "type": "BUTTON",
+                    "name": "TeamMemberPopupMenuArrow",
+                    "inherits": "BattleNetPopupMenuArrowTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 12,
+            "type": "FRAME",
+            "name": "BattleNetTeamPanel",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 13,
+                    "type": "TEXTAREA",
+                    "name": "TeamChatTextArea",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TextAreaLineHeight",
+                            "child": [
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TextAreaLineGap",
+                            "child": [
+                                "0.0015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TextAreaInset",
+                            "child": [
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TextAreaMaxLines",
+                            "child": [
+                                "128,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetTeamPanel,",
+                                "TOPLEFT,",
+                                "0.014375,",
+                                "-0.334375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.39375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.209375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TextAreaScrollBar",
+                            "child": [
+                                "TeamChatScrollBar,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 14,
+                            "type": "SCROLLBAR",
+                            "name": "TeamChatScrollBar",
+                            "inherits": "BattleNetScrollBarTemplate",
+                            "fields": [],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 15,
+                    "type": "EDITBOX",
+                    "name": "TeamChatEditBox",
+                    "inherits": "BattleNetEditBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.39375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "TeamChatTextArea,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusDefault,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusNext",
+                            "child": [
+                                "PlayGameButton,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 16,
+                    "type": "FRAME",
+                    "name": "MapPreferenceContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.33,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.1775,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "BattleNetTeamPanel,",
+                                "TOPRIGHT,",
+                                "-0.01875,",
+                                "-0.09625,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 17,
+                    "type": "TEXT",
+                    "name": "MapPreferenceLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "MapPreferenceContainer,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.001,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_MAP_PREFERENCES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 18,
+                    "type": "TEXT",
+                    "name": "StyleLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "MapPreferenceContainer,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.030625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_GAME_TYPE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 19,
+                    "type": "BACKDROP",
+                    "name": "StyleBackdrop",
+                    "inherits": "TeamPopupMenuBackdropTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,",
+                                "MapPreferenceContainer,",
+                                "TOPRIGHT,",
+                                "0.0,",
+                                "0.003125,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 20,
+                            "type": "POPUPMENU",
+                            "name": "StyleMenu",
+                            "inherits": "TeamPopupMenuTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,StyleBackdrop,TOPLEFT,",
+                                        "0.0595,",
+                                        "-0.01525,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupMenuFrame",
+                                    "child": [
+                                        "StylePopupMenuMenu,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 21,
+                                    "type": "MENU",
+                                    "name": "StylePopupMenuMenu",
+                                    "inherits": "BattleNetPopupMenuMenuTemplate",
+                                    "fields": [],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 22,
+                    "type": "FRAME",
+                    "name": "MapInfoPaneContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.34625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.17875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "MapPreferenceContainer,",
+                                "BOTTOM,",
+                                "-0.008125,",
+                                "-0.00125,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 23,
+                    "type": "FRAME",
+                    "name": "AnonStatusPanel",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.18125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.0625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "BattleNetTeamPanel,",
+                                "TOPRIGHT,",
+                                "-0.01875,",
+                                "-0.38125,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 24,
+                            "type": "TEXT",
+                            "name": "AnonStatusText",
+                            "inherits": "BattleNetValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FrameFont",
+                                    "child": [
+                                        "MasterFont,",
+                                        "0.011,",
+                                        ","
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "AnonStatusPanel,",
+                                        "TOP,",
+                                        "0.0,",
+                                        "-0.002,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 25,
+                            "type": "SPRITE",
+                            "name": "AnonWorkingSprite",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "AnonStatusText,",
+                                        "BOTTOM,",
+                                        "0.025625,",
+                                        "0.04625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackgroundArt",
+                                    "child": [
+                                        "UI\\Glues\\BattleNet\\BattlenetWorking\\BattlenetWorking.mdl,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 26,
+                    "type": "TEXT",
+                    "name": "TeamMemberLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetTeamPanel,",
+                                "TOPLEFT,",
+                                "0.02,",
+                                "-0.04,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_TEAM_MEMBER,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 27,
+                    "type": "TEXT",
+                    "name": "TeamMemberRaceLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetTeamPanel,",
+                                "TOPLEFT,",
+                                "0.28375,",
+                                "-0.04,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_RACE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 28,
+                    "type": "FRAME",
+                    "name": "TeamMember1",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 29,
+                            "type": "BACKDROP",
+                            "name": "TeamMemberBackdrop1",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.2575,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.032,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "TeamMemberLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\BattleNet\\bnet-userlist-back.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 30,
+                            "type": "TEXT",
+                            "name": "TeamMemberName1",
+                            "inherits": "BattleNetValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "TeamMemberBackdrop1,",
+                                        "LEFT,",
+                                        "0.0115,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 31,
+                            "type": "POPUPMENU",
+                            "name": "TeamMemberRaceMenu1",
+                            "inherits": "TeamMemberPopupMenu",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "TeamMemberBackdrop1,",
+                                        "RIGHT,",
+                                        "0.004,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupMenuFrame",
+                                    "child": [
+                                        "TeamMemberRaceMenuMenu1,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 32,
+                                    "type": "MENU",
+                                    "name": "TeamMemberRaceMenuMenu1",
+                                    "inherits": "BattleNetPopupMenuMenuTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "RANDOM,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "HUMAN,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "ORC,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "UNDEAD,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "NIGHT_ELF,",
+                                                "-2,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 33,
+                    "type": "FRAME",
+                    "name": "TeamMember2",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 34,
+                            "type": "BACKDROP",
+                            "name": "TeamMemberBackdrop2",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.2575,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.032,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "TeamMemberBackdrop1,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\BattleNet\\bnet-userlist-back.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 35,
+                            "type": "TEXT",
+                            "name": "TeamMemberName2",
+                            "inherits": "BattleNetValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "TeamMemberBackdrop2,",
+                                        "LEFT,",
+                                        "0.0115,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 36,
+                            "type": "POPUPMENU",
+                            "name": "TeamMemberRaceMenu2",
+                            "inherits": "TeamMemberPopupMenu",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "TeamMemberBackdrop2,",
+                                        "RIGHT,",
+                                        "0.004,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupMenuFrame",
+                                    "child": [
+                                        "TeamMemberRaceMenuMenu2,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 37,
+                                    "type": "MENU",
+                                    "name": "TeamMemberRaceMenuMenu2",
+                                    "inherits": "BattleNetPopupMenuMenuTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "RANDOM,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "HUMAN,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "ORC,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "UNDEAD,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "NIGHT_ELF,",
+                                                "-2,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 38,
+                    "type": "FRAME",
+                    "name": "TeamMember3",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 39,
+                            "type": "BACKDROP",
+                            "name": "TeamMemberBackdrop3",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.2575,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.032,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "TeamMemberBackdrop2,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\BattleNet\\bnet-userlist-back.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 40,
+                            "type": "TEXT",
+                            "name": "TeamMemberName3",
+                            "inherits": "BattleNetValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "TeamMemberBackdrop3,",
+                                        "LEFT,",
+                                        "0.0115,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 41,
+                            "type": "POPUPMENU",
+                            "name": "TeamMemberRaceMenu3",
+                            "inherits": "TeamMemberPopupMenu",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "TeamMemberBackdrop3,",
+                                        "RIGHT,",
+                                        "0.004,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupMenuFrame",
+                                    "child": [
+                                        "TeamMemberRaceMenuMenu3,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 42,
+                                    "type": "MENU",
+                                    "name": "TeamMemberRaceMenuMenu3",
+                                    "inherits": "BattleNetPopupMenuMenuTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "RANDOM,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "HUMAN,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "ORC,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "UNDEAD,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "NIGHT_ELF,",
+                                                "-2,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 43,
+                    "type": "FRAME",
+                    "name": "TeamMember4",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 44,
+                            "type": "BACKDROP",
+                            "name": "TeamMemberBackdrop4",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.2575,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.032,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "TeamMemberBackdrop3,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\BattleNet\\bnet-userlist-back.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 45,
+                            "type": "TEXT",
+                            "name": "TeamMemberName4",
+                            "inherits": "BattleNetValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "TeamMemberBackdrop4,",
+                                        "LEFT,",
+                                        "0.0115,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 46,
+                            "type": "POPUPMENU",
+                            "name": "TeamMemberRaceMenu4",
+                            "inherits": "TeamMemberPopupMenu",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "TeamMemberBackdrop4,",
+                                        "RIGHT,",
+                                        "0.004,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupMenuFrame",
+                                    "child": [
+                                        "TeamMemberRaceMenuMenu4,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 47,
+                                    "type": "MENU",
+                                    "name": "TeamMemberRaceMenuMenu4",
+                                    "inherits": "BattleNetPopupMenuMenuTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "RANDOM,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "HUMAN,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "ORC,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "UNDEAD,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "NIGHT_ELF,",
+                                                "-2,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 48,
+                    "type": "FRAME",
+                    "name": "TeamInfoPanel",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetTeamPanel,",
+                                "TOPLEFT,",
+                                "0.020625,",
+                                "-0.25875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.37,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.03125,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 49,
+                            "type": "TEXT",
+                            "name": "TeamInfoRankLabel",
+                            "inherits": "BattleNetLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "TeamInfoPanel,",
+                                        "LEFT,",
+                                        "0.004,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_RANK,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 50,
+                            "type": "TEXT",
+                            "name": "TeamInfoRankValue",
+                            "inherits": "BattleNetValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "TeamInfoRankLabel,",
+                                        "RIGHT,",
+                                        "0.006,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 51,
+                            "type": "SPRITE",
+                            "name": "TeamInfoLevelBar",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "TeamInfoPanel,",
+                                        "LEFT,",
+                                        "0.08125,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackgroundArt",
+                                    "child": [
+                                        "UI\\Glues\\BattleNet\\BattlenetProfileLevelBar\\BattlenetProfileLevelBar.mdl,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 52,
+                                    "type": "TEXT",
+                                    "name": "TeamInfoLevelValue",
+                                    "inherits": "BattleNetValueTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,",
+                                                "TeamInfoLevelBar,",
+                                                "CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 53,
+                            "type": "TEXT",
+                            "name": "TeamInfoWinsLabel",
+                            "inherits": "BattleNetLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMLEFT,",
+                                        "TeamInfoLevelBar,",
+                                        "RIGHT,",
+                                        "0.01425,",
+                                        "0.001,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_WINS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 54,
+                            "type": "TEXT",
+                            "name": "TeamInfoWinsValue",
+                            "inherits": "BattleNetValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMRIGHT,",
+                                        "TeamInfoPanel,",
+                                        "RIGHT,",
+                                        "0.0,",
+                                        "0.001,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 55,
+                            "type": "TEXT",
+                            "name": "TeamInfoLossesLabel",
+                            "inherits": "BattleNetLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "TeamInfoLevelBar,",
+                                        "RIGHT,",
+                                        "0.01425,",
+                                        "-0.001,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_LOSSES,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 56,
+                            "type": "TEXT",
+                            "name": "TeamInfoLossesValue",
+                            "inherits": "BattleNetValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,",
+                                        "TeamInfoPanel,",
+                                        "RIGHT,",
+                                        "0.0,",
+                                        "-0.001,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 57,
+                    "type": "BACKDROP",
+                    "name": "PlayGameBackdrop",
+                    "inherits": "BattleNetMenuButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.24,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,BattleNetTeamPanel,BOTTOMRIGHT,",
+                                "-0.015,",
+                                "0.0615,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 58,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "PlayGameButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.168,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,PlayGameBackdrop,TOPRIGHT,",
+                                        "-0.012,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "P,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "CancelButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "PlayGameButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 59,
+                                    "type": "TEXT",
+                                    "name": "PlayGameButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_PLAY_GAME,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 60,
+                    "type": "BACKDROP",
+                    "name": "CancelBackdrop",
+                    "inherits": "BattleNetMenuButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.24,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,BattleNetTeamPanel,BOTTOMRIGHT,",
+                                "-0.015,",
+                                "0.01,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 61,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "CancelButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.168,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,CancelBackdrop,TOPRIGHT,",
+                                        "-0.012,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "A,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "TeamChatEditBox,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "CancelButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 62,
+                                    "type": "TEXT",
+                                    "name": "CancelButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_CANCEL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 63,
+            "type": "DIALOG",
+            "name": "BattleNetTeamInviteDialog",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.425,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.5,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DialogBackdrop",
+                    "child": [
+                        "InviteDialogBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 64,
+                    "type": "BACKDROP",
+                    "name": "InviteDialogBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-background.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.064,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.128,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.01",
+                                "0.01",
+                                "0.01",
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-border.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 65,
+                    "type": "TEXT",
+                    "name": "InviteTitleText",
+                    "inherits": "BattleNetTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetTeamInviteDialog,",
+                                "TOPLEFT,",
+                                "0.02625,",
+                                "-0.024375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_TEAM_INVITATION_TITLE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 66,
+                    "type": "TEXT",
+                    "name": "InviteInfoText",
+                    "inherits": "BattleNetInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.448125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InviteTitleText,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.001875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_TEAM_INVITATION_INFO,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 67,
+                    "type": "TEXT",
+                    "name": "InviteInfoText2",
+                    "inherits": "BattleNetInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.448125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "InviteInfoText,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_TEAM_INVITATION_INFO2,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 68,
+                    "type": "FRAME",
+                    "name": "InviteListContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.45,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.175,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "BattleNetTeamInviteDialog,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "0.084375,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 69,
+                    "type": "TEXT",
+                    "name": "PotentialTeammatesLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "InviteListContainer,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_POTENTIAL_TEAMMATES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 70,
+                    "type": "GLUEBUTTON",
+                    "name": "InviteRefreshButton",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlStyle",
+                            "child": [
+                                "AUTOTRACK|HIGHLIGHTONMOUSEOVER,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,",
+                                "InviteListContainer,",
+                                "TOPRIGHT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "InviteRefreshButtonBackdropTemplate,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlPushedBackdrop",
+                            "child": [
+                                "InviteRefreshButtonPushedBackdropTemplate,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlDisabledBackdrop",
+                            "child": [
+                                "InviteRefreshButtonDisabledBackdropTemplate,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlMouseOverHighlight",
+                            "child": [
+                                "InviteRefreshButtonMouseOverHighlight,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 71,
+                            "type": "BACKDROP",
+                            "name": "InviteRefreshButtonBackdropTemplate",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\BattleNet\\bnet-refresh-up.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropCornerFlags",
+                                    "child": [
+                                        "UL|UR|BL|BR|T|L|B|R,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropCornerSize",
+                                    "child": [
+                                        "0.014,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundSize",
+                                    "child": [
+                                        "0.026,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundInsets",
+                                    "child": [
+                                        "0.004",
+                                        "0.004",
+                                        "0.004",
+                                        "0.004,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropEdgeFile",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 72,
+                            "type": "BACKDROP",
+                            "name": "InviteRefreshButtonPushedBackdropTemplate",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\BattleNet\\bnet-refresh-down.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropCornerFlags",
+                                    "child": [
+                                        "UL|UR|BL|BR|T|L|B|R,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropCornerSize",
+                                    "child": [
+                                        "0.014,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundSize",
+                                    "child": [
+                                        "0.026,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundInsets",
+                                    "child": [
+                                        "0.004",
+                                        "0.004",
+                                        "0.004",
+                                        "0.004,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropEdgeFile",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Down.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 73,
+                            "type": "BACKDROP",
+                            "name": "InviteRefreshButtonDisabledBackdropTemplate",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\BattleNet\\bnet-refresh-disabled.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropCornerFlags",
+                                    "child": [
+                                        "UL|UR|BL|BR|T|L|B|R,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropCornerSize",
+                                    "child": [
+                                        "0.014,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundSize",
+                                    "child": [
+                                        "0.026,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundInsets",
+                                    "child": [
+                                        "0.004",
+                                        "0.004",
+                                        "0.004",
+                                        "0.004,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropEdgeFile",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Disabled.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 74,
+                            "type": "HIGHLIGHT",
+                            "name": "InviteRefreshButtonMouseOverHighlight",
+                            "inherits": "BattleNetButtonMouseOverHighlightTemplate",
+                            "fields": [],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 75,
+                    "type": "BACKDROP",
+                    "name": "InviteCancelButtonBackdrop",
+                    "inherits": "BattleNetMenuSingleButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,",
+                                "BattleNetTeamInviteDialog,",
+                                "BOTTOMRIGHT,",
+                                "-0.022,",
+                                "0.015,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 76,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "InviteCancelButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.159,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,InviteCancelButtonBackdrop,TOPRIGHT,",
+                                        "-0.032,",
+                                        "-0.015625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "A,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "InviteCancelButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 77,
+                                    "type": "TEXT",
+                                    "name": "InviteCancelButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_CANCEL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 78,
+                    "type": "BACKDROP",
+                    "name": "InviteButtonBackdrop",
+                    "inherits": "BattleNetMenuSingleButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "RIGHT,",
+                                "InviteCancelButtonBackdrop,",
+                                "LEFT,",
+                                "0.025,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 79,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "InviteButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.159,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,InviteButtonBackdrop,TOPRIGHT,",
+                                        "-0.032,",
+                                        "-0.015625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "I,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "InviteButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 80,
+                                    "type": "TEXT",
+                                    "name": "InviteButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_INVITE,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

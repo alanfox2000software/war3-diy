@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Warcraft 3 Frames - Syntax语法格式</title>
+</head>
+<body>
+<h2>Syntax语法格式</h2>
+<p>FDF(Frame Definition File)Frame定义文件是war3用来定义UI的Frame的文件格式.另外FDF还可以用来定义语言本地化的字符串(StringLists).<br>在FDF中可以使用注释编写与FDF定义无关的内容.<br>
+<pre>// 我是行注释
+
+/* 区域注释起始
+*
+*
+*/ 区块注释结束</pre></p>
+<p>FDF文件描述了Frame和StringLists,FDF的内容可以看做是一系列的fdfActions的集合.</p>
+<p>大概有105个fdf-actions.每个actions可以携带一组使用空格分割的参数..</p>
+<p>例子如下:</p>
+<ul>
+<li>FontColor 0.99 0.827 0.0705 1.0,</li>
+<li>FrameFont "EscMenuTextFont", 0.010, "",</li>
+</ul>
+<br>
+<p>Actions没有使用{}作为划分,仅仅使用actions的名称,比如: <b>Frame</b>, <b>String</b>, <b>Texture</b>, <b>Layer</b> and <b>StringList</b>作为划分.<br>除Layer外的frame都可以存在块作用域(Blocks)外. IncludeFile和StringList是只能写在块作用域(Blocks)外的. <br>其他的fdf-Actions必须写在块作用域(Blocks)中. 一个块作用域中的Actions属于块定义的Frame.一行可以包含多个Actions.</p>
+<br>
+<p>通常将可以写在块作用域为的称为MainFrame.只有MainFrame可以被创建和继承,MainFrame可以包含多个ChildFrame,每个Frame只有一个Parent.</p>
+<p>对于Frame中的Fdf-Action: MainFrames的名称必须是唯一的.fdf相同名称的的MainFrame将会被跳过解析. ChildFrames可以使用相同的名称.</p>
+<p>Fdf的Frames支持一种继承机制(INHERITS)从其他Frames继承使用相关的Actions. 还有高级版本的子节点继承机制(INHERITS WITHCHILDREN),从其他Frame继承Child-Frames相关fdf-Actions.FDF的继承的Frame必须在同一个文件中,或者使用IncludeFile加载到当前文件.</p>
+<br>
+<p>每个Frame使用一个war3的FrameTypes, 每个FrameType的行为和可以使用的fdf-Actions各有区别. FrameTypes可以分为2类SimpleFrames和Frames. .</p>
+
+<p>FDF中的目录分割符只需要一个"\".</p>
+
+</body>
+</html>

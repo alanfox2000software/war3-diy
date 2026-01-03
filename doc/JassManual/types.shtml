@@ -1,0 +1,158 @@
+
+<html>
+<head>
+<title>JASS Manual: Types</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+
+
+<p><strong>Types</strong>
+
+<p>JASS has a type system that helps to ensure correctness of assignments
+and expressions (i.e., that you don't assign strings to integer variables
+or try to add two units together). There are several <em>native</em> types
+which are predefined, but users can also declare subtypes of the basic
+native types. An <em>array</em> of any type can also be declared.
+
+<p><strong>Native Types</strong>
+
+<p><tt class="hi"><a href="api/BUILT_IN-types-integer.shtml">integer</a></tt> - integer variables can hold the range
+of integral numbers ranging from -2147483647 to 2147483647.
+
+<p><tt class="hi"><a href="api/BUILT_IN-types-real.shtml">real</a></tt> - real variables can hold rational numbers (i.e.,
+floating-point or fractional numbers).
+One assumes the values are 32-bit and conform to the 
+IEEE Standard 754 Floating-Point standard (someone want to verify this?).
+
+<p><tt class="hi"><a href="api/BUILT_IN-types-boolean.shtml">boolean</a></tt> - boolean variables can take on the values
+<code>true</code> or <code>false</code>. Boolean values are returned by
+boolean operations and predicates to "if" statements must be boolean types.
+
+<p><tt class="hi"><a href="api/BUILT_IN-types-string.shtml">string</a></tt> - strings variables hold a series of characters.
+The value of a string variable may be
+<code>null</code> in which case the variable refers to nothing and it is
+illegal to use it (except to assign a value to it).
+
+<p><tt class="hi">handle</tt> - a handle variable is basically a "pointer". It
+refers to some data structure that is internal to Warcraft III which you
+can not manipulate directly. All user-defined types inherit from handle.
+For example, a <code>unit</code> is a subtype of <code>handle</code> that
+points to some unit data-structure in the game. Any handle
+variable can be assigned the value <code>null</code>, which means it refers
+to nothing.
+
+<p><tt class="hi">code</tt> - A function may have parameters that are of 
+type <code>code</code>. This means it must take a function reference
+as an argument. This is similar to a function pointer in C or C++.
+A function is referenced with the expression
+<code>function <span class="hi">func_name</span></code>. For example,
+a function with the prototype:
+
+<pre class="source">
+<span class="keyword">function</span> RunFunctionForAllPlayers <span class="keyword">takes</span> <span class="type">code</span> theFunction <span class="keyword">returns</span> <span class="type">nothing</span>
+</pre>
+
+<p>Would be called like this 
+<code>RunFunctionForAllPlayers(function someFunction)</code>.
+
+<p>A <code>code</code> value can also be <code>null</code>, which means it
+refers to no function (and should not be used in any native function).
+
+<p><strong>User-Defined Types</strong>
+
+<p>The handle type can be subtyped, meaning users can define more specific
+classes of handles. 
+See <a href="globals.shtml">Global Declarations</a> for
+more information. All types used in native functions are declared in
+<tt>common.j</tt>.
+
+<p>A type <code>new_type</code> which extends another type 
+<code>parent_type</code> is said to be a <em>child</em> of 
+<code>parent_type</code>. For example, <code>widget</code> is a child of
+<code>handle</code> and <code>unit</code> is a child of <code>widget</code>.
+The arrangement of children forms a <em>type-tree</em> which is rooted
+at the base-type, <code>handle</code>.
+
+<p>We define any type to be an <em>ancestor</em> of itself. In addition,
+a type <tt>a</tt> is an <em>ancestor</em> of type <tt>b</tt> if
+<tt>b</tt> is the child of some type <tt>c</tt>, which <tt>a</tt> is also the
+ancestor of (i.e., ancestry is transitive).
+In other words,
+<tt>a</tt> is an ancestor of <tt>b</tt> if there is a path going down from
+<tt>a</tt> to <tt>b</tt> in the type-tree. For example, if 
+<tt>c</tt> extends <tt>a</tt>, <tt>d</tt> extends <tt>c</tt>, and 
+<tt>b</tt> extends <tt>d</tt>, then <tt>a</tt> is an ancestor of <tt>b</tt>,
+and so are <tt>c</tt> and <tt>d</tt>. See Figure 1.
+
+<p align="center"><img src="type_tree.jpg" alt="type tree example"><br>
+<strong><small>Figure 1. A type tree. 例子 handle is an ancestor of
+player and unit.</small></strong>
+
+<p>We say type <tt>b</tt> <em>conforms</em> to type <tt>a</tt> if
+<tt>a</tt> is an ancestor of <tt>b</tt>. If a variable is of type <tt>b</tt>
+and <tt>b</tt> conforms to <tt>a</tt>, then the variable <em>is a</em>
+<tt>a</tt> as well as a <tt>b</tt>. For example, a <code>unit</code> variable
+is a <code>widget</code> as well as a <code>handle</code>, since 
+<code>unit</code> conforms to both.
+
+<p>The bottom-line is that a function that has a parameter of type
+<tt>a</tt> can take any argument that <em>is a</em> value of type <tt>a</tt>.
+For example, given the following function declaration:
+
+<pre class="source">
+<span class="keyword">function</span> DestroyWidget <span class="keyword">takes</span> widget toDestroy <span class="keyword">returns</span> <span class="type">nothing</span>
+</pre>
+
+The argument can be a <code>unit</code>, <code>destructable</code>,
+<code>item</code>, or <code>widget</code>, since all those types conform
+to the type <code>widget</code>. Note however that the converse is not
+true. If the function was declared as:
+
+<pre class="source">
+<span class="keyword">function</span> DestroyUnit <span class="keyword">takes</span> unit toDestroy <span class="keyword">returns</span> <span class="type">nothing</span>
+</pre>
+
+The argument must be of type <code>unit</code> and not <code>widget</code>
+because a <code>widget</code> is not necessarily a <code>unit</code>.
+
+<p><strong>Arrays</strong>
+
+<p>A variable can be declared as an array of any basic type (i.e., non-array
+type) <em>except</em> for <code>code</code> (<code>code array</code> is
+not legal). 
+See <a href="globals.shtml">Global Declarations</a> for more information.
+
+<p>Array variables are initialized to "empty" values (e.g., 0 for integer
+arrays, and null for handle arrays) and have a fixed size.
+Each index in an array holds a value of its declared
+type and is referenced with the standard bracket notation. For example,
+<code>my_array[10]</code> refers to the 11th element of <code>my_array</code>.
+
+<p>Although you can store an element in <em>any</em> index of an array
+(from 0 to the maximum positive integer value), you can only store up to
+<code>JASS_MAX_ARRAY_SIZE = 8192</code> elements total in a given array
+(defined in <tt>common.j</tt>). In other words, an array is more like a
+sparse hashtable with a fixed size of 8192.
+(<em>Note</em>: I have not verified this)
+
+<p>Functions may not take arrays as arguments, nor may arrays be returned 
+from functions. Array variables can not be reassigned (i.e., it is illegal
+to call <code>set</code> on an array variable). This means the following
+is illegal:
+
+<pre class="source">
+...
+     unit <span class="type">array</span> myUnits
+     unit <span class="type">array</span> yourUnits
+...
+<span class="keyword">     set</span> myUnits = yourUnits         <span class="comment">// illegal</span>
+<span class="keyword">     set</span> myUnits[0] = yourUnits[10]  <span class="comment">// legal</span>
+</pre>
+
+
+
+</body>
+</html>

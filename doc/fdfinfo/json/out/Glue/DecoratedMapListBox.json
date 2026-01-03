@@ -1,0 +1,49 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "CONTROL",
+            "name": "DecoratedMapListBox",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "MapListBoxBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "BACKDROP",
+                    "name": "MapListBoxBackdrop",
+                    "inherits": "EscMenuEditBoxBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "SCROLLBAR",
+                    "name": "MapListScrollBar",
+                    "inherits": "EscMenuScrollBarTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "DecoratedMapListBox,",
+                                "TOPRIGHT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

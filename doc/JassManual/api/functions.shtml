@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - API Browser: Functions</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">API Browser: Functions</a></strong>
+<p>This page is an index of all the functions declared in the standard library files.
+<p><table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><strong><a href="common_j-functions.shtml">common.j</a></strong></td></tr>
+<tr><td bgcolor="#AAFFAA"><strong><a href="common_ai-functions.shtml">common.ai</a></strong></td></tr>
+<tr><td bgcolor="#faffbf"><strong><a href="Blizzard_j-functions.shtml">Blizzard.j</a></strong></td></tr>
+</table>
+
+
+</body>
+</html>

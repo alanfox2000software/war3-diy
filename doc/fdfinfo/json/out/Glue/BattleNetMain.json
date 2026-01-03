@@ -1,0 +1,1762 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "BattleNetMainFrame",
+            "inherits": "BattleNetFrameTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "SPRITE",
+                    "name": "BattleNetMainBackground",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackgroundArt",
+                            "child": [
+                                "UI\\Glues\\BattleNet\\BattlenetLoginGlue\\BattlenetLoginGlue.mdl,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "FRAME",
+                    "name": "LoginPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 3,
+                            "type": "TEXT",
+                            "name": "NameLabel",
+                            "inherits": "BattleNetTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "BattleNetMainFrame,",
+                                        "TOPLEFT,",
+                                        "0.03125,",
+                                        "-0.1,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_ACCOUNT_NAME,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 4,
+                            "type": "EDITBOX",
+                            "name": "AccountName",
+                            "inherits": "BattleNetEditBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.24,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "NameLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusDefault,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "Password,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "EditTextFrame",
+                                    "child": [
+                                        "AccountNameEditBoxText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 5,
+                                    "type": "TEXT",
+                                    "name": "AccountNameEditBoxText",
+                                    "inherits": "BattleNetEditBoxTextTemplate",
+                                    "fields": [],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 6,
+                            "type": "TEXT",
+                            "name": "PasswordLabel",
+                            "inherits": "BattleNetTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "AccountName,",
+                                        "BOTTOMLEFT,",
+                                        "0.00,",
+                                        "-0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_PASSWORD,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 7,
+                            "type": "EDITBOX",
+                            "name": "Password",
+                            "inherits": "BattleNetEditBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.24,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,PasswordLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "TOSButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "EditTextFrame",
+                                    "child": [
+                                        "PasswordEditBoxText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 8,
+                                    "type": "TEXT",
+                                    "name": "PasswordEditBoxText",
+                                    "inherits": "BattleNetEditBoxTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontFlags",
+                                            "child": [
+                                                "PASSWORDFIELD,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 9,
+                            "type": "TEXT",
+                            "name": "SelectedRealmLabel",
+                            "inherits": "BattleNetTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "Password,",
+                                        "BOTTOMLEFT,",
+                                        "0.00,",
+                                        "-0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_SELECTED_REALM,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 10,
+                            "type": "BACKDROP",
+                            "name": "SelectedRealmBackdrop",
+                            "inherits": "BattleNetMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.256,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.064,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropMirrored,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "SelectedRealmLabel,",
+                                        "BOTTOMLEFT,",
+                                        "-0.00625,",
+                                        "0.00175,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 11,
+                                    "type": "TEXT",
+                                    "name": "SelectedRealmValue",
+                                    "inherits": "BattleNetInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "SelectedRealmBackdrop,",
+                                                "LEFT,",
+                                                "0.02675,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 12,
+                            "type": "BACKDROP",
+                            "name": "ChangePasswordBackdrop",
+                            "inherits": "BattleNetMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.256,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMLEFT,",
+                                        "BattleNetMainFrame,",
+                                        "BOTTOMLEFT,",
+                                        "0.023125,",
+                                        "0.06,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropMirrored,",
+                                    "child": []
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 13,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "ChangePasswordButton",
+                                    "inherits": "BattleNetButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.179,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,ChangePasswordBackdrop,TOPLEFT,",
+                                                "0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "LogonButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "P,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "ChangePasswordButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 14,
+                                            "type": "TEXT",
+                                            "name": "ChangePasswordButtonText",
+                                            "inherits": "BattleNetButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_CHANGE_PASSWORD,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 15,
+                            "type": "BACKDROP",
+                            "name": "NewAccountBackdrop",
+                            "inherits": "BattleNetMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.256,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMLEFT,",
+                                        "ChangePasswordBackdrop,",
+                                        "TOPLEFT,",
+                                        "0.0,",
+                                        "-0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropMirrored,",
+                                    "child": []
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 16,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "NewAccountButton",
+                                    "inherits": "BattleNetButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.179,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,NewAccountBackdrop,TOPLEFT,",
+                                                "0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "ChangePasswordButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "C,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "NewAccountButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 17,
+                                            "type": "TEXT",
+                                            "name": "NewAccountButtonText",
+                                            "inherits": "BattleNetButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_CREATE_NEW_ACCOUNT,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 18,
+                            "type": "BACKDROP",
+                            "name": "TOSBackdrop",
+                            "inherits": "BattleNetMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.256,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMLEFT,NewAccountBackdrop,TOPLEFT,",
+                                        "0.0,",
+                                        "-0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropMirrored,",
+                                    "child": []
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 19,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "TOSButton",
+                                    "inherits": "BattleNetButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.179,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,TOSBackdrop,TOPLEFT,",
+                                                "0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "NewAccountButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "V,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "TOSButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 20,
+                                            "type": "TEXT",
+                                            "name": "TOSButtonText",
+                                            "inherits": "BattleNetButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_VIEW_TERMS_OF_USE,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 21,
+                            "type": "BACKDROP",
+                            "name": "LogonBackdrop",
+                            "inherits": "BattleNetMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.2,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMRIGHT,",
+                                        "BattleNetMainFrame,",
+                                        "BOTTOMRIGHT,",
+                                        "-0.17,",
+                                        "0.06,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 22,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "LogonButton",
+                                    "inherits": "BattleNetButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.138,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,LogonBackdrop,TOPRIGHT,",
+                                                "-0.010,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "CancelButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "L,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "LogonButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 23,
+                                            "type": "TEXT",
+                                            "name": "LogonButtonText",
+                                            "inherits": "BattleNetButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_LOGON,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 24,
+                    "type": "FRAME",
+                    "name": "ChangePasswordPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 25,
+                            "type": "TEXT",
+                            "name": "CPNameLabel",
+                            "inherits": "BattleNetTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "BattleNetMainFrame,",
+                                        "TOPLEFT,",
+                                        "0.03125,",
+                                        "-0.1,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_NAME,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 26,
+                            "type": "EDITBOX",
+                            "name": "CPAccountName",
+                            "inherits": "BattleNetEditBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.24,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "CPNameLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusDefault,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "CPPassword,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "EditTextFrame",
+                                    "child": [
+                                        "CPAccountNameEditBoxText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 27,
+                                    "type": "TEXT",
+                                    "name": "CPAccountNameEditBoxText",
+                                    "inherits": "BattleNetEditBoxTextTemplate",
+                                    "fields": [],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 28,
+                            "type": "TEXT",
+                            "name": "CPPasswordLabel",
+                            "inherits": "BattleNetTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "CPAccountName,",
+                                        "BOTTOMLEFT,",
+                                        "0.00,",
+                                        "-0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_CURRENT_PASSWORD,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 29,
+                            "type": "EDITBOX",
+                            "name": "CPPassword",
+                            "inherits": "BattleNetEditBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.24,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,CPPasswordLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "CPNewPassword,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "EditTextFrame",
+                                    "child": [
+                                        "CPPasswordEditBoxText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 30,
+                                    "type": "TEXT",
+                                    "name": "CPPasswordEditBoxText",
+                                    "inherits": "BattleNetEditBoxTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontFlags",
+                                            "child": [
+                                                "PASSWORDFIELD,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 31,
+                            "type": "TEXT",
+                            "name": "CPNewPasswordLabel",
+                            "inherits": "BattleNetTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "CPPassword,",
+                                        "BOTTOMLEFT,",
+                                        "0.00,",
+                                        "-0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_NEW_PASSWORD,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 32,
+                            "type": "EDITBOX",
+                            "name": "CPNewPassword",
+                            "inherits": "BattleNetEditBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.24,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,CPNewPasswordLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "CPRepeatNewPassword,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "EditTextFrame",
+                                    "child": [
+                                        "CPNewPasswordEditBoxText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 33,
+                                    "type": "TEXT",
+                                    "name": "CPNewPasswordEditBoxText",
+                                    "inherits": "BattleNetEditBoxTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontFlags",
+                                            "child": [
+                                                "PASSWORDFIELD,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 34,
+                            "type": "TEXT",
+                            "name": "CPRepeatNewPasswordLabel",
+                            "inherits": "BattleNetTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "CPNewPassword,",
+                                        "BOTTOMLEFT,",
+                                        "0.00,",
+                                        "-0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_REPEAT_NEW_PASSWORD,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 35,
+                            "type": "EDITBOX",
+                            "name": "CPRepeatNewPassword",
+                            "inherits": "BattleNetEditBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.24,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,CPRepeatNewPasswordLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "CancelButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "EditTextFrame",
+                                    "child": [
+                                        "CPRepeatNewPasswordEditBoxText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 36,
+                                    "type": "TEXT",
+                                    "name": "CPRepeatNewPasswordEditBoxText",
+                                    "inherits": "BattleNetEditBoxTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontFlags",
+                                            "child": [
+                                                "PASSWORDFIELD,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 37,
+                    "type": "FRAME",
+                    "name": "TOSPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 38,
+                            "type": "TEXT",
+                            "name": "TOSTitle",
+                            "inherits": "BattleNetTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "BattleNetMainFrame,",
+                                        "TOPRIGHT,",
+                                        "-0.30125,",
+                                        "-0.1,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "TOS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 39,
+                            "type": "TEXTAREA",
+                            "name": "TOSTextArea",
+                            "inherits": "BattleNetTextAreaTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.271875,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.316875,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "TOSTitle,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.003125,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 40,
+                            "type": "BACKDROP",
+                            "name": "AgreeBackdrop",
+                            "inherits": "BattleNetMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.2,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMRIGHT,",
+                                        "BattleNetMainFrame,",
+                                        "BOTTOMRIGHT,",
+                                        "-0.17,",
+                                        "0.06,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 41,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "AgreeButton",
+                                    "inherits": "BattleNetButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.138,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,AgreeBackdrop,TOPRIGHT,",
+                                                "-0.010,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "DisagreeButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "G,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "AgreeButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 42,
+                                            "type": "TEXT",
+                                            "name": "AgreeButtonText",
+                                            "inherits": "BattleNetButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_AGREE,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 43,
+                            "type": "BACKDROP",
+                            "name": "DisagreeBackdrop",
+                            "inherits": "BattleNetMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.2,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMRIGHT,",
+                                        "BattleNetMainFrame,",
+                                        "BOTTOMRIGHT,",
+                                        "-0.008125,",
+                                        "0.06,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 44,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "DisagreeButton",
+                                    "inherits": "BattleNetButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.138,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,DisagreeBackdrop,TOPRIGHT,",
+                                                "-0.010,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "D,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "DisagreeButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 45,
+                                            "type": "TEXT",
+                                            "name": "DisagreeButtonText",
+                                            "inherits": "BattleNetButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_DISAGREE,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 46,
+                    "type": "FRAME",
+                    "name": "NewAccountPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 47,
+                            "type": "TEXT",
+                            "name": "NANameLabel",
+                            "inherits": "BattleNetTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "BattleNetMainFrame,",
+                                        "TOPLEFT,",
+                                        "0.03125,",
+                                        "-0.1,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_NAME,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 48,
+                            "type": "EDITBOX",
+                            "name": "NAAccountName",
+                            "inherits": "BattleNetEditBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.24,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "NANameLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusDefault,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "NAPassword,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "EditTextFrame",
+                                    "child": [
+                                        "NAAccountNameEditBoxText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 49,
+                                    "type": "TEXT",
+                                    "name": "NAAccountNameEditBoxText",
+                                    "inherits": "BattleNetEditBoxTextTemplate",
+                                    "fields": [],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 50,
+                            "type": "TEXT",
+                            "name": "NAPasswordLabel",
+                            "inherits": "BattleNetTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "NAAccountName,",
+                                        "BOTTOMLEFT,",
+                                        "0.00,",
+                                        "-0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_PASSWORD,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 51,
+                            "type": "EDITBOX",
+                            "name": "NAPassword",
+                            "inherits": "BattleNetEditBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.24,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,NAPasswordLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "NARepeatPassword,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "EditTextFrame",
+                                    "child": [
+                                        "NAPasswordEditBoxText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 52,
+                                    "type": "TEXT",
+                                    "name": "NAPasswordEditBoxText",
+                                    "inherits": "BattleNetEditBoxTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontFlags",
+                                            "child": [
+                                                "PASSWORDFIELD,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 53,
+                            "type": "TEXT",
+                            "name": "NARepeatPasswordLabel",
+                            "inherits": "BattleNetTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "Password,",
+                                        "BOTTOMLEFT,",
+                                        "0.00,",
+                                        "-0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_REPEAT_PASSWORD,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 54,
+                            "type": "EDITBOX",
+                            "name": "NARepeatPassword",
+                            "inherits": "BattleNetEditBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.24,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,NARepeatPasswordLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "NAOKButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "EditTextFrame",
+                                    "child": [
+                                        "NARepeatPasswordEditBoxText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 55,
+                                    "type": "TEXT",
+                                    "name": "NARepeatPasswordEditBoxText",
+                                    "inherits": "BattleNetEditBoxTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontFlags",
+                                            "child": [
+                                                "PASSWORDFIELD,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 56,
+                            "type": "TEXT",
+                            "name": "NAAccountCreationTitle",
+                            "inherits": "BattleNetTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "BattleNetMainFrame,",
+                                        "TOPRIGHT,",
+                                        "-0.30125,",
+                                        "-0.1,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "ACCOUNT_CREATION,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 57,
+                            "type": "TEXTAREA",
+                            "name": "NATextArea",
+                            "inherits": "BattleNetTextAreaTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.271875,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.316875,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "NAAccountCreationTitle,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.003125,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 58,
+                    "type": "BACKDROP",
+                    "name": "CancelBackdrop",
+                    "inherits": "BattleNetMenuButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.2,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,",
+                                "BattleNetMainFrame,",
+                                "BOTTOMRIGHT,",
+                                "-0.008125,",
+                                "0.06,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 59,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "CancelButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.138,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,CancelBackdrop,TOPRIGHT,",
+                                        "-0.010,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "A,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "CancelButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 60,
+                                    "type": "TEXT",
+                                    "name": "CancelButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_CANCEL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 61,
+                    "type": "BACKDROP",
+                    "name": "OKBackdrop",
+                    "inherits": "BattleNetMenuButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.2,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,",
+                                "BattleNetMainFrame,",
+                                "BOTTOMRIGHT,",
+                                "-0.17,",
+                                "0.06,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 62,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "OKButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.138,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,OKBackdrop,TOPRIGHT,",
+                                        "-0.010,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "CancelButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "O,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "OKButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 63,
+                                    "type": "TEXT",
+                                    "name": "OKButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_OK,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type gameevent</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type gameevent</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> <a href="common_j-types-eventid.shtml">eventid</a> <strong>&gt;</strong> gameevent</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#42">42</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">gameevent</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8">
+<p><a href="common_j-variables.shtml">common.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#7FEFE8"></td><td bgcolor="#7FEFE8">
+<strong><a href="common_j-variables.shtml#EVENT_GAME_BUILD_SUBMENU">EVENT_GAME_BUILD_SUBMENU</a>,
+<a href="common_j-variables.shtml#EVENT_GAME_END_LEVEL">EVENT_GAME_END_LEVEL</a>,
+<a href="common_j-variables.shtml#EVENT_GAME_ENTER_REGION">EVENT_GAME_ENTER_REGION</a>,
+<a href="common_j-variables.shtml#EVENT_GAME_LEAVE_REGION">EVENT_GAME_LEAVE_REGION</a>,
+<a href="common_j-variables.shtml#EVENT_GAME_LOADED">EVENT_GAME_LOADED</a>,
+<a href="common_j-variables.shtml#EVENT_GAME_SAVE">EVENT_GAME_SAVE</a>,
+<a href="common_j-variables.shtml#EVENT_GAME_SHOW_SKILL">EVENT_GAME_SHOW_SKILL</a>,
+<a href="common_j-variables.shtml#EVENT_GAME_STATE_LIMIT">EVENT_GAME_STATE_LIMIT</a>,
+<a href="common_j-variables.shtml#EVENT_GAME_TIMER_EXPIRED">EVENT_GAME_TIMER_EXPIRED</a>,
+<a href="common_j-variables.shtml#EVENT_GAME_TOURNAMENT_FINISH_NOW">EVENT_GAME_TOURNAMENT_FINISH_NOW</a>,
+<a href="common_j-variables.shtml#EVENT_GAME_TOURNAMENT_FINISH_SOON">EVENT_GAME_TOURNAMENT_FINISH_SOON</a>,
+<a href="common_j-variables.shtml#EVENT_GAME_TRACKABLE_HIT">EVENT_GAME_TRACKABLE_HIT</a>,
+<a href="common_j-variables.shtml#EVENT_GAME_TRACKABLE_TRACK">EVENT_GAME_TRACKABLE_TRACK</a>,
+<a href="common_j-variables.shtml#EVENT_GAME_VARIABLE_LIMIT">EVENT_GAME_VARIABLE_LIMIT</a>,
+<a href="common_j-variables.shtml#EVENT_GAME_VICTORY">EVENT_GAME_VICTORY</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">gameevent</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#ConvertGameEvent">ConvertGameEvent</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> i<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-gameevent.shtml">gameevent</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">gameevent</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TriggerRegisterGameEvent">TriggerRegisterGameEvent</a></strong> <strong>(</strong><a href="common_j-types-trigger.shtml">trigger</a> whichTrigger, <a href="common_j-types-gameevent.shtml">gameevent</a> whichGameEvent<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-event.shtml">event</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

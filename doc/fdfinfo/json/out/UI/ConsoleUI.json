@@ -1,0 +1,508 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "SIMPLEFRAME",
+            "name": "ConsoleUI",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "Texture",
+                    "name": "{",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "ConsoleTexture01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.256,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TexCoord",
+                            "child": [
+                                "0,",
+                                "1,",
+                                "0,",
+                                "0.125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "AlphaMode",
+                            "child": [
+                                "ALPHAKEY,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOPLEFT,0,0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "Texture",
+                    "name": "{",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "ConsoleTexture02,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.087,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TexCoord",
+                            "child": [
+                                "0,",
+                                "0.33984375,",
+                                "0,",
+                                "0.125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "AlphaMode",
+                            "child": [
+                                "ALPHAKEY,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOPLEFT,0.256,",
+                                "0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "Texture",
+                    "name": "{",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "ConsoleTexture02,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.053,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TexCoord",
+                            "child": [
+                                "0.79296875,",
+                                "1,",
+                                "0,",
+                                "0.125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "AlphaMode",
+                            "child": [
+                                "ALPHAKEY,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOPRIGHT,-0.288,",
+                                "0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 4,
+                    "type": "Texture",
+                    "name": "{",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "ConsoleTexture03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.256,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TexCoord",
+                            "child": [
+                                "0,",
+                                "1,",
+                                "0,",
+                                "0.125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "AlphaMode",
+                            "child": [
+                                "ALPHAKEY,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOPRIGHT,-0.032,",
+                                "0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 5,
+                    "type": "Texture",
+                    "name": "{",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "ConsoleTexture04,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TexCoord",
+                            "child": [
+                                "0,",
+                                "1,",
+                                "0,",
+                                "0.125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "AlphaMode",
+                            "child": [
+                                "ALPHAKEY,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOPRIGHT,0,0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 6,
+                    "type": "Texture",
+                    "name": "{",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "ConsoleTexture01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.256,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.176,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TexCoord",
+                            "child": [
+                                "0,",
+                                "1,",
+                                "0.3125,",
+                                "1,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "AlphaMode",
+                            "child": [
+                                "ALPHAKEY,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "BOTTOMLEFT,0,0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 7,
+                    "type": "Texture",
+                    "name": "{",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "ConsoleTexture02,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.256,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.15,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TexCoord",
+                            "child": [
+                                "0,",
+                                "1,",
+                                "0.4140625,",
+                                "1,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "AlphaMode",
+                            "child": [
+                                "ALPHAKEY,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "BOTTOMLEFT,0.256,0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 8,
+                    "type": "Texture",
+                    "name": "{",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "ConsoleTexture03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.256,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.176,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TexCoord",
+                            "child": [
+                                "0,",
+                                "1,",
+                                "0.3125,",
+                                "1,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "AlphaMode",
+                            "child": [
+                                "ALPHAKEY,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "BOTTOMRIGHT,-0.032,0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 9,
+                    "type": "Texture",
+                    "name": "{",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "ConsoleTexture04,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.176,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TexCoord",
+                            "child": [
+                                "0,",
+                                "1,",
+                                "0.3125,",
+                                "1,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "AlphaMode",
+                            "child": [
+                                "ALPHAKEY,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "BOTTOMRIGHT,0,0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

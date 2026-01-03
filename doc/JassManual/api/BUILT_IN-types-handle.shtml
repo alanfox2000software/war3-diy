@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type handle</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type handle</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Native Type</strong></td><td width=80% bgcolor="#dddddd">handle
+</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd"><a href="common_j-types-agent.shtml">agent</a>,
+<a href="common_j-types-aidifficulty.shtml">aidifficulty</a>,
+<a href="common_j-types-alliancetype.shtml">alliancetype</a>,
+<a href="common_j-types-attacktype.shtml">attacktype</a>,
+<a href="common_j-types-blendmode.shtml">blendmode</a>,
+<a href="common_j-types-camerafield.shtml">camerafield</a>,
+<a href="common_j-types-camerasetup.shtml">camerasetup</a>,
+<a href="common_j-types-damagetype.shtml">damagetype</a>,
+<a href="common_j-types-effecttype.shtml">effecttype</a>,
+<a href="common_j-types-eventid.shtml">eventid</a>,
+<a href="common_j-types-fogstate.shtml">fogstate</a>,
+<a href="common_j-types-gamedifficulty.shtml">gamedifficulty</a>,
+<a href="common_j-types-gamespeed.shtml">gamespeed</a>,
+<a href="common_j-types-gamestate.shtml">gamestate</a>,
+<a href="common_j-types-gametype.shtml">gametype</a>,
+<a href="common_j-types-image.shtml">image</a>,
+<a href="common_j-types-itempool.shtml">itempool</a>,
+<a href="common_j-types-itemtype.shtml">itemtype</a>,
+<a href="common_j-types-lightning.shtml">lightning</a>,
+<a href="common_j-types-mapcontrol.shtml">mapcontrol</a>,
+<a href="common_j-types-mapdensity.shtml">mapdensity</a>,
+<a href="common_j-types-mapflag.shtml">mapflag</a>,
+<a href="common_j-types-mapsetting.shtml">mapsetting</a>,
+<a href="common_j-types-mapvisibility.shtml">mapvisibility</a>,
+<a href="common_j-types-pathingtype.shtml">pathingtype</a>,
+<a href="common_j-types-placement.shtml">placement</a>,
+<a href="common_j-types-playercolor.shtml">playercolor</a>,
+<a href="common_j-types-playergameresult.shtml">playergameresult</a>,
+<a href="common_j-types-playerscore.shtml">playerscore</a>,
+<a href="common_j-types-playerslotstate.shtml">playerslotstate</a>,
+<a href="common_j-types-playerstate.shtml">playerstate</a>,
+<a href="common_j-types-race.shtml">race</a>,
+<a href="common_j-types-racepreference.shtml">racepreference</a>,
+<a href="common_j-types-raritycontrol.shtml">raritycontrol</a>,
+<a href="common_j-types-soundtype.shtml">soundtype</a>,
+<a href="common_j-types-startlocprio.shtml">startlocprio</a>,
+<a href="common_j-types-terraindeformation.shtml">terraindeformation</a>,
+<a href="common_j-types-texmapflags.shtml">texmapflags</a>,
+<a href="common_j-types-texttag.shtml">texttag</a>,
+<a href="common_j-types-triggeraction.shtml">triggeraction</a>,
+<a href="common_j-types-ubersplat.shtml">ubersplat</a>,
+<a href="common_j-types-unitpool.shtml">unitpool</a>,
+<a href="common_j-types-unitstate.shtml">unitstate</a>,
+<a href="common_j-types-unittype.shtml">unittype</a>,
+<a href="common_j-types-version.shtml">version</a>,
+<a href="common_j-types-volumegroup.shtml">volumegroup</a>,
+<a href="common_j-types-weapontype.shtml">weapontype</a>,
+<a href="common_j-types-weathereffect.shtml">weathereffect</a>
+</td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">handle</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd">none</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">handle</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd">none</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">handle</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetHandleId">GetHandleId</a></strong> <strong>(</strong><a href="BUILT_IN-types-handle.shtml">handle</a> h<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetHandleIdBJ">GetHandleIdBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-handle.shtml">handle</a> h<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

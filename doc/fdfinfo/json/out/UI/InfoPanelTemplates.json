@@ -1,0 +1,378 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "TEXT",
+            "name": "InfoPanelTitleTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "InfoPanelTextFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYCENTER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "TEXT",
+            "name": "InfoPanelDescriptionTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "InfoPanelTextFont,",
+                        "0.011,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYCENTER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 2,
+            "type": "TEXT",
+            "name": "InfoPanelLabelTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "InfoPanelTextFont,",
+                        "0.009,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 3,
+            "type": "TEXT",
+            "name": "InfoPanelAttributeTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "InfoPanelTextFont,",
+                        "0.009,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYCENTER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ]
+]

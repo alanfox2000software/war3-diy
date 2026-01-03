@@ -1,0 +1,957 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "BACKDROP",
+            "name": "BNetPopupMenuBackdropTemplate",
+            "inherits": "BattleNetMenuButtonBaseBackdrop",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropMirrored,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "POPUPMENU",
+            "name": "BNetPopupMenuTemplate",
+            "inherits": "BattleNetPopupMenuTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.179,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "PopupMenuBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "PopupMenuDisabledBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupTitleFrame",
+                    "child": [
+                        "PopupMenuTitle,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupArrowFrame",
+                    "child": [
+                        "PopupMenuArrow,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 2,
+                    "type": "BACKDROP",
+                    "name": "PopupMenuBackdrop",
+                    "inherits": "BattleNetButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "BACKDROP",
+                    "name": "PopupMenuDisabledBackdrop",
+                    "inherits": "BattleNetButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 4,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "PopupMenuTitle",
+                    "inherits": "BattleNetPopupMenuTitleTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 5,
+                    "type": "BUTTON",
+                    "name": "PopupMenuArrow",
+                    "inherits": "BattleNetPopupMenuArrowTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 6,
+            "type": "FRAME",
+            "name": "BattleNetStandardPanel",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 7,
+                    "type": "TEXT",
+                    "name": "StandardTitleLabel",
+                    "inherits": "BattleNetTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetStandardPanel,",
+                                "TOPLEFT,",
+                                "0.02625,",
+                                "-0.039,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_STD_TITLE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 8,
+                    "type": "TEXT",
+                    "name": "RaceLabel",
+                    "inherits": "BattleNetInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,StandardTitleLabel,BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.01625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_STD_RACE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 9,
+                    "type": "BACKDROP",
+                    "name": "RaceMenuBackdrop",
+                    "inherits": "BNetPopupMenuBackdropTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "RaceLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "0.00375,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 10,
+                            "type": "POPUPMENU",
+                            "name": "RaceMenu",
+                            "inherits": "BNetPopupMenuTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,RaceMenuBackdrop,TOPLEFT,",
+                                        "0.012,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupMenuFrame",
+                                    "child": [
+                                        "RacePopupMenuMenu,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 11,
+                                    "type": "MENU",
+                                    "name": "RacePopupMenuMenu",
+                                    "inherits": "BattleNetPopupMenuMenuTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "RANDOM,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "HUMAN,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "ORC,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "UNDEAD,",
+                                                "-2,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "MenuItem",
+                                            "child": [
+                                                "NIGHT_ELF,-2,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 12,
+                    "type": "TEXT",
+                    "name": "StyleLabel",
+                    "inherits": "BattleNetInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "RaceLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.07,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_STD_GAME_TYPE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 13,
+                    "type": "BACKDROP",
+                    "name": "StyleBackdrop",
+                    "inherits": "BNetPopupMenuBackdropTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "StyleLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "0.00375,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 14,
+                            "type": "POPUPMENU",
+                            "name": "StyleMenu",
+                            "inherits": "BNetPopupMenuTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,StyleBackdrop,TOPLEFT,",
+                                        "0.012,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "PopupMenuFrame",
+                                    "child": [
+                                        "StylePopupMenuMenu,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 15,
+                                    "type": "MENU",
+                                    "name": "StylePopupMenuMenu",
+                                    "inherits": "BattleNetPopupMenuMenuTemplate",
+                                    "fields": [],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 16,
+                    "type": "TEXT",
+                    "name": "StyleDescriptionValue",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.15625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "StyleBackdrop,",
+                                "RIGHT,",
+                                "-0.03125,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 17,
+                    "type": "FRAME",
+                    "name": "MapPreferenceContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.37875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.268125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "BattleNetStandardPanel,",
+                                "BOTTOMLEFT,",
+                                "0.021875,",
+                                "0.045375,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 18,
+                    "type": "TEXT",
+                    "name": "MapPreferenceDesc",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.38,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "MapPreferenceContainer,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.00325,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_STD_MAP_LIST_DESC,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 19,
+                    "type": "TEXT",
+                    "name": "MapPreferenceLabel",
+                    "inherits": "BattleNetInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "MapPreferenceDesc,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.00250,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_STD_MAP_LIST,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 20,
+                    "type": "FRAME",
+                    "name": "MapInfoPaneContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.259375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "BattleNetStandardPanel,",
+                                "TOPRIGHT,",
+                                "-0.1825,",
+                                "-0.035625,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 21,
+                    "type": "BACKDROP",
+                    "name": "PlayGameBackdrop",
+                    "inherits": "BattleNetMenuButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.24,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,BattleNetStandardPanel,BOTTOMRIGHT,",
+                                "-0.014375,",
+                                "0.124375,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 22,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "PlayGameButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.168,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,PlayGameBackdrop,TOPRIGHT,",
+                                        "-0.012,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "P,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusDefault,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "CancelButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "PlayGameButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 23,
+                                    "type": "TEXT",
+                                    "name": "PlayGameButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_PLAY_GAME,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 24,
+                    "type": "BACKDROP",
+                    "name": "CancelBackdrop",
+                    "inherits": "BattleNetMenuButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.24,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,PlayGameBackdrop,BOTTOMRIGHT,",
+                                "0.0,",
+                                "0.015,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 25,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "CancelButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.168,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,CancelBackdrop,TOPRIGHT,",
+                                        "-0.012,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "A,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "PlayGameButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "CancelButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 26,
+                                    "type": "TEXT",
+                                    "name": "CancelButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_CANCEL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 27,
+            "type": "DIALOG",
+            "name": "BattleNetAnonFindDialog",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.2,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.35,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DialogBackdrop",
+                    "child": [
+                        "AnonFindBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 28,
+                    "type": "BACKDROP",
+                    "name": "AnonFindBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-background.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.064,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.128,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.01",
+                                "0.01",
+                                "0.01",
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-border.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 29,
+                    "type": "TEXT",
+                    "name": "AnonFindTitleText",
+                    "inherits": "BattleNetTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "BattleNetAnonFindDialog,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.025,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_ANON_FIND_TITLE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 30,
+                    "type": "TEXT",
+                    "name": "AnonFindInfoText",
+                    "inherits": "BattleNetInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.30,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "AnonFindTitleText,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.01,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 31,
+                    "type": "SPRITE",
+                    "name": "AnonFindWorkingAnim",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackgroundArt",
+                            "child": [
+                                "UI\\Glues\\BattleNet\\BattlenetWorking\\BattlenetWorking.mdl,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "BattleNetAnonFindDialog,",
+                                "TOP,",
+                                "0.025,",
+                                "-0.025,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 32,
+                    "type": "BACKDROP",
+                    "name": "AnonFindButtonBackdrop",
+                    "inherits": "BattleNetMenuSingleButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "BattleNetAnonFindDialog,",
+                                "BOTTOM,",
+                                "-0.015,",
+                                "0.015,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 33,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "AnonFindButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.159,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,AnonFindButtonBackdrop,TOPRIGHT,",
+                                        "-0.032,",
+                                        "-0.015625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "AnonFindButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 34,
+                                    "type": "TEXT",
+                                    "name": "AnonFindButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "CANCEL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

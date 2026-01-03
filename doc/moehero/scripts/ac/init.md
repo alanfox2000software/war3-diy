@@ -1,0 +1,26 @@
+## init
+- 加载ac框架的其余部分
+- 主要包含ac目录下的基础功能
+```lua
+ac = {}
+ac.game = {}
+
+require 'ac.utility'
+require 'ac.table'
+require 'ac.point'
+require 'ac.math'
+--require 'ac.vector'
+require 'ac.trigger'
+require 'ac.event'
+require 'ac.player'
+require 'ac.unit'
+require 'ac.selector'
+require 'ac.timer'
+require 'ac.buff'
+require 'ac.skill'
+require 'ac.template_skill'
+require 'ac.resource'
+
+require 'ac.buff.init'
+
+```

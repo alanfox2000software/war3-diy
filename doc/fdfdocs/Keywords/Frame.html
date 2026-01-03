@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Warcraft 3 Frames - Frame</title>
+</head>
+<body>
+<h2>Frame</h2>
+<p>格式1: Frame "FRAMETYPE" "FrameName" {}</p>
+<p>格式2: Frame "FRAMETYPE" "FrameName" INHERITS "FrameNameInherited" {}</p>
+<p>格式3: Frame "FRAMETYPE" "FrameName" INHERITS WITHCHILDREN "FrameNameInherited" {}</p>
+<p>作用: 使用"FrameName"定义一个新的"FRAMETYPE".在第二种格式中将会继承右边Fram的fdf Actions. 另外子节点的fdfActions也将继承.FrameName可以使用空字符串"",但是必须存在. {}中的fdf-Actions属于当前Frame.{}外的通常MainFrame,可以写在{}称为child-Frames.
+<p>例子 Frame "FRAME" "TimerDialog"</p>
+<p>例子 Frame "BACKDROP" "QuestButtonBackdropTemplate" INHERITS "QuestButtonBaseTemplate"</p>
+<p>例子 Frame "GLUETEXTBUTTON" "ScriptDialogButton" INHERITS WITHCHILDREN "EscMenuButtonTemplate"</p>
+</body>
+</html>

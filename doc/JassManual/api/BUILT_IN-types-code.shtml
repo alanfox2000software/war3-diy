@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type code</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type code</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Native Type</strong></td><td width=80% bgcolor="#dddddd">code
+</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">code</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd">none</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">code</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd">none</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">code</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#AAFFAA"><span class="keyword">function</span> <strong><a href="common_ai-functions.shtml#CampaignAI">CampaignAI</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> farms, <a href="BUILT_IN-types-code.shtml">code</a> heroes<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#Condition">Condition</a></strong> <strong>(</strong><a href="BUILT_IN-types-code.shtml">code</a> func<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-conditionfunc.shtml">conditionfunc</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#EnumDestructablesInCircleBJ">EnumDestructablesInCircleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-real.shtml">real</a> radius, <a href="common_j-types-location.shtml">location</a> loc, <a href="BUILT_IN-types-code.shtml">code</a> actionFunc<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#EnumDestructablesInRect">EnumDestructablesInRect</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter, <a href="BUILT_IN-types-code.shtml">code</a> actionFunc<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#EnumDestructablesInRectAll">EnumDestructablesInRectAll</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="BUILT_IN-types-code.shtml">code</a> actionFunc<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#EnumItemsInRect">EnumItemsInRect</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter, <a href="BUILT_IN-types-code.shtml">code</a> actionFunc<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#EnumItemsInRectBJ">EnumItemsInRectBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="BUILT_IN-types-code.shtml">code</a> actionFunc<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#EnumUnitsSelected">EnumUnitsSelected</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-boolexpr.shtml">boolexpr</a> enumFilter, <a href="BUILT_IN-types-code.shtml">code</a> enumAction<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#Filter">Filter</a></strong> <strong>(</strong><a href="BUILT_IN-types-code.shtml">code</a> func<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-filterfunc.shtml">filterfunc</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ForForce">ForForce</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="BUILT_IN-types-code.shtml">code</a> callback<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ForGroup">ForGroup</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="BUILT_IN-types-code.shtml">code</a> callback<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ForGroupBJ">ForGroupBJ</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="BUILT_IN-types-code.shtml">code</a> callback<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#AAFFAA"><span class="keyword">native</span> <strong><a href="common_ai-functions.shtml#SetHeroLevels">SetHeroLevels</a></strong> <strong>(</strong><a href="BUILT_IN-types-code.shtml">code</a> func<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#AAFFAA"><span class="keyword">function</span> <strong><a href="common_ai-functions.shtml#StandardAI">StandardAI</a></strong> <strong>(</strong><a href="BUILT_IN-types-code.shtml">code</a> heroes, <a href="BUILT_IN-types-code.shtml">code</a> peons, <a href="BUILT_IN-types-code.shtml">code</a> attacks<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#AAFFAA"><span class="keyword">function</span> <strong><a href="common_ai-functions.shtml#StandardAI">StandardAI</a></strong> <strong>(</strong><a href="BUILT_IN-types-code.shtml">code</a> heroes, <a href="BUILT_IN-types-code.shtml">code</a> peons, <a href="BUILT_IN-types-code.shtml">code</a> attacks<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#AAFFAA"><span class="keyword">function</span> <strong><a href="common_ai-functions.shtml#StandardAI">StandardAI</a></strong> <strong>(</strong><a href="BUILT_IN-types-code.shtml">code</a> heroes, <a href="BUILT_IN-types-code.shtml">code</a> peons, <a href="BUILT_IN-types-code.shtml">code</a> attacks<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#AAFFAA"><span class="keyword">native</span> <strong><a href="common_ai-functions.shtml#StartThread">StartThread</a></strong> <strong>(</strong><a href="BUILT_IN-types-code.shtml">code</a> func<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#AAFFAA"><span class="keyword">function</span> <strong><a href="common_ai-functions.shtml#StartTownBuilder">StartTownBuilder</a></strong> <strong>(</strong><a href="BUILT_IN-types-code.shtml">code</a> func<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TimerStart">TimerStart</a></strong> <strong>(</strong><a href="common_j-types-timer.shtml">timer</a> whichTimer, <a href="BUILT_IN-types-real.shtml">real</a> timeout, <a href="BUILT_IN-types-boolean.shtml">boolean</a> periodic, <a href="BUILT_IN-types-code.shtml">code</a> handlerFunc<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TriggerAddAction">TriggerAddAction</a></strong> <strong>(</strong><a href="common_j-types-trigger.shtml">trigger</a> whichTrigger, <a href="BUILT_IN-types-code.shtml">code</a> actionFunc<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-triggeraction.shtml">triggeraction</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

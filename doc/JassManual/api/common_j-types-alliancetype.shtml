@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type alliancetype</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type alliancetype</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> alliancetype</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#30">30</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">alliancetype</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8">
+<p><a href="common_j-variables.shtml">common.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#7FEFE8"></td><td bgcolor="#7FEFE8">
+<strong><a href="common_j-variables.shtml#ALLIANCE_HELP_REQUEST">ALLIANCE_HELP_REQUEST</a>,
+<a href="common_j-variables.shtml#ALLIANCE_HELP_RESPONSE">ALLIANCE_HELP_RESPONSE</a>,
+<a href="common_j-variables.shtml#ALLIANCE_PASSIVE">ALLIANCE_PASSIVE</a>,
+<a href="common_j-variables.shtml#ALLIANCE_RESCUABLE">ALLIANCE_RESCUABLE</a>,
+<a href="common_j-variables.shtml#ALLIANCE_SHARED_ADVANCED_CONTROL">ALLIANCE_SHARED_ADVANCED_CONTROL</a>,
+<a href="common_j-variables.shtml#ALLIANCE_SHARED_CONTROL">ALLIANCE_SHARED_CONTROL</a>,
+<a href="common_j-variables.shtml#ALLIANCE_SHARED_SPELLS">ALLIANCE_SHARED_SPELLS</a>,
+<a href="common_j-variables.shtml#ALLIANCE_SHARED_VISION">ALLIANCE_SHARED_VISION</a>,
+<a href="common_j-variables.shtml#ALLIANCE_SHARED_VISION_FORCED">ALLIANCE_SHARED_VISION_FORCED</a>,
+<a href="common_j-variables.shtml#ALLIANCE_SHARED_XP">ALLIANCE_SHARED_XP</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">alliancetype</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#ConvertAllianceType">ConvertAllianceType</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> i<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-alliancetype.shtml">alliancetype</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">alliancetype</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetPlayerAlliance">GetPlayerAlliance</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> sourcePlayer, <a href="common_j-types-player.shtml">player</a> otherPlayer, <a href="common_j-types-alliancetype.shtml">alliancetype</a> whichAllianceSetting<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetPlayerAlliance">SetPlayerAlliance</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> sourcePlayer, <a href="common_j-types-player.shtml">player</a> otherPlayer, <a href="common_j-types-alliancetype.shtml">alliancetype</a> whichAllianceSetting, <a href="BUILT_IN-types-boolean.shtml">boolean</a> value<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetPlayerAllianceBJ">SetPlayerAllianceBJ</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> sourcePlayer, <a href="common_j-types-alliancetype.shtml">alliancetype</a> whichAllianceSetting, <a href="BUILT_IN-types-boolean.shtml">boolean</a> value, <a href="common_j-types-player.shtml">player</a> otherPlayer<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TriggerRegisterPlayerAllianceChange">TriggerRegisterPlayerAllianceChange</a></strong> <strong>(</strong><a href="common_j-types-trigger.shtml">trigger</a> whichTrigger, <a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-alliancetype.shtml">alliancetype</a> whichAlliance<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-event.shtml">event</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

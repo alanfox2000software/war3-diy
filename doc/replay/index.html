@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+
+<body youdao="bind">
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<h1 class="copyname" id="sitelogo">WarCraft III</h1>
+<h2 id="subsitelogo">replay file format description</h2>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<h3>What's there?</h3>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<div>
+  <p> This page is dedicated to the file format of
+  <span class="copyname">WarCraft III</span> replay files.
+  Here you can find a detailed fileformat documentation and some example code
+  as well as <a href="#linksection">links</a> to open source replay parsing
+  libraries and ready-to-use replay tools.</p>
+  <p> The file format description is currently divided into two files.
+  The file <span class="filename">w3g_format.txt</span> describes the general
+  layout of a replay file and everything else saved in the replay except for
+  single player actions. These actions are documented in detail in a seperate
+  file <span class="filename">w3g_actions.txt</span>.</p>
+  <p>Please note that the file format description is neither finished nor
+  complete. We will continue to update the files while changes are made
+  to the game by patches or new information is researched about unknown
+  fields and/or values. Please check back regularly.</p>
+</div>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<h3>Download</h3>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<div>
+
+  <p>To download the latest version of the respective text file click on the links below:</p>
+  <div class="linktablebox">
+  <table class="linktable">
+    <tbody><tr>
+      <td class="linkname"><a class="filename" href="./files/w3g_format.txt">w3g_format.txt</a></td>
+      <td class="linkdscr">Basic description of the <span class="copyname">WarCraft III</span> replay file format.</td>
+    </tr>
+    <tr>
+      <td class="linkname"><a class="filename" href="./files/w3g_actions.txt">w3g_actions.txt</a></td>
+      <td class="linkdscr">Description of actions in <span class="copyname">WarCraft III</span> replay files.</td>
+    </tr>
+  </tbody></table>
+  </div>
+<!--
+  <p>
+  You can browse the complete <a href="http://warcraft.kliegman.com/cgi-bin/cvsweb.cgi/src/replay/" rel="external">CVS-repository</a>
+  containing all released versions of the file format description and some example code
+  <a href="http://warcraft.kliegman.com/cgi-bin/cvsweb.cgi/src/replay/" rel="external">here</a>.
+  </p>
+-->
+</div>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<h3>Links<a id="linksection" name="linksection"></a></h3>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+<div>
+  <h4>Replay parsing libraries:</h4>
+    <p>The following libraries will help you to add replay parsing to your own project:</p>
+    <div class="linktablebox"><table class="linktable">
+      <tbody><tr>
+        <td class="linkname"><a rel="external" href="http://w3rep.sourceforge.net/">Julas' PHP library</a></td>
+        <td class="linkdscr">This is a nice (open source *grin*) PHP-library written by <span class="personname">Juliusz 'Julas' Gonera</span>.</td>
+      </tr>
+      </tbody></table>
+      <span class="smallnote">Your replay parsing library is not listed here ? Let us know about it on the
+            <a href="http://shadowflare.samods.org/cgi-bin/yabb/YaBB.cgi?board=dev">developer forum</a>.</span>
+    </div>
+</div>
+
+<div>
+  <h4>Replay tools:</h4>
+
+  <p>Below is a list of tools ready to analyse your replay collection. All
+     of these tools are based on the file format description of this site.</p>
+  <div class="linktablebox"><table class="linktable">
+    <tbody><tr>
+      <td class="linkname"><a rel="external" href="http://www.bwchart.com/">W3Chart</a></td>
+      <td class="linkdscr">This is the child of the mother of all replay tools:
+                         <a rel="external" href="http://www.bwchart.com/">BWChart</a>.<br>
+                         These tools were developed by <span class="personname">JCA</span>.</td>
+    </tr>
+    <tr>
+      <td class="linkname"><a rel="external" href="http://www.soarchin.com/">W3GMaster</a></td>
+      <td class="linkdscr">A really powerful replay tool featuring file browser, batch renaming, charts and more.<br>
+                          Written by <span class="personname">Soar</span>.</td>
+    </tr>
+    <tr>
+      <td class="linkname"><a rel="external" href="http://www.progamer.ru/download/view.php?id=39">Replay Toolkit</a></td>
+      <td class="linkdscr">This is one of the most complete replay analysing tool available.<br>
+                           It displays nearly every information saved in a replay file.<br>
+                           Written in <span class="copyname">Java</span> it as a little bit slow though.
+                           The author is <span class="personname">Andrey Chaschev</span>.</td>
+    </tr>
+    <tr>
+      <td class="linkname"><a rel="external" href="http://www.replaymanager.com/">Replay Manager</a></td>
+      <td class="linkdscr">This is an automatic replay saver renaming and archiving the replay of the last game played.<br>
+                           It also feature a replay browser displaying basic information on a selected replay.<br>
+                           It was written by <span class="personname">xill</span> and <span class="personname">pr1v</span>.</td>
+    </tr>
+    </tbody></table>
+    <span class="smallnote">Your replay tool is not listed here ? Let us know about it on the
+          <a href="http://shadowflare.samods.org/cgi-bin/yabb/YaBB.cgi?board=dev">developer forum</a>.</span>
+  </div>
+</div>
+
+<div>
+  <h4>Other replay file format resources</h4>
+
+  <p>Visit the <a href="http://shadowflare.samods.org/cgi-bin/yabb/YaBB.cgi?board=dev">developer forum</a>
+     and discuss everything regarding the replay file format.</p>
+</div>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<h3>Credits</h3>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<ul>
+  <li>Information on the replay file format was first published in <span class="filename">notes.txt</span>
+      written by <span class="personname">kliegs </span>.</li>
+  <li>The files <span class="filename">w3g_format.txt</span> and <span class="filename">w3g_actions.txt</span>
+      are written by <span class="personname">Blue</span> and <span class="personname">Nagger</span>.</li>
+  <li>The CVS repository is hosted by <span class="personname">kliegs</span>.</li>
+  <li>This webpage has been designed and coded by <span class="personname">Blue</span>.</li>
+  <li><span class="copyname">WarCraft III</span> is copyrighted by © <span class="copyname">Blizzard Entertainment</span>.</li>
+</ul>
+
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<h3 style="margin-bottom:0">&nbsp;</h3>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+  <div>
+    <p class="pagebottom">
+      <span id="lastupdate">last update: 2010-07-13</span><br>
+      <span id="contactnote">You found an error or broken link? Write us on the <a href="http://shadowflare.samods.org/cgi-bin/yabb/YaBB.cgi?board=dev">developer forum</a>.</span>
+    </p>
+  </div>
+
+</html>

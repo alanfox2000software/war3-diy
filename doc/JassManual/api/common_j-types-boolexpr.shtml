@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type boolexpr</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type boolexpr</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> <a href="common_j-types-agent.shtml">agent</a> <strong>&gt;</strong> boolexpr</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd"><a href="common_j-types-conditionfunc.shtml">conditionfunc</a>,
+<a href="common_j-types-filterfunc.shtml">filterfunc</a>
+</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#23">23</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">boolexpr</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf">
+<p><a href="Blizzard_j-variables.shtml">Blizzard.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#faffbf"></td><td bgcolor="#faffbf">
+<strong><a href="Blizzard_j-variables.shtml#filterEnumDestructablesInCircleBJ">filterEnumDestructablesInCircleBJ</a>,
+<a href="Blizzard_j-variables.shtml#filterGetUnitsInRectOfPlayer">filterGetUnitsInRectOfPlayer</a>,
+<a href="Blizzard_j-variables.shtml#filterGetUnitsOfPlayerAndTypeId">filterGetUnitsOfPlayerAndTypeId</a>,
+<a href="Blizzard_j-variables.shtml#filterGetUnitsOfTypeIdAll">filterGetUnitsOfTypeIdAll</a>,
+<a href="Blizzard_j-variables.shtml#filterIssueHauntOrderAtLocBJ">filterIssueHauntOrderAtLocBJ</a>,
+<a href="Blizzard_j-variables.shtml#filterLivingPlayerUnitsOfTypeId">filterLivingPlayerUnitsOfTypeId</a>,
+<a href="Blizzard_j-variables.shtml#filterMeleeTrainedUnitIsHeroBJ">filterMeleeTrainedUnitIsHeroBJ</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">boolexpr</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#And">And</a></strong> <strong>(</strong><a href="common_j-types-boolexpr.shtml">boolexpr</a> operandA, <a href="common_j-types-boolexpr.shtml">boolexpr</a> operandB<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-boolexpr.shtml">boolexpr</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LoadBooleanExprHandle">LoadBooleanExprHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-boolexpr.shtml">boolexpr</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LoadBooleanExprHandleBJ">LoadBooleanExprHandleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-boolexpr.shtml">boolexpr</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#Not">Not</a></strong> <strong>(</strong><a href="common_j-types-boolexpr.shtml">boolexpr</a> operand<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-boolexpr.shtml">boolexpr</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#Or">Or</a></strong> <strong>(</strong><a href="common_j-types-boolexpr.shtml">boolexpr</a> operandA, <a href="common_j-types-boolexpr.shtml">boolexpr</a> operandB<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-boolexpr.shtml">boolexpr</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">boolexpr</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#And">And</a></strong> <strong>(</strong><a href="common_j-types-boolexpr.shtml">boolexpr</a> operandA, <a href="common_j-types-boolexpr.shtml">boolexpr</a> operandB<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-boolexpr.shtml">boolexpr</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#And">And</a></strong> <strong>(</strong><a href="common_j-types-boolexpr.shtml">boolexpr</a> operandA, <a href="common_j-types-boolexpr.shtml">boolexpr</a> operandB<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-boolexpr.shtml">boolexpr</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#DestroyBoolExpr">DestroyBoolExpr</a></strong> <strong>(</strong><a href="common_j-types-boolexpr.shtml">boolexpr</a> e<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#EnumDestructablesInRect">EnumDestructablesInRect</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter, <a href="BUILT_IN-types-code.shtml">code</a> actionFunc<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#EnumItemsInRect">EnumItemsInRect</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter, <a href="BUILT_IN-types-code.shtml">code</a> actionFunc<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#EnumUnitsSelected">EnumUnitsSelected</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-boolexpr.shtml">boolexpr</a> enumFilter, <a href="BUILT_IN-types-code.shtml">code</a> enumAction<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ForceEnumAllies">ForceEnumAllies</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ForceEnumEnemies">ForceEnumEnemies</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ForceEnumPlayers">ForceEnumPlayers</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ForceEnumPlayersCounted">ForceEnumPlayersCounted</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter, <a href="BUILT_IN-types-integer.shtml">integer</a> countLimit<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetPlayersMatching">GetPlayersMatching</a></strong> <strong>(</strong><a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-force.shtml">force</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetUnitsInRangeOfLocMatching">GetUnitsInRangeOfLocMatching</a></strong> <strong>(</strong><a href="BUILT_IN-types-real.shtml">real</a> radius, <a href="common_j-types-location.shtml">location</a> whichLocation, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-group.shtml">group</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetUnitsInRectMatching">GetUnitsInRectMatching</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-group.shtml">group</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetUnitsOfPlayerMatching">GetUnitsOfPlayerMatching</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-group.shtml">group</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GroupEnumUnitsInRange">GroupEnumUnitsInRange</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="BUILT_IN-types-real.shtml">real</a> radius, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GroupEnumUnitsInRangeCounted">GroupEnumUnitsInRangeCounted</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="BUILT_IN-types-real.shtml">real</a> radius, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter, <a href="BUILT_IN-types-integer.shtml">integer</a> countLimit<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GroupEnumUnitsInRangeOfLoc">GroupEnumUnitsInRangeOfLoc</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="common_j-types-location.shtml">location</a> whichLocation, <a href="BUILT_IN-types-real.shtml">real</a> radius, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GroupEnumUnitsInRangeOfLocCounted">GroupEnumUnitsInRangeOfLocCounted</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="common_j-types-location.shtml">location</a> whichLocation, <a href="BUILT_IN-types-real.shtml">real</a> radius, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter, <a href="BUILT_IN-types-integer.shtml">integer</a> countLimit<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GroupEnumUnitsInRect">GroupEnumUnitsInRect</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GroupEnumUnitsInRectCounted">GroupEnumUnitsInRectCounted</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter, <a href="BUILT_IN-types-integer.shtml">integer</a> countLimit<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GroupEnumUnitsOfPlayer">GroupEnumUnitsOfPlayer</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GroupEnumUnitsOfType">GroupEnumUnitsOfType</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="BUILT_IN-types-string.shtml">string</a> unitname, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GroupEnumUnitsOfTypeCounted">GroupEnumUnitsOfTypeCounted</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="BUILT_IN-types-string.shtml">string</a> unitname, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter, <a href="BUILT_IN-types-integer.shtml">integer</a> countLimit<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GroupEnumUnitsSelected">GroupEnumUnitsSelected</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#Not">Not</a></strong> <strong>(</strong><a href="common_j-types-boolexpr.shtml">boolexpr</a> operand<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-boolexpr.shtml">boolexpr</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#Or">Or</a></strong> <strong>(</strong><a href="common_j-types-boolexpr.shtml">boolexpr</a> operandA, <a href="common_j-types-boolexpr.shtml">boolexpr</a> operandB<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-boolexpr.shtml">boolexpr</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#Or">Or</a></strong> <strong>(</strong><a href="common_j-types-boolexpr.shtml">boolexpr</a> operandA, <a href="common_j-types-boolexpr.shtml">boolexpr</a> operandB<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-boolexpr.shtml">boolexpr</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RandomDestructableInRectBJ">RandomDestructableInRectBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RandomItemInRectBJ">RandomItemInRectBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SaveBooleanExprHandle">SaveBooleanExprHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey, <a href="common_j-types-boolexpr.shtml">boolexpr</a> whichBoolexpr<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SaveBooleanExprHandleBJ">SaveBooleanExprHandleBJ</a></strong> <strong>(</strong><a href="common_j-types-boolexpr.shtml">boolexpr</a> whichBoolexpr, <a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TriggerAddCondition">TriggerAddCondition</a></strong> <strong>(</strong><a href="common_j-types-trigger.shtml">trigger</a> whichTrigger, <a href="common_j-types-boolexpr.shtml">boolexpr</a> condition<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-triggercondition.shtml">triggercondition</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#TriggerRegisterDistanceBetweenUnits">TriggerRegisterDistanceBetweenUnits</a></strong> <strong>(</strong><a href="common_j-types-trigger.shtml">trigger</a> trig, <a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-boolexpr.shtml">boolexpr</a> condition, <a href="BUILT_IN-types-real.shtml">real</a> range<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-event.shtml">event</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TriggerRegisterEnterRegion">TriggerRegisterEnterRegion</a></strong> <strong>(</strong><a href="common_j-types-trigger.shtml">trigger</a> whichTrigger, <a href="common_j-types-region.shtml">region</a> whichRegion, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-event.shtml">event</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TriggerRegisterFilterUnitEvent">TriggerRegisterFilterUnitEvent</a></strong> <strong>(</strong><a href="common_j-types-trigger.shtml">trigger</a> whichTrigger, <a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-unitevent.shtml">unitevent</a> whichEvent, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-event.shtml">event</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TriggerRegisterLeaveRegion">TriggerRegisterLeaveRegion</a></strong> <strong>(</strong><a href="common_j-types-trigger.shtml">trigger</a> whichTrigger, <a href="common_j-types-region.shtml">region</a> whichRegion, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-event.shtml">event</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TriggerRegisterPlayerUnitEvent">TriggerRegisterPlayerUnitEvent</a></strong> <strong>(</strong><a href="common_j-types-trigger.shtml">trigger</a> whichTrigger, <a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-playerunitevent.shtml">playerunitevent</a> whichPlayerUnitEvent, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-event.shtml">event</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TriggerRegisterUnitInRange">TriggerRegisterUnitInRange</a></strong> <strong>(</strong><a href="common_j-types-trigger.shtml">trigger</a> whichTrigger, <a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-real.shtml">real</a> range, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-event.shtml">event</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

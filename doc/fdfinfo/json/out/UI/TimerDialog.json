@@ -1,0 +1,196 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "TimerDialog",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.17f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.03f,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "BACKDROP",
+                    "name": "TimerDialogBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuEditBoxBackground,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.0125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.005f",
+                                "0.005f",
+                                "0.005f",
+                                "0.005f,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "EscMenuEditBoxBorder,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "TEXT",
+                    "name": "TimerDialogValue",
+                    "inherits": "EscMenuInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "RIGHT,",
+                                "TimerDialogBackdrop,",
+                                "RIGHT,",
+                                "-0.01,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.06,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "00:00:00,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "TEXT",
+                    "name": "TimerDialogTitle",
+                    "inherits": "EscMenuLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "RIGHT,",
+                                "TimerDialogValue,",
+                                "RIGHT,",
+                                "-0.01,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "TimerDialogBackdrop,",
+                                "LEFT,",
+                                "0.01,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "DEFAULTTIMERDIALOGTEXT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

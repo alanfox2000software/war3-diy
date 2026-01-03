@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type leaderboard</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type leaderboard</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> <a href="common_j-types-agent.shtml">agent</a> <strong>&gt;</strong> leaderboard</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#81">81</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">leaderboard</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf">
+<p><a href="Blizzard_j-variables.shtml">Blizzard.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#faffbf"></td><td bgcolor="#faffbf">
+<strong><a href="Blizzard_j-variables.shtml#bj_lastCreatedLeaderboard">bj_lastCreatedLeaderboard</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">leaderboard</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateLeaderboard">CreateLeaderboard</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-leaderboard.shtml">leaderboard</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CreateLeaderboardBJ">CreateLeaderboardBJ</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> toForce, <a href="BUILT_IN-types-string.shtml">string</a> label<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-leaderboard.shtml">leaderboard</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetLastCreatedLeaderboard">GetLastCreatedLeaderboard</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-leaderboard.shtml">leaderboard</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LoadLeaderboardHandle">LoadLeaderboardHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-leaderboard.shtml">leaderboard</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LoadLeaderboardHandleBJ">LoadLeaderboardHandleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-leaderboard.shtml">leaderboard</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#PlayerGetLeaderboard">PlayerGetLeaderboard</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> toPlayer<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-leaderboard.shtml">leaderboard</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#PlayerGetLeaderboardBJ">PlayerGetLeaderboardBJ</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-leaderboard.shtml">leaderboard</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">leaderboard</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#DestroyLeaderboard">DestroyLeaderboard</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#DestroyLeaderboardBJ">DestroyLeaderboardBJ</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ForceSetLeaderboardBJ">ForceSetLeaderboardBJ</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="common_j-types-force.shtml">force</a> toForce<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IsLeaderboardDisplayed">IsLeaderboardDisplayed</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardAddItem">LeaderboardAddItem</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-string.shtml">string</a> label, <a href="BUILT_IN-types-integer.shtml">integer</a> value, <a href="common_j-types-player.shtml">player</a> p<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardAddItemBJ">LeaderboardAddItemBJ</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-string.shtml">string</a> label, <a href="BUILT_IN-types-integer.shtml">integer</a> value<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardClear">LeaderboardClear</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardDisplay">LeaderboardDisplay</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-boolean.shtml">boolean</a> show<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardDisplayBJ">LeaderboardDisplayBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> show, <a href="common_j-types-leaderboard.shtml">leaderboard</a> lb<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardGetIndexedPlayerBJ">LeaderboardGetIndexedPlayerBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> position, <a href="common_j-types-leaderboard.shtml">leaderboard</a> lb<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-player.shtml">player</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardGetItemCount">LeaderboardGetItemCount</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardGetItemCountBJ">LeaderboardGetItemCountBJ</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardGetLabelText">LeaderboardGetLabelText</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-string.shtml">string</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardGetPlayerIndex">LeaderboardGetPlayerIndex</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="common_j-types-player.shtml">player</a> p<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardGetPlayerIndexBJ">LeaderboardGetPlayerIndexBJ</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-leaderboard.shtml">leaderboard</a> lb<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardHasPlayerItem">LeaderboardHasPlayerItem</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="common_j-types-player.shtml">player</a> p<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardHasPlayerItemBJ">LeaderboardHasPlayerItemBJ</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="common_j-types-player.shtml">player</a> whichPlayer<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardRemoveItem">LeaderboardRemoveItem</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> index<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardRemovePlayerItem">LeaderboardRemovePlayerItem</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="common_j-types-player.shtml">player</a> p<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardRemovePlayerItemBJ">LeaderboardRemovePlayerItemBJ</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-leaderboard.shtml">leaderboard</a> lb<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardResizeBJ">LeaderboardResizeBJ</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardSetItemLabel">LeaderboardSetItemLabel</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> whichItem, <a href="BUILT_IN-types-string.shtml">string</a> val<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardSetItemLabelColor">LeaderboardSetItemLabelColor</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> whichItem, <a href="BUILT_IN-types-integer.shtml">integer</a> red, <a href="BUILT_IN-types-integer.shtml">integer</a> green, <a href="BUILT_IN-types-integer.shtml">integer</a> blue, <a href="BUILT_IN-types-integer.shtml">integer</a> alpha<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardSetItemStyle">LeaderboardSetItemStyle</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> whichItem, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showLabel, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showValue, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showIcon<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardSetItemValue">LeaderboardSetItemValue</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> whichItem, <a href="BUILT_IN-types-integer.shtml">integer</a> val<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardSetItemValueColor">LeaderboardSetItemValueColor</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> whichItem, <a href="BUILT_IN-types-integer.shtml">integer</a> red, <a href="BUILT_IN-types-integer.shtml">integer</a> green, <a href="BUILT_IN-types-integer.shtml">integer</a> blue, <a href="BUILT_IN-types-integer.shtml">integer</a> alpha<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardSetLabel">LeaderboardSetLabel</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-string.shtml">string</a> label<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardSetLabelBJ">LeaderboardSetLabelBJ</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-string.shtml">string</a> label<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardSetLabelColor">LeaderboardSetLabelColor</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> red, <a href="BUILT_IN-types-integer.shtml">integer</a> green, <a href="BUILT_IN-types-integer.shtml">integer</a> blue, <a href="BUILT_IN-types-integer.shtml">integer</a> alpha<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardSetLabelColorBJ">LeaderboardSetLabelColorBJ</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-real.shtml">real</a> red, <a href="BUILT_IN-types-real.shtml">real</a> green, <a href="BUILT_IN-types-real.shtml">real</a> blue, <a href="BUILT_IN-types-real.shtml">real</a> transparency<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardSetPlayerItemLabelBJ">LeaderboardSetPlayerItemLabelBJ</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-string.shtml">string</a> val<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardSetPlayerItemLabelColorBJ">LeaderboardSetPlayerItemLabelColorBJ</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-real.shtml">real</a> red, <a href="BUILT_IN-types-real.shtml">real</a> green, <a href="BUILT_IN-types-real.shtml">real</a> blue, <a href="BUILT_IN-types-real.shtml">real</a> transparency<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardSetPlayerItemStyleBJ">LeaderboardSetPlayerItemStyleBJ</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showLabel, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showValue, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showIcon<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardSetPlayerItemValueBJ">LeaderboardSetPlayerItemValueBJ</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> val<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardSetPlayerItemValueColorBJ">LeaderboardSetPlayerItemValueColorBJ</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-real.shtml">real</a> red, <a href="BUILT_IN-types-real.shtml">real</a> green, <a href="BUILT_IN-types-real.shtml">real</a> blue, <a href="BUILT_IN-types-real.shtml">real</a> transparency<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardSetSizeByItemCount">LeaderboardSetSizeByItemCount</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> count<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardSetStyle">LeaderboardSetStyle</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showLabel, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showNames, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showValues, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showIcons<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardSetStyleBJ">LeaderboardSetStyleBJ</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showLabel, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showNames, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showValues, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showIcons<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardSetValueColor">LeaderboardSetValueColor</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> red, <a href="BUILT_IN-types-integer.shtml">integer</a> green, <a href="BUILT_IN-types-integer.shtml">integer</a> blue, <a href="BUILT_IN-types-integer.shtml">integer</a> alpha<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardSetValueColorBJ">LeaderboardSetValueColorBJ</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-real.shtml">real</a> red, <a href="BUILT_IN-types-real.shtml">real</a> green, <a href="BUILT_IN-types-real.shtml">real</a> blue, <a href="BUILT_IN-types-real.shtml">real</a> transparency<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardSortItemsBJ">LeaderboardSortItemsBJ</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> sortType, <a href="BUILT_IN-types-boolean.shtml">boolean</a> ascending<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardSortItemsByLabel">LeaderboardSortItemsByLabel</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-boolean.shtml">boolean</a> ascending<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardSortItemsByLabelBJ">LeaderboardSortItemsByLabelBJ</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-boolean.shtml">boolean</a> ascending<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardSortItemsByPlayer">LeaderboardSortItemsByPlayer</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-boolean.shtml">boolean</a> ascending<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LeaderboardSortItemsByPlayerBJ">LeaderboardSortItemsByPlayerBJ</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-boolean.shtml">boolean</a> ascending<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LeaderboardSortItemsByValue">LeaderboardSortItemsByValue</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="BUILT_IN-types-boolean.shtml">boolean</a> ascending<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#PlayerSetLeaderboard">PlayerSetLeaderboard</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> toPlayer, <a href="common_j-types-leaderboard.shtml">leaderboard</a> lb<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SaveLeaderboardHandle">SaveLeaderboardHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey, <a href="common_j-types-leaderboard.shtml">leaderboard</a> whichLeaderboard<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SaveLeaderboardHandleBJ">SaveLeaderboardHandleBJ</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> whichLeaderboard, <a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

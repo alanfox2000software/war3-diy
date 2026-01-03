@@ -1,0 +1,2212 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "BUTTON",
+            "name": "ScoreScreenTabButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.1,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.03,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "ScoreScreenTabButtonBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "HIGHLIGHT",
+                    "name": "ScoreScreenTabButtonBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "UI\\Glues\\ScoreScreen\\scorescreen-tab-hilight.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "ADD,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 2,
+            "type": "GLUECHECKBOX",
+            "name": "ScoreScreen5ColumnButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.0935,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.0125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "CheckBoxCheckHighlight",
+                    "child": [
+                        "ScoreScreen5ColumnButtonTemplateCheckHighlight,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "ScoreScreen5ColumnButtonTemplateMouseHighlight,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 3,
+                    "type": "HIGHLIGHT",
+                    "name": "ScoreScreen5ColumnButtonTemplateCheckHighlight",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "UI\\Glues\\ScoreScreen\\scorescreen-tab-hilight.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "ADD,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 4,
+                    "type": "HIGHLIGHT",
+                    "name": "ScoreScreen5ColumnButtonTemplateMouseHighlight",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "UI\\Glues\\ScoreScreen\\scorescreen-tab-hilight.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "ADD,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 5,
+            "type": "GLUECHECKBOX",
+            "name": "ScoreScreen4ColumnButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.1225,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.0125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "CheckBoxCheckHighlight",
+                    "child": [
+                        "ScoreScreen4ColumnButtonTemplateCheckHighlight,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "ScoreScreen4ColumnButtonTemplateHighlight,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 6,
+                    "type": "HIGHLIGHT",
+                    "name": "ScoreScreen4ColumnButtonTemplateCheckHighlight",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "UI\\Glues\\ScoreScreen\\scorescreen-tab-hilight.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "ADD,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 7,
+                    "type": "HIGHLIGHT",
+                    "name": "ScoreScreen4ColumnButtonTemplateHighlight",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "UI\\Glues\\ScoreScreen\\scorescreen-tab-hilight.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "ADD,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 8,
+            "type": "GLUETEXTBUTTON",
+            "name": "ScoreScreenBottomButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.1745,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.02925,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "ScoreScreenButtonBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "ScoreScreenBottomButtonTemplateHighlight,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 9,
+                    "type": "BACKDROP",
+                    "name": "ScoreScreenButtonBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\EscMenu\\Human\\blank-background.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.004",
+                                "0.004",
+                                "0.004",
+                                "0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Glues\\ScoreScreen\\scorescreen-buttonbackground.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 10,
+                    "type": "HIGHLIGHT",
+                    "name": "ScoreScreenBottomButtonTemplateHighlight",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "UI\\Glues\\ScoreScreen\\scorescreen-tab-hilight.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "ADD,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 11,
+            "type": "GLUECHECKBOX",
+            "name": "ScoreScreenBottomCheckButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.187,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.019,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "CheckBoxCheckHighlight",
+                    "child": [
+                        "ScoreScreenBottomButtonTemplateCheckHighlight,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "ScoreScreenBottomButtonTemplateMouseHighlight,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 12,
+                    "type": "HIGHLIGHT",
+                    "name": "ScoreScreenBottomButtonTemplateCheckHighlight",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "UI\\Glues\\ScoreScreen\\scorescreen-tab-hilight.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "ADD,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 13,
+                    "type": "HIGHLIGHT",
+                    "name": "ScoreScreenBottomButtonTemplateMouseHighlight",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "UI\\Glues\\ScoreScreen\\scorescreen-tab-hilight.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "ADD,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 14,
+            "type": "TEXT",
+            "name": "ScoreScreenTabTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYCENTER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.8",
+                        "0.64",
+                        "0.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 15,
+            "type": "TEXT",
+            "name": "ScoreScreenTabTextSelectedTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.015,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYCENTER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "0.86",
+                        "0.28",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 16,
+            "type": "TEXT",
+            "name": "ScoreScreenColumnHeaderTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.009,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYCENTER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 17,
+            "type": "FRAME",
+            "name": "ScoreScreenFrame",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 18,
+                    "type": "FRAME",
+                    "name": "ScoreScreenMainPanel",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameTEXT",
+                            "child": [
+                                "ScoreScreenTabTextSelected",
+                                "INHERITS",
+                                "ScoreScreenTabTextSelectedTemplate",
+                                "{"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 19,
+                            "type": "MODEL",
+                            "name": "ScoreScreenBackground",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackgroundArt",
+                                    "child": [
+                                        "UI\\Glues\\ScoreScreen\\ScoreScreen-Background\\ScoreScreen-Background.mdl,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "LayerStyle",
+                                    "child": [
+                                        "NOSHADING,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 20,
+                            "type": "MODEL",
+                            "name": "ScoreScreenPageTab",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackgroundArt",
+                                    "child": [
+                                        "UI\\Glues\\ScoreScreen\\ScoreScreen-Tabs\\ScoreScreen-Tabs.mdl,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "LayerStyle",
+                                    "child": [
+                                        "NOSHADING,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 21,
+                            "type": "FRAME",
+                            "name": "ScoreScreen5ColumnFrame",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "LayerStyle",
+                                    "child": [
+                                        "IGNORETRACKEVENTS,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 22,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "ScoreScreen5ColumnButton0",
+                                    "inherits": "ScoreScreen5ColumnButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,ScoreScreenBackground,TOP,-0.1865,-0.085,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 23,
+                                            "type": "TEXT",
+                                            "name": "ScoreScreen5ColumnHeader0",
+                                            "inherits": "ScoreScreenColumnHeaderTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "LayerStyle",
+                                                    "child": [
+                                                        "IGNORETRACKEVENTS,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "CENTER,ScoreScreen5ColumnButton0,CENTER,0,0,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 24,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "ScoreScreen5ColumnButton1",
+                                    "inherits": "ScoreScreen5ColumnButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,ScoreScreenBackground,TOP,-0.0703,-0.085,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 25,
+                                            "type": "TEXT",
+                                            "name": "ScoreScreen5ColumnHeader1",
+                                            "inherits": "ScoreScreenColumnHeaderTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "LayerStyle",
+                                                    "child": [
+                                                        "IGNORETRACKEVENTS,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "CENTER,ScoreScreen5ColumnButton1,CENTER,0,0,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 26,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "ScoreScreen5ColumnButton2",
+                                    "inherits": "ScoreScreen5ColumnButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,ScoreScreenBackground,TOP,0.0462,-0.085,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 27,
+                                            "type": "TEXT",
+                                            "name": "ScoreScreen5ColumnHeader2",
+                                            "inherits": "ScoreScreenColumnHeaderTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "LayerStyle",
+                                                    "child": [
+                                                        "IGNORETRACKEVENTS,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "CENTER,ScoreScreen5ColumnButton2,CENTER,0,0,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 28,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "ScoreScreen5ColumnButton3",
+                                    "inherits": "ScoreScreen5ColumnButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,ScoreScreenBackground,TOP,0.1627,-0.085,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 29,
+                                            "type": "TEXT",
+                                            "name": "ScoreScreen5ColumnHeader3",
+                                            "inherits": "ScoreScreenColumnHeaderTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "LayerStyle",
+                                                    "child": [
+                                                        "IGNORETRACKEVENTS,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "CENTER,ScoreScreen5ColumnButton3,CENTER,0,0,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 30,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "ScoreScreen5ColumnButton4",
+                                    "inherits": "ScoreScreen5ColumnButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,ScoreScreenBackground,TOP,0.28,-0.085,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 31,
+                                            "type": "TEXT",
+                                            "name": "ScoreScreen5ColumnHeader4",
+                                            "inherits": "ScoreScreenColumnHeaderTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "LayerStyle",
+                                                    "child": [
+                                                        "IGNORETRACKEVENTS,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "CENTER,ScoreScreen5ColumnButton4,CENTER,0,0,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 32,
+                            "type": "FRAME",
+                            "name": "ScoreScreen4ColumnFrame",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "LayerStyle",
+                                    "child": [
+                                        "IGNORETRACKEVENTS,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 33,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "ScoreScreen4ColumnButton0",
+                                    "inherits": "ScoreScreen4ColumnButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,ScoreScreenBackground,TOP,-0.172,-0.085,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 34,
+                                            "type": "TEXT",
+                                            "name": "ScoreScreen4ColumnHeader0",
+                                            "inherits": "ScoreScreenColumnHeaderTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "LayerStyle",
+                                                    "child": [
+                                                        "IGNORETRACKEVENTS,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "CENTER,ScoreScreen4ColumnButton0,CENTER,0,0,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 35,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "ScoreScreen4ColumnButton1",
+                                    "inherits": "ScoreScreen4ColumnButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,ScoreScreenBackground,TOP,-0.0273,-0.085,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 36,
+                                            "type": "TEXT",
+                                            "name": "ScoreScreen4ColumnHeader1",
+                                            "inherits": "ScoreScreenColumnHeaderTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "LayerStyle",
+                                                    "child": [
+                                                        "IGNORETRACKEVENTS,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "CENTER,ScoreScreen4ColumnButton1,CENTER,0,0,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 37,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "ScoreScreen4ColumnButton2",
+                                    "inherits": "ScoreScreen4ColumnButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,ScoreScreenBackground,TOP,0.1182,-0.085,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 38,
+                                            "type": "TEXT",
+                                            "name": "ScoreScreen4ColumnHeader2",
+                                            "inherits": "ScoreScreenColumnHeaderTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "LayerStyle",
+                                                    "child": [
+                                                        "IGNORETRACKEVENTS,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "CENTER,ScoreScreen4ColumnButton2,CENTER,0,0,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 39,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "ScoreScreen4ColumnButton3",
+                                    "inherits": "ScoreScreen4ColumnButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,ScoreScreenBackground,TOP,0.2647,-0.085,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 40,
+                                            "type": "TEXT",
+                                            "name": "ScoreScreen4ColumnHeader3",
+                                            "inherits": "ScoreScreenColumnHeaderTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "LayerStyle",
+                                                    "child": [
+                                                        "IGNORETRACKEVENTS,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "CENTER,ScoreScreen4ColumnButton3,CENTER,0,0,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 41,
+                            "type": "MODEL",
+                            "name": "ScoreScreenRaceArt",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "LayerStyle",
+                                    "child": [
+                                        "NOSHADING|IGNORETRACKEVENTS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 42,
+                            "type": "MODEL",
+                            "name": "ScoreScreenBarTop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackgroundArt",
+                                    "child": [
+                                        "UI\\Glues\\ScoreScreen\\ScoreScreen-TopBar\\ScoreScreen-TopBar.mdl,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,ScoreScreenFrame,TOPLEFT,0,-0.11,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "LayerStyle",
+                                    "child": [
+                                        "NOSHADING,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 43,
+                    "type": "TEXT",
+                    "name": "ScoreScreenTabText0",
+                    "inherits": "ScoreScreenTabTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,ScoreScreenBackground,TOP,-0.20,-0.036,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "SCORESCREEN_TAB0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 44,
+                    "type": "BUTTON",
+                    "name": "ScoreScreenTabButton0",
+                    "inherits": "ScoreScreenTabButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,ScoreScreenBackground,TOP,-0.20,-0.025,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 45,
+                    "type": "TEXT",
+                    "name": "ScoreScreenTabText1",
+                    "inherits": "ScoreScreenTabTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,ScoreScreenBackground,TOP,-0.074,-0.036,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "SCORESCREEN_TAB1,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 46,
+                    "type": "BUTTON",
+                    "name": "ScoreScreenTabButton1",
+                    "inherits": "ScoreScreenTabButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,ScoreScreenBackground,TOP,-0.074,-0.025,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 47,
+                    "type": "TEXT",
+                    "name": "ScoreScreenTabText2",
+                    "inherits": "ScoreScreenTabTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,ScoreScreenBackground,TOP,0.055,-0.036,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "SCORESCREEN_TAB2,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 48,
+                    "type": "BUTTON",
+                    "name": "ScoreScreenTabButton2",
+                    "inherits": "ScoreScreenTabButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,ScoreScreenBackground,TOP,0.055,-0.025,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 49,
+                    "type": "TEXT",
+                    "name": "ScoreScreenTabText3",
+                    "inherits": "ScoreScreenTabTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,ScoreScreenBackground,TOP,0.18,-0.036,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "SCORESCREEN_TAB3,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 50,
+                    "type": "BUTTON",
+                    "name": "ScoreScreenTabButton3",
+                    "inherits": "ScoreScreenTabButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,ScoreScreenBackground,TOP,0.18,-0.025,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 51,
+                    "type": "TEXT",
+                    "name": "ScoreScreenElapsedTimeLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "ScoreScreenFrame,",
+                                "BOTTOMLEFT,",
+                                "0.0094,",
+                                "0.05,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_ELAPSED_TIME,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 52,
+                    "type": "TEXT",
+                    "name": "ScoreScreenElapsedTimeValue",
+                    "inherits": "StandardValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "ScoreScreenElapsedTimeLabel,",
+                                "RIGHT,",
+                                "0.01,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 53,
+                    "type": "GLUECHECKBOX",
+                    "name": "ScoreScreenTeamsButton",
+                    "inherits": "ScoreScreenBottomCheckButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.0365,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.0125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,ScoreScreenBackground,TOP,-0.374,-0.085,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 54,
+                            "type": "TEXT",
+                            "name": "ScoreScreenTeamsText",
+                            "inherits": "ScoreScreenColumnHeaderTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "LayerStyle",
+                                    "child": [
+                                        "IGNORETRACKEVENTS,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "CENTER,ScoreScreenTeamsButton,CENTER,0,0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "TEAMS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 55,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "ScoreScreenSaveReplayButton",
+                    "inherits": "ScoreScreenBottomButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,ScoreScreenBackground,TOP,0.03875,-0.541,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlShortcutKey",
+                            "child": [
+                                "S,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusNext",
+                            "child": [
+                                "ScoreScreenOkButton,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "ScoreScreenSaveReplayText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 56,
+                            "type": "TEXT",
+                            "name": "ScoreScreenSaveReplayText",
+                            "inherits": "ScoreScreenTabTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "CENTER,ScoreScreenSaveReplayButton,CENTER,0,0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "KEY_SAVE_REPLAY,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 57,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "ScoreScreenReplaySavedButton",
+                    "inherits": "ScoreScreenBottomButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,ScoreScreenBackground,TOP,0.03875,-0.541,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "ScoreScreenReplaySavedText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 58,
+                            "type": "TEXT",
+                            "name": "ScoreScreenReplaySavedText",
+                            "inherits": "ScoreScreenTabTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "CENTER,ScoreScreenReplaySavedButton,CENTER,0,0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "REPLAY_SAVED,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 59,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "ScoreScreenOkButton",
+                    "inherits": "ScoreScreenBottomButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,ScoreScreenBackground,TOP,0.232125,-0.541,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlShortcutKey",
+                            "child": [
+                                "O,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusDefault,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusNext",
+                            "child": [
+                                "ScoreScreenSaveReplayButton,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "ScoreScreenOkText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 60,
+                            "type": "TEXT",
+                            "name": "ScoreScreenOkText",
+                            "inherits": "ScoreScreenTabTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "CENTER,ScoreScreenOkButton,CENTER,0,0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "OK_WHITE,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [],
+    [
+        {
+            "fid": 61,
+            "type": "FRAME",
+            "name": "SaveReplayPanel",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetPoint",
+                    "child": [
+                        "CENTER,",
+                        "ScoreScreenFrame,",
+                        "CENTER,",
+                        "0.0,",
+                        "0.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.432,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.288,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 62,
+                    "type": "BACKDROP",
+                    "name": "SaveReplayBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuBackground,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.048,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.256,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.01",
+                                "0.01",
+                                "0.01",
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "EscMenuBorder,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 63,
+                    "type": "FRAME",
+                    "name": "ReplayListFrame",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "SaveReplayPanel,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.048,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.362,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.135,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 64,
+                    "type": "TEXT",
+                    "name": "SaveReplayTitleText",
+                    "inherits": "StandardTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "SaveReplayPanel,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "SAVE_REPLAY,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 65,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "SaveReplaySaveButton",
+                    "inherits": "EscMenuButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "SaveReplayPanel,",
+                                "BOTTOMLEFT,",
+                                "0.035,",
+                                "0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.118,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusDefault,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusNext",
+                            "child": [
+                                "SaveReplayDeleteButton,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlShortcutKey",
+                            "child": [
+                                "E,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "SaveReplaySaveButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 66,
+                            "type": "TEXT",
+                            "name": "SaveReplaySaveButtonText",
+                            "inherits": "StandardButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "KEY_SAVE_E,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 67,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "SaveReplayDeleteButton",
+                    "inherits": "EscMenuButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "SaveReplaySaveButton,",
+                                "RIGHT,",
+                                "0.005,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.118,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusNext",
+                            "child": [
+                                "SaveReplayCancelButton,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlShortcutKey",
+                            "child": [
+                                "D,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "SaveReplayDeleteButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 68,
+                            "type": "TEXT",
+                            "name": "SaveReplayDeleteButtonText",
+                            "inherits": "StandardButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "KEY_DELETE,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 69,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "SaveReplayCancelButton",
+                    "inherits": "EscMenuButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "SaveReplayDeleteButton,",
+                                "RIGHT,",
+                                "0.005,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.118,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusNext",
+                            "child": [
+                                "SaveReplayFileEditBox,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlShortcutKey",
+                            "child": [
+                                "A,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "SaveReplayCancelButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 70,
+                            "type": "TEXT",
+                            "name": "SaveReplayCancelButtonText",
+                            "inherits": "StandardButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "KEY_CANCEL,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 71,
+                    "type": "EDITBOX",
+                    "name": "SaveReplayFileEditBox",
+                    "inherits": "StandardDecoratedEditBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.362,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.037,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "SaveReplayDeleteButton,",
+                                "TOP,",
+                                "0.0,",
+                                "0.005,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusNext",
+                            "child": [
+                                "SaveReplaySaveButton,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "EditTextFrame",
+                            "child": [
+                                "SaveReplayFileEditBoxText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 72,
+                            "type": "TEXT",
+                            "name": "SaveReplayFileEditBoxText",
+                            "inherits": "StandardDecoratedEditBoxTextTemplate",
+                            "fields": [],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

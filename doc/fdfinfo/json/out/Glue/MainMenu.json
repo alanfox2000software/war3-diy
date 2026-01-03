@@ -1,0 +1,2719 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "MainMenuFrame",
+            "inherits": "StandardFrameTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "SPRITE",
+                    "name": "WarCraftIIILogo",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackgroundArt",
+                            "child": [
+                                "UI\\Glues\\MainMenu\\WarCraftIIILogo\\WarCraftIIILogo.mdl,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "MainMenuFrame,",
+                                "TOPLEFT,",
+                                "0.13,",
+                                "0.04,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "FRAME",
+                    "name": "RealmSelect",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 3,
+                            "type": "TEXT",
+                            "name": "RealmSelectText",
+                            "inherits": "StandardTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "MainMenuFrame,",
+                                        "TOPLEFT,",
+                                        "0.02625,",
+                                        "-0.109,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "BNET_REALM_SELECT,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 4,
+                            "type": "TEXT",
+                            "name": "RealmSelectMessage",
+                            "inherits": "StandardSmallTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "RealmSelectText,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.005,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.275,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.06,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "BNET_REALM_MESSAGE,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYLEFT,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationV",
+                                    "child": [
+                                        "JUSTIFYTOP,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 5,
+                            "type": "FRAME",
+                            "name": "RealmListContainer",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "RealmSelectMessage,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "0.006,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.275,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.189,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 6,
+                            "type": "BACKDROP",
+                            "name": "RealmSelectOKBackdrop",
+                            "inherits": "StandardMenuSmallButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.16,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.05,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "MainMenuFrame,",
+                                        "TOPLEFT,",
+                                        "0.207,",
+                                        "-0.370,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropMirrored,",
+                                    "child": []
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 7,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "RealmSelectOKButton",
+                                    "inherits": "StandardSmallButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.079,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,RealmSelectOKBackdrop,TOPLEFT,",
+                                                "0.008,",
+                                                "-0.013,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "RealmSelectOKText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 8,
+                                            "type": "TEXT",
+                                            "name": "RealmSelectOKText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "OK,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 9,
+                            "type": "BACKDROP",
+                            "name": "RealmSelectCancelBackdrop",
+                            "inherits": "StandardMenuSmallButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.16,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.05,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "RIGHT,",
+                                        "RealmSelectOKBackdrop,",
+                                        "LEFT,",
+                                        "-0.02,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropMirrored,",
+                                    "child": []
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 10,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "RealmSelectCancelButton",
+                                    "inherits": "StandardSmallButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.079,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,RealmSelectCancelBackdrop,TOPLEFT,",
+                                                "0.008,",
+                                                "-0.013,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "RealmSelectCancelText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 11,
+                                            "type": "TEXT",
+                                            "name": "RealmSelectCancelText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "CANCEL,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 12,
+                    "type": "FRAME",
+                    "name": "ControlLayer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 13,
+                            "type": "BACKDROP",
+                            "name": "SinglePlayerBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,MainMenuFrame,TOPRIGHT,",
+                                        "-0.015,",
+                                        "-0.110625,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 14,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "SinglePlayerButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,SinglePlayerBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "S,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusDefault,",
+                                            "child": []
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "MultiPlayerButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "SinglePlayerButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 15,
+                                            "type": "TEXT",
+                                            "name": "SinglePlayerButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_SINGLE_PLAYER,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 16,
+                            "type": "BACKDROP",
+                            "name": "BattleNetBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,SinglePlayerBackdrop,BOTTOMRIGHT,",
+                                        "0,",
+                                        "0.005,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 17,
+                                    "type": "GLUEBUTTON",
+                                    "name": "RealmButton",
+                                    "inherits": "StandardIconicButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,",
+                                                "BattleNetBackdrop,",
+                                                "TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlBackdrop",
+                                            "child": [
+                                                "RealmButtonBackdropTemplate,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlPushedBackdrop",
+                                            "child": [
+                                                "RealmButtonPushedBackdropTemplate,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlDisabledBackdrop",
+                                            "child": [
+                                                "RealmButtonDisabledBackdropTemplate,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 18,
+                                            "type": "BACKDROP",
+                                            "name": "RealmButtonBackdropTemplate",
+                                            "inherits": "",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackground",
+                                                    "child": [
+                                                        "UI\\Widgets\\BattleNet\\bnet-mainmenu-options-up.blp,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropCornerFlags",
+                                                    "child": [
+                                                        "UL|UR|BL|BR|T|L|B|R,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropCornerSize",
+                                                    "child": [
+                                                        "0.0155,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackgroundSize",
+                                                    "child": [
+                                                        "0.031,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackgroundInsets",
+                                                    "child": [
+                                                        "0.004",
+                                                        "0.004",
+                                                        "0.004",
+                                                        "0.004,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropEdgeFile",
+                                                    "child": [
+                                                        "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder.blp,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        },
+                                        {
+                                            "fid": 19,
+                                            "type": "BACKDROP",
+                                            "name": "RealmButtonPushedBackdropTemplate",
+                                            "inherits": "",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackground",
+                                                    "child": [
+                                                        "UI\\Widgets\\BattleNet\\bnet-mainmenu-options-down.blp,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropCornerFlags",
+                                                    "child": [
+                                                        "UL|UR|BL|BR|T|L|B|R,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropCornerSize",
+                                                    "child": [
+                                                        "0.0155,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackgroundSize",
+                                                    "child": [
+                                                        "0.031,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackgroundInsets",
+                                                    "child": [
+                                                        "0.004",
+                                                        "0.004",
+                                                        "0.004",
+                                                        "0.004,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropEdgeFile",
+                                                    "child": [
+                                                        "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Down.blp,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        },
+                                        {
+                                            "fid": 20,
+                                            "type": "BACKDROP",
+                                            "name": "RealmButtonDisabledBackdropTemplate",
+                                            "inherits": "",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackground",
+                                                    "child": [
+                                                        "UI\\Widgets\\BattleNet\\bnet-mainmenu-options-disabled.blp,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropCornerFlags",
+                                                    "child": [
+                                                        "UL|UR|BL|BR|T|L|B|R,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropCornerSize",
+                                                    "child": [
+                                                        "0.0155,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackgroundSize",
+                                                    "child": [
+                                                        "0.031,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackgroundInsets",
+                                                    "child": [
+                                                        "0.004",
+                                                        "0.004",
+                                                        "0.004",
+                                                        "0.004,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropEdgeFile",
+                                                    "child": [
+                                                        "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Disabled.blp,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 21,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "BattleNetButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.149,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,",
+                                                "RealmButton,",
+                                                "TOPLEFT,",
+                                                "0.001,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "B,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "LocalAreaNetworkButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "BattleNetButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 22,
+                                            "type": "TEXT",
+                                            "name": "BattleNetButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_BATTLE_NET,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 23,
+                            "type": "BACKDROP",
+                            "name": "LocalAreaNetworkBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,BattleNetBackdrop,BOTTOMRIGHT,0,",
+                                        "0.005,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 24,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "LocalAreaNetworkButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,LocalAreaNetworkBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "L,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "OptionsButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "LocalAreaNetworkButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 25,
+                                            "type": "TEXT",
+                                            "name": "LocalAreaNetworkButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_LOCAL_AREA_NETWORK,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 26,
+                            "type": "BACKDROP",
+                            "name": "OptionsBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,LocalAreaNetworkBackdrop,BOTTOMRIGHT,0,0.005,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 27,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "OptionsButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,OptionsBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "O,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "CreditsButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "OptionsButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 28,
+                                            "type": "TEXT",
+                                            "name": "OptionsButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_OPTIONS,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 29,
+                            "type": "BACKDROP",
+                            "name": "CreditsBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,OptionsBackdrop,BOTTOMRIGHT,0,0.005,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 30,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "CreditsButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,CreditsBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "C,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "ExitButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "CreditsButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 31,
+                                            "type": "TEXT",
+                                            "name": "CreditsButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_CREDITS,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 32,
+                            "type": "BACKDROP",
+                            "name": "ExitBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.24,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMRIGHT,MainMenuFrame,BOTTOMRIGHT,-0.015,0.05,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 33,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "ExitButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.168,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,ExitBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "Q,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "ExitButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 34,
+                                            "type": "TEXT",
+                                            "name": "ExitButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_QUIT,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 35,
+            "type": "GLUETEXTBUTTON",
+            "name": "DebugButton",
+            "inherits": "StandardBorderedButtonTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetPoint",
+                    "child": [
+                        "BOTTOMLEFT,MainMenuFrame,BOTTOMLEFT,0.18,0.03,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlShortcutKey",
+                    "child": [
+                        "E,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonText",
+                    "child": [
+                        "DebugButtonText,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 36,
+                    "type": "TEXT",
+                    "name": "DebugButtonText",
+                    "inherits": "StandardButtonTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "KEY_DEBUG,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 37,
+            "type": "GLUETEXTBUTTON",
+            "name": "ReplayButton",
+            "inherits": "StandardBorderedButtonTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetPoint",
+                    "child": [
+                        "LEFT,DebugButton,RIGHT,0.01,0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlShortcutKey",
+                    "child": [
+                        "Y,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonText",
+                    "child": [
+                        "ReplayButtonText,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 38,
+                    "type": "TEXT",
+                    "name": "ReplayButtonText",
+                    "inherits": "StandardButtonTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "KEY_REPLAY,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 39,
+            "type": "DIALOG",
+            "name": "QuickReplayDialog",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.23,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.35,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DialogBackdrop",
+                    "child": [
+                        "ReplayBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 40,
+                    "type": "BACKDROP",
+                    "name": "ReplayBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-background.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.064,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.128,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.01",
+                                "0.01",
+                                "0.01",
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-border.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 41,
+                    "type": "TEXT",
+                    "name": "ReplayTitleText",
+                    "inherits": "StandardTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "QuickReplayDialog,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.04,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "REPLAY_OPTIONS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 42,
+                    "type": "GLUECHECKBOX",
+                    "name": "IgnoreSyncValues",
+                    "inherits": "StandardCheckBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "QuickReplayDialog,",
+                                "TOPLEFT,",
+                                "0.04,",
+                                "-0.07,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 43,
+                    "type": "TEXT",
+                    "name": "IgnoreSyncValuesLabel",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "IgnoreSyncValues,",
+                                "RIGHT,",
+                                "0.0045,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "IGNORESYNCVALUES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 44,
+                    "type": "GLUECHECKBOX",
+                    "name": "ReRecordSyncValues",
+                    "inherits": "StandardCheckBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "IgnoreSyncValues,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 45,
+                    "type": "TEXT",
+                    "name": "ReRecordSyncValuesLabel",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "ReRecordSyncValues,",
+                                "RIGHT,",
+                                "0.0045,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "RERECORDSYNCVALUES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 46,
+                    "type": "GLUECHECKBOX",
+                    "name": "OutputNetCommands",
+                    "inherits": "StandardCheckBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ReRecordSyncValues,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 47,
+                    "type": "TEXT",
+                    "name": "OutputNetCommandsLabel",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "OutputNetCommands,",
+                                "RIGHT,",
+                                "0.0045,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "OUTPUTNETCOMMANDS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 48,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "StartReplayButton",
+                    "inherits": "StandardBorderedButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.13,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,QuickReplayDialog,BOTTOM,",
+                                "-0.0,",
+                                "0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlShortcutKey",
+                            "child": [
+                                "S,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "StartReplayButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 49,
+                            "type": "TEXT",
+                            "name": "StartReplayButtonText",
+                            "inherits": "StandardButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "KEY_START_REPLAY,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 50,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "CancelReplayButton",
+                    "inherits": "StandardBorderedButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.13,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,QuickReplayDialog,BOTTOM,",
+                                "0.01,",
+                                "0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlShortcutKey",
+                            "child": [
+                                "A,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "CancelReplayButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 51,
+                            "type": "TEXT",
+                            "name": "CancelReplayButtonText",
+                            "inherits": "StandardButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "KEY_CANCEL,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 52,
+            "type": "DIALOG",
+            "name": "QuickReplayConfirmDialog",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.26,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.35,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DialogBackdrop",
+                    "child": [
+                        "ReplayConfirmBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 53,
+                    "type": "BACKDROP",
+                    "name": "ReplayConfirmBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-background.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.064,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.128,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.01",
+                                "0.01",
+                                "0.01",
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-border.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 54,
+                    "type": "TEXT",
+                    "name": "ConfirmReplayTitleText",
+                    "inherits": "StandardTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "QuickReplayConfirmDialog,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.04,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "REPLAY_CONFIRM,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 55,
+                    "type": "TEXT",
+                    "name": "DescriptionLabel",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.26,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "QuickReplayConfirmDialog,",
+                                "TOPLEFT,",
+                                "0.04,",
+                                "-0.07,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "REPLAY_CONFIRM_DESC,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 56,
+                    "type": "TEXT",
+                    "name": "ReplayNetVersionLabel",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "DescriptionLabel,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.012,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "REPLAY_CONFIRM_RE_NETVERSION,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 57,
+                    "type": "TEXT",
+                    "name": "ReplayNetVersion",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "ReplayNetVersionLabel,",
+                                "RIGHT,",
+                                "0.0045,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                ","
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 58,
+                    "type": "TEXT",
+                    "name": "ReplayBuildLabel",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ReplayNetVersionLabel,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "REPLAY_CONFIRM_RE_BUILD,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 59,
+                    "type": "TEXT",
+                    "name": "ReplayBuild",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "ReplayBuildLabel,",
+                                "RIGHT,",
+                                "0.0045,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                ","
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 60,
+                    "type": "TEXT",
+                    "name": "GameNetVersionLabel",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ReplayBuildLabel,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "REPLAY_CONFIRM_GA_NETVERSION,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 61,
+                    "type": "TEXT",
+                    "name": "GameNetVersion",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "GameNetVersionLabel,",
+                                "RIGHT,",
+                                "0.0045,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                ","
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 62,
+                    "type": "TEXT",
+                    "name": "GameBuildLabel",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "GameNetVersionLabel,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "REPLAY_CONFIRM_GA_BUILD,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 63,
+                    "type": "TEXT",
+                    "name": "GameBuild",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "GameBuildLabel,",
+                                "RIGHT,",
+                                "0.0045,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                ","
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 64,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "StartConfirmReplayButton",
+                    "inherits": "StandardBorderedButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.13,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,QuickReplayConfirmDialog,BOTTOM,",
+                                "-0.0,",
+                                "0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlShortcutKey",
+                            "child": [
+                                "S,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "StartReplayButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 65,
+                            "type": "TEXT",
+                            "name": "StartReplayButtonText",
+                            "inherits": "StandardButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "KEY_START_REPLAY,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 66,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "CancelConfirmReplayButton",
+                    "inherits": "StandardBorderedButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.13,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,QuickReplayConfirmDialog,BOTTOM,",
+                                "0.01,",
+                                "0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlShortcutKey",
+                            "child": [
+                                "A,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "CancelReplayButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 67,
+                            "type": "TEXT",
+                            "name": "CancelReplayButtonText",
+                            "inherits": "StandardButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "KEY_CANCEL,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 68,
+            "type": "DIALOG",
+            "name": "BattleNetPatchDialog",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.2,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.35,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DialogBackdrop",
+                    "child": [
+                        "PatchBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 69,
+                    "type": "BACKDROP",
+                    "name": "PatchBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-background.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.064,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.128,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.01",
+                                "0.01",
+                                "0.01",
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-border.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 70,
+                    "type": "TEXT",
+                    "name": "PatchTitleText",
+                    "inherits": "StandardTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "0.99",
+                                "0.827",
+                                "0.0705",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "BattleNetPatchDialog,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.04,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "DOWNLOADING_UPDATE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 71,
+                    "type": "TEXT",
+                    "name": "PatchInfoText",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.30,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "PatchTitleText,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.02,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "PATCH_RESTART,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 72,
+                    "type": "BACKDROP",
+                    "name": "PatchButtonBackdrop",
+                    "inherits": "StandardMenuSingleButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "BattleNetPatchDialog,",
+                                "BOTTOM,",
+                                "-0.015,",
+                                "0.015,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 73,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "PatchButton",
+                            "inherits": "StandardButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.159,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,PatchButtonBackdrop,TOPRIGHT,",
+                                        "-0.032,",
+                                        "-0.015625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "PatchButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 74,
+                                    "type": "TEXT",
+                                    "name": "PatchButtonText",
+                                    "inherits": "StandardButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "CANCEL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 75,
+                    "type": "SPRITE",
+                    "name": "PatchProgressBar",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "BattleNetPatchDialog,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "0.07875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackgroundArt",
+                            "child": [
+                                "UI\\Glues\\BattleNet\\ProgressBar\\BattlenetProgressBar.mdl,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 76,
+                            "type": "TEXT",
+                            "name": "PatchProgressText",
+                            "inherits": "StandardTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "CENTER,",
+                                        "PatchProgressBar,",
+                                        "CENTER,",
+                                        "0.0,",
+                                        "-0.0125,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 77,
+            "type": "DIALOG",
+            "name": "BattleNetConnectDialog",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.2,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.35,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DialogBackdrop",
+                    "child": [
+                        "ConnectBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 78,
+                    "type": "BACKDROP",
+                    "name": "ConnectBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-background.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.064,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.128,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.01",
+                                "0.01",
+                                "0.01",
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-border.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 79,
+                    "type": "TEXT",
+                    "name": "ConnectTitleText",
+                    "inherits": "StandardTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "BattleNetConnectDialog,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.04,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "0.99",
+                                "0.827",
+                                "0.0705",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_CONNECT_TITLE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 80,
+                    "type": "TEXT",
+                    "name": "ConnectInfoText",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.30,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ConnectTitleText,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.025,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 81,
+                    "type": "BACKDROP",
+                    "name": "ConnectButtonBackdrop",
+                    "inherits": "StandardMenuSingleButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "BattleNetConnectDialog,",
+                                "BOTTOM,",
+                                "-0.015,",
+                                "0.015,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 82,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "ConnectButton",
+                            "inherits": "StandardButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.159,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,ConnectButtonBackdrop,TOPRIGHT,",
+                                        "-0.032,",
+                                        "-0.015625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "ConnectButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 83,
+                                    "type": "TEXT",
+                                    "name": "ConnectButtonText",
+                                    "inherits": "StandardButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "CANCEL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

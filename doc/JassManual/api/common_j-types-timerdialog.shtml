@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type timerdialog</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type timerdialog</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> <a href="common_j-types-agent.shtml">agent</a> <strong>&gt;</strong> timerdialog</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#80">80</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">timerdialog</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf">
+<p><a href="Blizzard_j-variables.shtml">Blizzard.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#faffbf"></td><td bgcolor="#faffbf">
+<strong><a href="Blizzard_j-variables.shtml#bj_crippledTimerWindows">bj_crippledTimerWindows</a>,
+<a href="Blizzard_j-variables.shtml#bj_finishSoonTimerDialog">bj_finishSoonTimerDialog</a>,
+<a href="Blizzard_j-variables.shtml#bj_lastCreatedTimerDialog">bj_lastCreatedTimerDialog</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">timerdialog</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateTimerDialog">CreateTimerDialog</a></strong> <strong>(</strong><a href="common_j-types-timer.shtml">timer</a> t<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-timerdialog.shtml">timerdialog</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CreateTimerDialogBJ">CreateTimerDialogBJ</a></strong> <strong>(</strong><a href="common_j-types-timer.shtml">timer</a> t, <a href="BUILT_IN-types-string.shtml">string</a> title<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-timerdialog.shtml">timerdialog</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetLastCreatedTimerDialogBJ">GetLastCreatedTimerDialogBJ</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-timerdialog.shtml">timerdialog</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LoadTimerDialogHandle">LoadTimerDialogHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-timerdialog.shtml">timerdialog</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LoadTimerDialogHandleBJ">LoadTimerDialogHandleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-timerdialog.shtml">timerdialog</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">timerdialog</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#DestroyTimerDialog">DestroyTimerDialog</a></strong> <strong>(</strong><a href="common_j-types-timerdialog.shtml">timerdialog</a> whichDialog<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#DestroyTimerDialogBJ">DestroyTimerDialogBJ</a></strong> <strong>(</strong><a href="common_j-types-timerdialog.shtml">timerdialog</a> td<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IsTimerDialogDisplayed">IsTimerDialogDisplayed</a></strong> <strong>(</strong><a href="common_j-types-timerdialog.shtml">timerdialog</a> whichDialog<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SaveTimerDialogHandle">SaveTimerDialogHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey, <a href="common_j-types-timerdialog.shtml">timerdialog</a> whichTimerdialog<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SaveTimerDialogHandleBJ">SaveTimerDialogHandleBJ</a></strong> <strong>(</strong><a href="common_j-types-timerdialog.shtml">timerdialog</a> whichTimerdialog, <a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TimerDialogDisplay">TimerDialogDisplay</a></strong> <strong>(</strong><a href="common_j-types-timerdialog.shtml">timerdialog</a> whichDialog, <a href="BUILT_IN-types-boolean.shtml">boolean</a> display<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#TimerDialogDisplayBJ">TimerDialogDisplayBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> show, <a href="common_j-types-timerdialog.shtml">timerdialog</a> td<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#TimerDialogDisplayForPlayerBJ">TimerDialogDisplayForPlayerBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> show, <a href="common_j-types-timerdialog.shtml">timerdialog</a> td, <a href="common_j-types-player.shtml">player</a> whichPlayer<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TimerDialogSetRealTimeRemaining">TimerDialogSetRealTimeRemaining</a></strong> <strong>(</strong><a href="common_j-types-timerdialog.shtml">timerdialog</a> whichDialog, <a href="BUILT_IN-types-real.shtml">real</a> timeRemaining<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TimerDialogSetSpeed">TimerDialogSetSpeed</a></strong> <strong>(</strong><a href="common_j-types-timerdialog.shtml">timerdialog</a> whichDialog, <a href="BUILT_IN-types-real.shtml">real</a> speedMultFactor<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#TimerDialogSetSpeedBJ">TimerDialogSetSpeedBJ</a></strong> <strong>(</strong><a href="common_j-types-timerdialog.shtml">timerdialog</a> td, <a href="BUILT_IN-types-real.shtml">real</a> speedMultFactor<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TimerDialogSetTimeColor">TimerDialogSetTimeColor</a></strong> <strong>(</strong><a href="common_j-types-timerdialog.shtml">timerdialog</a> whichDialog, <a href="BUILT_IN-types-integer.shtml">integer</a> red, <a href="BUILT_IN-types-integer.shtml">integer</a> green, <a href="BUILT_IN-types-integer.shtml">integer</a> blue, <a href="BUILT_IN-types-integer.shtml">integer</a> alpha<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#TimerDialogSetTimeColorBJ">TimerDialogSetTimeColorBJ</a></strong> <strong>(</strong><a href="common_j-types-timerdialog.shtml">timerdialog</a> td, <a href="BUILT_IN-types-real.shtml">real</a> red, <a href="BUILT_IN-types-real.shtml">real</a> green, <a href="BUILT_IN-types-real.shtml">real</a> blue, <a href="BUILT_IN-types-real.shtml">real</a> transparency<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TimerDialogSetTitle">TimerDialogSetTitle</a></strong> <strong>(</strong><a href="common_j-types-timerdialog.shtml">timerdialog</a> whichDialog, <a href="BUILT_IN-types-string.shtml">string</a> title<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#TimerDialogSetTitleBJ">TimerDialogSetTitleBJ</a></strong> <strong>(</strong><a href="common_j-types-timerdialog.shtml">timerdialog</a> td, <a href="BUILT_IN-types-string.shtml">string</a> title<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TimerDialogSetTitleColor">TimerDialogSetTitleColor</a></strong> <strong>(</strong><a href="common_j-types-timerdialog.shtml">timerdialog</a> whichDialog, <a href="BUILT_IN-types-integer.shtml">integer</a> red, <a href="BUILT_IN-types-integer.shtml">integer</a> green, <a href="BUILT_IN-types-integer.shtml">integer</a> blue, <a href="BUILT_IN-types-integer.shtml">integer</a> alpha<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#TimerDialogSetTitleColorBJ">TimerDialogSetTitleColorBJ</a></strong> <strong>(</strong><a href="common_j-types-timerdialog.shtml">timerdialog</a> td, <a href="BUILT_IN-types-real.shtml">real</a> red, <a href="BUILT_IN-types-real.shtml">real</a> green, <a href="BUILT_IN-types-real.shtml">real</a> blue, <a href="BUILT_IN-types-real.shtml">real</a> transparency<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

@@ -1,0 +1,440 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "Texture",
+            "name": "UpperMenuButtonBackground",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "File",
+                    "child": [
+                        "UpperMenuButtonTexture,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "TexCoord",
+                    "child": [
+                        "0.0,",
+                        "0.6640625,",
+                        "0.0,",
+                        "0.171875,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "Texture",
+            "name": "UpperMenuButtonPushedBackground",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "File",
+                    "child": [
+                        "UpperMenuButtonTexture,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "TexCoord",
+                    "child": [
+                        "0.0,",
+                        "0.6640625,",
+                        "0.25,",
+                        "0.421875,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 2,
+            "type": "Texture",
+            "name": "UpperMenuButtonDisabledBackground",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "File",
+                    "child": [
+                        "UpperMenuButtonTexture,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "TexCoord",
+                    "child": [
+                        "0.0,",
+                        "0.6640625,",
+                        "0.5,",
+                        "0.671875,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 3,
+            "type": "Texture",
+            "name": "UpperMenuButtonHighlight",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "File",
+                    "child": [
+                        "UpperMenuButtonTexture,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "TexCoord",
+                    "child": [
+                        "0.0,",
+                        "0.6640625,",
+                        "0.75,",
+                        "0.921875,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "AlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 4,
+            "type": "SIMPLEBUTTON",
+            "name": "UpperButtonBarButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.085,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.022,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonPushedTextOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "NormalTexture",
+                    "child": [
+                        "UpperMenuButtonBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PushedTexture",
+                    "child": [
+                        "UpperMenuButtonPushedBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DisabledTexture",
+                    "child": [
+                        "UpperMenuButtonDisabledBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "UseHighlight",
+                    "child": [
+                        "UpperMenuButtonHighlight,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 5,
+            "type": "String",
+            "name": "UpperButtonBarButtonTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Font",
+                    "child": [
+                        "MasterFont,0.01,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 6,
+            "type": "String",
+            "name": "UpperButtonBarButtonDisabledTextTemplate",
+            "inherits": "UpperButtonBarButtonTextTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.4",
+                        "0.4",
+                        "0.4,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 7,
+            "type": "String",
+            "name": "UpperButtonBarButtonHighlightTextTemplate",
+            "inherits": "UpperButtonBarButtonTextTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "0.83",
+                        "0.07,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 8,
+            "type": "SIMPLEFRAME",
+            "name": "UpperButtonBarFrame",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.34,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.022,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 9,
+                    "type": "SIMPLEBUTTON",
+                    "name": "UpperButtonBarQuestsButton",
+                    "inherits": "UpperButtonBarButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,UpperButtonBarFrame,TOPLEFT,0.002,0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "NormalText",
+                            "child": [
+                                "UpperButtonBarButtonTextTemplate",
+                                "KEY_QUESTS,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DisabledText",
+                            "child": [
+                                "UpperButtonBarButtonDisabledTextTemplate",
+                                "QUESTS,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightText",
+                            "child": [
+                                "UpperButtonBarButtonHighlightTextTemplate",
+                                "KEY_QUESTS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 10,
+                    "type": "SIMPLEBUTTON",
+                    "name": "UpperButtonBarMenuButton",
+                    "inherits": "UpperButtonBarButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,UpperButtonBarQuestsButton,RIGHT,0,0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "NormalText",
+                            "child": [
+                                "UpperButtonBarButtonTextTemplate",
+                                "KEY_MENU,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DisabledText",
+                            "child": [
+                                "UpperButtonBarButtonDisabledTextTemplate",
+                                "MENU,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightText",
+                            "child": [
+                                "UpperButtonBarButtonHighlightTextTemplate",
+                                "KEY_MENU,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 11,
+                    "type": "SIMPLEBUTTON",
+                    "name": "UpperButtonBarAlliesButton",
+                    "inherits": "UpperButtonBarButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,UpperButtonBarMenuButton,RIGHT,0,0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "NormalText",
+                            "child": [
+                                "UpperButtonBarButtonTextTemplate",
+                                "KEY_ALLIES,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DisabledText",
+                            "child": [
+                                "UpperButtonBarButtonDisabledTextTemplate",
+                                "ALLIES,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightText",
+                            "child": [
+                                "UpperButtonBarButtonHighlightTextTemplate",
+                                "KEY_ALLIES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 12,
+                    "type": "SIMPLEBUTTON",
+                    "name": "UpperButtonBarChatButton",
+                    "inherits": "UpperButtonBarButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,UpperButtonBarAlliesButton,RIGHT,0,0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "NormalText",
+                            "child": [
+                                "UpperButtonBarButtonTextTemplate",
+                                "KEY_CHAT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DisabledText",
+                            "child": [
+                                "UpperButtonBarButtonDisabledTextTemplate",
+                                "CHAT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightText",
+                            "child": [
+                                "UpperButtonBarButtonHighlightTextTemplate",
+                                "KEY_CHAT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

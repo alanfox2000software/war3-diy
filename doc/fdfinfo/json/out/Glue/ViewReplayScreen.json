@@ -1,0 +1,410 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "ViewReplayScreen",
+            "inherits": "StandardFrameTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "TabFocusPush,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "FRAME",
+                    "name": "GameSettingsPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 2,
+                            "type": "TEXT",
+                            "name": "ViewReplayTitle",
+                            "inherits": "StandardTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "ViewReplayScreen,",
+                                        "TOPLEFT,",
+                                        "0.02625,",
+                                        "-0.039,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "VIEW_REPLAY,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 3,
+                            "type": "FRAME",
+                            "name": "FileListFrame",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "ViewReplayTitle,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.37,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.325,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 4,
+                    "type": "FRAME",
+                    "name": "MapInfoPaneContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.271875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.223125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ViewReplayScreen,",
+                                "TOPRIGHT,",
+                                "-0.180625,",
+                                "-0.0375,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 5,
+                    "type": "TEXT",
+                    "name": "NumPlayersLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "MapInfoPaneContainer,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.006,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.271875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_NUMBER_OF_PLAYERS,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYBOTTOM,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 6,
+                    "type": "TEXT",
+                    "name": "NumPlayersValue",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "NumPlayersLabel,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.271875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "EMPTY_STRING,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYBOTTOM,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 7,
+                    "type": "BACKDROP",
+                    "name": "OKBackdrop",
+                    "inherits": "StandardMenuButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.24,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,ViewReplayScreen,BOTTOMRIGHT,",
+                                "-0.014375,",
+                                "0.124375,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 8,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "OKButton",
+                            "inherits": "StandardButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.168,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,OKBackdrop,TOPRIGHT,",
+                                        "-0.012,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "R,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusDefault,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "CancelButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "OKButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 9,
+                                    "type": "TEXT",
+                                    "name": "OKButtonText",
+                                    "inherits": "StandardButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_VIEW_REPLAY,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 10,
+                    "type": "BACKDROP",
+                    "name": "CancelBackdrop",
+                    "inherits": "StandardMenuButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.24,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,OKBackdrop,BOTTOMRIGHT,",
+                                "0.0,",
+                                "0.015,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 11,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "CancelButton",
+                            "inherits": "StandardButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.168,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,CancelBackdrop,TOPRIGHT,",
+                                        "-0.012,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "B,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "OKButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "CancelButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 12,
+                                    "type": "TEXT",
+                                    "name": "CancelButtonText",
+                                    "inherits": "StandardButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_BACK,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

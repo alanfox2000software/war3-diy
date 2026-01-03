@@ -1,0 +1,1772 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "TEXT",
+            "name": "EscMenuMainPanelDialogTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "EscMenuTextFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "FRAME",
+            "name": "EscMenuMainPanel",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 2,
+                    "type": "FRAME",
+                    "name": "MainPanel",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.288,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.384,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusPush,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 3,
+                            "type": "TEXT",
+                            "name": "WouldTheRealOptionsTitleTextPleaseStandUp",
+                            "inherits": "EscMenuTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "EscMenuMainPanel,",
+                                        "TOP,",
+                                        "0.0,",
+                                        "-0.03,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "MAIN_MENU,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 4,
+                            "type": "FRAME",
+                            "name": "InsideMainPanel",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 5,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "PauseButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "EscMenuMainPanel,",
+                                                "TOP,",
+                                                "0.0,",
+                                                "-0.067,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "M,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusDefault,",
+                                            "child": []
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "SaveGameButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "PauseButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 6,
+                                            "type": "TEXT",
+                                            "name": "PauseButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_PAUSE_GAME,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 7,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "SaveGameButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "EscMenuMainPanel,",
+                                                "TOP,",
+                                                "0.0,",
+                                                "-0.104,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "S,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "LoadGameButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "SaveGameButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 8,
+                                            "type": "TEXT",
+                                            "name": "SaveGameButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_SAVE_GAME,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 9,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "LoadGameButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "SaveGameButton,",
+                                                "BOTTOM,",
+                                                "0.0,",
+                                                "-0.002,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "L,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "OptionsButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "LoadGameButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 10,
+                                            "type": "TEXT",
+                                            "name": "LoadGameButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_LOAD_GAME,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 11,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "OptionsButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "LoadGameButton,",
+                                                "BOTTOM,",
+                                                "0.0,",
+                                                "-0.002,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "O,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "HelpButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "OptionsButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 12,
+                                            "type": "TEXT",
+                                            "name": "OptionsButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_OPTIONS,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 13,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "HelpButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "OptionsButton,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.002,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "H,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "TipsButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.11,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "HelpButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 14,
+                                            "type": "TEXT",
+                                            "name": "HelpButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_HELP,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 15,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "TipsButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,",
+                                                "OptionsButton,",
+                                                "BOTTOMRIGHT,",
+                                                "0.0,",
+                                                "-0.002,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "T,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "EndGameButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.11,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "TipsButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 16,
+                                            "type": "TEXT",
+                                            "name": "TipsButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_TIPS,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 17,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "EndGameButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "OptionsButton,",
+                                                "BOTTOM,",
+                                                "0.0,",
+                                                "-0.039,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "E,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "ReturnButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "EndGameButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 18,
+                                            "type": "TEXT",
+                                            "name": "EndGameButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_END_GAME,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 19,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "ReturnButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOM,",
+                                                "EscMenuMainPanel,",
+                                                "BOTTOM,",
+                                                "0.0,",
+                                                "0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "ReturnButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 20,
+                                            "type": "TEXT",
+                                            "name": "ReturnButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_RETURN_TO_GAME,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 21,
+                    "type": "FRAME",
+                    "name": "EndGamePanel",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.288,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.384,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusPush,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 22,
+                            "type": "FRAME",
+                            "name": "InsideEndGamePanel",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 23,
+                                    "type": "TEXT",
+                                    "name": "EndGameTitleText",
+                                    "inherits": "EscMenuTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "EscMenuMainPanel,",
+                                                "TOP,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "END_GAME_OPTIONS,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 24,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "RestartButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusDefault,",
+                                            "child": []
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "QuitButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "EscMenuMainPanel,",
+                                                "TOP,",
+                                                "0.0,",
+                                                "-0.067,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "RestartButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 25,
+                                            "type": "TEXT",
+                                            "name": "RestartButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_RESTART_MISSION,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 26,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "QuitButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "RestartButton,",
+                                                "BOTTOM,",
+                                                "0.0,",
+                                                "-0.002,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "ExitButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "Q,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "QuitButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 27,
+                                            "type": "TEXT",
+                                            "name": "QuitButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_QUIT_MISSION,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 28,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "ExitButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "QuitButton,",
+                                                "BOTTOM,",
+                                                "0.0,",
+                                                "-0.002,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "PreviousButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "X,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "ExitButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 29,
+                                            "type": "TEXT",
+                                            "name": "ExitButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_EXIT_PROGRAM,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 30,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "PreviousButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOM,",
+                                                "EscMenuMainPanel,",
+                                                "BOTTOM,",
+                                                "0.0,",
+                                                "0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "P,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "PreviousButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 31,
+                                            "type": "TEXT",
+                                            "name": "PreviousButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_PREVIOUS_MENU,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 32,
+                    "type": "FRAME",
+                    "name": "ConfirmQuitPanel",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.336,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.192,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusPush,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 33,
+                            "type": "FRAME",
+                            "name": "InsideConfirmQuitPanel",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 34,
+                                    "type": "TEXT",
+                                    "name": "ConfirmQuitTitleText",
+                                    "inherits": "EscMenuTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "EscMenuMainPanel,",
+                                                "TOP,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "CONFIRM_EXIT,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 35,
+                                    "type": "TEXT",
+                                    "name": "ConfirmQuitMessageText",
+                                    "inherits": "EscMenuMainPanelDialogTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.26,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "ConfirmQuitTitleText,",
+                                                "BOTTOM,",
+                                                "0.0,",
+                                                "-0.005,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontJustificationH",
+                                            "child": [
+                                                "JUSTIFYCENTER,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "CONFIRM_EXIT_MESSAGE,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 36,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "ConfirmQuitQuitButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusDefault,",
+                                            "child": []
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "ConfirmQuitCancelButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "EscMenuMainPanel,",
+                                                "BOTTOMLEFT,",
+                                                "0.035,",
+                                                "0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.129,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "X,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "ConfirmQuitQuitButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 37,
+                                            "type": "TEXT",
+                                            "name": "ConfirmQuitQuitButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_EXIT,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 38,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "ConfirmQuitCancelButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "ConfirmQuitQuitButton,",
+                                                "RIGHT,",
+                                                "0.006,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.129,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "A,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "ConfirmQuitCancelButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 39,
+                                            "type": "TEXT",
+                                            "name": "ConfirmQuitCancelButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_CANCEL,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 40,
+                    "type": "FRAME",
+                    "name": "HelpPanel",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.432,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.384,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusPush,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 41,
+                            "type": "FRAME",
+                            "name": "InsideHelpPanel",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 42,
+                                    "type": "TEXT",
+                                    "name": "HelpTitleText",
+                                    "inherits": "EscMenuTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "EscMenuMainPanel,",
+                                                "TOP,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "HELP,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 43,
+                                    "type": "TEXTAREA",
+                                    "name": "HelpTextArea",
+                                    "inherits": "EscMenuTextAreaTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "HelpTitleText,",
+                                                "BOTTOM,",
+                                                "0.0,",
+                                                "-0.005,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.362,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.264,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 44,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "HelpOKButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusDefault,",
+                                            "child": []
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOM,",
+                                                "EscMenuMainPanel,",
+                                                "BOTTOM,",
+                                                "0.0,",
+                                                "0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.16,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "O,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "HelpOKButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 45,
+                                            "type": "TEXT",
+                                            "name": "HelpOKButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_OK,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 46,
+                    "type": "FRAME",
+                    "name": "TipsPanel",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.432,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.284,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusPush,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 47,
+                            "type": "FRAME",
+                            "name": "InsideTipsPanel",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 48,
+                                    "type": "TEXT",
+                                    "name": "TipsTitleText",
+                                    "inherits": "EscMenuTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "EscMenuMainPanel,",
+                                                "TOP,",
+                                                "0.0,",
+                                                "-0.04,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "WARCRAFT_III_TIPS,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 49,
+                                    "type": "TEXTAREA",
+                                    "name": "TipsTextArea",
+                                    "inherits": "EscMenuTextAreaTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "TipsTitleText,",
+                                                "BOTTOM,",
+                                                "0.0,",
+                                                "-0.009,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.362,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.147,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 50,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "TipsBackButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusDefault,",
+                                            "child": []
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "TipsNextButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "EscMenuMainPanel,",
+                                                "BOTTOMLEFT,",
+                                                "0.03,",
+                                                "0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.115,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "B,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "TipsBackButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 51,
+                                            "type": "TEXT",
+                                            "name": "TipsBackButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_BACK_ARROW,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 52,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "TipsNextButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "TipsOKButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOM,",
+                                                "EscMenuMainPanel,",
+                                                "BOTTOM,",
+                                                "0.0,",
+                                                "0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.115,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "N,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "TipsNextButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 53,
+                                            "type": "TEXT",
+                                            "name": "TipsNextButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_NEXT_ARROW,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 54,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "TipsOKButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMRIGHT,",
+                                                "EscMenuMainPanel,",
+                                                "BOTTOMRIGHT,",
+                                                "-0.03,",
+                                                "0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.115,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "O,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "TipsOKButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 55,
+                                            "type": "TEXT",
+                                            "name": "TipsOKButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_OK,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 56,
+            "type": "BACKDROP",
+            "name": "EscMenuBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.288,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.384,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "EscMenuBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.048,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.01",
+                        "0.01",
+                        "0.01",
+                        "0.01,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "EscMenuBorder,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ]
+]

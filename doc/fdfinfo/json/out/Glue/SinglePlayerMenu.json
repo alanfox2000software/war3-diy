@@ -1,0 +1,1304 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "SinglePlayerMenu",
+            "inherits": "StandardFrameTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "FRAME",
+                    "name": "ProfilePanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 2,
+                            "type": "TEXT",
+                            "name": "SinglePlayerProfileText",
+                            "inherits": "StandardTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "SinglePlayerMenu,",
+                                        "TOPLEFT,",
+                                        "0.02625,",
+                                        "-0.109,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "SINGLE_PLAYER_PROFILES,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 3,
+                            "type": "TEXT",
+                            "name": "ProfileMessage",
+                            "inherits": "StandardSmallTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "SinglePlayerProfileText,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.005,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.275,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.05,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "PROFILE_MESSAGE,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYLEFT,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationV",
+                                    "child": [
+                                        "JUSTIFYTOP,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 4,
+                            "type": "TEXT",
+                            "name": "ProfileAddText",
+                            "inherits": "StandardInfoTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "ProfileMessage,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.005,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.275,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "PROFILE_NEW,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYLEFT,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationV",
+                                    "child": [
+                                        "JUSTIFYBOTTOM,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 5,
+                            "type": "EDITBOX",
+                            "name": "NewProfileEditBox",
+                            "inherits": "StandardEditBoxTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.04,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.18,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "ProfileAddText,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.001,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "EditTextFrame",
+                                    "child": [
+                                        "NewProfileEditBoxText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 6,
+                                    "type": "TEXT",
+                                    "name": "NewProfileEditBoxText",
+                                    "inherits": "StandardEditBoxTextTemplate",
+                                    "fields": [],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 7,
+                            "type": "BACKDROP",
+                            "name": "AddProfileBackdrop",
+                            "inherits": "StandardMenuSmallButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.16,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.05,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "NewProfileEditBox,",
+                                        "RIGHT,",
+                                        "0.001,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropMirrored,",
+                                    "child": []
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 8,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "AddProfileButton",
+                                    "inherits": "StandardSmallButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.079,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,AddProfileBackdrop,TOPLEFT,",
+                                                "0.008,",
+                                                "-0.013,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "AddProfileButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 9,
+                                            "type": "TEXT",
+                                            "name": "AddProfileButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "CREATE,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 10,
+                            "type": "TEXT",
+                            "name": "ProfileListText",
+                            "inherits": "StandardInfoTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "NewProfileEditBox,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.275,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "PROFILE_LIST,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYLEFT,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationV",
+                                    "child": [
+                                        "JUSTIFYBOTTOM,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 11,
+                            "type": "FRAME",
+                            "name": "ProfileListContainer",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "ProfileListText,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.001,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.275,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.110,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 12,
+                            "type": "BACKDROP",
+                            "name": "DeleteProfileBackdrop",
+                            "inherits": "StandardMenuSmallButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.16,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.05,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "ProfileListContainer,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropMirrored,",
+                                    "child": []
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 13,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "DeleteProfileButton",
+                                    "inherits": "StandardSmallButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.079,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "DeleteProfileBackdrop,",
+                                                "TOPLEFT,",
+                                                "0.008,",
+                                                "-0.013,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "D,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "DeleteProfileButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 14,
+                                            "type": "TEXT",
+                                            "name": "DeleteProfileButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_DELETE,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 15,
+                            "type": "BACKDROP",
+                            "name": "SelectProfileBackdrop",
+                            "inherits": "StandardMenuSmallButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.16,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.05,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "SinglePlayerMenu,",
+                                        "TOPLEFT,",
+                                        "0.207,",
+                                        "-0.370,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropMirrored,",
+                                    "child": []
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 16,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "SelectProfileButton",
+                                    "inherits": "StandardSmallButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.079,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,SelectProfileBackdrop,TOPLEFT,",
+                                                "0.008,",
+                                                "-0.013,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "S,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "SelectProfileButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 17,
+                                            "type": "TEXT",
+                                            "name": "SelectProfileButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_SELECT,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 18,
+                    "type": "FRAME",
+                    "name": "CancelPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 19,
+                            "type": "BACKDROP",
+                            "name": "CancelBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.24,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMRIGHT,SinglePlayerMenu,BOTTOMRIGHT,-0.015,0.05,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 20,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "CancelButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.168,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,CancelBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "A,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "CancelButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 21,
+                                            "type": "TEXT",
+                                            "name": "CancelButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_CANCEL,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 22,
+                    "type": "FRAME",
+                    "name": "MainPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 23,
+                            "type": "BACKDROP",
+                            "name": "CampaignBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,SinglePlayerMenu,TOPRIGHT,",
+                                        "-0.015,",
+                                        "-0.156,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 24,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "CampaignButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,CampaignBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "C,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusDefault,",
+                                            "child": []
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "LoadSavedButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "CampaignButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 25,
+                                            "type": "TEXT",
+                                            "name": "CampaignButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_CAMPAIGN,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 26,
+                            "type": "BACKDROP",
+                            "name": "LoadSavedBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,CampaignBackdrop,BOTTOMRIGHT,0,",
+                                        "0.005,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 27,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "LoadSavedButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,LoadSavedBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "L,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "ViewReplayButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "LoadSavedButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 28,
+                                            "type": "TEXT",
+                                            "name": "LoadSavedButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_LOAD_SAVED_GAME,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 29,
+                            "type": "BACKDROP",
+                            "name": "ViewReplayBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,LoadSavedBackdrop,BOTTOMRIGHT,0,",
+                                        "0.005,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 30,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "ViewReplayButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,ViewReplayBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "SkirmishButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "ViewReplayButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 31,
+                                            "type": "TEXT",
+                                            "name": "ViewReplayButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_VIEW_REPLAY,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 32,
+                            "type": "BACKDROP",
+                            "name": "SkirmishBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,ViewReplayBackdrop,BOTTOMRIGHT,0,",
+                                        "0.005,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 33,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "SkirmishButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,SkirmishBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "G,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "CancelButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "SkirmishButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 34,
+                                            "type": "TEXT",
+                                            "name": "SkirmishButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_CUSTOM_GAME,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 35,
+                            "type": "TEXT",
+                            "name": "ProfileNameText",
+                            "inherits": "StandardTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.16,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.04,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMLEFT,",
+                                        "CampaignBackdrop,",
+                                        "TOPLEFT,",
+                                        "0.04,",
+                                        "0.03,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "EMPTY_STRING,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYLEFT,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationV",
+                                    "child": [
+                                        "JUSTIFYBOTTOM,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 36,
+                            "type": "BACKDROP",
+                            "name": "ProfileButtonBackdrop",
+                            "inherits": "StandardMenuTinyButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,SinglePlayerMenu,TOPRIGHT,",
+                                        "-0.012,",
+                                        "-0.09,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 37,
+                                    "type": "GLUEBUTTON",
+                                    "name": "ProfileButton",
+                                    "inherits": "StandardIconicButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.026,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,ProfileButtonBackdrop,TOPRIGHT,",
+                                                "-0.009,",
+                                                "-0.014,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlBackdrop",
+                                            "child": [
+                                                "RealmButtonBackdropTemplate,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlPushedBackdrop",
+                                            "child": [
+                                                "RealmButtonPushedBackdropTemplate,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlDisabledBackdrop",
+                                            "child": [
+                                                "RealmButtonDisabledBackdropTemplate,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 38,
+                                            "type": "BACKDROP",
+                                            "name": "RealmButtonBackdropTemplate",
+                                            "inherits": "",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackground",
+                                                    "child": [
+                                                        "UI\\Widgets\\BattleNet\\bnet-mainmenu-options-up.blp,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropCornerFlags",
+                                                    "child": [
+                                                        "UL|UR|BL|BR|T|L|B|R,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropCornerSize",
+                                                    "child": [
+                                                        "0.013,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackgroundSize",
+                                                    "child": [
+                                                        "0.026,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackgroundInsets",
+                                                    "child": [
+                                                        "0.004",
+                                                        "0.004",
+                                                        "0.004",
+                                                        "0.004,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropEdgeFile",
+                                                    "child": [
+                                                        "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder.blp,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        },
+                                        {
+                                            "fid": 39,
+                                            "type": "BACKDROP",
+                                            "name": "RealmButtonPushedBackdropTemplate",
+                                            "inherits": "",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackground",
+                                                    "child": [
+                                                        "UI\\Widgets\\BattleNet\\bnet-mainmenu-options-down.blp,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropCornerFlags",
+                                                    "child": [
+                                                        "UL|UR|BL|BR|T|L|B|R,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropCornerSize",
+                                                    "child": [
+                                                        "0.013,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackgroundSize",
+                                                    "child": [
+                                                        "0.026,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackgroundInsets",
+                                                    "child": [
+                                                        "0.004",
+                                                        "0.004",
+                                                        "0.004",
+                                                        "0.004,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropEdgeFile",
+                                                    "child": [
+                                                        "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Down.blp,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        },
+                                        {
+                                            "fid": 40,
+                                            "type": "BACKDROP",
+                                            "name": "RealmButtonDisabledBackdropTemplate",
+                                            "inherits": "",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackground",
+                                                    "child": [
+                                                        "UI\\Widgets\\BattleNet\\bnet-mainmenu-options-disabled.blp,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropCornerFlags",
+                                                    "child": [
+                                                        "UL|UR|BL|BR|T|L|B|R,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropCornerSize",
+                                                    "child": [
+                                                        "0.013,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackgroundSize",
+                                                    "child": [
+                                                        "0.026,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackgroundInsets",
+                                                    "child": [
+                                                        "0.004",
+                                                        "0.004",
+                                                        "0.004",
+                                                        "0.004,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropEdgeFile",
+                                                    "child": [
+                                                        "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Disabled.blp,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

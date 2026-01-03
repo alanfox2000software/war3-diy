@@ -1,0 +1,339 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "DIALOG",
+            "name": "SuspendDialog",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.336,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.432,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DialogBackdrop",
+                    "child": [
+                        "SuspendBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "BACKDROP",
+                    "name": "SuspendBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuBackground,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.048,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.128,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.01",
+                                "0.01",
+                                "0.01",
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "EscMenuBorder,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "TEXT",
+                    "name": "SuspendTitleText",
+                    "inherits": "EscMenuInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "SuspendDialog,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "WAITING_FOR_PLAYERS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "SuspendDropPlayersButton",
+                    "inherits": "EscMenuButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "SuspendDialog,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "SuspendDropPlayersButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 4,
+                            "type": "TEXT",
+                            "name": "SuspendDropPlayersButtonText",
+                            "inherits": "EscMenuButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "DROP_PLAYERS,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 5,
+                    "type": "TEXT",
+                    "name": "SuspendTimerText",
+                    "inherits": "EscMenuInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "SuspendDropPlayersButton,",
+                                "TOP,",
+                                "0.0,",
+                                "0.00625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.018,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 6,
+            "type": "FRAME",
+            "name": "SuspendPlayerSlot",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.219375,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.02,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 7,
+                    "type": "BACKDROP",
+                    "name": "SuspendPlayerSlotColorBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "SuspendPlayerSlot,",
+                                "LEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.016,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 8,
+                            "type": "BACKDROP",
+                            "name": "SuspendPlayerSlotColorBorder",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "UseActiveContext,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "EscMenuCheckBoxBackground,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundInsets",
+                                    "child": [
+                                        "-0.005",
+                                        "-0.005",
+                                        "-0.005",
+                                        "-0.005,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 9,
+                    "type": "TEXT",
+                    "name": "SuspendPlayerSlotPlayerNameLabel",
+                    "inherits": "EscMenuInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "SuspendPlayerSlotColorBackdrop,",
+                                "RIGHT,",
+                                "0.00625,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

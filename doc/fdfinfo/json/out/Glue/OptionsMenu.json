@@ -1,0 +1,3487 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "BACKDROP",
+            "name": "OptionsPopupMenuBackdropTemplate",
+            "inherits": "StandardMenuButtonBaseBackdrop",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.053,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropMirrored,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "POPUPMENU",
+            "name": "OptionsPopupMenuTemplate",
+            "inherits": "StandardPopupMenuTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.025,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.1775,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "PopupMenuBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "PopupMenuDisabledBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupTitleFrame",
+                    "child": [
+                        "PopupMenuTitle,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupArrowFrame",
+                    "child": [
+                        "PopupMenuArrow,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 2,
+                    "type": "BACKDROP",
+                    "name": "PopupMenuBackdrop",
+                    "inherits": "StandardButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "BACKDROP",
+                    "name": "PopupMenuDisabledBackdrop",
+                    "inherits": "StandardButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 4,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "PopupMenuTitle",
+                    "inherits": "StandardPopupMenuTitleTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 5,
+                    "type": "BUTTON",
+                    "name": "PopupMenuArrow",
+                    "inherits": "StandardPopupMenuArrowTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 6,
+            "type": "FRAME",
+            "name": "OptionsMenu",
+            "inherits": "StandardFrameTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 7,
+                    "type": "FRAME",
+                    "name": "OptionsControlLayer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 8,
+                            "type": "BACKDROP",
+                            "name": "GameplayBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,OptionsMenu,TOPRIGHT,",
+                                        "-0.015,",
+                                        "-0.110625,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 9,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "GameplayButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,GameplayBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "G,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusDefault,",
+                                            "child": []
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "VideoButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "GameplayButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 10,
+                                            "type": "TEXT",
+                                            "name": "GameplayButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_GAMEPLAY,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 11,
+                            "type": "BACKDROP",
+                            "name": "VideoBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,GameplayBackdrop,BOTTOMRIGHT,0,",
+                                        "0.005,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 12,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "VideoButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,VideoBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "V,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "SoundButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "VideoButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 13,
+                                            "type": "TEXT",
+                                            "name": "VideoButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_VIDEO,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 14,
+                            "type": "BACKDROP",
+                            "name": "SoundBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,VideoBackdrop,BOTTOMRIGHT,0,",
+                                        "0.005,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 15,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "SoundButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,SoundBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "S,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "OKButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "SoundButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 16,
+                                            "type": "TEXT",
+                                            "name": "SoundButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_SOUND,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 17,
+                            "type": "FRAME",
+                            "name": "GameplayPanel",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 18,
+                                    "type": "TEXT",
+                                    "name": "GameplayOptionsTitle",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "OptionsMenu,",
+                                                "TOPLEFT,",
+                                                "0.025,",
+                                                "-0.085,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "GAMEPLAY_OPTIONS,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 19,
+                                    "type": "TEXT",
+                                    "name": "MouseScrollLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "GameplayOptionsTitle,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.01,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_MOUSE_SCROLL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 20,
+                                    "type": "TEXT",
+                                    "name": "MouseScrollSlowLabel",
+                                    "inherits": "StandardLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "MouseScrollLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.01,",
+                                                "-0.005,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "SLOW,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 21,
+                                    "type": "SLIDER",
+                                    "name": "MouseScrollSlider",
+                                    "inherits": "StandardSliderTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.287,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "MouseScrollSlowLabel,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderMinValue",
+                                            "child": [
+                                                "0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderMaxValue",
+                                            "child": [
+                                                "100,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderInitialValue",
+                                            "child": [
+                                                "0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderStepSize",
+                                            "child": [
+                                                "1,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 22,
+                                    "type": "TEXT",
+                                    "name": "MouseScrollFastLabel",
+                                    "inherits": "StandardLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "MouseScrollSlider,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "FAST,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 23,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "MouseScrollDisableCheckBox",
+                                    "inherits": "StandardCheckBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "MouseScrollSlowLabel,",
+                                                "BOTTOMLEFT,",
+                                                "-0.01,",
+                                                "-0.01,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 24,
+                                    "type": "TEXT",
+                                    "name": "MouseScrollDisableLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "MouseScrollDisableCheckBox,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "GAMEPLAY_MOUSE_SCROLL_DISABLE,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 25,
+                                    "type": "TEXT",
+                                    "name": "KeyScrollLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "MouseScrollLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.06,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_KEYBOARD_SCROLL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 26,
+                                    "type": "TEXT",
+                                    "name": "KeyScrollSlowLabel",
+                                    "inherits": "StandardLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "KeyScrollLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.01,",
+                                                "-0.005,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "SLOW,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 27,
+                                    "type": "SLIDER",
+                                    "name": "KeyScrollSlider",
+                                    "inherits": "StandardSliderTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.287,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "KeyScrollSlowLabel,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderMinValue",
+                                            "child": [
+                                                "0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderMaxValue",
+                                            "child": [
+                                                "100,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderInitialValue",
+                                            "child": [
+                                                "0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderStepSize",
+                                            "child": [
+                                                "1,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 28,
+                                    "type": "TEXT",
+                                    "name": "KeyScrollFastLabel",
+                                    "inherits": "StandardLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "KeyScrollSlider,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "FAST,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 29,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "TooltipsCheckBox",
+                                    "inherits": "StandardCheckBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "KeyScrollLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 30,
+                                    "type": "TEXT",
+                                    "name": "TooltipsLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "TooltipsCheckBox,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "ENHANCED_TOOLTIPS,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 31,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "InputSprocketCheckBox",
+                                    "inherits": "StandardCheckBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "TooltipsCheckBox,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 32,
+                                    "type": "TEXT",
+                                    "name": "InputSprocketLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "InputSprocketCheckBox,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "ENABLE_MULTIBUTTON_MOUSE,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 33,
+                                    "type": "TEXT",
+                                    "name": "GamePortInfoText",
+                                    "inherits": "StandardValueTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.37,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "TooltipsCheckBox,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.04,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "GAMEPORT_INFO,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 34,
+                                    "type": "TEXT",
+                                    "name": "GamePortLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "GamePortInfoText,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.018,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_GAMEPORT,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 35,
+                                    "type": "EDITBOX",
+                                    "name": "GamePortEditBox",
+                                    "inherits": "StandardEditBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.08,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "GamePortLabel,",
+                                                "RIGHT,",
+                                                "0.005,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 36,
+                                    "type": "TEXT",
+                                    "name": "ChatSupportInfoText",
+                                    "inherits": "StandardValueTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.37,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "CHAT_SUPPORT_INFO,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "GamePortLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.025,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 37,
+                                    "type": "TEXT",
+                                    "name": "ChatSupportLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "ChatSupportInfoText,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.018,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_CHAT_SUPPORT,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 38,
+                                    "type": "BACKDROP",
+                                    "name": "ChatSupportBackdrop",
+                                    "inherits": "OptionsPopupMenuBackdropTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,ChatSupportLabel,RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 39,
+                                            "type": "POPUPMENU",
+                                            "name": "ChatSupportMenu",
+                                            "inherits": "OptionsPopupMenuTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPLEFT,ChatSupportBackdrop,TOPLEFT,",
+                                                        "0.012,",
+                                                        "-0.013,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "PopupMenuFrame",
+                                                    "child": [
+                                                        "ChatSupportPopupMenuMenu,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 40,
+                                                    "type": "MENU",
+                                                    "name": "ChatSupportPopupMenuMenu",
+                                                    "inherits": "StandardPopupMenuMenuTemplate",
+                                                    "fields": [],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 41,
+                            "type": "FRAME",
+                            "name": "VideoPanel",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 42,
+                                    "type": "TEXT",
+                                    "name": "VideoOptionsTitle",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "OptionsMenu,",
+                                                "TOPLEFT,",
+                                                "0.025,",
+                                                "-0.085,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "VIDEO_OPTIONS,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 43,
+                                    "type": "TEXT",
+                                    "name": "GammaLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "VideoOptionsTitle,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.01,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_GAMMA,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 44,
+                                    "type": "TEXT",
+                                    "name": "GammaDarkLabel",
+                                    "inherits": "StandardLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "GammaLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.007,",
+                                                "-0.01,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "DARK,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 45,
+                                    "type": "SLIDER",
+                                    "name": "GammaSlider",
+                                    "inherits": "StandardSliderTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.287,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "GammaDarkLabel,",
+                                                "RIGHT,",
+                                                "0.007,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderMinValue",
+                                            "child": [
+                                                "0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderMaxValue",
+                                            "child": [
+                                                "100,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderInitialValue",
+                                            "child": [
+                                                "0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderStepSize",
+                                            "child": [
+                                                "1,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 46,
+                                    "type": "BACKDROP",
+                                    "name": "GammaNotch",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "GammaSlider,",
+                                                "TOPLEFT,",
+                                                "0.06,",
+                                                "0.005,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.007,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.007,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-PullDown-Arrow.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBlendAll,",
+                                            "child": []
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 47,
+                                            "type": "TEXT",
+                                            "name": "GammaNotchLabel",
+                                            "inherits": "StandardLabelTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "LEFT,",
+                                                        "GammaNotch,",
+                                                        "RIGHT,",
+                                                        "0.00375,",
+                                                        "0.0,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "FontColor",
+                                                    "child": [
+                                                        "1.0",
+                                                        "1.0",
+                                                        "1.0",
+                                                        "1.0,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "1.0,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 48,
+                                    "type": "TEXT",
+                                    "name": "GammaBrightLabel",
+                                    "inherits": "StandardLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "GammaSlider,",
+                                                "RIGHT,",
+                                                "0.007,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "BRIGHT,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 49,
+                                    "type": "TEXT",
+                                    "name": "ResolutionLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "GammaLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.05,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_RESOLUTION,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 50,
+                                    "type": "TEXT",
+                                    "name": "ModelDetailLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "ResolutionLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_MODEL_DETAIL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 51,
+                                    "type": "TEXT",
+                                    "name": "AnimQualityLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "ModelDetailLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_ANIM_QUALITY,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 52,
+                                    "type": "TEXT",
+                                    "name": "TextureQualityLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "AnimQualityLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_TEXTURE_QUALITY,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 53,
+                                    "type": "TEXT",
+                                    "name": "ParticlesLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "TextureQualityLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_PARTICLES,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 54,
+                                    "type": "TEXT",
+                                    "name": "LightsLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "ParticlesLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_LIGHTS,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 55,
+                                    "type": "TEXT",
+                                    "name": "ShadowsLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "LightsLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_SHADOWS,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 56,
+                                    "type": "TEXT",
+                                    "name": "OcclusionLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "ShadowsLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_OCCLUSION,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 57,
+                                    "type": "BACKDROP",
+                                    "name": "ResolutionBackdrop",
+                                    "inherits": "OptionsPopupMenuBackdropTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,ResolutionLabel,RIGHT,",
+                                                "0.0675,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 58,
+                                            "type": "POPUPMENU",
+                                            "name": "ResolutionMenu",
+                                            "inherits": "OptionsPopupMenuTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPLEFT,ResolutionBackdrop,TOPLEFT,",
+                                                        "0.012,",
+                                                        "-0.013,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "PopupMenuFrame",
+                                                    "child": [
+                                                        "ResolutionPopupMenuMenu,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 59,
+                                                    "type": "MENU",
+                                                    "name": "ResolutionPopupMenuMenu",
+                                                    "inherits": "StandardPopupMenuMenuTemplate",
+                                                    "fields": [],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 60,
+                                    "type": "BACKDROP",
+                                    "name": "ModelDetailBackdrop",
+                                    "inherits": "OptionsPopupMenuBackdropTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,ResolutionBackdrop,BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.01,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 61,
+                                            "type": "POPUPMENU",
+                                            "name": "ModelDetailMenu",
+                                            "inherits": "OptionsPopupMenuTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPLEFT,ModelDetailBackdrop,TOPLEFT,",
+                                                        "0.012,",
+                                                        "-0.013,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "PopupMenuFrame",
+                                                    "child": [
+                                                        "ModelDetailPopupMenuMenu,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 62,
+                                                    "type": "MENU",
+                                                    "name": "ModelDetailPopupMenuMenu",
+                                                    "inherits": "StandardPopupMenuMenuTemplate",
+                                                    "fields": [
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "LOW,",
+                                                                "-2,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "MEDIUM,",
+                                                                "-2,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "HIGH,",
+                                                                "-2,"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 63,
+                                    "type": "BACKDROP",
+                                    "name": "AnimQualityBackdrop",
+                                    "inherits": "OptionsPopupMenuBackdropTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,ModelDetailBackdrop,BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.01,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 64,
+                                            "type": "POPUPMENU",
+                                            "name": "AnimQualityMenu",
+                                            "inherits": "OptionsPopupMenuTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPLEFT,AnimQualityBackdrop,TOPLEFT,",
+                                                        "0.012,",
+                                                        "-0.013,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "PopupMenuFrame",
+                                                    "child": [
+                                                        "AnimQualityPopupMenuMenu,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 65,
+                                                    "type": "MENU",
+                                                    "name": "AnimQualityPopupMenuMenu",
+                                                    "inherits": "StandardPopupMenuMenuTemplate",
+                                                    "fields": [
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "LOW,",
+                                                                "-2,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "MEDIUM,",
+                                                                "-2,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "HIGH,",
+                                                                "-2,"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 66,
+                                    "type": "BACKDROP",
+                                    "name": "TextureQualityBackdrop",
+                                    "inherits": "OptionsPopupMenuBackdropTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,AnimQualityBackdrop,BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.01,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 67,
+                                            "type": "POPUPMENU",
+                                            "name": "TextureQualityMenu",
+                                            "inherits": "OptionsPopupMenuTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPLEFT,TextureQualityBackdrop,TOPLEFT,",
+                                                        "0.012,",
+                                                        "-0.013,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "PopupMenuFrame",
+                                                    "child": [
+                                                        "TextureQualityPopupMenuMenu,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 68,
+                                                    "type": "MENU",
+                                                    "name": "TextureQualityPopupMenuMenu",
+                                                    "inherits": "StandardPopupMenuMenuTemplate",
+                                                    "fields": [
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "LOW,",
+                                                                "-2,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "MEDIUM,",
+                                                                "-2,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "HIGH,",
+                                                                "-2,"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 69,
+                                    "type": "BACKDROP",
+                                    "name": "ParticlesBackdrop",
+                                    "inherits": "OptionsPopupMenuBackdropTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,TextureQualityBackdrop,BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.01,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 70,
+                                            "type": "POPUPMENU",
+                                            "name": "ParticlesMenu",
+                                            "inherits": "OptionsPopupMenuTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPLEFT,ParticlesBackdrop,TOPLEFT,",
+                                                        "0.012,",
+                                                        "-0.013,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "PopupMenuFrame",
+                                                    "child": [
+                                                        "ParticlesPopupMenuMenu,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 71,
+                                                    "type": "MENU",
+                                                    "name": "ParticlesPopupMenuMenu",
+                                                    "inherits": "StandardPopupMenuMenuTemplate",
+                                                    "fields": [
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "LOW,",
+                                                                "-2,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "MEDIUM,",
+                                                                "-2,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "HIGH,",
+                                                                "-2,"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 72,
+                                    "type": "BACKDROP",
+                                    "name": "LightsBackdrop",
+                                    "inherits": "OptionsPopupMenuBackdropTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,ParticlesBackdrop,BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.01,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 73,
+                                            "type": "POPUPMENU",
+                                            "name": "LightsMenu",
+                                            "inherits": "OptionsPopupMenuTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPLEFT,LightsBackdrop,TOPLEFT,",
+                                                        "0.012,",
+                                                        "-0.013,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "PopupMenuFrame",
+                                                    "child": [
+                                                        "LightsPopupMenuMenu,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 74,
+                                                    "type": "MENU",
+                                                    "name": "LightsPopupMenuMenu",
+                                                    "inherits": "StandardPopupMenuMenuTemplate",
+                                                    "fields": [
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "LOW,",
+                                                                "-2,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "MEDIUM,",
+                                                                "-2,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "HIGH,",
+                                                                "-2,"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 75,
+                                    "type": "BACKDROP",
+                                    "name": "ShadowsBackdrop",
+                                    "inherits": "OptionsPopupMenuBackdropTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,LightsBackdrop,BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.01,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 76,
+                                            "type": "POPUPMENU",
+                                            "name": "ShadowsMenu",
+                                            "inherits": "OptionsPopupMenuTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPLEFT,ShadowsBackdrop,TOPLEFT,",
+                                                        "0.012,",
+                                                        "-0.013,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "PopupMenuFrame",
+                                                    "child": [
+                                                        "ShadowsPopupMenuMenu,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 77,
+                                                    "type": "MENU",
+                                                    "name": "ShadowsPopupMenuMenu",
+                                                    "inherits": "StandardPopupMenuMenuTemplate",
+                                                    "fields": [
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "OFF,",
+                                                                "-2,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "ON,",
+                                                                "-2,"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 78,
+                                    "type": "BACKDROP",
+                                    "name": "OcclusionBackdrop",
+                                    "inherits": "OptionsPopupMenuBackdropTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,ShadowsBackdrop,BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.01,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 79,
+                                            "type": "POPUPMENU",
+                                            "name": "OcclusionMenu",
+                                            "inherits": "OptionsPopupMenuTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPLEFT,OcclusionBackdrop,TOPLEFT,",
+                                                        "0.012,",
+                                                        "-0.013,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "PopupMenuFrame",
+                                                    "child": [
+                                                        "OcclusionPopupMenuMenu,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 80,
+                                                    "type": "MENU",
+                                                    "name": "OcclusionPopupMenuMenu",
+                                                    "inherits": "StandardPopupMenuMenuTemplate",
+                                                    "fields": [
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "OFF,",
+                                                                "-2,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "MenuItem",
+                                                            "child": [
+                                                                "ON,",
+                                                                "-2,"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 81,
+                            "type": "FRAME",
+                            "name": "SoundPanel",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 82,
+                                    "type": "TEXT",
+                                    "name": "SoundOptionsTitle",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "OptionsMenu,",
+                                                "TOPLEFT,",
+                                                "0.025,",
+                                                "-0.085,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "SOUND_OPTIONS,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 83,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "SoundCheckBox",
+                                    "inherits": "StandardCheckBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "SoundOptionsTitle,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.01,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 84,
+                                    "type": "TEXT",
+                                    "name": "SoundVolumeLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "SoundCheckBox,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_SOUND_EFFECTS_VOLUME,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 85,
+                                    "type": "TEXT",
+                                    "name": "SoundVolumeLowLabel",
+                                    "inherits": "StandardLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "SoundCheckBox,",
+                                                "BOTTOMLEFT,",
+                                                "0.005,",
+                                                "-0.006,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "LOW,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 86,
+                                    "type": "SLIDER",
+                                    "name": "SoundVolumeSlider",
+                                    "inherits": "StandardSliderTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.287,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "SoundVolumeLowLabel,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderMinValue",
+                                            "child": [
+                                                "0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderMaxValue",
+                                            "child": [
+                                                "100,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderInitialValue",
+                                            "child": [
+                                                "0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderStepSize",
+                                            "child": [
+                                                "1,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 87,
+                                    "type": "TEXT",
+                                    "name": "SoundVolumeHighLabel",
+                                    "inherits": "StandardLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "SoundVolumeSlider,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "HIGH,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 88,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "MusicCheckBox",
+                                    "inherits": "StandardCheckBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "SoundCheckBox,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.04,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 89,
+                                    "type": "TEXT",
+                                    "name": "MusicVolumeLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "MusicCheckBox,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_MUSIC_VOLUME,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 90,
+                                    "type": "TEXT",
+                                    "name": "MusicVolumeLowLabel",
+                                    "inherits": "StandardLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "MusicCheckBox,",
+                                                "BOTTOMLEFT,",
+                                                "0.005,",
+                                                "-0.006,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "LOW,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 91,
+                                    "type": "SLIDER",
+                                    "name": "MusicVolumeSlider",
+                                    "inherits": "StandardSliderTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.287,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "MusicVolumeLowLabel,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderMinValue",
+                                            "child": [
+                                                "0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderMaxValue",
+                                            "child": [
+                                                "100,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderInitialValue",
+                                            "child": [
+                                                "0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SliderStepSize",
+                                            "child": [
+                                                "1,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 92,
+                                    "type": "TEXT",
+                                    "name": "MusicVolumeHighLabel",
+                                    "inherits": "StandardLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "MusicVolumeSlider,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "HIGH,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 93,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "AmbientCheckBox",
+                                    "inherits": "StandardCheckBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "MusicCheckBox,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.05,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 94,
+                                    "type": "TEXT",
+                                    "name": "AmbientLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "AmbientCheckBox,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "AMBIENT_SOUNDS,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 95,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "MovementCheckBox",
+                                    "inherits": "StandardCheckBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "AmbientCheckBox,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 96,
+                                    "type": "TEXT",
+                                    "name": "MovementLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "MovementCheckBox,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "MOVEMENT_SOUNDS,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 97,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "SubtitlesCheckBox",
+                                    "inherits": "StandardCheckBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "MovementCheckBox,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 98,
+                                    "type": "TEXT",
+                                    "name": "SubtitlesLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "SubtitlesCheckBox,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "SUBTITLES,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 99,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "UnitCheckBox",
+                                    "inherits": "StandardCheckBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "AmbientCheckBox,",
+                                                "RIGHT,",
+                                                "0.17125,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 100,
+                                    "type": "TEXT",
+                                    "name": "UnitLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "UnitCheckBox,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "UNIT_SOUNDS,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 101,
+                                    "type": "TEXT",
+                                    "name": "ProviderLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "SubtitlesCheckBox,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_SOUND_PROVIDER,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 102,
+                                    "type": "BACKDROP",
+                                    "name": "ProviderBackdrop",
+                                    "inherits": "OptionsPopupMenuBackdropTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,ProviderLabel,RIGHT,",
+                                                "0.035,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 103,
+                                            "type": "POPUPMENU",
+                                            "name": "ProviderMenu",
+                                            "inherits": "OptionsPopupMenuTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPLEFT,ProviderBackdrop,TOPLEFT,",
+                                                        "0.012,",
+                                                        "-0.013,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "PopupMenuFrame",
+                                                    "child": [
+                                                        "ProviderPopupMenuMenu,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 104,
+                                                    "type": "MENU",
+                                                    "name": "ProviderPopupMenuMenu",
+                                                    "inherits": "StandardPopupMenuMenuTemplate",
+                                                    "fields": [],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 105,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "EnviroCheckBox",
+                                    "inherits": "StandardCheckBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "ProviderLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 106,
+                                    "type": "TEXT",
+                                    "name": "EnviroLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "EnviroCheckBox,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "ENVIRONMENTAL_EFFECTS,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 107,
+                                    "type": "GLUECHECKBOX",
+                                    "name": "PositionalCheckBox",
+                                    "inherits": "StandardCheckBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "EnviroCheckBox,",
+                                                "RIGHT,",
+                                                "0.18,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 108,
+                                    "type": "TEXT",
+                                    "name": "PositionalLabel",
+                                    "inherits": "StandardInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "PositionalCheckBox,",
+                                                "RIGHT,",
+                                                "0.01,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "POSITIONAL_AUDIO,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 109,
+                            "type": "BACKDROP",
+                            "name": "OKBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.24,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMRIGHT,OptionsMenu,BOTTOMRIGHT,",
+                                        "-0.015,",
+                                        "0.074,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 110,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "OKButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.168,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,OKBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "O,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "CancelButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "OKButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 111,
+                                            "type": "TEXT",
+                                            "name": "OKButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_OK,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 112,
+                            "type": "BACKDROP",
+                            "name": "CancelBackdrop",
+                            "inherits": "StandardMenuButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.24,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMRIGHT,OptionsMenu,BOTTOMRIGHT,",
+                                        "-0.015,",
+                                        "0.0225,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 113,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "CancelButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.168,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,CancelBackdrop,TOPRIGHT,",
+                                                "-0.012,",
+                                                "-0.0165,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "A,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "CancelButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 114,
+                                            "type": "TEXT",
+                                            "name": "CancelButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_CANCEL,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 115,
+            "type": "DIALOG",
+            "name": "OptionsConfirmDialog",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.19,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.5265625,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DialogBackdrop",
+                    "child": [
+                        "OptionsConfirmDialogBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 116,
+                    "type": "BACKDROP",
+                    "name": "OptionsConfirmDialogBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-background.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.064,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.128,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.01",
+                                "0.01",
+                                "0.01",
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-border.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 117,
+                    "type": "TEXT",
+                    "name": "OptionsConfirmTitleText",
+                    "inherits": "StandardTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "OptionsConfirmDialog,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.025,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "OPTIONS_CONFIRM_TITLE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 118,
+                    "type": "TEXT",
+                    "name": "OptionsConfirmInfoText",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.48,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "OptionsConfirmDialog,",
+                                "TOPLEFT,",
+                                "0.0234375,",
+                                "-0.05053125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "OPTIONS_CONFIRM_INFO,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 119,
+                    "type": "TEXT",
+                    "name": "OptionsTimeoutLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "OptionsConfirmInfoText,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "OPTIONS_CONFIRM_TIMEOUT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 120,
+                    "type": "TEXT",
+                    "name": "OptionsTimeoutValue",
+                    "inherits": "StandardValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "OptionsTimeoutLabel,",
+                                "RIGHT,",
+                                "0.01,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 121,
+                    "type": "BACKDROP",
+                    "name": "ConfirmOKButtonBackdrop",
+                    "inherits": "StandardMenuSingleButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,",
+                                "OptionsConfirmDialog,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "0.015,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 122,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "ConfirmOKButton",
+                            "inherits": "StandardButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.159,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,ConfirmOKButtonBackdrop,TOPRIGHT,",
+                                        "-0.032,",
+                                        "-0.015625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "O,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusDefault,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "ConfirmCancelButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "ConfirmOKButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 123,
+                                    "type": "TEXT",
+                                    "name": "ConfirmOKButtonText",
+                                    "inherits": "StandardButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_OK,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 124,
+                    "type": "BACKDROP",
+                    "name": "ConfirmCancelButtonBackdrop",
+                    "inherits": "StandardMenuSingleButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "OptionsConfirmDialog,",
+                                "BOTTOM,",
+                                "-0.03203125,",
+                                "0.015,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 125,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "ConfirmCancelButton",
+                            "inherits": "StandardButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.159,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,ConfirmCancelButtonBackdrop,TOPRIGHT,",
+                                        "-0.032,",
+                                        "-0.015625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "A,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "ConfirmOKButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "ConfirmCancelButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 126,
+                                    "type": "TEXT",
+                                    "name": "ConfirmCancelButtonText",
+                                    "inherits": "StandardButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_CANCEL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

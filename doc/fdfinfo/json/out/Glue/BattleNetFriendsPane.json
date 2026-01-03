@@ -1,0 +1,145 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "BattleNetFriendsPane",
+            "inherits": "",
+            "fields": [],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "FRAME",
+                    "name": "FriendListContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.28875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetFriendsPane,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "BattleNetFriendsPane,",
+                                "TOPRIGHT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "EDITBOX",
+                    "name": "AddFriendEditBox",
+                    "inherits": "BattleNetEditBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.17875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "BattleNetFriendsPane,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "EditTextFrame",
+                            "child": [
+                                "AddFriendEditBoxText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 3,
+                            "type": "TEXT",
+                            "name": "AddFriendEditBoxText",
+                            "inherits": "BattleNetEditBoxTextTemplate",
+                            "fields": [],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 4,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "AddFriendButton",
+                    "inherits": "BattleNetBorderedButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.0875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "AddFriendEditBox,",
+                                "RIGHT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "AddFriendButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 5,
+                            "type": "TEXT",
+                            "name": "AddFriendButtonText",
+                            "inherits": "BattleNetButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "ADD,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

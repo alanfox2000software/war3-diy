@@ -1,0 +1,160 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type gamecache</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type gamecache</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> <a href="common_j-types-agent.shtml">agent</a> <strong>&gt;</strong> gamecache</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#85">85</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">gamecache</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf">
+<p><a href="Blizzard_j-variables.shtml">Blizzard.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#faffbf"></td><td bgcolor="#faffbf">
+<strong><a href="Blizzard_j-variables.shtml#bj_lastCreatedGameCache">bj_lastCreatedGameCache</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">gamecache</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetLastCreatedGameCacheBJ">GetLastCreatedGameCacheBJ</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-gamecache.shtml">gamecache</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#InitGameCache">InitGameCache</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> campaignFile<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-gamecache.shtml">gamecache</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#InitGameCacheBJ">InitGameCacheBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> campaignFile<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-gamecache.shtml">gamecache</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">gamecache</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#FlushGameCache">FlushGameCache</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#FlushGameCacheBJ">FlushGameCacheBJ</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#FlushStoredBoolean">FlushStoredBoolean</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#FlushStoredInteger">FlushStoredInteger</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#FlushStoredMission">FlushStoredMission</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#FlushStoredMissionBJ">FlushStoredMissionBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="common_j-types-gamecache.shtml">gamecache</a> cache<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#FlushStoredReal">FlushStoredReal</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#FlushStoredString">FlushStoredString</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#FlushStoredUnit">FlushStoredUnit</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetStoredBoolean">GetStoredBoolean</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetStoredBooleanBJ">GetStoredBooleanBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="common_j-types-gamecache.shtml">gamecache</a> cache<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetStoredInteger">GetStoredInteger</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetStoredIntegerBJ">GetStoredIntegerBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="common_j-types-gamecache.shtml">gamecache</a> cache<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetStoredReal">GetStoredReal</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetStoredRealBJ">GetStoredRealBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="common_j-types-gamecache.shtml">gamecache</a> cache<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetStoredString">GetStoredString</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-string.shtml">string</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetStoredStringBJ">GetStoredStringBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="common_j-types-gamecache.shtml">gamecache</a> cache<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-string.shtml">string</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#HaveStoredBoolean">HaveStoredBoolean</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#HaveStoredInteger">HaveStoredInteger</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#HaveStoredReal">HaveStoredReal</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#HaveStoredString">HaveStoredString</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#HaveStoredUnit">HaveStoredUnit</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#HaveStoredValue">HaveStoredValue</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> valueType, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="common_j-types-gamecache.shtml">gamecache</a> cache<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#RestoreUnit">RestoreUnit</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key, <a href="common_j-types-player.shtml">player</a> forWhichPlayer, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="BUILT_IN-types-real.shtml">real</a> facing<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-unit.shtml">unit</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RestoreUnitLocFacingAngleBJ">RestoreUnitLocFacingAngleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="common_j-types-player.shtml">player</a> forWhichPlayer, <a href="common_j-types-location.shtml">location</a> loc, <a href="BUILT_IN-types-real.shtml">real</a> facing<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-unit.shtml">unit</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RestoreUnitLocFacingPointBJ">RestoreUnitLocFacingPointBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="common_j-types-player.shtml">player</a> forWhichPlayer, <a href="common_j-types-location.shtml">location</a> loc, <a href="common_j-types-location.shtml">location</a> lookAt<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-unit.shtml">unit</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SaveGameCache">SaveGameCache</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> whichCache<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SaveGameCacheBJ">SaveGameCacheBJ</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#StoreBoolean">StoreBoolean</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-boolean.shtml">boolean</a> value<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#StoreBooleanBJ">StoreBooleanBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> value, <a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="common_j-types-gamecache.shtml">gamecache</a> cache<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#StoreInteger">StoreInteger</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> value<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#StoreIntegerBJ">StoreIntegerBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> value, <a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="common_j-types-gamecache.shtml">gamecache</a> cache<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#StoreReal">StoreReal</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-real.shtml">real</a> value<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#StoreRealBJ">StoreRealBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-real.shtml">real</a> value, <a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="common_j-types-gamecache.shtml">gamecache</a> cache<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#StoreString">StoreString</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-string.shtml">string</a> value<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#StoreStringBJ">StoreStringBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> value, <a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="common_j-types-gamecache.shtml">gamecache</a> cache<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#StoreUnit">StoreUnit</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key, <a href="common_j-types-unit.shtml">unit</a> whichUnit<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#StoreUnitBJ">StoreUnitBJ</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-string.shtml">string</a> key, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="common_j-types-gamecache.shtml">gamecache</a> cache<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SyncStoredBoolean">SyncStoredBoolean</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SyncStoredInteger">SyncStoredInteger</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SyncStoredReal">SyncStoredReal</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SyncStoredString">SyncStoredString</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SyncStoredUnit">SyncStoredUnit</a></strong> <strong>(</strong><a href="common_j-types-gamecache.shtml">gamecache</a> cache, <a href="BUILT_IN-types-string.shtml">string</a> missionKey, <a href="BUILT_IN-types-string.shtml">string</a> key<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

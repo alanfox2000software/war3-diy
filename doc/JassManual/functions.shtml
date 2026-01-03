@@ -1,0 +1,182 @@
+
+<html>
+<head>
+<title>JASS Manual: Functions</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+
+
+<p><strong>Functions</strong>
+
+<p>A function is declared in the following manner:
+
+<pre class="source">
+<span class="keyword">function</span> <span class="hi">func_name</span> <span class="keyword">takes</span> <span class="hi">param_list</span> <span class="keyword">returns</span> <span class="hi">return_type</span>
+     <em class="hi">variable_declaration</em>
+     <em class="hi">variable_declaration</em>
+     <span class="hi">...</span>
+     <em class="hi">statement</em>
+     <em class="hi">statement</em>
+     <em class="hi">statement</em>
+     <span class="hi">...</span>
+<span class="keyword">endfunction</span>
+</pre>
+
+<p>See <a href="globals.shtml">Global Declarations</a> for more information.
+Remember that you can not call functions you have not yet declared (no
+forward references), but you can call a function within itself (i.e., recursion
+is legal).
+
+<p>If a function declaration is prefixed with <code>constant</code>, like the
+following:
+
+<pre class="source">
+<span class="keyword">constant function</span> const_func <span class="keyword">takes</span> <span class="type">integer</span> a <span class="keyword">returns</span> <span class="type">nothing</span>
+     ...
+<span class="keyword">endfunction</span>
+</pre>
+
+then you can not call non-constant functions within the function body. 
+(Nevertheless, note that you can still use the <code>set</code> statement
+in the body to alter function arguments, so it is not really "constant"
+in the typical sense; it is more of a hint to the programmer than anything
+else)
+
+<p><strong>Parameters</strong>
+
+<p>As noted in the <a href="globals.shtml">Globals Section</a>, a function
+is declared with a comma separated parameter list which parameterizes the 
+types of the arguments it takes. When calling a function, the caller passes
+in a list of argument expressions which evaluate to values of types conforming
+to the list of parameters. See <a href="types.shtml">Types</a> for more
+information.
+
+<p>All <code>integer</code>, <code>real</code>, and
+<code>boolean</code> arguments have <em>pass-by-value</em> semantics.
+Because <code>string</code> and <code>code</code> values are 
+<em>immutable</em> (can not be modified after creation), arguments with
+these types can be thought of as having pass by value semantics also.
+In other words:
+
+<pre class="source">
+<span class="keyword">function</span> Foo <span class="keyword">takes</span> <span class="type">integer</span> a, <span class="type">string</span> b <span class="keyword">returns</span> <span class="type">nothing</span>
+<span class="keyword">     set</span> a = 10
+<span class="keyword">     set</span> b = b + <span class="str">" is a dummy"</span>
+     <span class="comment">// a == 10 and b == "joe is a dummy"</span>
+     <span class="comment">// but the original arguments passed in are NOT modified</span>
+<span class="keyword">endfunction</span>
+
+...
+<span class="keyword">     local</span> <span class="type">integer</span> i = 5
+<span class="keyword">     local</span> <span class="type">string</span>  j = <span class="str">"joe"</span>
+
+<span class="keyword">     call</span> Foo(i, j)
+     <span class="comment">// i is still == 5, and j is still == "joe"</span>
+</pre>
+
+<p>However, all <code>handle</code> arguments (and handle subtypes) have
+roughly <em>pass-by-reference</em> semantics. In other words, modifying the 
+"internals" of a handle variable, like a <code>unit</code>, 
+passed to a function as an argument will alter the variable both 
+<em>within</em> the callee function and the caller. For 例子
+
+<pre class="source">
+<span class="keyword">function</span> Bar <span class="keyword">takes</span> unit u <span class="keyword">returns</span> <span class="type">nothing</span>
+<span class="keyword">     call</span> PauseUnit(u, true)
+     <span class="comment">// the unit u is paused, but u and y refer to the same</span>
+     <span class="comment">// data structure so y is also paused</span>
+<span class="keyword">endfunction</span>
+
+...
+<span class="keyword">     local</span> unit y = GetTriggeringUnit()
+
+<span class="keyword">     call</span> Bar(y)
+     <span class="comment">// the unit y is paused</span>
+</pre>
+
+<em>Note</em>: strictly speaking, handle values do not have true 
+pass-by-reference semantics. It is more correct to say that 
+<code>handle</code> values
+are equivalent to pointers, and using a native function to modify a
+handle value is like dereferencing the pointer and modifying the 
+object that the variable <em>points to</em> (like in Java). 
+In particular,
+altering the <em>value</em> of a handle variable in a function does affect
+the argument in the caller. In other words:
+
+<pre class="source">
+<span class="keyword">function</span> Goo <span class="keyword">takes</span> unit u <span class="keyword">returns</span> <span class="type">nothing</span>
+<span class="keyword">     set</span> u = CreateUnit(player1, <span class="fourcc">'hC00'</span>, 100, 100, 90)
+     <span class="comment">// u now refers to the newly created unit</span>
+     <span class="comment">// but y still refers to the triggering unit</span>
+<span class="keyword">endfunction</span>
+
+...
+<span class="keyword">     local</span> unit y = GetTriggeringUnit()
+
+<span class="keyword">     call</span> Goo(y)
+     <span class="comment">// y still refers to the trigger unit</span>
+</pre>
+
+<p><strong>Local Variables</strong>
+
+<p>The first part of a function body consists of local variable declarations.
+These are variables which are initialized each time we enter the function
+and can only be referenced within the function. They are declared in the
+following manner:
+
+<pre class="source">
+<span class="keyword">     local</span> <span class="hi">type name</span> <em>= <span class="hi">expression</span></em>
+</pre>
+
+<p>This is similar to the global variable declaration. 
+The expression is optional. There may be no local variables, in which case
+the function body only consists of statements (or is empty). Local variable
+names should not be identical to function parameter names.
+
+<p>Within a function, expressions can reference local variables,
+the names of function parameters, as well as global variables.
+
+<p><strong>Statements</strong>
+
+<p>After the list of local variables is a list of statements which performs
+the actions the function wants to execute. See 
+<a href="statements.shtml">Statements</a> for more information.
+
+<p>If the function returns a value, then every execution path in the function
+must reach a <code>return</code> statement which returns a value of the
+appropriate type.
+
+<p><strong>Return Value</strong>
+
+<p>A function may be declared to return a value (if the return type is not
+<code>nothing</code>). In this case, calling the function as an expression
+will evaluate to a value. See <a href="expressions.shtml">Expressions</a> for
+more information.
+
+<p>Return values have the same by-value/by-reference semantics as arguments
+(see above).
+
+<p><strong>Entry Point Functions</strong>
+
+<p>AI scripts require a user-defined <code>main</code> function,
+while map trigger scripts require a <code>main</code> function and
+a <code>config</code> function. The <code>config</code> function is
+run before the game starts initializing the map. The <code>main</code>
+function is the entry point for execution when the game begins.
+
+<p>These must have the following prototypes, respectively:
+
+<pre class="source">
+<span class="keyword">function</span> main <span class="keyword">takes</span> <span class="type">nothing</span> <span class="keyword">returns</span> <span class="type">nothing</span>
+
+<span class="keyword">function</span> config <span class="keyword">takes</span> <span class="type">nothing</span> <span class="keyword">returns</span> <span class="type">nothing</span>
+</pre>
+
+
+
+</body>
+</html>

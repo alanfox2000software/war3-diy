@@ -1,0 +1,567 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "DIALOG",
+            "name": "AllianceDialog",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.576f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.48f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DialogBackdrop",
+                    "child": [
+                        "AllianceBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "BACKDROP",
+                    "name": "AllianceBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuBackground,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.048,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.128,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.01",
+                                "0.01",
+                                "0.01",
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "EscMenuBorder,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "TEXT",
+                    "name": "AllianceTitle",
+                    "inherits": "EscMenuTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "AllianceDialog,",
+                                "TOPLEFT,",
+                                "0.03375,",
+                                "-0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "ALLIANCES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "TEXT",
+                    "name": "ResourceTradingTitle",
+                    "inherits": "EscMenuTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "AllianceDialog,",
+                                "TOPRIGHT,",
+                                "-0.03375,",
+                                "-0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "RESOURCE_TRADING,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 4,
+                    "type": "TEXT",
+                    "name": "PlayersHeader",
+                    "inherits": "EscMenuLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "AllianceDialog,",
+                                "TOPLEFT,",
+                                "0.03625,",
+                                "-0.060875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "PLAYERS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 5,
+                    "type": "TEXT",
+                    "name": "AllyHeader",
+                    "inherits": "EscMenuLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.0375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "PlayersHeader,",
+                                "BOTTOMRIGHT,",
+                                "0.196,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "ALLY,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 6,
+                    "type": "TEXT",
+                    "name": "VisionHeader",
+                    "inherits": "EscMenuLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.0375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "AllyHeader,",
+                                "BOTTOMRIGHT,",
+                                "0.003,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "SHARE_VISION,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 7,
+                    "type": "TEXT",
+                    "name": "UnitsHeader",
+                    "inherits": "EscMenuLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.0375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "VisionHeader,",
+                                "BOTTOMRIGHT,",
+                                "0.003,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "SHARE_UNITS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 8,
+                    "type": "TEXT",
+                    "name": "GoldHeader",
+                    "inherits": "EscMenuLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.0375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "UnitsHeader,",
+                                "BOTTOMRIGHT,",
+                                "0.0477,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "GOLD,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 9,
+                    "type": "TEXT",
+                    "name": "LumberHeader",
+                    "inherits": "EscMenuLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.0375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "GoldHeader,",
+                                "BOTTOMRIGHT,",
+                                "0.019,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "LUMBER,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 10,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "AllianceAcceptButton",
+                    "inherits": "EscMenuButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.13,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,",
+                                "AllianceDialog,",
+                                "BOTTOM,",
+                                "-0.003,",
+                                "0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "AllianceAcceptButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 11,
+                            "type": "TEXT",
+                            "name": "AllianceAcceptButtonText",
+                            "inherits": "EscMenuButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "ACCEPT,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 12,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "AllianceCancelButton",
+                    "inherits": "EscMenuButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.13,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "AllianceAcceptButton,",
+                                "RIGHT,",
+                                "0.005,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "AllianceCancelButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 13,
+                            "type": "TEXT",
+                            "name": "AllianceCancelButtonText",
+                            "inherits": "EscMenuButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "CANCEL,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 14,
+                    "type": "GLUECHECKBOX",
+                    "name": "AlliedVictoryCheckBox",
+                    "inherits": "EscMenuCheckBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.024,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.024,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "AllianceDialog,",
+                                "BOTTOM,",
+                                "-0.056875,",
+                                "0.06875,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 15,
+                    "type": "TEXT",
+                    "name": "AlliedVictoryLabel",
+                    "inherits": "EscMenuTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "AlliedVictoryCheckBox,",
+                                "RIGHT,",
+                                "0.01,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "ALLIED_VICTORY,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

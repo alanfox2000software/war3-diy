@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type attacktype</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type attacktype</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> attacktype</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#89">89</a></td></tr>
+</table>
+<p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Information about type <span class="hi">attacktype</span></a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<p>attacktype is used by the damage functions to determine how the damage will act against units with different armor types, this behaviur depends on the gameplay constants related with attack type and armor type.<p>ATTACK_TYPE_UNKNOWN or null seems to ignore the unit's armor.</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">attacktype</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8">
+<p><a href="common_j-variables.shtml">common.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#7FEFE8"></td><td bgcolor="#7FEFE8">
+<strong><a href="common_j-variables.shtml#ATTACK_TYPE_CHAOS">ATTACK_TYPE_CHAOS</a>,
+<a href="common_j-variables.shtml#ATTACK_TYPE_HERO">ATTACK_TYPE_HERO</a>,
+<a href="common_j-variables.shtml#ATTACK_TYPE_MAGIC">ATTACK_TYPE_MAGIC</a>,
+<a href="common_j-variables.shtml#ATTACK_TYPE_MELEE">ATTACK_TYPE_MELEE</a>,
+<a href="common_j-variables.shtml#ATTACK_TYPE_NORMAL">ATTACK_TYPE_NORMAL</a>,
+<a href="common_j-variables.shtml#ATTACK_TYPE_PIERCE">ATTACK_TYPE_PIERCE</a>,
+<a href="common_j-variables.shtml#ATTACK_TYPE_SIEGE">ATTACK_TYPE_SIEGE</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">attacktype</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#ConvertAttackType">ConvertAttackType</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> i<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-attacktype.shtml">attacktype</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">attacktype</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitDamagePoint">UnitDamagePoint</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-real.shtml">real</a> delay, <a href="BUILT_IN-types-real.shtml">real</a> radius, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="BUILT_IN-types-real.shtml">real</a> amount, <a href="BUILT_IN-types-boolean.shtml">boolean</a> attack, <a href="BUILT_IN-types-boolean.shtml">boolean</a> ranged, <a href="common_j-types-attacktype.shtml">attacktype</a> attackType, <a href="common_j-types-damagetype.shtml">damagetype</a> damageType, <a href="common_j-types-weapontype.shtml">weapontype</a> weaponType<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitDamagePointLoc">UnitDamagePointLoc</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-real.shtml">real</a> delay, <a href="BUILT_IN-types-real.shtml">real</a> radius, <a href="common_j-types-location.shtml">location</a> loc, <a href="BUILT_IN-types-real.shtml">real</a> amount, <a href="common_j-types-attacktype.shtml">attacktype</a> whichAttack, <a href="common_j-types-damagetype.shtml">damagetype</a> whichDamage<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitDamageTarget">UnitDamageTarget</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-widget.shtml">widget</a> target, <a href="BUILT_IN-types-real.shtml">real</a> amount, <a href="BUILT_IN-types-boolean.shtml">boolean</a> attack, <a href="BUILT_IN-types-boolean.shtml">boolean</a> ranged, <a href="common_j-types-attacktype.shtml">attacktype</a> attackType, <a href="common_j-types-damagetype.shtml">damagetype</a> damageType, <a href="common_j-types-weapontype.shtml">weapontype</a> weaponType<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitDamageTargetBJ">UnitDamageTargetBJ</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-unit.shtml">unit</a> target, <a href="BUILT_IN-types-real.shtml">real</a> amount, <a href="common_j-types-attacktype.shtml">attacktype</a> whichAttack, <a href="common_j-types-damagetype.shtml">damagetype</a> whichDamage<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

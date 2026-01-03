@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type camerafield</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type camerafield</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> camerafield</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#61">61</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">camerafield</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8">
+<p><a href="common_j-variables.shtml">common.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#7FEFE8"></td><td bgcolor="#7FEFE8">
+<strong><a href="common_j-variables.shtml#CAMERA_FIELD_ANGLE_OF_ATTACK">CAMERA_FIELD_ANGLE_OF_ATTACK</a>,
+<a href="common_j-variables.shtml#CAMERA_FIELD_FARZ">CAMERA_FIELD_FARZ</a>,
+<a href="common_j-variables.shtml#CAMERA_FIELD_FIELD_OF_VIEW">CAMERA_FIELD_FIELD_OF_VIEW</a>,
+<a href="common_j-variables.shtml#CAMERA_FIELD_ROLL">CAMERA_FIELD_ROLL</a>,
+<a href="common_j-variables.shtml#CAMERA_FIELD_ROTATION">CAMERA_FIELD_ROTATION</a>,
+<a href="common_j-variables.shtml#CAMERA_FIELD_TARGET_DISTANCE">CAMERA_FIELD_TARGET_DISTANCE</a>,
+<a href="common_j-variables.shtml#CAMERA_FIELD_ZOFFSET">CAMERA_FIELD_ZOFFSET</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">camerafield</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#ConvertCameraField">ConvertCameraField</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> i<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-camerafield.shtml">camerafield</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">camerafield</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#AdjustCameraField">AdjustCameraField</a></strong> <strong>(</strong><a href="common_j-types-camerafield.shtml">camerafield</a> whichField, <a href="BUILT_IN-types-real.shtml">real</a> offset, <a href="BUILT_IN-types-real.shtml">real</a> duration<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CameraSetupGetField">CameraSetupGetField</a></strong> <strong>(</strong><a href="common_j-types-camerasetup.shtml">camerasetup</a> whichSetup, <a href="common_j-types-camerafield.shtml">camerafield</a> whichField<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CameraSetupGetFieldSwap">CameraSetupGetFieldSwap</a></strong> <strong>(</strong><a href="common_j-types-camerafield.shtml">camerafield</a> whichField, <a href="common_j-types-camerasetup.shtml">camerasetup</a> whichSetup<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CameraSetupSetField">CameraSetupSetField</a></strong> <strong>(</strong><a href="common_j-types-camerasetup.shtml">camerasetup</a> whichSetup, <a href="common_j-types-camerafield.shtml">camerafield</a> whichField, <a href="BUILT_IN-types-real.shtml">real</a> value, <a href="BUILT_IN-types-real.shtml">real</a> duration<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetCameraField">GetCameraField</a></strong> <strong>(</strong><a href="common_j-types-camerafield.shtml">camerafield</a> whichField<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetCameraField">SetCameraField</a></strong> <strong>(</strong><a href="common_j-types-camerafield.shtml">camerafield</a> whichField, <a href="BUILT_IN-types-real.shtml">real</a> value, <a href="BUILT_IN-types-real.shtml">real</a> duration<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetCameraFieldForPlayer">SetCameraFieldForPlayer</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-camerafield.shtml">camerafield</a> whichField, <a href="BUILT_IN-types-real.shtml">real</a> value, <a href="BUILT_IN-types-real.shtml">real</a> duration<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

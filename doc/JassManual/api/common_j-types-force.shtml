@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type force</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type force</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> <a href="common_j-types-agent.shtml">agent</a> <strong>&gt;</strong> force</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#14">14</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">force</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf">
+<p><a href="Blizzard_j-variables.shtml">Blizzard.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#faffbf"></td><td bgcolor="#faffbf">
+<strong><a href="Blizzard_j-variables.shtml#bj_FORCE_ALL_PLAYERS">bj_FORCE_ALL_PLAYERS</a>,
+<a href="Blizzard_j-variables.shtml#bj_FORCE_PLAYER">bj_FORCE_PLAYER</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">force</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateForce">CreateForce</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-force.shtml">force</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetForceOfPlayer">GetForceOfPlayer</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-force.shtml">force</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetPlayersAll">GetPlayersAll</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-force.shtml">force</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetPlayersAllies">GetPlayersAllies</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-force.shtml">force</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetPlayersByMapControl">GetPlayersByMapControl</a></strong> <strong>(</strong><a href="common_j-types-mapcontrol.shtml">mapcontrol</a> whichControl<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-force.shtml">force</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetPlayersEnemies">GetPlayersEnemies</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-force.shtml">force</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetPlayersMatching">GetPlayersMatching</a></strong> <strong>(</strong><a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-force.shtml">force</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LoadForceHandle">LoadForceHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-force.shtml">force</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LoadForceHandleBJ">LoadForceHandleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-force.shtml">force</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#MeleeCheckForVictors">MeleeCheckForVictors</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-force.shtml">force</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">force</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CinematicModeBJ">CinematicModeBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> cineMode, <a href="common_j-types-force.shtml">force</a> forForce<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CinematicModeExBJ">CinematicModeExBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> cineMode, <a href="common_j-types-force.shtml">force</a> forForce, <a href="BUILT_IN-types-real.shtml">real</a> interfaceFadeTime<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ClearTextMessagesBJ">ClearTextMessagesBJ</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> toForce<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CountPlayersInForceBJ">CountPlayersInForceBJ</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> f<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CreateLeaderboardBJ">CreateLeaderboardBJ</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> toForce, <a href="BUILT_IN-types-string.shtml">string</a> label<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-leaderboard.shtml">leaderboard</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CripplePlayer">CripplePlayer</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-force.shtml">force</a> toWhichPlayers, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#DestroyForce">DestroyForce</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#DisplayTextToForce">DisplayTextToForce</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> toForce, <a href="BUILT_IN-types-string.shtml">string</a> message<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#DisplayTimedTextToForce">DisplayTimedTextToForce</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> toForce, <a href="BUILT_IN-types-real.shtml">real</a> duration, <a href="BUILT_IN-types-string.shtml">string</a> message<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#EnableOcclusionBJ">EnableOcclusionBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> enable, <a href="common_j-types-force.shtml">force</a> f<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#EnableWorldFogBoundaryBJ">EnableWorldFogBoundaryBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> enable, <a href="common_j-types-force.shtml">force</a> f<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ForceAddPlayer">ForceAddPlayer</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="common_j-types-player.shtml">player</a> whichPlayer<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ForceAddPlayerSimple">ForceAddPlayerSimple</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-force.shtml">force</a> whichForce<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ForceClear">ForceClear</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ForceEnumAllies">ForceEnumAllies</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ForceEnumEnemies">ForceEnumEnemies</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ForceEnumPlayers">ForceEnumPlayers</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ForceEnumPlayersCounted">ForceEnumPlayersCounted</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter, <a href="BUILT_IN-types-integer.shtml">integer</a> countLimit<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ForcePickRandomPlayer">ForcePickRandomPlayer</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-player.shtml">player</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ForceRemovePlayer">ForceRemovePlayer</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="common_j-types-player.shtml">player</a> whichPlayer<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ForceRemovePlayerSimple">ForceRemovePlayerSimple</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-force.shtml">force</a> whichForce<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ForceSetLeaderboardBJ">ForceSetLeaderboardBJ</a></strong> <strong>(</strong><a href="common_j-types-leaderboard.shtml">leaderboard</a> lb, <a href="common_j-types-force.shtml">force</a> toForce<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#ForForce">ForForce</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="BUILT_IN-types-code.shtml">code</a> callback<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#IsPlayerInForce">IsPlayerInForce</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-force.shtml">force</a> whichForce<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#IsUnitInForce">IsUnitInForce</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-force.shtml">force</a> whichForce<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#MakeUnitRescuableToForceBJ">MakeUnitRescuableToForceBJ</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-boolean.shtml">boolean</a> isRescuable, <a href="common_j-types-force.shtml">force</a> whichForce<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#PingMinimapForForce">PingMinimapForForce</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="BUILT_IN-types-real.shtml">real</a> duration<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#PingMinimapForForceEx">PingMinimapForForceEx</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="BUILT_IN-types-real.shtml">real</a> duration, <a href="BUILT_IN-types-integer.shtml">integer</a> style, <a href="BUILT_IN-types-real.shtml">real</a> red, <a href="BUILT_IN-types-real.shtml">real</a> green, <a href="BUILT_IN-types-real.shtml">real</a> blue<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#PingMinimapLocForForce">PingMinimapLocForForce</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="common_j-types-location.shtml">location</a> loc, <a href="BUILT_IN-types-real.shtml">real</a> duration<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#PingMinimapLocForForceEx">PingMinimapLocForForceEx</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="common_j-types-location.shtml">location</a> loc, <a href="BUILT_IN-types-real.shtml">real</a> duration, <a href="BUILT_IN-types-integer.shtml">integer</a> style, <a href="BUILT_IN-types-real.shtml">real</a> red, <a href="BUILT_IN-types-real.shtml">real</a> green, <a href="BUILT_IN-types-real.shtml">real</a> blue<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#QuestMessageBJ">QuestMessageBJ</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> f, <a href="BUILT_IN-types-integer.shtml">integer</a> messageType, <a href="BUILT_IN-types-string.shtml">string</a> message<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SaveForceHandle">SaveForceHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey, <a href="common_j-types-force.shtml">force</a> whichForce<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SaveForceHandleBJ">SaveForceHandleBJ</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetForceAllianceStateBJ">SetForceAllianceStateBJ</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> sourceForce, <a href="common_j-types-force.shtml">force</a> targetForce, <a href="BUILT_IN-types-integer.shtml">integer</a> allianceState<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetForceAllianceStateBJ">SetForceAllianceStateBJ</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> sourceForce, <a href="common_j-types-force.shtml">force</a> targetForce, <a href="BUILT_IN-types-integer.shtml">integer</a> allianceState<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetUserControlForceOff">SetUserControlForceOff</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetUserControlForceOn">SetUserControlForceOn</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ShowInterfaceForceOff">ShowInterfaceForceOff</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="BUILT_IN-types-real.shtml">real</a> fadeDuration<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ShowInterfaceForceOn">ShowInterfaceForceOn</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> whichForce, <a href="BUILT_IN-types-real.shtml">real</a> fadeDuration<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ShowTextTagForceBJ">ShowTextTagForceBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> show, <a href="common_j-types-texttag.shtml">texttag</a> tt, <a href="common_j-types-force.shtml">force</a> whichForce<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#TransmissionFromUnitTypeWithNameBJ">TransmissionFromUnitTypeWithNameBJ</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> toForce, <a href="common_j-types-player.shtml">player</a> fromPlayer, <a href="BUILT_IN-types-integer.shtml">integer</a> unitId, <a href="BUILT_IN-types-string.shtml">string</a> unitName, <a href="common_j-types-location.shtml">location</a> loc, <a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-string.shtml">string</a> message, <a href="BUILT_IN-types-integer.shtml">integer</a> timeType, <a href="BUILT_IN-types-real.shtml">real</a> timeVal, <a href="BUILT_IN-types-boolean.shtml">boolean</a> wait<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#TransmissionFromUnitWithNameBJ">TransmissionFromUnitWithNameBJ</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> toForce, <a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-string.shtml">string</a> unitName, <a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-string.shtml">string</a> message, <a href="BUILT_IN-types-integer.shtml">integer</a> timeType, <a href="BUILT_IN-types-real.shtml">real</a> timeVal, <a href="BUILT_IN-types-boolean.shtml">boolean</a> wait<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

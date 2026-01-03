@@ -1,0 +1,44 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "TeamSetup",
+            "inherits": "",
+            "fields": [],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "HIGHLIGHT",
+                    "name": "Test",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "SHADE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightColor",
+                            "child": [
+                                "1.0",
+                                "0.0",
+                                "0.0",
+                                "0.2,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

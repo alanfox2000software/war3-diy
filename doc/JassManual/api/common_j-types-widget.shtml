@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type widget</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type widget</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> <a href="common_j-types-agent.shtml">agent</a> <strong>&gt;</strong> widget</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd"><a href="common_j-types-destructable.shtml">destructable</a>,
+<a href="common_j-types-item.shtml">item</a>,
+<a href="common_j-types-unit.shtml">unit</a>
+</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#8">8</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">widget</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf">
+<p><a href="Blizzard_j-variables.shtml">Blizzard.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#faffbf"></td><td bgcolor="#faffbf">
+<strong><a href="Blizzard_j-variables.shtml#bj_lastDyingWidget">bj_lastDyingWidget</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">widget</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetOrderTarget">GetOrderTarget</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-widget.shtml">widget</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetTriggerWidget">GetTriggerWidget</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-widget.shtml">widget</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LoadWidgetHandle">LoadWidgetHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-widget.shtml">widget</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LoadWidgetHandleBJ">LoadWidgetHandleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-widget.shtml">widget</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">widget</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#AddIndicator">AddIndicator</a></strong> <strong>(</strong><a href="common_j-types-widget.shtml">widget</a> whichWidget, <a href="BUILT_IN-types-integer.shtml">integer</a> red, <a href="BUILT_IN-types-integer.shtml">integer</a> green, <a href="BUILT_IN-types-integer.shtml">integer</a> blue, <a href="BUILT_IN-types-integer.shtml">integer</a> alpha<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#AddSpecialEffectTarget">AddSpecialEffectTarget</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> modelName, <a href="common_j-types-widget.shtml">widget</a> targetWidget, <a href="BUILT_IN-types-string.shtml">string</a> attachPointName<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-effect.shtml">effect</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#AddSpecialEffectTargetUnitBJ">AddSpecialEffectTargetUnitBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> attachPointName, <a href="common_j-types-widget.shtml">widget</a> targetWidget, <a href="BUILT_IN-types-string.shtml">string</a> modelName<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-effect.shtml">effect</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#AddSpellEffectTarget">AddSpellEffectTarget</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> modelName, <a href="common_j-types-effecttype.shtml">effecttype</a> t, <a href="common_j-types-widget.shtml">widget</a> targetWidget, <a href="BUILT_IN-types-string.shtml">string</a> attachPoint<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-effect.shtml">effect</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#AddSpellEffectTargetById">AddSpellEffectTargetById</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> abilityId, <a href="common_j-types-effecttype.shtml">effecttype</a> t, <a href="common_j-types-widget.shtml">widget</a> targetWidget, <a href="BUILT_IN-types-string.shtml">string</a> attachPoint<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-effect.shtml">effect</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetItemLifeBJ">GetItemLifeBJ</a></strong> <strong>(</strong><a href="common_j-types-widget.shtml">widget</a> whichWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetWidgetLife">GetWidgetLife</a></strong> <strong>(</strong><a href="common_j-types-widget.shtml">widget</a> whichWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetWidgetX">GetWidgetX</a></strong> <strong>(</strong><a href="common_j-types-widget.shtml">widget</a> whichWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetWidgetY">GetWidgetY</a></strong> <strong>(</strong><a href="common_j-types-widget.shtml">widget</a> whichWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GroupTargetDestructableOrder">GroupTargetDestructableOrder</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="BUILT_IN-types-string.shtml">string</a> order, <a href="common_j-types-widget.shtml">widget</a> targetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GroupTargetItemOrder">GroupTargetItemOrder</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="BUILT_IN-types-string.shtml">string</a> order, <a href="common_j-types-widget.shtml">widget</a> targetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GroupTargetOrder">GroupTargetOrder</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="BUILT_IN-types-string.shtml">string</a> order, <a href="common_j-types-widget.shtml">widget</a> targetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GroupTargetOrderBJ">GroupTargetOrderBJ</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="BUILT_IN-types-string.shtml">string</a> order, <a href="common_j-types-widget.shtml">widget</a> targetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GroupTargetOrderById">GroupTargetOrderById</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="BUILT_IN-types-integer.shtml">integer</a> order, <a href="common_j-types-widget.shtml">widget</a> targetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IssueInstantPointOrder">IssueInstantPointOrder</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-string.shtml">string</a> order, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="common_j-types-widget.shtml">widget</a> instantTargetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IssueInstantPointOrderById">IssueInstantPointOrderById</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-integer.shtml">integer</a> order, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="common_j-types-widget.shtml">widget</a> instantTargetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IssueInstantTargetOrder">IssueInstantTargetOrder</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-string.shtml">string</a> order, <a href="common_j-types-widget.shtml">widget</a> targetWidget, <a href="common_j-types-widget.shtml">widget</a> instantTargetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IssueInstantTargetOrder">IssueInstantTargetOrder</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-string.shtml">string</a> order, <a href="common_j-types-widget.shtml">widget</a> targetWidget, <a href="common_j-types-widget.shtml">widget</a> instantTargetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IssueInstantTargetOrderById">IssueInstantTargetOrderById</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-integer.shtml">integer</a> order, <a href="common_j-types-widget.shtml">widget</a> targetWidget, <a href="common_j-types-widget.shtml">widget</a> instantTargetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IssueInstantTargetOrderById">IssueInstantTargetOrderById</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-integer.shtml">integer</a> order, <a href="common_j-types-widget.shtml">widget</a> targetWidget, <a href="common_j-types-widget.shtml">widget</a> instantTargetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IssueNeutralTargetOrder">IssueNeutralTargetOrder</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> forWhichPlayer, <a href="common_j-types-unit.shtml">unit</a> neutralStructure, <a href="BUILT_IN-types-string.shtml">string</a> unitToBuild, <a href="common_j-types-widget.shtml">widget</a> target<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IssueNeutralTargetOrderById">IssueNeutralTargetOrderById</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> forWhichPlayer, <a href="common_j-types-unit.shtml">unit</a> neutralStructure, <a href="BUILT_IN-types-integer.shtml">integer</a> unitId, <a href="common_j-types-widget.shtml">widget</a> target<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#IssueTargetDestructableOrder">IssueTargetDestructableOrder</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-string.shtml">string</a> order, <a href="common_j-types-widget.shtml">widget</a> targetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#IssueTargetItemOrder">IssueTargetItemOrder</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-string.shtml">string</a> order, <a href="common_j-types-widget.shtml">widget</a> targetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IssueTargetOrder">IssueTargetOrder</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-string.shtml">string</a> order, <a href="common_j-types-widget.shtml">widget</a> targetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#IssueTargetOrderBJ">IssueTargetOrderBJ</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-string.shtml">string</a> order, <a href="common_j-types-widget.shtml">widget</a> targetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IssueTargetOrderById">IssueTargetOrderById</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-integer.shtml">integer</a> order, <a href="common_j-types-widget.shtml">widget</a> targetWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SaveWidgetHandle">SaveWidgetHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey, <a href="common_j-types-widget.shtml">widget</a> whichWidget<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SaveWidgetHandleBJ">SaveWidgetHandleBJ</a></strong> <strong>(</strong><a href="common_j-types-widget.shtml">widget</a> whichWidget, <a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetItemLifeBJ">SetItemLifeBJ</a></strong> <strong>(</strong><a href="common_j-types-widget.shtml">widget</a> whichWidget, <a href="BUILT_IN-types-real.shtml">real</a> life<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetWidgetLife">SetWidgetLife</a></strong> <strong>(</strong><a href="common_j-types-widget.shtml">widget</a> whichWidget, <a href="BUILT_IN-types-real.shtml">real</a> newLife<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TriggerRegisterDeathEvent">TriggerRegisterDeathEvent</a></strong> <strong>(</strong><a href="common_j-types-trigger.shtml">trigger</a> whichTrigger, <a href="common_j-types-widget.shtml">widget</a> whichWidget<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-event.shtml">event</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitDamageTarget">UnitDamageTarget</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-widget.shtml">widget</a> target, <a href="BUILT_IN-types-real.shtml">real</a> amount, <a href="BUILT_IN-types-boolean.shtml">boolean</a> attack, <a href="BUILT_IN-types-boolean.shtml">boolean</a> ranged, <a href="common_j-types-attacktype.shtml">attacktype</a> attackType, <a href="common_j-types-damagetype.shtml">damagetype</a> damageType, <a href="common_j-types-weapontype.shtml">weapontype</a> weaponType<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitDropItemTarget">UnitDropItemTarget</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-widget.shtml">widget</a> target<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitDropItemTargetBJ">UnitDropItemTargetBJ</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-widget.shtml">widget</a> target<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitUseItemDestructable">UnitUseItemDestructable</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-widget.shtml">widget</a> target<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitUseItemTarget">UnitUseItemTarget</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-widget.shtml">widget</a> target<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#WidgetDropItem">WidgetDropItem</a></strong> <strong>(</strong><a href="common_j-types-widget.shtml">widget</a> inWidget, <a href="BUILT_IN-types-integer.shtml">integer</a> inItemID<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

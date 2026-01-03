@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="./css/tw.css" rel="stylesheet">
+
+    <script src="./js/vue.js"></script>
+    <script src="./js/jq.js"></script>
+    <script src="./js/War3Api.js"></script>
+    <script src="./layer/layer.js"></script>
+    <title>War3Api</title>
+</head>
+
+<body>
+    <div style="padding-top: 1vh;" id="app">
+        <div class="w-full bg-blue-200 p-2 flex flex-row justify-around">
+            <div class="flex-none w-1/3">War3Api</div>
+            <div class="flex-1">
+                <input type="text" :value="keyword" class="rounded-none w-full"placeholder="搜索" @change="searchKeyword">
+            </div>
+            <div class="ml-2" @click="clearSearch">重置</div>
+        </div>
+
+        <div class="flex flex-row flex-wrap mt-3 text-xs">
+            <div class="flex flex-row m-2" @click="showInfo(item)" v-for="item in listData">
+                <div class="bg-yellow-200 p-1">{{item.nameUS}}</div>
+                <div class="bg-green-200 p-1" v-if="item.nameUS.includes('Dz')">Dz</div>
+                <div class="bg-red-200 p-1 " v-if="item.usPath.includes('YDWE')">YDWE</div>
+                <div class="bg-purple-200 p-1" v-if="item.category">{{item.category}}</div>
+                <div class="bg-indigo-200 p-1 ">{{ item.usPath }}</div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let option = {
+        el: "#app",
+        data: {
+            warApi: window.War3Api,
+            apiType: "dz", //dz|yd
+            keyword: "",
+            searchResult: [],
+        },
+        computed: {
+            //获取转换后的值
+            apiData() {
+                console.log("dd");
+                let result = [];
+                if (this.apiType == "dz") {
+                    result = this.warApi.filter(
+                        item => {
+                            console.log("d", item);
+                            return item.nameUS.includes('Dz')
+                        }
+                    );
+                }
+                if (this.apiType == 'yd') {
+                    result = this.warApi.filter(
+                        item => item.usPath.includes('YDWE'));
+                }
+                return result;
+            },
+            listData(){
+                return this.keyword ? this.searchResult : this.warApi;
+            }
+        },
+        methods: {
+            setType(type) {
+                this.apiType = type;
+            },
+            searchKeyword(e) {
+                const OPTIONS_KEYS = ['nameUS', 'title', 'usPath'];
+                
+                let keyword = e.target.value;
+                let data = this.warApi
+                if (keyword.trim()) {
+                    this.keyword = keyword.trim();
+                    data = data.filter(item => {
+                        return OPTIONS_KEYS.some(key => {
+                            return item[key] 
+                            && item[key].toLowerCase().includes(keyword.toLowerCase());
+                        })
+                    })
+                }
+                this.searchResult = data;
+            },
+            clearSearch(){
+                this.keyword = "";
+            },
+            showInfo(showItem) {
+                let code_ = this.getCode(showItem);
+                let h_ = `
+                        <div  class="p-2" >
+                    <h3 class="card-title"> ${showItem.title ? showItem.title : ""}</h3>
+                    <h4 class="card-sub">${showItem.nameUS ? showItem.nameUS : ""}</h4>
+                    <div class="card-info">
+                        <p >${showItem.description ? showItem.description :""}</p>
+                        <p >${showItem.comment ? showItem.comment : ""}</p>
+                    </div>
+                    <div class="code">`+ code_ + '</div></div>';
+                layer.open({
+                    type: 1,
+                    shadeClose: true,
+                    title: false,
+                    content: h_
+                });
+            },
+            getCode(item) {
+                const CODE_TYPE_MAP = {
+                    trigger: '触发器',
+                    integer: '整数',
+                    boolean: '布尔型',
+                    real: '实数',
+                    player: '玩家',
+                    unit: '单位',
+                    handle: '触发器',
+                    sound: '音频'
+                }
+                let colorArgs = '' // 参数带类型
+                let simpleArgs = '' // 参数无类型
+                let jassResult = '' // jass 返回值
+                let luaResult = '' // lua 返回值
+                if (item.args && item.args !== 'nothing') {
+                    let list = item.args.split(', ')
+                    colorArgs = list.map(key => {
+                        let options = key.trim().split(' ')
+                        return `<span class="arg-label">${options[0]}<span class="arg-tooltip">${CODE_TYPE_MAP[options[0]] || options[0]}</span></span> <span class="arg-value">${options[1]}</span>`
+                    }).join(', ')
+                    simpleArgs = list.map(item => item.trim().split(' ')[1]).join(', ')
+                }
+                if (item.returns != 'nothing') {
+                    jassResult = `<p><span class="function-prefix">local</span> <span class="function-type">${item.returns}</span> ${(item.returns || '').slice(0, 1)} = <span class="function-name">${item.nameUS}</span><span>(</span><span>${simpleArgs}</span><span>)</span></p>`
+                    luaResult = `<p><span class="function-prefix">local</span> ${(item.returns || '').slice(0, 1)} = <span class="function-name">${item.nameUS}</span><span>(</span><span>${simpleArgs}</span><span>)</span></p>`
+                }
+                let code = `
+            <p class="memo">// jass</p>
+            <p><span class="function-prefix">call</span> <span class="function-name">${item.nameUS}</span><span>(</span><span>${colorArgs}</span><span>)</span></p>
+            <p><span class="function-prefix">call</span> <span class="function-name">${item.nameUS}</span><span>(</span><span>${simpleArgs}</span><span>)</span></p>
+            ${jassResult}
+            <br />
+            <p class="memo">// lua</p>
+            <p><span class="function-name">${item.nameUS}</span><span>(</span><span>${colorArgs}</span><span>)</span></p>
+            <p><span class="function-name">${item.nameUS}</span><span>(</span><span>${simpleArgs}</span><span>)</span></p>
+            ${luaResult}
+            `
+                return code
+            },
+        }
+    }
+    new Vue(option);
+</script>
+
+</html>

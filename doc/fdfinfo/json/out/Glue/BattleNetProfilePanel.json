@@ -1,0 +1,2642 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "TEXT",
+            "name": "TeamLabelTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.011,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "TEXT",
+            "name": "TeamValueTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.011,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 2,
+            "type": "FRAME",
+            "name": "BattleNetProfilePanel",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 3,
+                    "type": "SPRITE",
+                    "name": "ProfilePortraitFrame",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.0900,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.09185,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetProfilePanel,",
+                                "TOPLEFT,",
+                                "0.02,",
+                                "-0.034375,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 4,
+                            "type": "BACKDROP",
+                            "name": "ProfilePortraitHighlight",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\BattleNet\\bnet-profileportrait-cover.blp,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 5,
+                    "type": "TEXT",
+                    "name": "ProfileNameLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetProfilePanel,",
+                                "TOPLEFT,",
+                                "0.130625,",
+                                "-0.03125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_NAME,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 6,
+                    "type": "TEXT",
+                    "name": "ProfileNameValue",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.025,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.27625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetProfilePanel,",
+                                "TOPLEFT,",
+                                "0.131875,",
+                                "-0.05,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYMIDDLE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 7,
+                    "type": "TEXT",
+                    "name": "ProfileClanLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetProfilePanel,",
+                                "TOPLEFT,",
+                                "0.130625,",
+                                "-0.0825,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_CLAN,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 8,
+                    "type": "TEXT",
+                    "name": "ProfileClanValue",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.025,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.22875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetProfilePanel,",
+                                "TOPLEFT,",
+                                "0.131875,",
+                                "-0.101875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYMIDDLE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 9,
+                    "type": "TEXT",
+                    "name": "ProfileHomepageLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetProfilePanel,",
+                                "TOPLEFT,",
+                                "0.0175,",
+                                "-0.1525,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_HOMEPAGE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 10,
+                    "type": "EDITBOX",
+                    "name": "ProfileHomepageField",
+                    "inherits": "BattleNetEditBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.39,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfileHomepageLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.001,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusDefault,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusNext",
+                            "child": [
+                                "ProfileAdditionalField,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 11,
+                    "type": "TEXT",
+                    "name": "ProfileAdditionalLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfileHomepageField,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_ADDITIONAL_INFORMATION,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 12,
+                    "type": "EDITBOX",
+                    "name": "ProfileAdditionalField",
+                    "inherits": "BattleNetEditBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.39,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfileAdditionalLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.001,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusNext",
+                            "child": [
+                                "ProfileBackButton,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 13,
+                    "type": "TEXT",
+                    "name": "ProfileSoloLabel",
+                    "inherits": "BattleNetInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "BattleNetProfilePanel,",
+                                "BOTTOMLEFT,",
+                                "0.11,",
+                                "0.188125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "SOLO_GAMES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 14,
+                    "type": "TEXT",
+                    "name": "ProfileSoloLevelValue",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ProfileSoloLabel,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.004125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 15,
+                    "type": "SPRITE",
+                    "name": "ProfileSoloLevelBar",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ProfileSoloLabel,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.016375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackgroundArt",
+                            "child": [
+                                "UI\\Glues\\BattleNet\\BattlenetProfileLevelBar\\BattlenetProfileLevelBar.mdl,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 16,
+                    "type": "TEXT",
+                    "name": "ProfileSoloPreviousLevelValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfileSoloLevelBar,",
+                                "BOTTOMLEFT,",
+                                "0.00625,",
+                                "0.00625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "0.7",
+                                "0.7",
+                                "0.7,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 17,
+                    "type": "TEXT",
+                    "name": "ProfileSoloCurrentLevelValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ProfileSoloLevelBar,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "0.00625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "0.7",
+                                "0.7",
+                                "0.7,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 18,
+                    "type": "TEXT",
+                    "name": "ProfileSoloNextLevelValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileSoloLevelBar,",
+                                "BOTTOMRIGHT,",
+                                "-0.00625,",
+                                "0.00625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "0.7",
+                                "0.7",
+                                "0.7,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 19,
+                    "type": "TEXT",
+                    "name": "ProfileSoloWinsLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ProfileSoloLabel,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.081875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_WINS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 20,
+                    "type": "TEXT",
+                    "name": "ProfileSoloWinsValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfileSoloWinsLabel,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 21,
+                    "type": "TEXT",
+                    "name": "ProfileSoloLossesLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ProfileSoloWinsLabel,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_LOSSES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 22,
+                    "type": "TEXT",
+                    "name": "ProfileSoloLossesValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfileSoloLossesLabel,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 23,
+                    "type": "TEXT",
+                    "name": "ProfileSoloRankLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ProfileSoloLossesLabel,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_RANK,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 24,
+                    "type": "TEXT",
+                    "name": "ProfileSoloRankValue",
+                    "inherits": "BattleNetTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ProfileSoloRankLabel,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 25,
+                    "type": "TEXT",
+                    "name": "ProfileTeamLabel",
+                    "inherits": "BattleNetInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "BattleNetProfilePanel,",
+                                "BOTTOMLEFT,",
+                                "0.31625,",
+                                "0.188125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "TEAM_GAMES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 26,
+                    "type": "TEXT",
+                    "name": "ProfileTeamLevelValue",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ProfileTeamLabel,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.004125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 27,
+                    "type": "SPRITE",
+                    "name": "ProfileTeamLevelBar",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ProfileTeamLabel,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.016375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackgroundArt",
+                            "child": [
+                                "UI\\Glues\\BattleNet\\BattlenetProfileLevelBar\\BattlenetProfileLevelBar.mdl,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 28,
+                    "type": "TEXT",
+                    "name": "ProfileTeamPreviousLevelValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfileTeamLevelBar,",
+                                "BOTTOMLEFT,",
+                                "0.00625,",
+                                "0.00625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "0.7",
+                                "0.7",
+                                "0.7,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 29,
+                    "type": "TEXT",
+                    "name": "ProfileTeamCurrentLevelValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ProfileTeamLevelBar,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "0.00625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "0.7",
+                                "0.7",
+                                "0.7,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 30,
+                    "type": "TEXT",
+                    "name": "ProfileTeamNextLevelValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FrameFont",
+                            "child": [
+                                "MasterFont,",
+                                "0.011,",
+                                ","
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileTeamLevelBar,",
+                                "BOTTOMRIGHT,",
+                                "-0.00625,",
+                                "0.00625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "0.7",
+                                "0.7",
+                                "0.7,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 31,
+                    "type": "TEXT",
+                    "name": "ProfileTeamWinsLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ProfileTeamLabel,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.081875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_WINS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 32,
+                    "type": "TEXT",
+                    "name": "ProfileTeamWinsValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfileTeamWinsLabel,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 33,
+                    "type": "TEXT",
+                    "name": "ProfileTeamLossesLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ProfileTeamWinsLabel,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_LOSSES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 34,
+                    "type": "TEXT",
+                    "name": "ProfileTeamLossesValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfileTeamLossesLabel,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 35,
+                    "type": "TEXT",
+                    "name": "ProfileTeamRankLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ProfileTeamLossesLabel,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_RANK,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 36,
+                    "type": "TEXT",
+                    "name": "ProfileTeamRankValue",
+                    "inherits": "BattleNetTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.16,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ProfileTeamRankLabel,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 37,
+                    "type": "TEXT",
+                    "name": "ProfilePlayHistoryLabel",
+                    "inherits": "BattleNetTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetProfilePanel,",
+                                "TOPRIGHT,",
+                                "-0.3475,",
+                                "-0.0425,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_PLAY_HISTORY,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 38,
+                    "type": "TEXT",
+                    "name": "ProfileHumanLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfilePlayHistoryLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0285,",
+                                "-0.01625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_HUMAN,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 39,
+                    "type": "TEXT",
+                    "name": "ProfileOrcLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfileHumanLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_ORC,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 40,
+                    "type": "TEXT",
+                    "name": "ProfileUndeadLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfileOrcLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_UNDEAD,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 41,
+                    "type": "TEXT",
+                    "name": "ProfileNightElfLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfileUndeadLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_NIGHT_ELF,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 42,
+                    "type": "TEXT",
+                    "name": "ProfileRandomLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfileNightElfLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_RANDOM,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 43,
+                    "type": "TEXT",
+                    "name": "ProfileTotalLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ProfileRandomLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_TOTAL,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 44,
+                    "type": "TEXT",
+                    "name": "ProfileWinsLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfilePlayHistoryLabel,",
+                                "BOTTOMLEFT,",
+                                "0.14125,",
+                                "-0.00375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_WINS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 45,
+                    "type": "TEXT",
+                    "name": "ProfileHumanWinsValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileWinsLabel,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.00075,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 46,
+                    "type": "TEXT",
+                    "name": "ProfileOrcWinsValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileHumanWinsValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 47,
+                    "type": "TEXT",
+                    "name": "ProfileUndeadWinsValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileOrcWinsValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 48,
+                    "type": "TEXT",
+                    "name": "ProfileNightElfWinsValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileUndeadWinsValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 49,
+                    "type": "TEXT",
+                    "name": "ProfileRandomWinsValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileNightElfWinsValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 50,
+                    "type": "TEXT",
+                    "name": "ProfileTotalWinsValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileRandomWinsValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 51,
+                    "type": "TEXT",
+                    "name": "ProfileLossesLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "ProfileWinsLabel,",
+                                "RIGHT,",
+                                "0.035,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_LOSSES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 52,
+                    "type": "TEXT",
+                    "name": "ProfileHumanLossesValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileLossesLabel,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.00075,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 53,
+                    "type": "TEXT",
+                    "name": "ProfileOrcLossesValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileHumanLossesValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 54,
+                    "type": "TEXT",
+                    "name": "ProfileUndeadLossesValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileOrcLossesValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 55,
+                    "type": "TEXT",
+                    "name": "ProfileNightElfLossesValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileUndeadLossesValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 56,
+                    "type": "TEXT",
+                    "name": "ProfileRandomLossesValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileNightElfLossesValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 57,
+                    "type": "TEXT",
+                    "name": "ProfileTotalLossesValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileRandomLossesValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 58,
+                    "type": "TEXT",
+                    "name": "ProfileWinPercentageLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "ProfileLossesLabel,",
+                                "RIGHT,",
+                                "0.035,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_WIN_PERCENTAGE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 59,
+                    "type": "TEXT",
+                    "name": "ProfileHumanWinPercentageValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileWinPercentageLabel,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.00075,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 60,
+                    "type": "TEXT",
+                    "name": "ProfileOrcWinPercentageValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileHumanWinPercentageValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 61,
+                    "type": "TEXT",
+                    "name": "ProfileUndeadWinPercentageValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileOrcWinPercentageValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 62,
+                    "type": "TEXT",
+                    "name": "ProfileNightElfWinPercentageValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileUndeadWinPercentageValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 63,
+                    "type": "TEXT",
+                    "name": "ProfileRandomWinPercentageValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileNightElfWinPercentageValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 64,
+                    "type": "TEXT",
+                    "name": "ProfileTotalWinPercentageValue",
+                    "inherits": "BattleNetValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ProfileRandomWinPercentageValue,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 65,
+                    "type": "TEXT",
+                    "name": "ProfileTeamHistoryLabel",
+                    "inherits": "BattleNetTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetProfilePanel,",
+                                "TOPRIGHT,",
+                                "-0.3475,",
+                                "-0.181875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_ARRANGED_TEAM_HISTORY,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 66,
+                    "type": "BACKDROP",
+                    "name": "ProfileBackBackdrop",
+                    "inherits": "BattleNetMenuButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.24,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,BattleNetProfilePanel,BOTTOMRIGHT,",
+                                "-0.014375,",
+                                "0.099375,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 67,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "ProfileBackButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.168,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,ProfileBackBackdrop,TOPRIGHT,",
+                                        "-0.012,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "B,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "ProfileBackButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 68,
+                                    "type": "TEXT",
+                                    "name": "ProfileBackButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_BACK,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 69,
+            "type": "FRAME",
+            "name": "BattleNetProfileTeam",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "UseActiveContext,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.025,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.33125,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 70,
+                    "type": "SPRITE",
+                    "name": "TeamProfileLevelBar",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "BattleNetProfileTeam,",
+                                "LEFT,",
+                                "-0.0195,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackgroundArt",
+                            "child": [
+                                "UI\\Glues\\BattleNet\\BattleNetTeamLevelBar\\BattleNetTeamLevelBar.mdl,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 71,
+                            "type": "TEXT",
+                            "name": "TeamProfileLevelValue",
+                            "inherits": "BattleNetValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "UseActiveContext,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "CENTER,",
+                                        "TeamProfileLevelBar,",
+                                        "CENTER,",
+                                        "-0.024375,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 72,
+                    "type": "TEXT",
+                    "name": "TeamProfileWinsLabel",
+                    "inherits": "TeamLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetProfileTeam,",
+                                "TOPLEFT,",
+                                "0.0975,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_WINS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 73,
+                    "type": "TEXT",
+                    "name": "TeamProfileLossesLabel",
+                    "inherits": "TeamLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "BattleNetProfileTeam,",
+                                "BOTTOMLEFT,",
+                                "0.0975,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_LOSSES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 74,
+                    "type": "TEXT",
+                    "name": "TeamProfileWinsValue",
+                    "inherits": "TeamValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.0655,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "TeamProfileWinsLabel,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 75,
+                    "type": "TEXT",
+                    "name": "TeamProfileLossesValue",
+                    "inherits": "TeamValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.0655,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "TeamProfileLossesLabel,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 76,
+                    "type": "TEXT",
+                    "name": "TeamProfilePartnerLabel",
+                    "inherits": "TeamLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "TeamProfileWinsValue,",
+                                "RIGHT,",
+                                "0.009125,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_PARTNER,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 77,
+                    "type": "TEXT",
+                    "name": "TeamProfilePartnerAValue",
+                    "inherits": "TeamValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "TeamProfilePartnerLabel,",
+                                "TOPRIGHT,",
+                                "0.004,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 78,
+                    "type": "TEXT",
+                    "name": "TeamProfilePartnerBValue",
+                    "inherits": "TeamValueTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "UseActiveContext,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "TeamProfilePartnerAValue,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.001375,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

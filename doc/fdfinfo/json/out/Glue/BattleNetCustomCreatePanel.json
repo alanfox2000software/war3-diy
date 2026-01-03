@@ -1,0 +1,993 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "BattleNetCustomCreatePanel",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "TabFocusPush,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "TEXT",
+                    "name": "CustomCreateTitleLabel",
+                    "inherits": "BattleNetTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "BattleNetCustomCreatePanel,",
+                                "TOPLEFT,",
+                                "0.02625,",
+                                "-0.039,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_CUSTOM_CREATE_TITLE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "TEXT",
+                    "name": "CreateGameNameLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "CustomCreateTitleLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.01625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_GAME_NAME,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "EDITBOX",
+                    "name": "CreateGameNameEditBox",
+                    "inherits": "BattleNetEditBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.2375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "CreateGameNameLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.001,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusDefault,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "TabFocusNext",
+                            "child": [
+                                "AdvancedOptionsButton,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "EditTextFrame",
+                            "child": [
+                                "CreateGameNameEditBoxText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 4,
+                            "type": "TEXT",
+                            "name": "CreateGameNameEditBoxText",
+                            "inherits": "BattleNetEditBoxTextTemplate",
+                            "fields": [],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 5,
+                    "type": "GLUECHECKBOX",
+                    "name": "PublicGameRadio",
+                    "inherits": "BattleNetRadioButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.020,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.020,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "CreateGameNameEditBox,",
+                                "TOPRIGHT,",
+                                "0.002,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 6,
+                    "type": "TEXT",
+                    "name": "PublicGameLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "PublicGameRadio,",
+                                "RIGHT,",
+                                "0.003,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "PUBLIC_GAME,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 7,
+                    "type": "GLUECHECKBOX",
+                    "name": "PrivateGameRadio",
+                    "inherits": "BattleNetRadioButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.020,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.020,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "CreateGameNameEditBox,",
+                                "BOTTOMRIGHT,",
+                                "0.002,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 8,
+                    "type": "TEXT",
+                    "name": "PrivateGameLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "PrivateGameRadio,",
+                                "RIGHT,",
+                                "0.003,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "PRIVATE_GAME,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 9,
+                    "type": "TEXT",
+                    "name": "CreateGameSpeedLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "CreateGameNameEditBox,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.011875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_GAME_SPEED,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 10,
+                    "type": "BACKDROP",
+                    "name": "CreateGameSpeedSliderBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.256,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "CreateGameSpeedLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.001,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-slider-bar3.blp,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 11,
+                            "type": "SLIDER",
+                            "name": "CreateGameSpeedSlider",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.032,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.23725,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "CENTER,",
+                                        "CreateGameSpeedSliderBackdrop,",
+                                        "CENTER,",
+                                        "-0.00125,",
+                                        "-0.0003,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderMinValue",
+                                    "child": [
+                                        "0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderMaxValue",
+                                    "child": [
+                                        "2,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderInitialValue",
+                                    "child": [
+                                        "2,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderStepSize",
+                                    "child": [
+                                        "1,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderLayoutHorizontal,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SliderThumbButtonFrame",
+                                    "child": [
+                                        "CreateGameSpeedThumbButton,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 12,
+                                    "type": "BUTTON",
+                                    "name": "CreateGameSpeedThumbButton",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlBackdrop",
+                                            "child": [
+                                                "CreateGameSpeedThumbButtonBackdrop,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlDisabledBackdrop",
+                                            "child": [
+                                                "CreateGameSpeedThumbButtonDisabledBackdrop,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 13,
+                                            "type": "BACKDROP",
+                                            "name": "CreateGameSpeedThumbButtonBackdrop",
+                                            "inherits": "",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBlendAll,",
+                                                    "child": []
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackground",
+                                                    "child": [
+                                                        "UI\\Widgets\\Glues\\SinglePlayerSkirmish-ScrollBarKnob.blp,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        },
+                                        {
+                                            "fid": 14,
+                                            "type": "BACKDROP",
+                                            "name": "CreateGameSpeedThumbButtonDisabledBackdrop",
+                                            "inherits": "",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBlendAll,",
+                                                    "child": []
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackground",
+                                                    "child": [
+                                                        "UI\\Widgets\\Glues\\SinglePlayerSkirmish-ScrollBarKnobDisabled.blp,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 15,
+                    "type": "TEXT",
+                    "name": "CreateGameSpeedValue",
+                    "inherits": "BattleNetTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "CreateGameSpeedSliderBackdrop,",
+                                "RIGHT,",
+                                "0.005,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 16,
+                    "type": "TEXT",
+                    "name": "MapListLabel",
+                    "inherits": "BattleNetLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "CreateGameSpeedLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.04625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_SELECT_MAP,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 17,
+                    "type": "FRAME",
+                    "name": "MapListContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "MapListLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.001,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.230625,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 18,
+                    "type": "FRAME",
+                    "name": "MapInfoPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 19,
+                            "type": "FRAME",
+                            "name": "MapInfoPaneContainer",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.271875,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.323125,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "BattleNetCustomCreatePanel,",
+                                        "TOPRIGHT,",
+                                        "-0.180625,",
+                                        "-0.0375,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 20,
+                            "type": "BACKDROP",
+                            "name": "MapInfoBackdrop",
+                            "inherits": "BattleNetMenuSingleLargeButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,BattleNetCustomCreatePanel,TOPRIGHT,",
+                                        "-0.055,",
+                                        "-0.38,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 21,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "MapInfoButton",
+                                    "inherits": "BattleNetButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.187,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,MapInfoBackdrop,TOPRIGHT,",
+                                                "-0.032,",
+                                                "-0.015625,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "O,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "CreateGameButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "MapInfoButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 22,
+                                            "type": "TEXT",
+                                            "name": "MapInfoButtonText",
+                                            "inherits": "BattleNetButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_ADVANCED_OPTIONS,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 23,
+                    "type": "FRAME",
+                    "name": "AdvancedOptionsPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 24,
+                            "type": "FRAME",
+                            "name": "AdvancedOptionsPaneContainer",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.271875,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.323125,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "BattleNetCustomCreatePanel,",
+                                        "TOPRIGHT,",
+                                        "-0.180625,",
+                                        "-0.0375,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 25,
+                            "type": "BACKDROP",
+                            "name": "AdvancedOptionsBackdrop",
+                            "inherits": "BattleNetMenuSingleLargeButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,BattleNetCustomCreatePanel,TOPRIGHT,",
+                                        "-0.055,",
+                                        "-0.38,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 26,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "AdvancedOptionsButton",
+                                    "inherits": "BattleNetButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.187,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,AdvancedOptionsBackdrop,TOPRIGHT,",
+                                                "-0.032,",
+                                                "-0.015625,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "M,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "CreateGameButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "AdvancedOptionsButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 27,
+                                            "type": "TEXT",
+                                            "name": "AdvancedOptionsButtonText",
+                                            "inherits": "BattleNetButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_MAP_INFO,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 28,
+                    "type": "BACKDROP",
+                    "name": "CreateGameBackdrop",
+                    "inherits": "BattleNetMenuButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.24,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,BattleNetCustomCreatePanel,BOTTOMRIGHT,",
+                                "-0.014375,",
+                                "0.124375,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 29,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "CreateGameButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.168,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,CreateGameBackdrop,TOPRIGHT,",
+                                        "-0.012,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "C,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "CancelButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "CreateGameButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 30,
+                                    "type": "TEXT",
+                                    "name": "CreateGameButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_CREATE_GAME,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 31,
+                    "type": "BACKDROP",
+                    "name": "CancelBackdrop",
+                    "inherits": "BattleNetMenuButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.24,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,CreateGameBackdrop,BOTTOMRIGHT,",
+                                "0.0,",
+                                "0.015,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 32,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "CancelButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.168,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,CancelBackdrop,TOPRIGHT,",
+                                        "-0.012,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "A,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "CreateGameNameEditBox,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "CancelButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 33,
+                                    "type": "TEXT",
+                                    "name": "CancelButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_CANCEL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

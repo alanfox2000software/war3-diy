@@ -1,0 +1,534 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "AdvancedOptionsDisplay",
+            "inherits": "",
+            "fields": [],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "HIGHLIGHT",
+                    "name": "DebugTestFrame",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightColor",
+                            "child": [
+                                "1.0",
+                                "0.0",
+                                "0.0",
+                                "0.2,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "SHADE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "TEXT",
+                    "name": "AdvancedOptionsTitleLabel",
+                    "inherits": "StandardTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "AdvancedOptionsDisplay,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "AdvancedOptionsDisplay,",
+                                "TOPRIGHT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "ADVANCED_OPTIONS,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 3,
+                            "type": "TEXT",
+                            "name": "AdvancedOptionsTitleValue",
+                            "inherits": "StandardTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYRIGHT,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 4,
+                    "type": "TEXT",
+                    "name": "LockTeamsLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "AdvancedOptionsTitleLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "AdvancedOptionsTitleLabel,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_LOCK_TEAMS,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 5,
+                            "type": "TEXT",
+                            "name": "LockTeamsValue",
+                            "inherits": "StandardValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYRIGHT,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 6,
+                    "type": "TEXT",
+                    "name": "TeamsTogetherLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "LockTeamsLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "LockTeamsLabel,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_TEAMS_TOGETHER,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 7,
+                            "type": "TEXT",
+                            "name": "TeamsTogetherValue",
+                            "inherits": "StandardValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYRIGHT,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 8,
+                    "type": "TEXT",
+                    "name": "AdvSharedControlLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "TeamsTogetherLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "TeamsTogetherLabel,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_ADV_SHARED_CONTROL,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 9,
+                            "type": "TEXT",
+                            "name": "AdvSharedControlValue",
+                            "inherits": "StandardValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYRIGHT,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 10,
+                    "type": "TEXT",
+                    "name": "RandomRacesLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "AdvSharedControlLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "AdvSharedControlLabel,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_RANDOM_RACES,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 11,
+                            "type": "TEXT",
+                            "name": "RandomRacesValue",
+                            "inherits": "StandardValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYRIGHT,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 12,
+                    "type": "TEXT",
+                    "name": "RandomHeroLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "RandomRacesLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "RandomRacesLabel,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_RANDOM_HERO,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 13,
+                            "type": "TEXT",
+                            "name": "RandomHeroValue",
+                            "inherits": "StandardValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYRIGHT,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 14,
+                    "type": "TEXT",
+                    "name": "ObserversLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "RandomHeroLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "RandomHeroLabel,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_OBSERVERS,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 15,
+                            "type": "TEXT",
+                            "name": "ObserversValue",
+                            "inherits": "StandardValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYRIGHT,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 16,
+                    "type": "TEXT",
+                    "name": "MapVisibilityLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ObserversLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ObserversLabel,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_VISIBILITY,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 17,
+                            "type": "TEXT",
+                            "name": "MapVisibilityValue",
+                            "inherits": "StandardValueTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYRIGHT,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

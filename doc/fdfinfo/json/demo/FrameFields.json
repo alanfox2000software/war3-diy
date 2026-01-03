@@ -1,0 +1,412 @@
+[
+  {
+    "frame": "DIALOG",
+    "fields": [
+      "Width",
+      "Height",
+      "DialogBackdrop",
+      "UseActiveContext,",
+      "DecorateFileNames,",
+      "FrameFont"
+    ]
+  },
+  {
+    "frame": "BACKDROP",
+    "fields": [
+      "DecorateFileNames,",
+      "BackdropTileBackground,",
+      "BackdropBackground",
+      "BackdropCornerFlags",
+      "BackdropCornerSize",
+      "BackdropBackgroundSize",
+      "BackdropBackgroundInsets",
+      "BackdropEdgeFile",
+      "BackdropBlendAll,",
+      "UseActiveContext,",
+      "SetPoint",
+      "Height",
+      "Width",
+      "SetAllPoints,",
+      "BackdropMirrored,",
+      "BackdropCornerFile",
+      "BackdropLeftFile",
+      "BackdropRightFile",
+      "BackdropTopFile",
+      "BackdropBottomFile",
+      "BackdropHalfSides,"
+    ]
+  },
+  {
+    "frame": "TEXT",
+    "fields": [
+      "SetPoint",
+      "FontJustificationH",
+      "Text",
+      "Width",
+      "UseActiveContext,",
+      "Height",
+      "FontJustificationV",
+      "FontColor",
+      "DecorateFileNames,",
+      "FrameFont",
+      "FontFlags",
+      "FontHighlightColor",
+      "FontDisabledColor",
+      "FontShadowColor",
+      "FontShadowOffset",
+      "SetAllPoints,",
+      "FontJustificationOffset",
+      "LayerStyle",
+      "ControlShortcutKey"
+    ]
+  },
+  {
+    "frame": "GLUETEXTBUTTON",
+    "fields": [
+      "Width",
+      "SetPoint",
+      "ButtonText",
+      "ControlShortcutKey",
+      "TabFocusNext",
+      "UseActiveContext,",
+      "TabFocusDefault,",
+      "Height",
+      "ControlStyle",
+      "ButtonPushedTextOffset",
+      "ControlBackdrop",
+      "ControlPushedBackdrop",
+      "ControlDisabledBackdrop",
+      "ControlDisabledPushedBackdrop",
+      "ControlMouseOverHighlight",
+      "DecorateFileNames,",
+      "FrameFont"
+    ]
+  },
+  {
+    "frame": "GLUECHECKBOX",
+    "fields": [
+      "Width",
+      "Height",
+      "SetPoint",
+      "UseActiveContext,",
+      "ControlBackdrop",
+      "ControlDisabledBackdrop",
+      "ControlPushedBackdrop",
+      "CheckBoxCheckHighlight",
+      "CheckBoxDisabledCheckHighlight",
+      "ControlStyle",
+      "ControlMouseOverHighlight"
+    ]
+  },
+  {
+    "frame": "FRAME",
+    "fields": [
+      "Height",
+      "Width",
+      "SetAllPoints,",
+      "TabFocusPush,",
+      "SetPoint",
+      "UseActiveContext,",
+      "LayerStyle",
+      "FrameTEXT",
+      "DecorateFileNames,",
+      "FrameFont"
+    ]
+  },
+  {
+    "frame": "POPUPMENU",
+    "fields": [
+      "Width",
+      "Height",
+      "PopupButtonInset",
+      "SetPoint",
+      "ControlBackdrop",
+      "ControlDisabledBackdrop",
+      "PopupTitleFrame",
+      "PopupArrowFrame",
+      "PopupMenuFrame",
+      "ControlPushedBackdrop",
+      "UseActiveContext,InfoPanelLabelTextTemplate",
+      "UseActiveContext,"
+    ]
+  },
+  {
+    "frame": "TEXTAREA",
+    "fields": [
+      "Height",
+      "Width",
+      "SetPoint",
+      "DecorateFileNames,",
+      "FrameFont",
+      "TextAreaLineGap",
+      "TextAreaMaxLines",
+      "TextAreaLineHeight",
+      "TextAreaInset",
+      "TextAreaScrollBar",
+      "ControlBackdrop"
+    ]
+  },
+  {
+    "frame": "SPRITE",
+    "fields": [
+      "Width",
+      "Height",
+      "SetPoint",
+      "BackgroundArt",
+      "SetAllPoints,",
+      "UseActiveContext,"
+    ]
+  },
+  {
+    "frame": "EDITBOX",
+    "fields": [
+      "Width",
+      "Height",
+      "SetPoint",
+      "TabFocusDefault,",
+      "TabFocusNext",
+      "EditTextFrame",
+      "EditBorderSize",
+      "EditCursorColor",
+      "ControlBackdrop"
+    ]
+  },
+  {
+    "frame": "SIMPLEFRAME",
+    "fields": [
+      "DecorateFileNames,",
+      "SetAllPoints,",
+      "Width",
+      "Height",
+      "UI\\Glues\\BattleNet\\ProgressBar\\BattlenetProgressBar.mdl",
+      "UseActiveContext,",
+      "SetPoint"
+    ]
+  },
+  {
+    "frame": "Texture",
+    "fields": [
+      "File",
+      "Width",
+      "Height",
+      "TexCoord",
+      "AlphaMode",
+      "Anchor",
+      "SetPoint"
+    ]
+  },
+  {
+    "frame": "String",
+    "fields": [
+      "FontColor",
+      "FontShadowColor",
+      "FontShadowOffset",
+      "Font",
+      "Anchor",
+      "FontJustificationH",
+      "Text",
+      "SetPoint",
+      "Height",
+      "TextLength",
+      "Width",
+      "FontJustificationV"
+    ]
+  },
+  {
+    "frame": "MENU",
+    "fields": [
+      "DecorateFileNames,",
+      "FrameFont",
+      "MenuItemHeight",
+      "MenuBorder",
+      "ControlBackdrop",
+      "UseActiveContext,",
+      "MenuItem",
+      "Height",
+      "MenuTextHighlightColor"
+    ]
+  },
+  {
+    "frame": "SIMPLESTATUSBAR",
+    "fields": [
+      "DecorateFileNames,",
+      "SetPoint",
+      "Width",
+      "Height",
+      "BarTexture"
+    ]
+  },
+  {
+    "frame": "SIMPLECHECKBOX",
+    "fields": [
+      "DecorateFileNames,",
+      "SetPoint",
+      "Width",
+      "Height",
+      "NormalTexture",
+      "PushedTexture",
+      "CheckedTexture"
+    ]
+  },
+  {
+    "frame": "SIMPLEBUTTON",
+    "fields": [
+      "DecorateFileNames,",
+      "Width",
+      "Height",
+      "ButtonPushedTextOffset",
+      "NormalTexture",
+      "PushedTexture",
+      "DisabledTexture",
+      "UseHighlight",
+      "SetPoint",
+      "NormalText",
+      "DisabledText",
+      "HighlightText"
+    ]
+  },
+  {
+    "frame": "HIGHLIGHT",
+    "fields": [
+      "SetAllPoints,",
+      "HighlightColor",
+      "HighlightType",
+      "UseActiveContext,",
+      "Height",
+      "Width",
+      "SetPoint",
+      "DecorateFileNames,",
+      "HighlightAlphaFile",
+      "HighlightAlphaMode"
+    ]
+  },
+  {
+    "frame": "CONTROL",
+    "fields": [
+      "Width",
+      "Height",
+      "ControlBackdrop",
+      "UseActiveContext,"
+    ]
+  },
+  {
+    "frame": "SCROLLBAR",
+    "fields": [
+      "SetPoint",
+      "UseActiveContext,",
+      "Height",
+      "Width",
+      "SliderLayoutVertical,",
+      "ControlBackdrop",
+      "ScrollBarIncButtonFrame",
+      "ScrollBarDecButtonFrame",
+      "SliderThumbButtonFrame"
+    ]
+  },
+  {
+    "frame": "SLIDER",
+    "fields": [
+      "Height",
+      "Width",
+      "SetPoint",
+      "SliderMinValue",
+      "SliderMaxValue",
+      "SliderInitialValue",
+      "SliderStepSize",
+      "SliderLayoutHorizontal,",
+      "SliderThumbButtonFrame",
+      "ControlBackdrop",
+      "ControlDisabledBackdrop"
+    ]
+  },
+  {
+    "frame": "BUTTON",
+    "fields": [
+      "Width",
+      "Height",
+      "ControlBackdrop",
+      "ControlDisabledBackdrop",
+      "SetPoint",
+      "UseActiveContext,",
+      "ControlStyle",
+      "ControlMouseOverHighlight"
+    ]
+  },
+  {
+    "frame": "GLUEBUTTON",
+    "fields": [
+      "Width",
+      "Height",
+      "ControlStyle",
+      "ControlBackdrop",
+      "ControlPushedBackdrop",
+      "ControlDisabledBackdrop",
+      "ControlDisabledPushedBackdrop",
+      "ControlMouseOverHighlight",
+      "UseActiveContext,",
+      "SetPoint",
+      "ControlFocusHighlight",
+      "ControlShortcutKey",
+      "TabFocusNext"
+    ]
+  },
+  {
+    "frame": "MODEL",
+    "fields": [
+      "BackgroundArt",
+      "SetAllPoints,",
+      "LayerStyle",
+      "SetPoint"
+    ]
+  },
+  {
+    "frame": "TEXTBUTTON",
+    "fields": [
+      "Height",
+      "Width",
+      "ControlStyle",
+      "ButtonPushedTextOffset",
+      "ControlBackdrop",
+      "ControlPushedBackdrop",
+      "ControlDisabledBackdrop",
+      "ControlMouseOverHighlight",
+      "DecorateFileNames,",
+      "FrameFont",
+      "ButtonText",
+      "SetPoint",
+      "ControlFocusHighlight"
+    ]
+  },
+  {
+    "frame": "LISTBOX",
+    "fields": [
+      "ListBoxBorder",
+      "ControlBackdrop",
+      "ListBoxScrollBar"
+    ]
+  },
+  {
+    "frame": "CHECKBOX",
+    "fields": [
+      "Width",
+      "Height",
+      "ControlBackdrop",
+      "ControlPushedBackdrop",
+      "ControlDisabledBackdrop",
+      "CheckBoxCheckHighlight",
+      "CheckBoxDisabledCheckHighlight"
+    ]
+  },
+  {
+    "frame": "CHATDISPLAY",
+    "fields": [
+      "DecorateFileNames,",
+      "FrameFont",
+      "ChatDisplayLineHeight",
+      "ChatDisplayBorderSize",
+      "ControlBackdrop",
+      "ChatDisplayScrollBar",
+      "ChatDisplayEditBox"
+    ]
+  }
+]

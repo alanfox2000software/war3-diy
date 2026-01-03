@@ -1,0 +1,232 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type item</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type item</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> <a href="common_j-types-agent.shtml">agent</a> <strong>&gt;</strong> <a href="common_j-types-widget.shtml">widget</a> <strong>&gt;</strong> item</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#11">11</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">item</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf">
+<p><a href="Blizzard_j-variables.shtml">Blizzard.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#faffbf"></td><td bgcolor="#faffbf">
+<strong><a href="Blizzard_j-variables.shtml#bj_itemRandomCurrentPick">bj_itemRandomCurrentPick</a>,
+<a href="Blizzard_j-variables.shtml#bj_lastCreatedItem">bj_lastCreatedItem</a>,
+<a href="Blizzard_j-variables.shtml#bj_lastRemovedItem">bj_lastRemovedItem</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">item</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateItem">CreateItem</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> itemid, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CreateItemLoc">CreateItemLoc</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> itemId, <a href="common_j-types-location.shtml">location</a> loc<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetEnumItem">GetEnumItem</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetFilterItem">GetFilterItem</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetItemOfTypeFromUnitBJ">GetItemOfTypeFromUnitBJ</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-integer.shtml">integer</a> itemId<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetLastCreatedItem">GetLastCreatedItem</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetLastRemovedItem">GetLastRemovedItem</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetManipulatedItem">GetManipulatedItem</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetOrderTargetItem">GetOrderTargetItem</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetSoldItem">GetSoldItem</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetSpellTargetItem">GetSpellTargetItem</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LoadItemHandle">LoadItemHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LoadItemHandleBJ">LoadItemHandleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#PlaceRandomItem">PlaceRandomItem</a></strong> <strong>(</strong><a href="common_j-types-itempool.shtml">itempool</a> whichItemPool, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RandomItemInRectBJ">RandomItemInRectBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RandomItemInRectSimpleBJ">RandomItemInRectSimpleBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitAddItemById">UnitAddItemById</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-integer.shtml">integer</a> itemId<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitAddItemByIdSwapped">UnitAddItemByIdSwapped</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> itemId, <a href="common_j-types-unit.shtml">unit</a> whichHero<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitDropItem">UnitDropItem</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> inUnit, <a href="BUILT_IN-types-integer.shtml">integer</a> inItemID<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitItemInSlot">UnitItemInSlot</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-integer.shtml">integer</a> itemSlot<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitItemInSlotBJ">UnitItemInSlotBJ</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-integer.shtml">integer</a> itemSlot<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitRemoveItemFromSlot">UnitRemoveItemFromSlot</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-integer.shtml">integer</a> itemSlot<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitRemoveItemFromSlotSwapped">UnitRemoveItemFromSlotSwapped</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> itemSlot, <a href="common_j-types-unit.shtml">unit</a> whichHero<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#WidgetDropItem">WidgetDropItem</a></strong> <strong>(</strong><a href="common_j-types-widget.shtml">widget</a> inWidget, <a href="BUILT_IN-types-integer.shtml">integer</a> inItemID<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">item</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CheckItemStatus">CheckItemStatus</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-integer.shtml">integer</a> status<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetItemCharges">GetItemCharges</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetItemLevel">GetItemLevel</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetItemLoc">GetItemLoc</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-location.shtml">location</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">constant native</span> <strong><a href="common_j-functions.shtml#GetItemName">GetItemName</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-string.shtml">string</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetItemPlayer">GetItemPlayer</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-player.shtml">player</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetItemType">GetItemType</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-itemtype.shtml">itemtype</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetItemTypeId">GetItemTypeId</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> i<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetItemUserData">GetItemUserData</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetItemX">GetItemX</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> i<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetItemY">GetItemY</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> i<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#IsItemHiddenBJ">IsItemHiddenBJ</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IsItemInvulnerable">IsItemInvulnerable</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IsItemOwned">IsItemOwned</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IsItemPawnable">IsItemPawnable</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IsItemPowerup">IsItemPowerup</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IsItemSellable">IsItemSellable</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IsItemVisible">IsItemVisible</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#ItemAddIndicatorBJ">ItemAddIndicatorBJ</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-real.shtml">real</a> red, <a href="BUILT_IN-types-real.shtml">real</a> green, <a href="BUILT_IN-types-real.shtml">real</a> blue, <a href="BUILT_IN-types-real.shtml">real</a> transparency<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RectContainsItem">RectContainsItem</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#RemoveItem">RemoveItem</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SaveItemHandle">SaveItemHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey, <a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SaveItemHandleBJ">SaveItemHandleBJ</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetItemCharges">SetItemCharges</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-integer.shtml">integer</a> charges<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetItemDropID">SetItemDropID</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-integer.shtml">integer</a> unitId<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetItemDropOnDeath">SetItemDropOnDeath</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetItemDropOnDeathBJ">SetItemDropOnDeathBJ</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetItemDroppable">SetItemDroppable</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> i, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetItemDroppableBJ">SetItemDroppableBJ</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetItemInvulnerable">SetItemInvulnerable</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetItemInvulnerableBJ">SetItemInvulnerableBJ</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetItemPawnable">SetItemPawnable</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> i, <a href="BUILT_IN-types-boolean.shtml">boolean</a> flag<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetItemPlayer">SetItemPlayer</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="BUILT_IN-types-boolean.shtml">boolean</a> changeColor<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetItemPlayerBJ">SetItemPlayerBJ</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="BUILT_IN-types-boolean.shtml">boolean</a> changeColor<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetItemPosition">SetItemPosition</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> i, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetItemPositionLoc">SetItemPositionLoc</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-location.shtml">location</a> loc<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetItemUserData">SetItemUserData</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-integer.shtml">integer</a> data<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetItemVisible">SetItemVisible</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-boolean.shtml">boolean</a> show<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetItemVisibleBJ">SetItemVisibleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> show, <a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitAddItem">UnitAddItem</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitAddItemSwapped">UnitAddItemSwapped</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-unit.shtml">unit</a> whichHero<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitDropItemPoint">UnitDropItemPoint</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitDropItemPointBJ">UnitDropItemPointBJ</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitDropItemPointLoc">UnitDropItemPointLoc</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-location.shtml">location</a> loc<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitDropItemSlot">UnitDropItemSlot</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-integer.shtml">integer</a> slot<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitDropItemSlotBJ">UnitDropItemSlotBJ</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-integer.shtml">integer</a> slot<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitDropItemTarget">UnitDropItemTarget</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-widget.shtml">widget</a> target<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitDropItemTargetBJ">UnitDropItemTargetBJ</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-widget.shtml">widget</a> target<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitHasItem">UnitHasItem</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitRemoveItem">UnitRemoveItem</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitRemoveItemSwapped">UnitRemoveItemSwapped</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-unit.shtml">unit</a> whichHero<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitUseItem">UnitUseItem</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitUseItemDestructable">UnitUseItemDestructable</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-widget.shtml">widget</a> target<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitUseItemPoint">UnitUseItemPoint</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UnitUseItemPointLoc">UnitUseItemPointLoc</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-location.shtml">location</a> loc<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnitUseItemTarget">UnitUseItemTarget</a></strong> <strong>(</strong><a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-widget.shtml">widget</a> target<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#UpdateStockAvailability">UpdateStockAvailability</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

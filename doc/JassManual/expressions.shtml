@@ -1,0 +1,205 @@
+
+<html>
+<head>
+<title>JASS Manual: Expressions</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+
+
+<p><strong>Expressions</strong>
+
+<p>An expression is a segment of code that evaluates to a value (which has
+a type). Most statements require the use of expressions and variable
+declarations can be initialized to the value of an expression.
+Expressions can be arbitrarily nested within other expressions. 
+This section describes the available expressions in JASS.
+
+<p><strong>Arithmetic Operators</strong>
+
+<pre class="source">
+<span class="hi">expression</span> + <span class="hi">expression</span>
+<span class="hi">expression</span> - <span class="hi">expression</span>
+<span class="hi">expression</span> * <span class="hi">expression</span>
+<span class="hi">expression</span> / <span class="hi">expression</span>
+- <span class="hi">expression</span>
++ <span class="hi">expression</span>
+</pre>
+
+<p>These expressions perform addition, subtraction, multiplication, and
+division on their two operands, and negation and identity 
+on a single operand respectively. 
+Multiplication and division
+have higher precedence than addition and subtraction; each pair has equal
+precedence, and they are evaluated left to right. Thus:
+
+<pre class="source">
+a + b * c - d / e
+</pre>
+
+<p>Is equivalent to:
+
+<pre class="source">
+( a + (b * c) ) - (d / e)
+</pre>
+
+<p>Operands must either be integers or reals. If any operand is real, then the
+result is real, otherwise the result is an integer.
+
+<p><strong>Comparison Operators</strong>
+
+<pre class="source">
+<span class="hi">expression</span> == <span class="hi">expression</span>
+<span class="hi">expression</span> != <span class="hi">expression</span>
+<span class="hi">expression</span> >= <span class="hi">expression</span>
+<span class="hi">expression</span> <= <span class="hi">expression</span>
+<span class="hi">expression</span> > <span class="hi">expression</span>
+<span class="hi">expression</span> < <span class="hi">expression</span>
+</pre>
+
+<p>These expressions evaluate equality, inequality, greater than or equal to,
+less than or equal to, strictly greater than, and strictly less than, 
+respectively.
+
+<p>The operands to <code>==</code> and <code>!=</code> may be of any type,
+as long as both operands conform to the same native type (e.g., if they
+are both integers, both strings, one is unit and the other is a destructable, 
+etc.). As a special case, a real may be compared to an integer.
+For integer, real, boolean, and string values, they test value
+equality/inequality. For handle types, they test pointer equality (e.g.,
+that both handles refer to the same thing). (Someone want to verify this?)
+
+<p>The other four inequality operators can only take integers and reals as
+arguments. They return a boolean value indicating whether the inequality was
+satisfied.
+
+<p><strong>Boolean Operators</strong>
+
+<pre class="source">
+<span class="hi">expression</span> and <span class="hi">expression</span>
+<span class="hi">expression</span> or <span class="hi">expression</span>
+not <span class="hi">expression</span>
+</pre>
+
+These expressions return the boolean and, or, and not of their operator(s).
+The expressions must evaluate to booleans. These have the least precedence,
+so:
+
+<pre class="source">
+a == b and c > d + e or f
+</pre>
+
+Is equivalent to:
+
+<pre class="source">
+( (a == b) and (c > d + e) ) or f
+</pre>
+
+<p><strong>String Operators</strong>
+
+<pre class="source">
+<span class="hi">expression</span> + <span class="hi">expression</span>
+</pre>
+
+<p><code>+</code> can be used to concatenate two string variables together
+(like in Java). The result is of type <code>string</code>.
+
+<p><strong>Function Call</strong>
+
+<pre class="source">
+<span class="hi">func_name</span>(<span class="hi">arguments</span>)
+</pre>
+
+<p>This is similar to the <code>call</code> statement. <code>arguments</code>
+is a comma separated list of expressions to pass to the function as parameters.
+The function must return a value (not <code>nothing</code>), which is what this
+expression evaluates to.
+
+<p><strong>Array Reference</strong>
+
+<pre class="source">
+<span class="hi">array_variable</span>[<span class="hi">index</span>]
+</pre>
+
+<p>This expression evalues to an element in an array variable. 
+<code>index</code> is an expression that must evaluate to an integer, which
+serves as the index into the array. The expression evaluates to a value of
+the basic type of the array.
+
+<p><strong>Function Reference</strong>
+
+<pre class="source">
+<span class="keyword">function</span> <span class="hi">func_name</span>
+</pre>
+
+<p>This expression is used to refer to a function. It returns a "pointer"
+to that function of type <code>code</code> that can be passed to functions
+that take parameters of <code>code</code> type 
+(e.g., <code>StartThread</code>).
+
+<p><strong>Variable Name</strong>
+
+<pre class="source">
+<span class="hi">variable_name</span>
+</pre>
+
+<p>This trivial expression evaluates to the value of a variable.
+Variable names are composed of alphanumeric characters and underscores
+but must start with a letter and can not end with an underscore.
+
+<p><strong>Constants</strong>
+
+<p>Constant values can be expressed for integers, reals, booleans, and stings.
+In addition, the constant value <code>null</code>, a pointer to nothing, can
+be expressed as a handle or string type.
+
+<p>Integer constants are expressed as 32-bit twos-complement integral numbers.
+For example, <code>0, 1, 2, 4, 10, 14, 1000, 1234, 3245</code>. 
+If the number is prefixed with a <code>0</code> (e.g., <code>016</code>) then
+the value is interpreted as octal. If the number is prefixed with 
+<code>0x</code> (e.g., <code>0xA15F</code>) then the value is interpreted as
+hexadecimal and can contain the characters <code>a-f</code> or <code>A-F</code>
+as digits.
+Integers can
+also be expressed as four character strings enclosed in single quotes, 
+in which case the value is equal to the bit-string formed by the
+ASCII bytes (4 bytes = 32 bit value). These values are usually used to
+reference unit/upgrade/etc. identifiers which are enumerated in the
+<tt>*.slk</tt> files. For example, <code>'abcd', 'AhGn', 'EEEE'</code>.
+
+<p>Real constants are expressed as 32-bit floating point numbers. For example,
+<code>1.0, 0.0, .34, 1.5, 1000.3, 324.32, 0.35</code>.
+
+<p>Boolean constants are <code>true</code> and <code>false</code>.
+
+<p>String constants are declared enclosed in double-quotes like 
+<code>"This is a string"</code>. The value of a string variable may be
+<code>null</code> in which case the variable refers to nothing and it is
+illegal to use it (except to assign a value to it). Within a string
+constant, the back-slash is used as an escape like in C or Java. For
+example, to include a double-quote in a string, do 
+<code>"This is a \"string\""</code>.
+
+<p><strong>Parenthesis</strong>
+
+<pre class="source">
+(<span class="hi">expression</span>)
+</pre>
+
+<p>By enclosing an expression in parenthesis, it is given higher precedence
+than the immediately surrounding expression. For 例子
+
+<pre class="source">
+(1 * (2 + 3) != a) == (b or GetSomeBoolean())
+</pre>
+
+Causes the <code>2 + 3</code> to be evaluated before the <code>*</code>, and
+the <code>b or GetSomeBoolean()</code> to be evaluated before the inner
+<code>==</code>.
+
+
+
+</body>
+</html>

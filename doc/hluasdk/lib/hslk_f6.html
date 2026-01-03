@@ -1,0 +1,484 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Slk原生物编字段</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../favicon.svg">
+                        <link rel="shortcut icon" href="../favicon.png">
+                <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+                <link rel="stylesheet" href="../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 快速开始</a></li><li class="chapter-item expanded "><a href="../quick/struct.html"><strong aria-hidden="true">2.</strong> 项目结构</a></li><li class="chapter-item expanded "><a href="../quick/command.html"><strong aria-hidden="true">3.</strong> SDK命令指引</a></li><li class="chapter-item expanded "><a href="../quick/update.html"><strong aria-hidden="true">4.</strong> 更新日志</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 功能库</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../lib/api.html"><strong aria-hidden="true">5.1.</strong> API</a></li><li class="chapter-item expanded "><a href="../lib/attr.html"><strong aria-hidden="true">5.2.</strong> 属性 Attr</a></li><li class="chapter-item expanded "><a href="../lib/japi.html"><strong aria-hidden="true">5.3.</strong> JAPI</a></li><li class="chapter-item expanded "><a href="../lib/hslk1.html"><strong aria-hidden="true">5.4.</strong> Slk入门</a></li><li class="chapter-item expanded "><a href="../lib/hslk2.html"><strong aria-hidden="true">5.5.</strong> Slk进阶</a></li><li class="chapter-item expanded "><a href="../lib/hslk_f6.html" class="active"><strong aria-hidden="true">5.6.</strong> Slk原生物编字段</a></li><li class="chapter-item expanded "><a href="../lib/hslk_misc.html"><strong aria-hidden="true">5.7.</strong> Slk与MISC数据</a></li><li class="chapter-item expanded "><a href="../lib/sync.html"><strong aria-hidden="true">5.8.</strong> Sync同步</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 例子</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../example/leaderBoard.html"><strong aria-hidden="true">6.1.</strong> 使用排行榜</a></li><li class="chapter-item expanded "><a href="../example/multiBoard.html"><strong aria-hidden="true">6.2.</strong> 使用多面板</a></li><li class="chapter-item expanded "><a href="../example/dialog.html"><strong aria-hidden="true">6.3.</strong> 难度选择对话框</a></li><li class="chapter-item expanded "><a href="../example/pickHero.html"><strong aria-hidden="true">6.4.</strong> 常见两种选英雄</a></li><li class="chapter-item expanded "><a href="../example/attack.html"><strong aria-hidden="true">6.5.</strong> 简单刷兵</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> 其他学习</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../other/jetbrain.html"><strong aria-hidden="true">7.1.</strong> Jetbrain设置</a></li><li class="chapter-item expanded "><a href="../other/q_a.html"><strong aria-hidden="true">7.2.</strong> 询问的技巧</a></li><li class="chapter-item expanded "><a href="../other/dz.html"><strong aria-hidden="true">7.3.</strong> 平台上线须知</a></li><li class="chapter-item expanded "><a href="../other/war3_tec.html"><strong aria-hidden="true">7.4.</strong> 魔兽作图小技巧</a></li><li class="chapter-item expanded "><a href="../other/war3_terrainArt.html"><strong aria-hidden="true">7.5.</strong> 魔兽地形贴图路径</a></li><li class="chapter-item expanded "><a href="../other/lua_engine.html"><strong aria-hidden="true">7.6.</strong> YDLua引擎</a></li><li class="chapter-item expanded "><a href="../other/ui_fdf.html"><strong aria-hidden="true">7.7.</strong> UI &amp; FDF</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> 小小专栏</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../xxqq/BV1nV411J7FB.html"><strong aria-hidden="true">8.1.</strong> 基础指令介绍</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1TK4y1Z7eB.html"><strong aria-hidden="true">8.2.</strong> hslk高级用法演示1</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1M64y117sB.html"><strong aria-hidden="true">8.3.</strong> hslk高级用法演示2</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1ZV411J7JJ.html"><strong aria-hidden="true">8.4.</strong> hslk高级用法演示3</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1iv411L7CP.html"><strong aria-hidden="true">8.5.</strong> UI之sync演示</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1Hy4y1s7cj.html"><strong aria-hidden="true">8.6.</strong> 构建酒馆与小地图UI显示头像</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1Lh411v7pR.html"><strong aria-hidden="true">8.7.</strong> 伤害排行榜</a></li><li class="chapter-item expanded "><a href="../xxqq/upscale.html"><strong aria-hidden="true">8.8.</strong> 高端演示</a></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                                                <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="slk原生物编字段"><a class="header" href="#slk原生物编字段">Slk原生物编字段</a></h2>
+<pre><code class="language-lua">abilList = &quot;主动技能ID列表&quot;
+Requires = &quot;科技树&quot;
+Requiresamount = &quot;科技树-需求值&quot;
+Name = &quot;名称&quot;
+Description = &quot;描述&quot;
+Tip = &quot;描述标题&quot;
+Ubertip = &quot;说明&quot;
+Hotkey = &quot;热键&quot;
+Art = &quot;图标&quot;
+scale = &quot;模型大小&quot;
+file = &quot;模型文件路径&quot;
+Buttonpos = &quot;X坐标&quot;
+Buttonpos = &quot;Y坐标&quot;
+UnButtonpos = &quot;X坐标-关闭&quot;
+UnButtonpos = &quot;Y坐标-关闭&quot;
+selSize = &quot;选择圈大小&quot;
+colorR = &quot;红&quot;
+colorG = &quot;绿&quot;
+colorB = &quot;蓝&quot;
+armor = &quot;装甲类型&quot;
+Level = &quot;等级&quot;
+oldLevel = &quot;等级(旧)&quot;
+class = &quot;分类&quot;
+goldcost = &quot;黄金&quot;
+lumbercost = &quot;木头&quot;
+HP = &quot;生命&quot;
+stockStart = &quot;开始库存&quot;
+stockRegen = &quot;补货周期&quot;
+stockMax = &quot;最大库存&quot;
+prio = &quot;优先权&quot;
+morph = &quot;有效的物品转换目标&quot;
+drop = &quot;死亡时掉落&quot;
+powerup = &quot;捡到时自动使用&quot;
+sellable = &quot;可以出售&quot;
+pawnable = &quot;可以抵押&quot;
+droppable = &quot;可以丢弃&quot;
+pickRandom = &quot;可以作为随机物品&quot;
+uses = &quot;使用次数&quot;
+perishable = &quot;使用后完全消失&quot;
+usable = &quot;主动使用&quot;
+level = &quot;等级&quot;
+race = &quot;种族&quot;
+type = &quot;类别&quot;
+manaN = &quot;最大魔法值&quot;
+regenMana = &quot;魔法恢复&quot;
+mana0 = &quot;初始魔法&quot;
+regenHP = &quot;生命恢复&quot;
+regenType = &quot;生命恢复类型&quot;
+fmade = &quot;提供人口&quot;
+fused = &quot;占用人口&quot;
+stockStart = &quot;雇佣开始时间&quot;
+stockRegen = &quot;雇佣开始间隔&quot;
+stockMax = &quot;最大库存&quot;
+sight = &quot;白天视野&quot;
+nsight = &quot;夜晚视野&quot;
+collision = &quot;接触体积&quot;
+modelScale = &quot;模型缩放&quot;
+fileVerFlags = &quot;模型文件版本&quot;
+scaleBull = &quot;缩放投射物&quot;
+scale = &quot;选择圈缩放&quot;
+selZ = &quot;选择圈高度&quot;
+selCircOnWater = &quot;选择圈在水面上&quot;
+red = &quot;红&quot;
+green = &quot;绿&quot;
+blue = &quot;蓝&quot;
+occH = &quot;闭塞高度&quot;
+maxPitch = &quot;X轴最大旋转角度&quot;
+maxRoll = &quot;Y轴最大旋转角度&quot;
+impactZ = &quot;射弹碰撞偏移Z&quot;
+impactSwimZ = &quot;射弹碰撞偏移Z深水&quot;
+launchX = &quot;射弹偏移X&quot;
+launchY = &quot;射弹偏移Y&quot;
+launchZ = &quot;射弹偏移Z&quot;
+launchSwimZ = &quot;射弹偏移Z深水&quot;
+unitSound = &quot;单位声音&quot;
+RandomSoundLabel = &quot;声音随机&quot;
+MovementSoundLabel = &quot;声音移动&quot;
+LoopingSoundFadeOut = &quot;声音渐出&quot;
+LoopingSoundFadeIn = &quot;声音渐入&quot;
+auto = &quot;主动自动技能ID&quot;
+Sellitems = &quot;售出物品&quot;
+Sellunits = &quot;售出单位&quot;
+Markitems = &quot;制造物品&quot;
+Builds = &quot;可建造单位&quot;
+Specialart = &quot;特殊效果&quot;
+unitShadow = &quot;单位阴影&quot;
+buildingShadow = &quot;建筑阴影&quot;
+shadowH = &quot;阴影H&quot;
+shadowW = &quot;阴影W&quot;
+shadowX = &quot;阴影X&quot;
+shadowY = &quot;阴影Y&quot;
+shadowOnWater = &quot;深水有阴影&quot;
+death = &quot;死亡时间&quot;
+deathType = &quot;死亡类型&quot;
+movetp = &quot;移动类型&quot;
+moveHeight = &quot;移动高度&quot;
+moveFloor = &quot;最小高度&quot;
+spd = &quot;基础速度&quot;
+maxSpd = &quot;最大速度&quot;
+minSpd = &quot;最小速度&quot;
+turnRate = &quot;转身速率&quot;
+acquire = &quot;主动攻击范围&quot;
+minRange = &quot;最小攻击范围&quot;
+weapsOn = &quot;允许攻击&quot;
+Missileart = &quot;箭矢模型&quot;
+Missilespeed = &quot;箭矢速度&quot;
+Missilearc = &quot;箭矢弧度&quot;
+MissileHoming = &quot;箭矢自导&quot;
+targs = &quot;目标允许&quot;
+atkType = &quot;攻击类型&quot;
+weapTp = &quot;武器类型&quot;
+weapType = &quot;武器声音&quot;
+spillRadius = &quot;穿透伤害范围&quot;
+spillDist = &quot;穿透距离&quot;
+damageLoss = &quot;伤害衰减参数&quot;
+showUI = &quot;显示攻击UI&quot;
+backSw = &quot;攻击后摇&quot;
+dmgpt = &quot;攻击前摇&quot;
+rangeN = &quot;攻击范围&quot;
+RngBuff = &quot;攻击范围缓冲&quot;
+dmgplus = &quot;基础伤害&quot;
+dmgUp = &quot;攻击科技升级&quot;
+sides = &quot;伤害骰子面数&quot;
+dice = &quot;伤害骰子数量&quot;
+splashTargs = &quot;范围影响目标&quot;
+cool = &quot;攻击间隔&quot;
+Farea = &quot;全伤害范围&quot;
+targCount = &quot;最大目标数&quot;
+Qfact = &quot;小伤害参数&quot;
+Qarea = &quot;小伤害范围&quot;
+Hfact = &quot;中伤害参数&quot;
+Harea = &quot;中伤害范围&quot;
+defType = &quot;护甲类型&quot;
+defUp = &quot;护甲科技升级&quot;
+def = &quot;基础护甲&quot;
+armor = &quot;装甲类型（被击声音）&quot;
+targType = &quot;作为目标类型&quot;
+Propernames = &quot;英雄称谓&quot;
+nameCount = &quot;英雄称谓个数&quot;
+Awakentip = &quot;英雄唤醒提示&quot;
+Revivetip = &quot;英雄重生提示&quot;
+Primary = &quot;主属性&quot;
+STR = &quot;力量&quot;
+STRplus = &quot;力量成长&quot;
+AGI = &quot;敏捷&quot;
+AGIplus = &quot;敏捷成长&quot;
+INT = &quot;智力&quot;
+INTplus = &quot;智力成长&quot;
+heroAbilList = &quot;英雄技能ID列表&quot;
+hideHeroMinimap = &quot;隐藏英雄小地图&quot;
+hideHeroBar = &quot;隐藏英雄栏图标&quot;
+hideHeroDeathMsg = &quot;隐藏英雄死亡信息&quot;
+Requiresacount = &quot;科技树-使用等级数&quot;
+Requires = &quot;科技树-等级&quot;
+Reviveat = &quot;指定复活点&quot;
+buffRadius = &quot;路径-AI放置范围&quot;
+buffType = &quot;路径-AI放置类型&quot;
+Revive = &quot;可复活单位&quot;
+Trains = &quot;可训练单位&quot;
+Upgrade = &quot;可升级建筑&quot;
+requirePlace = &quot;路径-放置不允许&quot;
+preventPlace = &quot;路径-放置要求&quot;
+requireWaterRadius = &quot;路径-放置要求距离水的范围&quot;
+pathTex = &quot;路径纹理&quot;
+uberSplat = &quot;建筑地面纹理&quot;
+nbrandom = &quot;中立-可作为随机建筑&quot;
+nbmmlcon = &quot;中立-显示小地图&quot;
+canBuildOn = &quot;能被其他建筑建造&quot;
+isBuildOn = &quot;能建造在其他建筑上&quot;
+tilesets = &quot;大地图-地形设置&quot;
+special = &quot;大地图-分类-特殊&quot;
+campaign = &quot;大地图-分类-战役&quot;
+inEditor = &quot;大地图-可放置&quot;
+dropItems = &quot;大地图-死亡掉落物品&quot;
+hostilePal = &quot;大地图-可作为中立敌对&quot;
+useClickHelper = &quot;大地图-使用点击帮助&quot;
+tilesetSpecific = &quot;大地图-有地形指定数据&quot;
+DependencyOr = &quot;科技树-从属等价物&quot;
+Researches = &quot;科技树-可研究项目&quot;
+upgrades = &quot;使用的科技&quot;
+EditorSuffix = &quot;编辑器后缀&quot;
+Casterupgradename = &quot;魔法升级名字&quot;
+Casterupgradetip = &quot;魔法升级说明&quot;
+Castrerupgradeart = &quot;魔法升级图标&quot;
+ScoreScreenIcon = &quot;图标-记分屏&quot;
+animProps = &quot;要求动画名&quot;
+Attachmentanimprops = &quot;要求动画名-附加动画&quot;
+Attachmentlinkprops = &quot;要求动画名-链接名&quot;
+Boneprops = &quot;要求骨骼名&quot;
+castpt = &quot;动画-施法前摇&quot;
+castbsw = &quot;动画-施法后摇&quot;
+blend = &quot;动画-混合时间（秒）&quot;
+run = &quot;动画-跑步&quot;
+walk = &quot;动画-行走&quot;
+propWin = &quot;动画-转向角度&quot;
+orientInterp = &quot;动画-转向补正&quot;
+teamColor = &quot;队伍颜色&quot;
+customTeamColor = &quot;允许更改队伍颜色&quot;
+elevPts = &quot;高度变化-采样点数量&quot;
+elevRad = &quot;高度变化-采样范围&quot;
+fogRad = &quot;战争迷雾-采样范围&quot;
+fatLOS = &quot;不可见区域显示单位&quot;
+repulse = &quot;组群分离-允许&quot;
+repulsePrio = &quot;组群分离-优先&quot;
+repulseParam = &quot;组群分离-参数&quot;
+repulseGroup = &quot;组群分离-组号&quot;
+isbldg = &quot;是一个建筑&quot;
+bldtm = &quot;建造时间&quot;
+bountyplus = &quot;黄金奖励-值&quot;
+bountysides = &quot;黄金奖励-骰子面数&quot;
+bountydice = &quot;黄金奖励-骰子数量&quot;
+goldRep = &quot;修理黄金消耗&quot;
+lumberRep = &quot;修理木材消耗&quot;
+reptm = &quot;修理时间&quot;
+lumberbountyplus = &quot;木材奖励-值&quot;
+lumberbountysides = &quot;木材奖励-骰子面数&quot;
+lumberbountydice = &quot;木材奖励-骰子数量&quot;
+cargoSize = &quot;运输尺寸&quot;
+hideOnMinimap = &quot;隐藏小地图显示&quot;
+points = &quot;单位附加值&quot;
+prio = &quot;编队优先权&quot;
+formation = &quot;队形排列&quot;
+canFlee = &quot;可以逃跑&quot;
+canSleep = &quot;可以睡眠&quot;
+checkDep = &quot;科技树-检查等价所属&quot;
+Effectsound = &quot;声效-音效&quot;
+Effectsoundlooped = &quot;声效-音效（循环）&quot;
+Researchtip = &quot;学习技能提示&quot;
+Researchubertip = &quot;学习技能描述&quot;
+Unorder = &quot;命令-关闭&quot;
+Orderon = &quot;命令-激活&quot;
+Order = &quot;命令串&quot;
+Orderoff = &quot;命令-取消激活&quot;
+Unhotkey = &quot;热键-关闭&quot;
+Researchhotkey = &quot;热键-学习&quot;
+Researchbuttonpos1 = &quot;X坐标-学习&quot;
+Researchbuttonpos2 = &quot;Y坐标-学习&quot;
+Unart = &quot;图标-关闭&quot;
+Researchart = &quot;图标-学习&quot;
+SpecialArt = &quot;效果-特殊&quot;
+Specialattach = &quot;效果-特殊附加点&quot;
+LightningEffect = &quot;效果-闪电效果&quot;
+EffectArt = &quot;效果-目标点&quot;
+TargetArt = &quot;效果-目标&quot;
+Targetattachcount = &quot;效果-目标-附加数量&quot;
+Targetattach = &quot;效果-目标-附加&quot;
+Areaeffectart = &quot;效果-区域&quot;
+Animnames = &quot;施法动作&quot;
+CasterArt = &quot;效果-施法者&quot;
+Casterattachcount = &quot;效果-施法者-附加数量&quot;
+Casterattach = &quot;效果-施法者-附加&quot;
+hero = &quot;是否英雄技能&quot;
+item = &quot;是否物品技能&quot;
+levels = &quot;等级&quot;
+reqLevel = &quot;等级要求&quot;
+levelSkip = &quot;学习跳等级&quot;
+priority = &quot;魔法偷取优先级&quot;
+BuffID = &quot;魔法效果&quot;
+EfctID = &quot;区域持续效果&quot;
+DataA = &quot;数据A&quot;
+DataB = &quot;数据B&quot;
+DataC = &quot;数据C&quot;
+DataD = &quot;数据D&quot;
+DataE = &quot;数据E&quot;
+DataF = &quot;数据F&quot;
+Cast = &quot;施法时间&quot;
+Cool = &quot;冷却时间&quot;
+Dur = &quot;持续时间&quot;
+HeroDur = &quot;持续时间（英雄）&quot;
+Cost = &quot;魔法消耗&quot;
+Rng = &quot;施法距离&quot;
+Area = &quot;施法范围&quot;  
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../lib/hslk2.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="../lib/hslk_misc.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../lib/hslk2.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="../lib/hslk_misc.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+                <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>

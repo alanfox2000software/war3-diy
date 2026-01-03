@@ -1,0 +1,661 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "MapInfoPane",
+            "inherits": "",
+            "fields": [],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "HIGHLIGHT",
+                    "name": "DebugTestFrame",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightColor",
+                            "child": [
+                                "1.0",
+                                "0.0",
+                                "0.0",
+                                "0.2,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "SHADE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "BACKDROP",
+                    "name": "MaxPlayersIcon",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.01875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.01875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "ui\\widgets\\glues\\icon-file-melee.blp,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 3,
+                            "type": "TEXT",
+                            "name": "MaxPlayersValue",
+                            "inherits": "StandardSmallTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FrameFont",
+                                    "child": [
+                                        "MasterFont,",
+                                        "0.009,",
+                                        ","
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "CENTER,",
+                                        "MaxPlayersIcon,",
+                                        "CENTER,",
+                                        "0.0,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 4,
+                    "type": "TEXT",
+                    "name": "MapNameValue",
+                    "inherits": "StandardInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "MaxPlayersIcon,",
+                                "RIGHT,",
+                                "0.0025,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 5,
+                    "type": "BACKDROP",
+                    "name": "AuthIcon",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "MapNameValue,",
+                                "RIGHT,",
+                                "0.0025,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.01875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.01875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "ui\\widgets\\battlenet\\chaticons\\bnet-blizzard.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 6,
+                    "type": "SPRITE",
+                    "name": "MinimapImage",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.13125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.13125,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 7,
+                    "type": "BACKDROP",
+                    "name": "MinimapImageBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "CENTER,",
+                                "MinimapImage,",
+                                "CENTER,",
+                                "0.0,",
+                                "0.002275,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.183125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.183125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\SinglePlayerSkirmish-MinimapCover3.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 8,
+                    "type": "TEXT",
+                    "name": "NumPlayersLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_NUMBER_OF_PLAYERS,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYBOTTOM,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 9,
+                    "type": "TEXT",
+                    "name": "NumPlayersValue",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "NumPlayersLabel,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYBOTTOM,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 10,
+                    "type": "TEXT",
+                    "name": "ElapsedTimeLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_ELAPSED_TIME,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYBOTTOM,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 11,
+                    "type": "TEXT",
+                    "name": "ElapsedTimeValue",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "DASH_DASH,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ElapsedTimeLabel,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYBOTTOM,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 12,
+                    "type": "TEXT",
+                    "name": "SuggestedPlayersLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_SUGGESTED_PLAYERS,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYBOTTOM,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 13,
+                    "type": "TEXT",
+                    "name": "SuggestedPlayersValue",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "SuggestedPlayersLabel,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYBOTTOM,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 14,
+                    "type": "TEXT",
+                    "name": "MapSizeLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_MAP_SIZE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYBOTTOM,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 15,
+                    "type": "TEXT",
+                    "name": "MapSizeValue",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "MapSizeLabel,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYBOTTOM,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 16,
+                    "type": "TEXT",
+                    "name": "MapTilesetLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_TILESET,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYBOTTOM,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 17,
+                    "type": "TEXT",
+                    "name": "MapTilesetValue",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "MapTilesetLabel,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYBOTTOM,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 18,
+                    "type": "TEXT",
+                    "name": "MapDescLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_MAP_DESC,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 19,
+                    "type": "TEXT",
+                    "name": "MapDescValue",
+                    "inherits": "StandardSmallTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "MapDescLabel,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationV",
+                            "child": [
+                                "JUSTIFYTOP,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

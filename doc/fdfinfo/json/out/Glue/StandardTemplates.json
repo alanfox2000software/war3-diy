@@ -1,0 +1,5494 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "BACKDROP",
+            "name": "StandardHeavyBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\HeavyBorderBackGround.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFile",
+                    "child": [
+                        "UI\\Widgets\\HeavyBorderCorners.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropLeftFile",
+                    "child": [
+                        "UI\\Widgets\\HeavyBorderLeft.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropRightFile",
+                    "child": [
+                        "UI\\Widgets\\HeavyBorderRight.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTopFile",
+                    "child": [
+                        "UI\\Widgets\\HeavyBorderTop.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBottomFile",
+                    "child": [
+                        "UI\\Widgets\\HeavyBorderBottom.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "BACKDROP",
+            "name": "StandardMediumBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\LightBorderBackGround.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFile",
+                    "child": [
+                        "UI\\Widgets\\LightBorderCorners.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropLeftFile",
+                    "child": [
+                        "UI\\Widgets\\LightBorderLeft.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropRightFile",
+                    "child": [
+                        "UI\\Widgets\\LightBorderRight.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTopFile",
+                    "child": [
+                        "UI\\Widgets\\LightBorderTop.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBottomFile",
+                    "child": [
+                        "UI\\Widgets\\LightBorderBottom.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 2,
+            "type": "BACKDROP",
+            "name": "StandardLightBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\LightBorderBackGround.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFile",
+                    "child": [
+                        "UI\\Widgets\\LightBorderCorners.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropLeftFile",
+                    "child": [
+                        "UI\\Widgets\\LightBorderLeft.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropRightFile",
+                    "child": [
+                        "UI\\Widgets\\LightBorderRight.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTopFile",
+                    "child": [
+                        "UI\\Widgets\\LightBorderTop.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBottomFile",
+                    "child": [
+                        "UI\\Widgets\\LightBorderBottom.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 3,
+            "type": "BACKDROP",
+            "name": "StandardControlBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropHalfSides,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\ButtonBackGround.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.015,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFile",
+                    "child": [
+                        "UI\\Widgets\\ButtonCorners.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropLeftFile",
+                    "child": [
+                        "UI\\Widgets\\ButtonLeft.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropRightFile",
+                    "child": [
+                        "UI\\Widgets\\ButtonRight.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTopFile",
+                    "child": [
+                        "UI\\Widgets\\ButtonTop.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBottomFile",
+                    "child": [
+                        "UI\\Widgets\\ButtonBottom.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 4,
+            "type": "BACKDROP",
+            "name": "StandardMenuTinyButtonBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.11,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.055,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-TinyBorder.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 5,
+            "type": "BACKDROP",
+            "name": "StandardMenuSmallButtonBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.064,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-SmallBorder.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 6,
+            "type": "BACKDROP",
+            "name": "StandardMenuLargeButtonBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.064,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-LargeBorder.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 7,
+            "type": "BACKDROP",
+            "name": "StandardMenuSingleButtonBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.064,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderSingle.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 8,
+            "type": "BACKDROP",
+            "name": "StandardMenuSingleSmallButtonBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.064,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-SmallBorderSingle.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 9,
+            "type": "BACKDROP",
+            "name": "StandardMenuSingleLargeButtonBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.064,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-LargeBorderSingle.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 10,
+            "type": "BACKDROP",
+            "name": "StandardMenuButtonBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.064,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-Border.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 11,
+            "type": "BACKDROP",
+            "name": "StandardButtonBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBorder.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 12,
+            "type": "BACKDROP",
+            "name": "StandardButtonPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBorder-Down.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 13,
+            "type": "BACKDROP",
+            "name": "StandardButtonDisabledBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBorder-Disabled.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 14,
+            "type": "BACKDROP",
+            "name": "StandardButtonDisabledPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBorder-DisabledDown.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 15,
+            "type": "HIGHLIGHT",
+            "name": "StandardButtonFocusHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button-KeyboardHighlight.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 16,
+            "type": "HIGHLIGHT",
+            "name": "StandardButtonMouseOverHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\BattleNet\\bnet-button01-highlight-mouse.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 17,
+            "type": "TEXTBUTTON",
+            "name": "StandardButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.031,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.179,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonPushedTextOffset",
+                    "child": [
+                        "-0.002f",
+                        "-0.003f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "ButtonBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "ButtonPushedBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "ButtonDisabledBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "ButtonMouseOverHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 18,
+                    "type": "BACKDROP",
+                    "name": "ButtonBackdropTemplate",
+                    "inherits": "StandardButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 19,
+                    "type": "BACKDROP",
+                    "name": "ButtonPushedBackdropTemplate",
+                    "inherits": "StandardButtonPushedBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 20,
+                    "type": "BACKDROP",
+                    "name": "ButtonDisabledBackdropTemplate",
+                    "inherits": "StandardButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 21,
+                    "type": "HIGHLIGHT",
+                    "name": "ButtonMouseOverHighlightTemplate",
+                    "inherits": "StandardButtonMouseOverHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 22,
+            "type": "BACKDROP",
+            "name": "StandardBorderedButtonBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderedBackdropBorder.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 23,
+            "type": "BACKDROP",
+            "name": "StandardBorderedButtonPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderedBackdropBorder-Down.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 24,
+            "type": "BACKDROP",
+            "name": "StandardBorderedButtonDisabledBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderedBackdropBorder-Disabled.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 25,
+            "type": "BACKDROP",
+            "name": "StandardBorderedButtonDisabledPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderedBackdropBorder-DisabledDown.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 26,
+            "type": "HIGHLIGHT",
+            "name": "StandardBorderedButtonFocusHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button-KeyboardHighlight.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 27,
+            "type": "HIGHLIGHT",
+            "name": "StandardBorderedButtonMouseOverHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\BattleNet\\bnet-button01-highlight-mouse.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 28,
+            "type": "TEXTBUTTON",
+            "name": "StandardBorderedButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.031,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.179,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonPushedTextOffset",
+                    "child": [
+                        "-0.002f",
+                        "-0.003f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "BorderedButtonBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "BorderedButtonPushedBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "BorderedButtonDisabledBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "BorderedButtonMouseOverHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 29,
+                    "type": "BACKDROP",
+                    "name": "BorderedButtonBackdropTemplate",
+                    "inherits": "StandardBorderedButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 30,
+                    "type": "BACKDROP",
+                    "name": "BorderedButtonPushedBackdropTemplate",
+                    "inherits": "StandardBorderedButtonPushedBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 31,
+                    "type": "BACKDROP",
+                    "name": "BorderedButtonDisabledBackdropTemplate",
+                    "inherits": "StandardBorderedButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 32,
+                    "type": "HIGHLIGHT",
+                    "name": "BorderedButtonMouseOverHighlightTemplate",
+                    "inherits": "StandardBorderedButtonMouseOverHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 33,
+            "type": "BACKDROP",
+            "name": "StandardSmallButtonBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.012,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.003",
+                        "0.003",
+                        "0.003",
+                        "0.003,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBorder.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 34,
+            "type": "BACKDROP",
+            "name": "StandardSmallButtonPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.012,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.003",
+                        "0.003",
+                        "0.003",
+                        "0.003,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBorder-Down.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 35,
+            "type": "BACKDROP",
+            "name": "StandardSmallButtonDisabledBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.012,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.003",
+                        "0.003",
+                        "0.003",
+                        "0.003,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBorder-Disabled.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 36,
+            "type": "BACKDROP",
+            "name": "StandardSmallButtonDisabledPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.012,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.003",
+                        "0.003",
+                        "0.003",
+                        "0.003,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBorder-DisabledDown.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 37,
+            "type": "HIGHLIGHT",
+            "name": "StandardSmallButtonFocusHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button-KeyboardHighlight.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 38,
+            "type": "HIGHLIGHT",
+            "name": "StandardSmallButtonMouseOverHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\BattleNet\\bnet-button01-highlight-mouse.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 39,
+            "type": "TEXTBUTTON",
+            "name": "StandardSmallButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.031,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.179,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonPushedTextOffset",
+                    "child": [
+                        "-0.002f",
+                        "-0.003f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "SmallButtonBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "SmallButtonPushedBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "SmallButtonDisabledBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "SmallButtonMouseOverHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 40,
+                    "type": "BACKDROP",
+                    "name": "SmallButtonBackdropTemplate",
+                    "inherits": "StandardSmallButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 41,
+                    "type": "BACKDROP",
+                    "name": "SmallButtonPushedBackdropTemplate",
+                    "inherits": "StandardSmallButtonPushedBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 42,
+                    "type": "BACKDROP",
+                    "name": "SmallButtonDisabledBackdropTemplate",
+                    "inherits": "StandardSmallButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 43,
+                    "type": "HIGHLIGHT",
+                    "name": "SmallButtonMouseOverHighlightTemplate",
+                    "inherits": "StandardSmallButtonMouseOverHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 44,
+            "type": "BACKDROP",
+            "name": "StandardCampaignButtonBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBackground.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.036,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.007",
+                        "0.007",
+                        "0.007",
+                        "0.007,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBorder.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 45,
+            "type": "BACKDROP",
+            "name": "StandardCampaignButtonPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBackground-Down.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.036,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.007",
+                        "0.007",
+                        "0.007",
+                        "0.007,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBorder-Down.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 46,
+            "type": "BACKDROP",
+            "name": "StandardCampaignButtonDisabledBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBackground-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBorder-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 47,
+            "type": "BACKDROP",
+            "name": "StandardCampaignButtonDisabledPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBackground-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBorder-DisabledDown.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 48,
+            "type": "HIGHLIGHT",
+            "name": "StandardCampaignButtonFocusHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button-KeyboardHighlight.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 49,
+            "type": "HIGHLIGHT",
+            "name": "StandardCampaignButtonMouseOverHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\BattleNet\\bnet-button01-highlight-mouse.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 50,
+            "type": "TEXTBUTTON",
+            "name": "CampaignButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.036,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.179,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonPushedTextOffset",
+                    "child": [
+                        "-0.0015f",
+                        "-0.0015f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "CampaignButtonBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "CampaignButtonPushedBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "CampaignButtonDisabledBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "CampaignButtonMouseOverHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 51,
+                    "type": "BACKDROP",
+                    "name": "CampaignButtonBackdropTemplate",
+                    "inherits": "StandardCampaignButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 52,
+                    "type": "BACKDROP",
+                    "name": "CampaignButtonPushedBackdropTemplate",
+                    "inherits": "StandardCampaignButtonPushedBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 53,
+                    "type": "BACKDROP",
+                    "name": "CampaignButtonDisabledBackdropTemplate",
+                    "inherits": "StandardCampaignButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 54,
+                    "type": "HIGHLIGHT",
+                    "name": "CampaignButtonMouseOverHighlightTemplate",
+                    "inherits": "StandardCampaignButtonMouseOverHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 55,
+            "type": "BACKDROP",
+            "name": "StandardCampaignArrowButtonBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBackgroundArrow.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.007",
+                        "0.007",
+                        "0.007",
+                        "0.007,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBorder.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 56,
+            "type": "BACKDROP",
+            "name": "StandardCampaignArrowButtonPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBackgroundArrow-Down.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.007",
+                        "0.007",
+                        "0.007",
+                        "0.007,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBorder-Down.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 57,
+            "type": "BACKDROP",
+            "name": "StandardCampaignArrowButtonDisabledBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBackgroundArrow-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBorder-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 58,
+            "type": "BACKDROP",
+            "name": "StandardCampaignArrowButtonDisabledPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBackgroundArrow-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBorder-DisabledDown.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 59,
+            "type": "HIGHLIGHT",
+            "name": "StandardCampaignArrowButtonFocusHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-KeyboardHighlight.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 60,
+            "type": "HIGHLIGHT",
+            "name": "StandardCampaignArrowButtonMouseOverHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\BattleNet\\bnet-button01-highlight-mouse.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 61,
+            "type": "TEXTBUTTON",
+            "name": "CampaignArrowButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONFOCUS|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonPushedTextOffset",
+                    "child": [
+                        "-0.0015f",
+                        "-0.0015f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "CampaignArrowButtonBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "CampaignArrowButtonPushedBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "CampaignArrowButtonDisabledBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlFocusHighlight",
+                    "child": [
+                        "CampaignArrowButtonFocusHighlightTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "CampaignArrowButtonMouseOverHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 62,
+                    "type": "BACKDROP",
+                    "name": "CampaignArrowButtonBackdropTemplate",
+                    "inherits": "StandardCampaignArrowButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 63,
+                    "type": "BACKDROP",
+                    "name": "CampaignArrowButtonPushedBackdropTemplate",
+                    "inherits": "StandardCampaignArrowButtonPushedBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 64,
+                    "type": "BACKDROP",
+                    "name": "CampaignArrowButtonDisabledBackdropTemplate",
+                    "inherits": "StandardCampaignArrowButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 65,
+                    "type": "HIGHLIGHT",
+                    "name": "CampaignArrowButtonFocusHighlightTemplate",
+                    "inherits": "StandardCampaignArrowButtonFocusHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 66,
+                    "type": "HIGHLIGHT",
+                    "name": "CampaignArrowButtonMouseOverHighlightTemplate",
+                    "inherits": "StandardCampaignArrowButtonMouseOverHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 67,
+            "type": "BACKDROP",
+            "name": "StandardCampaignCameraButtonBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBackgroundCamera.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.007",
+                        "0.007",
+                        "0.007",
+                        "0.007,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBorder.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 68,
+            "type": "BACKDROP",
+            "name": "StandardCampaignCameraButtonPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBackgroundCamera-Down.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.007",
+                        "0.007",
+                        "0.007",
+                        "0.007,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBorder-Down.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 69,
+            "type": "BACKDROP",
+            "name": "StandardCampaignCameraButtonDisabledBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBackgroundCamera-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBorder-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 70,
+            "type": "BACKDROP",
+            "name": "StandardCampaignCameraButtonDisabledPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBackgroundCamera-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-BackdropBorder-DisabledDown.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 71,
+            "type": "HIGHLIGHT",
+            "name": "StandardCampaignCameraButtonFocusHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-CampaignButton-KeyboardHighlight.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 72,
+            "type": "HIGHLIGHT",
+            "name": "StandardCampaignCameraButtonMouseOverHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\BattleNet\\bnet-button01-highlight-mouse.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 73,
+            "type": "TEXTBUTTON",
+            "name": "CampaignCameraButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONFOCUS|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonPushedTextOffset",
+                    "child": [
+                        "-0.0015f",
+                        "-0.0015f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "CampaignCameraButtonBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "CampaignCameraButtonPushedBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "CampaignCameraButtonDisabledBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlFocusHighlight",
+                    "child": [
+                        "CampaignCameraButtonFocusHighlightTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "CampaignCameraButtonMouseOverHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 74,
+                    "type": "BACKDROP",
+                    "name": "CampaignCameraButtonBackdropTemplate",
+                    "inherits": "StandardCampaignCameraButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 75,
+                    "type": "BACKDROP",
+                    "name": "CampaignCameraButtonPushedBackdropTemplate",
+                    "inherits": "StandardCampaignCameraButtonPushedBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 76,
+                    "type": "BACKDROP",
+                    "name": "CampaignCameraButtonDisabledBackdropTemplate",
+                    "inherits": "StandardCampaignCameraButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 77,
+                    "type": "HIGHLIGHT",
+                    "name": "CampaignCameraButtonFocusHighlightTemplate",
+                    "inherits": "StandardCampaignCameraButtonFocusHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 78,
+                    "type": "HIGHLIGHT",
+                    "name": "CampaignCameraButtonMouseOverHighlightTemplate",
+                    "inherits": "StandardCampaignCameraButtonMouseOverHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 79,
+            "type": "GLUEBUTTON",
+            "name": "StandardIconicButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.031,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.031,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "StandardIconicButtonMouseOverHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 80,
+                    "type": "HIGHLIGHT",
+                    "name": "StandardIconicButtonMouseOverHighlightTemplate",
+                    "inherits": "StandardButtonMouseOverHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 81,
+            "type": "TEXT",
+            "name": "StandardButtonTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYCENTER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 82,
+            "type": "TEXT",
+            "name": "StandardInfoTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYCENTER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 83,
+            "type": "TEXT",
+            "name": "StandardTitleTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.015,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 84,
+            "type": "TEXT",
+            "name": "StandardLabelTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 85,
+            "type": "TEXT",
+            "name": "StandardValueTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 86,
+            "type": "TEXT",
+            "name": "StandardSmallTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.011,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 87,
+            "type": "TEXT",
+            "name": "StandardSmallTitleTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.011,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 88,
+            "type": "SLIDER",
+            "name": "StandardSliderTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "SliderLayoutHorizontal,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "StandardScrollBarBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "SliderThumbButtonFrame",
+                    "child": [
+                        "StandardThumbButtonTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 89,
+                    "type": "BACKDROP",
+                    "name": "StandardScrollBarBackdropTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Slider-BackdropBackground.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.004",
+                                "0.004",
+                                "0.004",
+                                "0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Slider-BackdropBorder.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 90,
+                    "type": "BUTTON",
+                    "name": "StandardThumbButtonTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "StandardThumbButtonBackdropTemplate,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlDisabledBackdrop",
+                            "child": [
+                                "StandardThumbButtonDisabledBackdrop,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 91,
+                            "type": "BACKDROP",
+                            "name": "StandardThumbButtonBackdropTemplate",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\SinglePlayerSkirmish-ScrollBarKnob.blp,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 92,
+                            "type": "BACKDROP",
+                            "name": "StandardThumbButtonDisabledBackdrop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\SinglePlayerSkirmish-ScrollBarKnobDisabled.blp,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 93,
+            "type": "SCROLLBAR",
+            "name": "StandardScrollBarTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.0165,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "SliderLayoutVertical,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "StandardScrollBarBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ScrollBarIncButtonFrame",
+                    "child": [
+                        "StandardScrollBarIncButton,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ScrollBarDecButtonFrame",
+                    "child": [
+                        "StandardScrollBarDecButton,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "SliderThumbButtonFrame",
+                    "child": [
+                        "StandardThumbButton,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 94,
+                    "type": "BACKDROP",
+                    "name": "StandardScrollBarBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Scrollbar-BackdropBackground.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.004",
+                                "0.004",
+                                "0.004",
+                                "0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Scrollbar-BackdropBorder.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 95,
+                    "type": "BUTTON",
+                    "name": "StandardScrollBarIncButton",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "StandardScrollBarIncButtonBackdrop,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 96,
+                            "type": "BACKDROP",
+                            "name": "StandardScrollBarIncButtonBackdrop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\GlueScreen-Scrollbar-UpArrow.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 97,
+                    "type": "BUTTON",
+                    "name": "StandardScrollBarDecButton",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "StandardScrollBarDecButtonBackdrop,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 98,
+                            "type": "BACKDROP",
+                            "name": "StandardScrollBarDecButtonBackdrop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\GlueScreen-Scrollbar-DownArrow.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 99,
+                    "type": "BUTTON",
+                    "name": "StandardThumbButton",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "StandardThumbButtonBackdrop,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 100,
+                            "type": "BACKDROP",
+                            "name": "StandardThumbButtonBackdrop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\SinglePlayerSkirmish-ScrollBarKnob.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 101,
+            "type": "LISTBOX",
+            "name": "StandardListBoxTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "ListBoxBorder",
+                    "child": [
+                        "0.01,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "StandardListBoxBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ListBoxScrollBar",
+                    "child": [
+                        "StandardListBoxScrollBarTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 102,
+                    "type": "BACKDROP",
+                    "name": "StandardListBoxBackdropTemplate",
+                    "inherits": "StandardLightBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 103,
+                    "type": "SCROLLBAR",
+                    "name": "StandardListBoxScrollBarTemplate",
+                    "inherits": "StandardScrollBarTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 104,
+            "type": "BACKDROP",
+            "name": "StandardEditBoxBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\BattleNet\\bnet-inputbox-back.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\BattleNet\\bnet-inputbox-border.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 105,
+            "type": "TEXT",
+            "name": "StandardEditBoxTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.015,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 106,
+            "type": "EDITBOX",
+            "name": "StandardEditBoxTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.04,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "EditBorderSize",
+                    "child": [
+                        "0.009,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "EditCursorColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "StandardEditBoxBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 107,
+                    "type": "BACKDROP",
+                    "name": "StandardEditBoxBackdrop",
+                    "inherits": "StandardEditBoxBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 108,
+            "type": "BACKDROP",
+            "name": "StandardDecoratedEditBoxBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "EscMenuEditBoxBackground,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.0125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.005",
+                        "0.005",
+                        "0.005",
+                        "0.005,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "EscMenuEditBoxBorder,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 109,
+            "type": "TEXT",
+            "name": "StandardDecoratedEditBoxTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.015,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 110,
+            "type": "EDITBOX",
+            "name": "StandardDecoratedEditBoxTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.04,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "EditBorderSize",
+                    "child": [
+                        "0.009,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "EditCursorColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "StandardDecoratedEditBoxBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 111,
+                    "type": "BACKDROP",
+                    "name": "StandardDecoratedEditBoxBackdrop",
+                    "inherits": "StandardDecoratedEditBoxBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 112,
+            "type": "BACKDROP",
+            "name": "StandardPopupMenuBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.064,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-PlayerButton-BorderRight.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 113,
+            "type": "MENU",
+            "name": "StandardPopupMenuMenuTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.06,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,0.011,,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "MenuTextHighlightColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "MenuItemHeight",
+                    "child": [
+                        "0.014,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "MenuBorder",
+                    "child": [
+                        "0.009,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "StandardPopupMenuMenuBackdropTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 114,
+                    "type": "BACKDROP",
+                    "name": "StandardPopupMenuMenuBackdropTemplate",
+                    "inherits": "StandardBorderedButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 115,
+            "type": "TEXTBUTTON",
+            "name": "StandardPopupMenuTitleTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,0.011,,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonText",
+                    "child": [
+                        "StandardPopupMenuTitleTextTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 116,
+                    "type": "TEXT",
+                    "name": "StandardPopupMenuTitleTextTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationOffset",
+                            "child": [
+                                "0.01",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontFlags",
+                            "child": [
+                                "FIXEDSIZE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 117,
+            "type": "BUTTON",
+            "name": "StandardPopupMenuArrowTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.011,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.011,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "StandardPopupMenuArrowBackdropTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 118,
+                    "type": "BACKDROP",
+                    "name": "StandardPopupMenuArrowBackdropTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Pulldown-Arrow.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 119,
+            "type": "POPUPMENU",
+            "name": "StandardPopupMenuTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.111875,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.01875,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupButtonInset",
+                    "child": [
+                        "0.01,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "StandardPopupMenuBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "StandardPopupMenuDisabledBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupTitleFrame",
+                    "child": [
+                        "PopupMenuTitle,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupArrowFrame",
+                    "child": [
+                        "PopupMenuArrow,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupMenuFrame",
+                    "child": [
+                        "PopupMenuMenu,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 120,
+                    "type": "BACKDROP",
+                    "name": "StandardPopupMenuBackdropTemplate",
+                    "inherits": "StandardButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 121,
+                    "type": "BACKDROP",
+                    "name": "StandardPopupMenuDisabledBackdropTemplate",
+                    "inherits": "StandardButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 122,
+                    "type": "TEXTBUTTON",
+                    "name": "PopupMenuTitle",
+                    "inherits": "StandardPopupMenuTitleTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 123,
+                    "type": "BUTTON",
+                    "name": "PopupMenuArrow",
+                    "inherits": "StandardPopupMenuArrowTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 124,
+                    "type": "MENU",
+                    "name": "PopupMenuMenu",
+                    "inherits": "StandardPopupMenuMenuTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 125,
+            "type": "BACKDROP",
+            "name": "CampaignPopupMenuBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.064,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-PlayerButton-BorderRight.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 126,
+            "type": "MENU",
+            "name": "CampaignPopupMenuMenuTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.06,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,0.013,,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "MenuTextHighlightColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "MenuItemHeight",
+                    "child": [
+                        "0.014,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "MenuBorder",
+                    "child": [
+                        "0.015,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "CampaignPopupMenuMenuBackdropTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 127,
+                    "type": "BACKDROP",
+                    "name": "CampaignPopupMenuMenuBackdropTemplate",
+                    "inherits": "StandardCampaignButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 128,
+            "type": "TEXTBUTTON",
+            "name": "CampaignPopupMenuTitleTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,0.013,,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonText",
+                    "child": [
+                        "CampaignPopupMenuTitleTextTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 129,
+                    "type": "TEXT",
+                    "name": "CampaignPopupMenuTitleTextTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationOffset",
+                            "child": [
+                                "0.015",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontFlags",
+                            "child": [
+                                "FIXEDSIZE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 130,
+            "type": "BUTTON",
+            "name": "CampaignPopupMenuArrowTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.011,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.011,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "CampaignPopupMenuArrowBackdropTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 131,
+                    "type": "BACKDROP",
+                    "name": "CampaignPopupMenuArrowBackdropTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Pulldown-Arrow.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 132,
+            "type": "POPUPMENU",
+            "name": "CampaignPopupMenuTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.111875,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.01875,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupButtonInset",
+                    "child": [
+                        "0.015,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "CampaignPopupMenuBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "CampaignPopupMenuDisabledBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupTitleFrame",
+                    "child": [
+                        "CampaignPopupMenuTitle,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupArrowFrame",
+                    "child": [
+                        "CampaignPopupMenuArrow,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupMenuFrame",
+                    "child": [
+                        "CampaignPopupMenuMenu,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 133,
+                    "type": "BACKDROP",
+                    "name": "CampaignPopupMenuBackdropTemplate",
+                    "inherits": "StandardCampaignButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 134,
+                    "type": "BACKDROP",
+                    "name": "CampaignPopupMenuDisabledBackdropTemplate",
+                    "inherits": "StandardCampaignButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 135,
+                    "type": "TEXTBUTTON",
+                    "name": "CampaignPopupMenuTitle",
+                    "inherits": "CampaignPopupMenuTitleTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 136,
+                    "type": "BUTTON",
+                    "name": "CampaignPopupMenuArrow",
+                    "inherits": "CampaignPopupMenuArrowTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 137,
+                    "type": "MENU",
+                    "name": "CampaignPopupMenuMenu",
+                    "inherits": "CampaignPopupMenuMenuTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 138,
+            "type": "CHECKBOX",
+            "name": "StandardCheckBoxTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.024,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.024,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "StandardCheckBoxBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "StandardCheckBoxPushedBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "StandardCheckBoxDisabledBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "CheckBoxCheckHighlight",
+                    "child": [
+                        "StandardCheckHighlightTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "CheckBoxDisabledCheckHighlight",
+                    "child": [
+                        "StandardDisabledCheckHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 139,
+                    "type": "BACKDROP",
+                    "name": "StandardCheckBoxBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Checkbox-Background.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 140,
+                    "type": "BACKDROP",
+                    "name": "StandardCheckBoxPushedBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Checkbox-BackgroundPressed.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 141,
+                    "type": "BACKDROP",
+                    "name": "StandardCheckBoxDisabledBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Checkbox-BackgroundDisabled.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 142,
+                    "type": "HIGHLIGHT",
+                    "name": "StandardCheckHighlightTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Checkbox-Check.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "BLEND,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 143,
+                    "type": "HIGHLIGHT",
+                    "name": "StandardDisabledCheckHighlightTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Checkbox-CheckDisabled.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "BLEND,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 144,
+            "type": "DIALOG",
+            "name": "StandardDialogTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.60,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.40,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,0.015,,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DialogBackdrop",
+                    "child": [
+                        "StandardDialogBackdropTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 145,
+                    "type": "BACKDROP",
+                    "name": "StandardDialogBackdropTemplate",
+                    "inherits": "StandardHeavyBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 146,
+            "type": "FRAME",
+            "name": "StandardFrameTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.015,",
+                        ","
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ]
+]

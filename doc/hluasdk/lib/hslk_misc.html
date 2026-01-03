@@ -1,0 +1,663 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Slk与MISC数据</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../favicon.svg">
+                        <link rel="shortcut icon" href="../favicon.png">
+                <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+                <link rel="stylesheet" href="../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 快速开始</a></li><li class="chapter-item expanded "><a href="../quick/struct.html"><strong aria-hidden="true">2.</strong> 项目结构</a></li><li class="chapter-item expanded "><a href="../quick/command.html"><strong aria-hidden="true">3.</strong> SDK命令指引</a></li><li class="chapter-item expanded "><a href="../quick/update.html"><strong aria-hidden="true">4.</strong> 更新日志</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 功能库</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../lib/api.html"><strong aria-hidden="true">5.1.</strong> API</a></li><li class="chapter-item expanded "><a href="../lib/attr.html"><strong aria-hidden="true">5.2.</strong> 属性 Attr</a></li><li class="chapter-item expanded "><a href="../lib/japi.html"><strong aria-hidden="true">5.3.</strong> JAPI</a></li><li class="chapter-item expanded "><a href="../lib/hslk1.html"><strong aria-hidden="true">5.4.</strong> Slk入门</a></li><li class="chapter-item expanded "><a href="../lib/hslk2.html"><strong aria-hidden="true">5.5.</strong> Slk进阶</a></li><li class="chapter-item expanded "><a href="../lib/hslk_f6.html"><strong aria-hidden="true">5.6.</strong> Slk原生物编字段</a></li><li class="chapter-item expanded "><a href="../lib/hslk_misc.html" class="active"><strong aria-hidden="true">5.7.</strong> Slk与MISC数据</a></li><li class="chapter-item expanded "><a href="../lib/sync.html"><strong aria-hidden="true">5.8.</strong> Sync同步</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 例子</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../example/leaderBoard.html"><strong aria-hidden="true">6.1.</strong> 使用排行榜</a></li><li class="chapter-item expanded "><a href="../example/multiBoard.html"><strong aria-hidden="true">6.2.</strong> 使用多面板</a></li><li class="chapter-item expanded "><a href="../example/dialog.html"><strong aria-hidden="true">6.3.</strong> 难度选择对话框</a></li><li class="chapter-item expanded "><a href="../example/pickHero.html"><strong aria-hidden="true">6.4.</strong> 常见两种选英雄</a></li><li class="chapter-item expanded "><a href="../example/attack.html"><strong aria-hidden="true">6.5.</strong> 简单刷兵</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> 其他学习</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../other/jetbrain.html"><strong aria-hidden="true">7.1.</strong> Jetbrain设置</a></li><li class="chapter-item expanded "><a href="../other/q_a.html"><strong aria-hidden="true">7.2.</strong> 询问的技巧</a></li><li class="chapter-item expanded "><a href="../other/dz.html"><strong aria-hidden="true">7.3.</strong> 平台上线须知</a></li><li class="chapter-item expanded "><a href="../other/war3_tec.html"><strong aria-hidden="true">7.4.</strong> 魔兽作图小技巧</a></li><li class="chapter-item expanded "><a href="../other/war3_terrainArt.html"><strong aria-hidden="true">7.5.</strong> 魔兽地形贴图路径</a></li><li class="chapter-item expanded "><a href="../other/lua_engine.html"><strong aria-hidden="true">7.6.</strong> YDLua引擎</a></li><li class="chapter-item expanded "><a href="../other/ui_fdf.html"><strong aria-hidden="true">7.7.</strong> UI &amp; FDF</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> 小小专栏</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../xxqq/BV1nV411J7FB.html"><strong aria-hidden="true">8.1.</strong> 基础指令介绍</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1TK4y1Z7eB.html"><strong aria-hidden="true">8.2.</strong> hslk高级用法演示1</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1M64y117sB.html"><strong aria-hidden="true">8.3.</strong> hslk高级用法演示2</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1ZV411J7JJ.html"><strong aria-hidden="true">8.4.</strong> hslk高级用法演示3</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1iv411L7CP.html"><strong aria-hidden="true">8.5.</strong> UI之sync演示</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1Hy4y1s7cj.html"><strong aria-hidden="true">8.6.</strong> 构建酒馆与小地图UI显示头像</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1Lh411v7pR.html"><strong aria-hidden="true">8.7.</strong> 伤害排行榜</a></li><li class="chapter-item expanded "><a href="../xxqq/upscale.html"><strong aria-hidden="true">8.8.</strong> 高端演示</a></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                                                <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="slk与misc数据"><a class="header" href="#slk与misc数据">Slk与MISC数据</a></h2>
+<pre><code class="language-lua">[Ping](4) =&gt; table: {
+    [PingAttackColor] =&gt; &lt;string&gt;&quot;255,255,0,0&quot;
+    [PingColor] =&gt; &lt;string&gt;&quot;255,0,255,0&quot;
+    [PingAdvisorColor] =&gt; &lt;string&gt;&quot;255,255,255,0&quot;
+    [PingWaypointColor] =&gt; &lt;string&gt;&quot;255,255,255,25&quot;
+}
+[Misc](232) =&gt; table: {
+    [FadeBuffMinDuration] =&gt; &lt;string&gt;&quot;10&quot;
+    [BountyTextVelocity] =&gt; &lt;string&gt;&quot;0,0.03,100&quot;
+    [GrantNormalXP] =&gt; &lt;string&gt;&quot;25&quot;
+    [LumberTextVelocity] =&gt; &lt;string&gt;&quot;0,0.03,100&quot;
+    [GoldTextFadeStart] =&gt; &lt;string&gt;&quot;1&quot;
+    [DamageBonusMagic] =&gt; &lt;string&gt;&quot;1.25,0.75,2.00,0.35,1.00,0.50,0.05,1.00&quot;
+    [FoggedAttackRevealRadius] =&gt; &lt;string&gt;&quot;200.0&quot;
+    [BuildingUnblightRadius] =&gt; &lt;string&gt;&quot;350&quot;
+    [FadeBuffMinAlpha] =&gt; &lt;string&gt;&quot;96&quot;
+    [FollowItemRange] =&gt; &lt;string&gt;&quot;1000&quot;
+    [FadeBuffMaxAlpha] =&gt; &lt;string&gt;&quot;255&quot;
+    [GoldTextColor] =&gt; &lt;string&gt;&quot;255,255,220,0&quot;
+    [BashTextVelocity] =&gt; &lt;string&gt;&quot;0,0.04,100&quot;
+    [GoldTextLifetime] =&gt; &lt;string&gt;&quot;2&quot;
+    [ShadowStrikeTextVelocity] =&gt; &lt;string&gt;&quot;0,0.04,100&quot;
+    [ScaledAnimTime] =&gt; &lt;string&gt;&quot;60&quot;
+    [AwakenLevelFactor] =&gt; &lt;string&gt;&quot;.20&quot;
+    [GoldTextVelocity] =&gt; &lt;string&gt;&quot;0,0.03,100&quot;
+    [CanDeactivateBarkskin] =&gt; &lt;string&gt;&quot;1&quot;
+    [Dusk] =&gt; &lt;string&gt;&quot;18&quot;
+    [ChanceToMiss] =&gt; &lt;string&gt;&quot;0&quot;
+    [BountyTextColor] =&gt; &lt;string&gt;&quot;255,255,220,0&quot;
+    [BulletDeathTime] =&gt; &lt;string&gt;&quot;5&quot;
+    [StructureFollowRange] =&gt; &lt;string&gt;&quot;100&quot;
+    [LumberTextColor] =&gt; &lt;string&gt;&quot;255,0,200,80&quot;
+    [BuildingAngle] =&gt; &lt;string&gt;&quot;270&quot;
+    [CriticalStrikeTextVelocity] =&gt; &lt;string&gt;&quot;0,0.04,100&quot;
+    [BountyTextLifetime] =&gt; &lt;string&gt;&quot;3&quot;
+    [LumberTextLifetime] =&gt; &lt;string&gt;&quot;2&quot;
+    [MaxCollisionRadius] =&gt; &lt;string&gt;&quot;200&quot;
+    [BountyTextFadeStart] =&gt; &lt;string&gt;&quot;2&quot;
+    [NeedHeroXP] =&gt; &lt;string&gt;&quot;200&quot;
+    [LumberTextFadeStart] =&gt; &lt;string&gt;&quot;1&quot;
+    [// revivalTime] =&gt; &lt;string&gt;&quot;originalTime * level * ReviveTimeFactor&quot;
+    [TradingIncLarge] =&gt; &lt;string&gt;&quot;0&quot;
+    [SpellCastRangeBuffer] =&gt; &lt;string&gt;&quot;300&quot;
+    [ReactionDelay] =&gt; &lt;string&gt;&quot;0.25&quot;
+    [StructureDecayTime] =&gt; &lt;string&gt;&quot;15&quot;
+    [MissTextColor] =&gt; &lt;string&gt;&quot;255,255,0,0&quot;
+    [ItemShadowOffset] =&gt; &lt;string&gt;&quot;50,50&quot;
+    [MissTextVelocity] =&gt; &lt;string&gt;&quot;0,0.03,100&quot;
+    [MissTextLifetime] =&gt; &lt;string&gt;&quot;3&quot;
+    [MissTextFadeStart] =&gt; &lt;string&gt;&quot;1&quot;
+    [CriticalStrikeTextColor] =&gt; &lt;string&gt;&quot;255,255,0,0&quot;
+    [DefendDeflection] =&gt; &lt;string&gt;&quot;0&quot;
+    [ShadowStrikeTextFadeStart] =&gt; &lt;string&gt;&quot;2&quot;
+    [CriticalStrikeTextLifetime] =&gt; &lt;string&gt;&quot;5&quot;
+    [CriticalStrikeTextFadeStart] =&gt; &lt;string&gt;&quot;2&quot;
+    [ShadowStrikeTextColor] =&gt; &lt;string&gt;&quot;255,160,255,0&quot;
+    [ManaBurnTextVelocity] =&gt; &lt;string&gt;&quot;0,0.04,100&quot;
+    [ShadowStrikeTextLifetime] =&gt; &lt;string&gt;&quot;5&quot;
+    [ManaBurnTextColor] =&gt; &lt;string&gt;&quot;255,82,82,255&quot;
+    [BuildingPlacementNotifyRadius] =&gt; &lt;string&gt;&quot;600&quot;
+    [MorphLandClosest] =&gt; &lt;string&gt;&quot;1&quot;
+    [ManaBurnTextLifetime] =&gt; &lt;string&gt;&quot;5&quot;
+    [ManaBurnTextFadeStart] =&gt; &lt;string&gt;&quot;2&quot;
+    [BashTextColor] =&gt; &lt;string&gt;&quot;255,0,0,255&quot;
+    [IllusionsGetAttackSpeedBonus] =&gt; &lt;string&gt;&quot;0&quot;
+    [BashTextLifetime] =&gt; &lt;string&gt;&quot;5&quot;
+    [BashTextFadeStart] =&gt; &lt;string&gt;&quot;2&quot;
+    [HeroExpRange] =&gt; &lt;string&gt;&quot;1200&quot;
+    [LavaSpawnColor] =&gt; &lt;string&gt;&quot;255,255,255,255,255,220,220,220,255,185,185,185&quot;
+    [ActiveButtonColor] =&gt; &lt;string&gt;&quot;255,75,150,255&quot;
+    [DamageBonusNormal] =&gt; &lt;string&gt;&quot;1.00,1.50,1.00,0.70,1.00,1.00,0.05,1.00&quot;
+    [CloseEnoughRange] =&gt; &lt;string&gt;&quot;100&quot;
+    [NeutralUseNotifyRadius] =&gt; &lt;string&gt;&quot;900&quot;
+    [StrRegenBonus] =&gt; &lt;string&gt;&quot;0&quot;
+    [ReviveMaxTimeFactor] =&gt; &lt;string&gt;&quot;2.0&quot;
+    [RootAngle] =&gt; &lt;string&gt;&quot;250&quot;
+    [AttackHalfAngle] =&gt; &lt;string&gt;&quot;0.5&quot;
+    [InvisibleUnitsBestowAuras] =&gt; &lt;string&gt;&quot;0&quot;
+    [DyingRevealRadius] =&gt; &lt;string&gt;&quot;500.0&quot;
+    [BoneDecayTime] =&gt; &lt;string&gt;&quot;60&quot;
+    [DecayTime] =&gt; &lt;string&gt;&quot;2&quot;
+    [FlyingHeroesBestowAuras] =&gt; &lt;string&gt;&quot;0&quot;
+    [FogFlashTime] =&gt; &lt;string&gt;&quot;3&quot;
+    [DissipateTime] =&gt; &lt;string&gt;&quot;3&quot;
+    [CancelTime] =&gt; &lt;string&gt;&quot;3&quot;
+    [EffectDeathTime] =&gt; &lt;string&gt;&quot;5&quot;
+    [CanDeactivateBearForm] =&gt; &lt;string&gt;&quot;1&quot;
+    [CreepCampPathingCellDistance] =&gt; &lt;string&gt;&quot;26&quot;
+    [FollowRange] =&gt; &lt;string&gt;&quot;300&quot;
+    [RallyZOffset] =&gt; &lt;string&gt;&quot;200&quot;
+    [HeroMaxAwakenCostGold] =&gt; &lt;string&gt;&quot;1400&quot;
+    [DayLength] =&gt; &lt;string&gt;&quot;480&quot;
+    [Dawn] =&gt; &lt;string&gt;&quot;6&quot;
+    [DayHours] =&gt; &lt;string&gt;&quot;24&quot;
+    [GoldMineMaxGold] =&gt; &lt;string&gt;&quot;1000000&quot;
+    [AllowMultiBounce] =&gt; &lt;string&gt;&quot;1&quot;
+    [InvisSpeed] =&gt; &lt;string&gt;&quot;0.4&quot;
+    [LowGoldAmount] =&gt; &lt;string&gt;&quot;1500&quot;
+    [CanDeactivateWindWalk] =&gt; &lt;string&gt;&quot;0&quot;
+    [GoldMineOwnDuration] =&gt; &lt;string&gt;&quot;2.0&quot;
+    [IntManaBonus] =&gt; &lt;string&gt;&quot;0&quot;
+    [// this is the speed units change visibility (smaller] =&gt; &lt;string&gt;&quot;&quot;cloak&quot; slower)&quot;
+    [SelectionCircleBaseZ] =&gt; &lt;string&gt;&quot;16&quot;
+    [ItemShadowFile] =&gt; &lt;string&gt;&quot;Shadow&quot;
+    [ItemShadowSize] =&gt; &lt;string&gt;&quot;120,120&quot;
+    [StrAttackBonus] =&gt; &lt;string&gt;&quot;0&quot;
+    [TownPortalCluster] =&gt; &lt;string&gt;&quot;1&quot;
+    [AttackNotifyDelay] =&gt; &lt;string&gt;&quot;30.0&quot;
+    [DrainTransfersLife] =&gt; &lt;string&gt;&quot;0&quot;
+    [AttackNotifyRange] =&gt; &lt;string&gt;&quot;1250&quot;
+    [CanDeactivateRavenForm] =&gt; &lt;string&gt;&quot;1&quot;
+    [TradingIncSmall] =&gt; &lt;string&gt;&quot;0&quot;
+    [MissDamageReduction] =&gt; &lt;string&gt;&quot;0.&quot;
+    [MagicImmunesResistDamage] =&gt; &lt;string&gt;&quot;1&quot;
+    [MagicImmunesResistThorns] =&gt; &lt;string&gt;&quot;0&quot;
+    [MagicImmunesResistLeech] =&gt; &lt;string&gt;&quot;0&quot;
+    [MagicImmunesResistUltimates] =&gt; &lt;string&gt;&quot;0&quot;
+    [CycloneStasis] =&gt; &lt;string&gt;&quot;0&quot;
+    [GrantNormalXPFormulaB] =&gt; &lt;string&gt;&quot;5&quot;
+    [ReviveTimeFactor] =&gt; &lt;string&gt;&quot;0.65&quot;
+    [DepCheckAlias] =&gt; &lt;string&gt;&quot;1&quot;
+    [MassTeleportCluster] =&gt; &lt;string&gt;&quot;1&quot;
+    [DarkSummoningCluster] =&gt; &lt;string&gt;&quot;1&quot;
+    [AmuletOfRecallCluster] =&gt; &lt;string&gt;&quot;1&quot;
+    [MorphAlternateDisable] =&gt; &lt;string&gt;&quot;0&quot;
+    [InvulnSummonDispelDamage] =&gt; &lt;string&gt;&quot;1&quot;
+    [ConstructionDamageRefundPenalty] =&gt; &lt;string&gt;&quot;1&quot;
+    [UpgradeDamageRefundPenalty] =&gt; &lt;string&gt;&quot;0&quot;
+    [MaxUnitSpeed] =&gt; &lt;string&gt;&quot;522&quot;
+    [EnsnareIsMagic] =&gt; &lt;string&gt;&quot;0&quot;
+    [MinUnitSpeed] =&gt; &lt;string&gt;&quot;0&quot;
+    [WebIsMagic] =&gt; &lt;string&gt;&quot;0&quot;
+    [IllusionsGetAttackBonus] =&gt; &lt;string&gt;&quot;0&quot;
+    [IllusionsGetMoveSpeedBonus] =&gt; &lt;string&gt;&quot;0&quot;
+    [IllusionsGetDefenseBonus] =&gt; &lt;string&gt;&quot;0&quot;
+    [IllusionsCanRestoreLife] =&gt; &lt;string&gt;&quot;0&quot;
+    [IllusionsCanRestoreMana] =&gt; &lt;string&gt;&quot;0&quot;
+    [IllusionsBestowAuras] =&gt; &lt;string&gt;&quot;0&quot;
+    [CanDeactivateAvengerForm] =&gt; &lt;string&gt;&quot;0&quot;
+    [IllusionsGetAutocast] =&gt; &lt;string&gt;&quot;0&quot;
+    [GrantNormalXPFormulaA] =&gt; &lt;string&gt;&quot;1&quot;
+    [DrainGivesBonusMana] =&gt; &lt;string&gt;&quot;0&quot;
+    [PolymorphedUnitsBestowAuras] =&gt; &lt;string&gt;&quot;0&quot;
+    [BurrowedUnitsBestowAuras] =&gt; &lt;string&gt;&quot;0&quot;
+    [DamageBonusChaos] =&gt; &lt;string&gt;&quot;1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00&quot;
+    [AnimatedUnitsBestowAuras] =&gt; &lt;string&gt;&quot;0&quot;
+    [MoveSpeedBonusesStack] =&gt; &lt;string&gt;&quot;1&quot;
+    [DrainUsesEtheralBonus] =&gt; &lt;string&gt;&quot;0&quot;
+    [DrainTransfersMana] =&gt; &lt;string&gt;&quot;0&quot;
+    [AgiAttackSpeedBonus] =&gt; &lt;string&gt;&quot;0&quot;
+    [DrainGivesBonusLife] =&gt; &lt;string&gt;&quot;0&quot;
+    [EtherealDamageBonusAlly] =&gt; &lt;string&gt;&quot;1&quot;
+    [CanDeactivateAvatar] =&gt; &lt;string&gt;&quot;0&quot;
+    [CanDeactivateBladestorm] =&gt; &lt;string&gt;&quot;0&quot;
+    [AgiMoveBonus] =&gt; &lt;string&gt;&quot;0&quot;
+    [CanDeactivateBurrow] =&gt; &lt;string&gt;&quot;1&quot;
+    [CanDeactivateCallToArms] =&gt; &lt;string&gt;&quot;1&quot;
+    [CanDeactivateChemicalRage] =&gt; &lt;string&gt;&quot;0&quot;
+    [CanDeactivateCorporealForm] =&gt; &lt;string&gt;&quot;1&quot;
+    [DisplayBuildingStatus] =&gt; &lt;string&gt;&quot;0&quot;
+    [CanDeactivateDefend] =&gt; &lt;string&gt;&quot;1&quot;
+    [GrantNormalXPFormulaC] =&gt; &lt;string&gt;&quot;5&quot;
+    [CanDeactivateDivineShield] =&gt; &lt;string&gt;&quot;1&quot;
+    [CanDeactivateImmolation] =&gt; &lt;string&gt;&quot;1&quot;
+    [CanDeactivateManaFlare] =&gt; &lt;string&gt;&quot;0&quot;
+    [CanDeactivateManaShield] =&gt; &lt;string&gt;&quot;1&quot;
+    [CanDeactivateMetamorphosis] =&gt; &lt;string&gt;&quot;0&quot;
+    [CanDeactivateRoboGoblin] =&gt; &lt;string&gt;&quot;1&quot;
+    [CanDeactivateStoneForm] =&gt; &lt;string&gt;&quot;1&quot;
+    [CanDeactivateSubmerge] =&gt; &lt;string&gt;&quot;1&quot;
+    [RelativeUpgradeCost] =&gt; &lt;string&gt;&quot;1&quot;
+    [ItemSaleAggroRange] =&gt; &lt;string&gt;&quot;0&quot;
+    [UnitSaleAggroRange] =&gt; &lt;string&gt;&quot;0&quot;
+    [AbilSaleAggroRange] =&gt; &lt;string&gt;&quot;0&quot;
+    [AbolishMagicDispelSmart] =&gt; &lt;string&gt;&quot;0&quot;
+    [UpgradeInProgressIdChange] =&gt; &lt;string&gt;&quot;1&quot;
+    [GlobalExperience] =&gt; &lt;string&gt;&quot;1&quot;
+    [HeroMaxAwakenCostLumber] =&gt; &lt;string&gt;&quot;350&quot;
+    [MaxLevelHeroesDrainExp] =&gt; &lt;string&gt;&quot;1&quot;
+    [BuildingKillsGiveExp] =&gt; &lt;string&gt;&quot;0&quot;
+    [DisplayEnemyInventory] =&gt; &lt;string&gt;&quot;1&quot;
+    [AgiDefenseBonus] =&gt; &lt;string&gt;&quot;0&quot;
+    [HeroMaxReviveCostGold] =&gt; &lt;string&gt;&quot;700&quot;
+    [AwakenLumberLevelFactor] =&gt; &lt;string&gt;&quot;.20&quot;
+    [HeroMaxReviveCostLumber] =&gt; &lt;string&gt;&quot;0&quot;
+    [HeroMaxReviveTime] =&gt; &lt;string&gt;&quot;150&quot;
+    [GuardReturnTime] =&gt; &lt;string&gt;&quot;5.0&quot;
+    [HeroReviveManaStart] =&gt; &lt;string&gt;&quot;1&quot;
+    [HeroReviveManaFactor] =&gt; &lt;string&gt;&quot;0.0&quot;
+    [HeroReviveLifeFactor] =&gt; &lt;string&gt;&quot;1.0&quot;
+    [HeroAwakenManaStart] =&gt; &lt;string&gt;&quot;0&quot;
+    [PawnItemRate] =&gt; &lt;string&gt;&quot;0.50&quot;
+    [HeroAwakenManaFactor] =&gt; &lt;string&gt;&quot;0.0&quot;
+    [HeroAwakenLifeFactor] =&gt; &lt;string&gt;&quot;0.5&quot;
+    [// goldRevivalCost] =&gt; &lt;string&gt;&quot;originalCost * (ReviveBaseFactor + (ReviveLevelFactor*(level-1)))&quot;
+    [// lumberRevivalCost] =&gt; &lt;string&gt;&quot;originalCost * (ReviveBaseLumberFactor + (ReviveLumberLevelFactor*(level-1)))&quot;
+    [ReviveBaseFactor] =&gt; &lt;string&gt;&quot;.40&quot;
+    [ReviveLevelFactor] =&gt; &lt;string&gt;&quot;.10&quot;
+    [ReviveBaseLumberFactor] =&gt; &lt;string&gt;&quot;0&quot;
+    [DamageBonusSpells] =&gt; &lt;string&gt;&quot;1.00,1.00,1.00,1.00,1.00,0.75,0.05,1.00&quot;
+    [ReviveLumberLevelFactor] =&gt; &lt;string&gt;&quot;0&quot;
+    [ReviveMaxFactor] =&gt; &lt;string&gt;&quot;4.0&quot;
+    [FrostAttackSpeedDecrease] =&gt; &lt;string&gt;&quot;0&quot;
+    [AwakenBaseFactor] =&gt; &lt;string&gt;&quot;.80&quot;
+    [FrostMoveSpeedDecrease] =&gt; &lt;string&gt;&quot;0&quot;
+    [AwakenBaseLumberFactor] =&gt; &lt;string&gt;&quot;.80&quot;
+    [AwakenMaxFactor] =&gt; &lt;string&gt;&quot;8.0&quot;
+    [MinBldgSpeed] =&gt; &lt;string&gt;&quot;25&quot;
+    [MaxBldgSpeed] =&gt; &lt;string&gt;&quot;400&quot;
+    [MaxHeroLevel] =&gt; &lt;string&gt;&quot;10&quot;
+    [MaxUnitLevel] =&gt; &lt;string&gt;&quot;99&quot;
+    [GrantHeroXP] =&gt; &lt;string&gt;&quot;100,120,160,220,300&quot;
+    [HeroFactorXP] =&gt; &lt;string&gt;&quot;80,70,60,50,0&quot;
+    [EtherealHealBonus] =&gt; &lt;string&gt;&quot;1.66&quot;
+    [SummonedKillFactor] =&gt; &lt;string&gt;&quot;0.5&quot;
+    [StrHitPointBonus] =&gt; &lt;string&gt;&quot;0&quot;
+    [IntRegenBonus] =&gt; &lt;string&gt;&quot;0&quot;
+    [AgiDefenseBase] =&gt; &lt;string&gt;&quot;0&quot;
+    [// f(x)] =&gt; &lt;string&gt;&quot;A*f(x-1) + B*x + C&quot;
+    [NeedHeroXPFormulaA] =&gt; &lt;string&gt;&quot;1&quot;
+    [NeedHeroXPFormulaB] =&gt; &lt;string&gt;&quot;100&quot;
+    [NeedHeroXPFormulaC] =&gt; &lt;string&gt;&quot;0&quot;
+    [GrantHeroXPFormulaA] =&gt; &lt;string&gt;&quot;1&quot;
+    [GrantHeroXPFormulaB] =&gt; &lt;string&gt;&quot;0&quot;
+    [GrantHeroXPFormulaC] =&gt; &lt;string&gt;&quot;100&quot;
+    [HeroAbilityLevelSkip] =&gt; &lt;string&gt;&quot;2&quot;
+    [DropItemRange] =&gt; &lt;string&gt;&quot;100&quot;
+    [GiveItemRange] =&gt; &lt;string&gt;&quot;150&quot;
+    [PickupItemRange] =&gt; &lt;string&gt;&quot;150&quot;
+    [PawnItemRange] =&gt; &lt;string&gt;&quot;300&quot;
+    [CallForHelp] =&gt; &lt;string&gt;&quot;600&quot;
+    [CreepCallForHelp] =&gt; &lt;string&gt;&quot;600&quot;
+    [DefenseArmor] =&gt; &lt;string&gt;&quot;0.06&quot;
+    [DamageBonusPierce] =&gt; &lt;string&gt;&quot;2.00,0.75,1.00,0.35,1.00,0.50,0.05,1.50&quot;
+    [DamageBonusSiege] =&gt; &lt;string&gt;&quot;1.00,0.50,1.00,1.50,1.00,0.50,0.05,1.50&quot;
+    [DamageBonusHero] =&gt; &lt;string&gt;&quot;1.00,1.00,1.00,0.50,1.00,1.00,0.05,1.00&quot;
+    [EtherealDamageBonus] =&gt; &lt;string&gt;&quot;0,0,0,1.66,0,1.66,0&quot;
+    [GuardDistance] =&gt; &lt;string&gt;&quot;600&quot;
+    [MaxGuardDistance] =&gt; &lt;string&gt;&quot;1000&quot;
+}
+[Ques](1) =&gt; table: {
+    [QuestIndicatorTimeout] =&gt; &lt;string&gt;&quot;10&quot;
+}
+[Came](19) =&gt; table: {
+    [AOA] =&gt; &lt;string&gt;&quot;20&quot;
+    [top] =&gt; &lt;string&gt;&quot;2&quot;
+    [FarZ] =&gt; &lt;string&gt;&quot;5000,5000,5000,5000,5000,5000&quot;
+    [FOV] =&gt; &lt;string&gt;&quot;20&quot;
+    [SmoothMaxDist] =&gt; &lt;string&gt;&quot;1000&quot;
+    [SmoothScale] =&gt; &lt;string&gt;&quot;0.80&quot;
+    [NearZ] =&gt; &lt;string&gt;&quot;100,100,100,100,100,100,60&quot;
+    [Rotation] =&gt; &lt;string&gt;&quot;30&quot;
+    [Height] =&gt; &lt;string&gt;&quot;0,0,0,0,0,0,0&quot;
+    [Distance] =&gt; &lt;string&gt;&quot;1200&quot;
+    [Smoothing] =&gt; &lt;string&gt;&quot;0.00&quot;
+    [SmoothBias] =&gt; &lt;string&gt;&quot;0.15&quot;
+    [SmoothMinFPS] =&gt; &lt;string&gt;&quot;10&quot;
+    [right] =&gt; &lt;string&gt;&quot;4&quot;
+    [SmoothBeta] =&gt; &lt;string&gt;&quot;1.5&quot;
+    [Forward] =&gt; &lt;string&gt;&quot;3000&quot;
+    [Strafe] =&gt; &lt;string&gt;&quot;3000&quot;
+    [left] =&gt; &lt;string&gt;&quot;4&quot;
+    [bottom] =&gt; &lt;string&gt;&quot;2&quot;
+}
+[Info](5) =&gt; table: {
+    [MeleeRangeMax] =&gt; &lt;string&gt;&quot;128&quot;
+    [SpeedSlow] =&gt; &lt;string&gt;&quot;220&quot;
+    [SpeedAverage] =&gt; &lt;string&gt;&quot;280&quot;
+    [AttackAverage] =&gt; &lt;string&gt;&quot;1.5&quot;
+    [AttackSlow] =&gt; &lt;string&gt;&quot;2&quot;
+}
+[Flye](2) =&gt; table: {
+    [MaximizeRadius] =&gt; &lt;string&gt;&quot;6&quot;
+    [SmoothLevels] =&gt; &lt;string&gt;&quot;3&quot;
+}
+[Unpa](4) =&gt; table: {
+    [left] =&gt; &lt;string&gt;&quot;6&quot;
+    [right] =&gt; &lt;string&gt;&quot;6&quot;
+    [top] =&gt; &lt;string&gt;&quot;8&quot;
+    [bottom] =&gt; &lt;string&gt;&quot;4&quot;
+}
+[Defa](5) =&gt; table: {
+    [Style] =&gt; &lt;string&gt;&quot;0&quot;
+    [Start] =&gt; &lt;string&gt;&quot;20000&quot;
+    [End] =&gt; &lt;string&gt;&quot;50000&quot;
+    [Density] =&gt; &lt;string&gt;&quot;0&quot;
+    [Color] =&gt; &lt;string&gt;&quot;0,0,0,0&quot;
+}
+[Arth](33) =&gt; table: {
+    [File1] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\ArthasCape0001.mrf&quot;
+    [File21] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\ArthasCape0004.mrf&quot;
+    [Style] =&gt; &lt;string&gt;&quot;0&quot;
+    [File13] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\IllidanDeathShadowA.blp&quot;
+    [Start] =&gt; &lt;string&gt;&quot;0&quot;
+    [End] =&gt; &lt;string&gt;&quot;6000&quot;
+    [Density] =&gt; &lt;string&gt;&quot;1&quot;
+    [File3] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\ArthasCloakFight.blp&quot;
+    [Color] =&gt; &lt;string&gt;&quot;255,92,112,120&quot;
+    [File0] =&gt; &lt;string&gt;&quot;Sound\Ambient\DoodadEffects\FinalCinematic.mp3&quot;
+    [File4] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\Arthas1.blp&quot;
+    [File5] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\StoneTiledSnowTALLtrev.blp&quot;
+    [File6] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\IllidanBlade.blp&quot;
+    [File7] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\FrostMorne.blp&quot;
+    [File8] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\BigAssSky.blp&quot;
+    [File9] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\ArthasCape0000.mrf&quot;
+    [File10] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\ArthasCape0002.mrf&quot;
+    [File11] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\ArthasCape0003.mrf&quot;
+    [File12] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\SpeedLines1_solid.blp&quot;
+    [File14] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\IllidanCineStuff.blp&quot;
+    [File15] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\IllidanCine.blp&quot;
+    [File16] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\IceCrownWalls.blp&quot;
+    [File17] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\IceCrownDoodads0.blp&quot;
+    [File18] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\Ice_Natural01.blp&quot;
+    [File19] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\Clouds8x8.blp&quot;
+    [File20] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\Ice_Natural01.blp&quot;
+    [File22] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\ArthasCape0005.mrf&quot;
+    [File23] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\SacrificialAltarskull1.blp&quot;
+    [File24] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\rockShadow.blp&quot;
+    [File25] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\IronForgeSnow01solid1.blp&quot;
+    [File26] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\furboots2.blp&quot;
+    [File27] =&gt; &lt;string&gt;&quot;Doodads\Cinematic\ArthasIllidanFight\IllidanBlade_mip1.blp&quot;
+    [Scene1] =&gt; &lt;string&gt;&quot;FinalCinematic&quot;
+}
+[Terr](9) =&gt; table: {
+    [MaxHeight] =&gt; &lt;string&gt;&quot;1536&quot;
+    [Style] =&gt; &lt;string&gt;&quot;0&quot;
+    [Start] =&gt; &lt;string&gt;&quot;3000&quot;
+    [End] =&gt; &lt;string&gt;&quot;5000&quot;
+    [// 0] =&gt; &lt;string&gt;&quot;low ground, each cliff level = 128&quot;
+    [Density] =&gt; &lt;string&gt;&quot;0.5&quot;
+    [MinHeight] =&gt; &lt;string&gt;&quot;-128&quot;
+    [Color] =&gt; &lt;string&gt;&quot;255,0,0,0&quot;
+    [MaxSlope] =&gt; &lt;string&gt;&quot;50&quot;
+}
+[Menu](5) =&gt; table: {
+    [Style] =&gt; &lt;string&gt;&quot;0,0&quot;
+    [Start] =&gt; &lt;string&gt;&quot;100,0&quot;
+    [End] =&gt; &lt;string&gt;&quot;5500,7000&quot;
+    [Density] =&gt; &lt;string&gt;&quot;1,1&quot;
+    [Color] =&gt; &lt;string&gt;&quot;255,11,20,11,255,178,178,204&quot;
+}
+[Soun](5) =&gt; table: {
+    [MusicFadeInterval] =&gt; &lt;string&gt;&quot;500&quot;
+    [MinDist] =&gt; &lt;string&gt;&quot;1200&quot;
+    [Attenuation] =&gt; &lt;string&gt;&quot;3.0&quot;
+    [MaxDist] =&gt; &lt;string&gt;&quot;20000&quot;
+    [MusicFadeRate] =&gt; &lt;string&gt;&quot;16&quot;
+}
+[Targ](2) =&gt; table: {
+    [TargetLightColor] =&gt; &lt;string&gt;&quot;180,0,255,0&quot;
+    [SelTargetColor] =&gt; &lt;string&gt;&quot;255,240,200,0&quot;
+}
+[Ligh](1) =&gt; table: {
+    [Direction] =&gt; &lt;string&gt;&quot;0.3,0.3,-0.25&quot;
+}
+[Sele](15) =&gt; table: {
+    [NumSizes] =&gt; &lt;string&gt;&quot;3&quot;
+    [TextureDotted00] =&gt; &lt;string&gt;&quot;ReplaceableTextures\Selection\SelectionCircleSmallDotted&quot;
+    [ColorEnemy] =&gt; &lt;string&gt;&quot;255,255,0,0&quot;
+    [Texture00] =&gt; &lt;string&gt;&quot;ReplaceableTextures\Selection\SelectionCircleSmall&quot;
+    [AllyOffset] =&gt; &lt;string&gt;&quot;0.2&quot;
+    [Size00] =&gt; &lt;string&gt;&quot;100&quot;
+    [ColorNeutral] =&gt; &lt;string&gt;&quot;255,255,255,0&quot;
+    [TextureDotted01] =&gt; &lt;string&gt;&quot;ReplaceableTextures\Selection\SelectionCircleMedDotted&quot;
+    [Texture01] =&gt; &lt;string&gt;&quot;ReplaceableTextures\Selection\SelectionCircleMed&quot;
+    [Size01] =&gt; &lt;string&gt;&quot;300&quot;
+    [ScaleFactor] =&gt; &lt;string&gt;&quot;72&quot;
+    [TextureDotted02] =&gt; &lt;string&gt;&quot;ReplaceableTextures\Selection\SelectionCircleLargeDotted&quot;
+    [Texture02] =&gt; &lt;string&gt;&quot;ReplaceableTextures\Selection\SelectionCircleLarge&quot;
+    [ImageWalkableZOffset] =&gt; &lt;string&gt;&quot;15&quot;
+    [ColorFriend] =&gt; &lt;string&gt;&quot;255,0,255,0&quot;
+}
+[Blig](7) =&gt; table: {
+    [DCT_s2] =&gt; &lt;string&gt;&quot;10&quot;
+    [Texture] =&gt; &lt;string&gt;&quot;TerrainArt\Blight\Blight&quot;
+    [DCT_d2] =&gt; &lt;string&gt;&quot;20&quot;
+    [PuffModel] =&gt; &lt;string&gt;&quot;Environment\BlightDoodad\BlightDoodad.mdl&quot;
+    [DCT_s1] =&gt; &lt;string&gt;&quot;5&quot;
+    [DCT_sd] =&gt; &lt;string&gt;&quot;15&quot;
+    [DCT_d1] =&gt; &lt;string&gt;&quot;5&quot;
+}
+[Wate](5) =&gt; table: {
+    [DeepLevelPathing] =&gt; &lt;string&gt;&quot;52&quot;
+    [MinDepth] =&gt; &lt;string&gt;&quot;10&quot;
+    [DeepLevel] =&gt; &lt;string&gt;&quot;64&quot;
+    [MaxDepth] =&gt; &lt;string&gt;&quot;72&quot;
+    [WavesDepth] =&gt; &lt;string&gt;&quot;25&quot;
+}
+[Team](4) =&gt; table: {
+    [ColorIndexPlayer] =&gt; &lt;string&gt;&quot;1&quot;
+    [ColorIndexAlly] =&gt; &lt;string&gt;&quot;2&quot;
+    [ColorIndexCreep] =&gt; &lt;string&gt;&quot;12&quot;
+    [ColorIndexEnemy] =&gt; &lt;string&gt;&quot;0&quot;
+}
+[FogO](25) =&gt; table: {
+    [BlackMaskedObject] =&gt; &lt;string&gt;&quot;255,0,0,0&quot;
+    [FoggedTerrain] =&gt; &lt;string&gt;&quot;170,16,16,32&quot;
+    [FoggedObject] =&gt; &lt;string&gt;&quot;255,64,64,96&quot;
+    [BlackMaskedTerrain] =&gt; &lt;string&gt;&quot;255,0,0,0&quot;
+    [DarkMaskedTerrain] =&gt; &lt;string&gt;&quot;230,0,0,0&quot;
+    [BoundaryTerrain] =&gt; &lt;string&gt;&quot;230,0,0,0&quot;
+    [FogColorCreepAllied] =&gt; &lt;string&gt;&quot;255,0,0,50&quot;
+    [BoundaryObject] =&gt; &lt;string&gt;&quot;255,0,0,0&quot;
+    [FoggedBoundaryTerrain] =&gt; &lt;string&gt;&quot;170,16,16,32&quot;
+    [FogColorPlayer] =&gt; &lt;string&gt;&quot;255,255,255,255&quot;
+    [DarkMaskedObject] =&gt; &lt;string&gt;&quot;255,32,32,48&quot;
+    [FoggedBoundaryObject] =&gt; &lt;string&gt;&quot;255,64,64,96&quot;
+    [ShadowImageColor] =&gt; &lt;string&gt;&quot;170,0,0,0&quot;
+    [FogColorAlly] =&gt; &lt;string&gt;&quot;255,0,255,210&quot;
+    [FogColorEnemy] =&gt; &lt;string&gt;&quot;255,255,0,0&quot;
+    [FogColorResource] =&gt; &lt;string&gt;&quot;255,32,128,128&quot;
+    [FogColorItem] =&gt; &lt;string&gt;&quot;255,240,240,0&quot;
+    [FogColorHero] =&gt; &lt;string&gt;&quot;255,255,255,128&quot;
+    [FogColorCreepNormal] =&gt; &lt;string&gt;&quot;255,0,0,50&quot;
+    [FogColorDestructable] =&gt; &lt;string&gt;&quot;255,0,160,128&quot;
+    [FogColorBlackMaskAlpha] =&gt; &lt;string&gt;&quot;0&quot;
+    [FogColorDarkMaskAlpha] =&gt; &lt;string&gt;&quot;96&quot;
+    [FogColorFogMaskAlpha] =&gt; &lt;string&gt;&quot;192&quot;
+    [FogColorVisibleAlpha] =&gt; &lt;string&gt;&quot;255&quot;
+    [FogColorBlightMask] =&gt; &lt;string&gt;&quot;0,63,63,64&quot;
+}
+[Mini](8) =&gt; table: {
+    [MinimapToughCampColor] =&gt; &lt;string&gt;&quot;255,220,0,0&quot;
+    [MinimapToughCampThreshold] =&gt; &lt;string&gt;&quot;20&quot;
+    [MinimapColorBorder] =&gt; &lt;string&gt;&quot;255,60,60,70&quot;
+    [MinimapMiddleCampThreshold] =&gt; &lt;string&gt;&quot;10&quot;
+    [MinimapMiddleCampScale] =&gt; &lt;string&gt;&quot;1.3&quot;
+    [MinimapWeakCampColor] =&gt; &lt;string&gt;&quot;255,0,200,0&quot;
+    [MinimapMiddleCampColor] =&gt; &lt;string&gt;&quot;255,255,128,0&quot;
+    [MinimapCampPulseScale] =&gt; &lt;string&gt;&quot;0.5&quot;
+}
+[Glue](3) =&gt; table: {
+    [ControlFadeDuration] =&gt; &lt;string&gt;&quot;0.25&quot;
+    [ControlFadeDurationDebug] =&gt; &lt;string&gt;&quot;0.01&quot;
+    [CustomLoadTimerDuration] =&gt; &lt;string&gt;&quot;10.0&quot;
+}
+[Batt](3) =&gt; table: {
+    [LargeMapRange] =&gt; &lt;string&gt;&quot;9,12&quot;
+    [SmallMapRange] =&gt; &lt;string&gt;&quot;2,4&quot;
+    [MediumMapRange] =&gt; &lt;string&gt;&quot;5,8&quot;
+}
+[Occl](4) =&gt; table: {
+    [BuildingsOcclude] =&gt; &lt;string&gt;&quot;0&quot;
+    [OccluderColor] =&gt; &lt;string&gt;&quot;128,255,255,255&quot;
+    [MarkImage] =&gt; &lt;string&gt;&quot;ReplaceableTextures\Occlusion\OcclusionMark&quot;
+    [MarkColor] =&gt; &lt;string&gt;&quot;255,255,0,255&quot;
+}
+[Plac](2) =&gt; table: {
+    [PaidStructureColor] =&gt; &lt;string&gt;&quot;96,128,128,255&quot;
+    [UnpaidStructureColor] =&gt; &lt;string&gt;&quot;96,255,128,128&quot;
+} 
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../lib/hslk_f6.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="../lib/sync.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../lib/hslk_f6.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="../lib/sync.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+                <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>

@@ -1,0 +1,3182 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "BACKDROP",
+            "name": "BattleNetHeavyBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\HeavyBorderBackGround.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\HeavyBorderCorners.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "BACKDROP",
+            "name": "BattleNetMediumBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\LightBorderBackGround.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\LightBorderCorners.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 2,
+            "type": "BACKDROP",
+            "name": "BattleNetLightBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\LightBorderBackGround.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\LightBorderCorners.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 3,
+            "type": "BACKDROP",
+            "name": "BattleNetControlBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\BattleNet\\bnet-inputbox-back.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\BattleNet\\bnet-inputbox-border.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 4,
+            "type": "BACKDROP",
+            "name": "BattleNetEditBoxBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\BattleNet\\bnet-inputbox-back.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\BattleNet\\bnet-inputbox-border.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 5,
+            "type": "BACKDROP",
+            "name": "BattleNetMenuSmallButtonBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.064,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-SmallBorder.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 6,
+            "type": "BACKDROP",
+            "name": "BattleNetMenuLargeButtonBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.064,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-LargeBorder.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 7,
+            "type": "BACKDROP",
+            "name": "BattleNetMenuSingleButtonBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.064,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderSingle.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 8,
+            "type": "BACKDROP",
+            "name": "BattleNetMenuSingleSmallButtonBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.064,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-SmallBorderSingle.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 9,
+            "type": "BACKDROP",
+            "name": "BattleNetMenuSingleLargeButtonBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.064,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-LargeBorderSingle.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 10,
+            "type": "BACKDROP",
+            "name": "BattleNetMenuButtonBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.256,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.064,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-Border.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 11,
+            "type": "BACKDROP",
+            "name": "BattleNetButtonBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBorder.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 12,
+            "type": "BACKDROP",
+            "name": "BattleNetButtonPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBorder-Down.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 13,
+            "type": "BACKDROP",
+            "name": "BattleNetButtonDisabledBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBorder-Disabled.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 14,
+            "type": "BACKDROP",
+            "name": "BattleNetButtonDisabledPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBorder-DisabledDown.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 15,
+            "type": "HIGHLIGHT",
+            "name": "BattleNetButtonFocusHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button-KeyboardHighlight.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 16,
+            "type": "HIGHLIGHT",
+            "name": "BattleNetButtonMouseOverHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\BattleNet\\bnet-button01-highlight-mouse.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 17,
+            "type": "TEXTBUTTON",
+            "name": "BattleNetButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.031,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.179,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonPushedTextOffset",
+                    "child": [
+                        "-0.002f",
+                        "-0.003f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "ButtonBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "ButtonPushedBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "ButtonDisabledBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "ButtonMouseOverHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 18,
+                    "type": "BACKDROP",
+                    "name": "ButtonBackdropTemplate",
+                    "inherits": "BattleNetButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 19,
+                    "type": "BACKDROP",
+                    "name": "ButtonPushedBackdropTemplate",
+                    "inherits": "BattleNetButtonPushedBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 20,
+                    "type": "BACKDROP",
+                    "name": "ButtonDisabledBackdropTemplate",
+                    "inherits": "BattleNetButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 21,
+                    "type": "HIGHLIGHT",
+                    "name": "ButtonMouseOverHighlightTemplate",
+                    "inherits": "BattleNetButtonMouseOverHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 22,
+            "type": "TEXT",
+            "name": "BattleNetButtonTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYCENTER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationOffset",
+                    "child": [
+                        "0.0",
+                        "-0.001,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 23,
+            "type": "TEXT",
+            "name": "BattleNetButtonBarTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYCENTER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationOffset",
+                    "child": [
+                        "0.0",
+                        "-0.001,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 24,
+            "type": "TEXT",
+            "name": "BattleNetTitleTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.015,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 25,
+            "type": "TEXT",
+            "name": "BattleNetLabelTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 26,
+            "type": "TEXT",
+            "name": "BattleNetValueTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 27,
+            "type": "TEXT",
+            "name": "BattleNetListBoxTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 28,
+            "type": "TEXT",
+            "name": "BattleNetInfoTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYCENTER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.2",
+                        "0.2",
+                        "0.2",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 29,
+            "type": "BACKDROP",
+            "name": "BattleNetBorderedButtonBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderedBackdropBorder.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 30,
+            "type": "BACKDROP",
+            "name": "BattleNetBorderedButtonPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderedBackdropBorder-Down.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 31,
+            "type": "BACKDROP",
+            "name": "BattleNetBorderedButtonDisabledBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderedBackdropBorder-Disabled.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 32,
+            "type": "BACKDROP",
+            "name": "BattleNetBorderedButtonDisabledPushedBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "BackdropTileBackground,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground-Disabled.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerFlags",
+                    "child": [
+                        "UL|UR|BL|BR|T|L|B|R,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropCornerSize",
+                    "child": [
+                        "0.016,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundSize",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackgroundInsets",
+                    "child": [
+                        "0.004",
+                        "0.004",
+                        "0.004",
+                        "0.004,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropEdgeFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderedBackdropBorder-DisabledDown.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 33,
+            "type": "HIGHLIGHT",
+            "name": "BattleNetBorderedButtonFocusHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button-KeyboardHighlight.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 34,
+            "type": "HIGHLIGHT",
+            "name": "BattleNetBorderedButtonMouseOverHighlightTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "HighlightType",
+                    "child": [
+                        "FILETEXTURE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaFile",
+                    "child": [
+                        "UI\\Widgets\\BattleNet\\bnet-button01-highlight-mouse.blp,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "HighlightAlphaMode",
+                    "child": [
+                        "ADD,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 35,
+            "type": "TEXTBUTTON",
+            "name": "BattleNetBorderedButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.031,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.179,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonPushedTextOffset",
+                    "child": [
+                        "-0.002f",
+                        "-0.003f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "BorderedButtonBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "BorderedButtonPushedBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "BorderedButtonDisabledBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "BorderedButtonMouseOverHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 36,
+                    "type": "BACKDROP",
+                    "name": "BorderedButtonBackdropTemplate",
+                    "inherits": "BattleNetBorderedButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 37,
+                    "type": "BACKDROP",
+                    "name": "BorderedButtonPushedBackdropTemplate",
+                    "inherits": "BattleNetBorderedButtonPushedBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 38,
+                    "type": "BACKDROP",
+                    "name": "BorderedButtonDisabledBackdropTemplate",
+                    "inherits": "BattleNetBorderedButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 39,
+                    "type": "HIGHLIGHT",
+                    "name": "BorderedButtonMouseOverHighlightTemplate",
+                    "inherits": "BattleNetBorderedButtonMouseOverHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 40,
+            "type": "SCROLLBAR",
+            "name": "BattleNetScrollBarTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.0165,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "SliderLayoutVertical,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "StandardScrollBarBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ScrollBarIncButtonFrame",
+                    "child": [
+                        "BattleNetScrollBarIncButton,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ScrollBarDecButtonFrame",
+                    "child": [
+                        "BattleNetScrollBarDecButton,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "SliderThumbButtonFrame",
+                    "child": [
+                        "BattleNetThumbButton,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 41,
+                    "type": "BACKDROP",
+                    "name": "StandardScrollBarBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Scrollbar-BackdropBackground.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.004",
+                                "0.004",
+                                "0.004",
+                                "0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Scrollbar-BackdropBorder.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 42,
+                    "type": "BUTTON",
+                    "name": "BattleNetScrollBarIncButton",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "BattleNetScrollBarIncButtonBackdrop,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 43,
+                            "type": "BACKDROP",
+                            "name": "BattleNetScrollBarIncButtonBackdrop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\GlueScreen-Scrollbar-UpArrow.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 44,
+                    "type": "BUTTON",
+                    "name": "BattleNetScrollBarDecButton",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.015,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "BattleNetScrollBarDecButtonBackdrop,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 45,
+                            "type": "BACKDROP",
+                            "name": "BattleNetScrollBarDecButtonBackdrop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\GlueScreen-Scrollbar-DownArrow.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 46,
+                    "type": "BUTTON",
+                    "name": "BattleNetThumbButton",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "BattleNetThumbButtonBackdrop,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 47,
+                            "type": "BACKDROP",
+                            "name": "BattleNetThumbButtonBackdrop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\SinglePlayerSkirmish-ScrollBarKnob.blp,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 48,
+            "type": "SLIDER",
+            "name": "BattleNetSliderTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.022,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "SliderLayoutHorizontal,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "BattleNetScrollBarBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "SliderThumbButtonFrame",
+                    "child": [
+                        "BattleNetThumbButtonTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 49,
+                    "type": "BACKDROP",
+                    "name": "BattleNetScrollBarBackdropTemplate",
+                    "inherits": "BattleNetControlBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 50,
+                    "type": "BUTTON",
+                    "name": "BattleNetThumbButtonTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "BattleNetThumbButtonBackdropTemplate,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 51,
+                            "type": "BACKDROP",
+                            "name": "BattleNetThumbButtonBackdropTemplate",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "UI\\Widgets\\Glues\\SinglePlayerSkirmish-ScrollBarKnob.blp,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 52,
+            "type": "LISTBOX",
+            "name": "BattleNetListBoxTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "ListBoxBorder",
+                    "child": [
+                        "0.01,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "BattleNetListBoxBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ListBoxScrollBar",
+                    "child": [
+                        "BattleNetListBoxScrollBarTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 53,
+                    "type": "BACKDROP",
+                    "name": "BattleNetListBoxBackdropTemplate",
+                    "inherits": "BattleNetControlBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 54,
+                    "type": "SCROLLBAR",
+                    "name": "BattleNetListBoxScrollBarTemplate",
+                    "inherits": "BattleNetScrollBarTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 55,
+            "type": "BACKDROP",
+            "name": "BattleNetPopupMenuBaseBackdrop",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.14675,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.026125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-PlayerButton-BorderRight.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 56,
+            "type": "MENU",
+            "name": "BattleNetPopupMenuMenuTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.03,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,0.013,,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "MenuTextHighlightColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "MenuItemHeight",
+                    "child": [
+                        "0.014,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "MenuBorder",
+                    "child": [
+                        "0.009,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "BattleNetPopupMenuMenuBackdropTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 57,
+                    "type": "BACKDROP",
+                    "name": "BattleNetPopupMenuMenuBackdropTemplate",
+                    "inherits": "BattleNetBorderedButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 58,
+            "type": "TEXTBUTTON",
+            "name": "BattleNetPopupMenuTitleTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,0.013,,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ButtonText",
+                    "child": [
+                        "BattleNetPopupMenuTitleTextTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 59,
+                    "type": "TEXT",
+                    "name": "BattleNetPopupMenuTitleTextTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationOffset",
+                            "child": [
+                                "0.01",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontFlags",
+                            "child": [
+                                "FIXEDSIZE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 60,
+            "type": "BUTTON",
+            "name": "BattleNetPopupMenuArrowTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.011,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.011,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "BattleNetPopupMenuArrowBackdropTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 61,
+                    "type": "BACKDROP",
+                    "name": "BattleNetPopupMenuArrowBackdropTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Pulldown-Arrow.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 62,
+            "type": "POPUPMENU",
+            "name": "BattleNetPopupMenuTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.111875,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.03125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupButtonInset",
+                    "child": [
+                        "0.01,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "BattleNetPopupMenuBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "BattleNetPopupMenuDisabledBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupTitleFrame",
+                    "child": [
+                        "PopupMenuTitle,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupArrowFrame",
+                    "child": [
+                        "PopupMenuArrow,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupMenuFrame",
+                    "child": [
+                        "PopupMenuMenu,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 63,
+                    "type": "BACKDROP",
+                    "name": "BattleNetPopupMenuBackdropTemplate",
+                    "inherits": "BattleNetButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 64,
+                    "type": "BACKDROP",
+                    "name": "BattleNetPopupMenuDisabledBackdropTemplate",
+                    "inherits": "BattleNetButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 65,
+                    "type": "TEXTBUTTON",
+                    "name": "PopupMenuTitle",
+                    "inherits": "BattleNetPopupMenuTitleTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 66,
+                    "type": "BUTTON",
+                    "name": "PopupMenuArrow",
+                    "inherits": "BattleNetPopupMenuArrowTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 67,
+                    "type": "MENU",
+                    "name": "PopupMenuMenu",
+                    "inherits": "BattleNetPopupMenuMenuTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 68,
+            "type": "CHECKBOX",
+            "name": "BattleNetRadioButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.024,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.024,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "BattleNetRadioButtonBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlPushedBackdrop",
+                    "child": [
+                        "BattleNetRadioButtonPushedBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "BattleNetCheckBoxDisabledBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "CheckBoxCheckHighlight",
+                    "child": [
+                        "BattleNetRadioButtonHighlightTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "CheckBoxDisabledCheckHighlight",
+                    "child": [
+                        "BattleNetDisabledRadioButtonHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 69,
+                    "type": "BACKDROP",
+                    "name": "BattleNetRadioButtonBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-RadioButton-Background.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 70,
+                    "type": "BACKDROP",
+                    "name": "BattleNetRadioButtonPushedBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-RadioButton-BackgroundPressed.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 71,
+                    "type": "BACKDROP",
+                    "name": "BattleNetCheckBoxDisabledBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Checkbox-BackgroundDisabled.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 72,
+                    "type": "HIGHLIGHT",
+                    "name": "BattleNetRadioButtonHighlightTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-RadioButton-Button.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "BLEND,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 73,
+                    "type": "HIGHLIGHT",
+                    "name": "BattleNetDisabledRadioButtonHighlightTemplate",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "FILETEXTURE,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaFile",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-RadioButton-ButtonDisabled.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightAlphaMode",
+                            "child": [
+                                "BLEND,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 74,
+            "type": "TEXT",
+            "name": "BattleNetEditBoxTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.015,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 75,
+            "type": "EDITBOX",
+            "name": "BattleNetEditBoxTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.04,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "EditBorderSize",
+                    "child": [
+                        "0.009,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "EditCursorColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "BattleNetEditBoxBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 76,
+                    "type": "BACKDROP",
+                    "name": "BattleNetEditBoxBackdrop",
+                    "inherits": "BattleNetEditBoxBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 77,
+            "type": "TEXTAREA",
+            "name": "BattleNetTextAreaTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "TextAreaLineHeight",
+                    "child": [
+                        "0.015,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "TextAreaLineGap",
+                    "child": [
+                        "0.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "TextAreaInset",
+                    "child": [
+                        "0.01,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "TextAreaScrollBar",
+                    "child": [
+                        "BattleNetTextAreaScrollBarTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "BattleNetTextAreaBackdropTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 78,
+                    "type": "SCROLLBAR",
+                    "name": "BattleNetTextAreaScrollBarTemplate",
+                    "inherits": "BattleNetScrollBarTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 79,
+                    "type": "BACKDROP",
+                    "name": "BattleNetTextAreaBackdropTemplate",
+                    "inherits": "BattleNetControlBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 80,
+            "type": "CHATDISPLAY",
+            "name": "BattleNetChatDisplayTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.011,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ChatDisplayLineHeight",
+                    "child": [
+                        "0.01,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ChatDisplayBorderSize",
+                    "child": [
+                        "0.01,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "BattleNetChatDisplayBackdropTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ChatDisplayScrollBar",
+                    "child": [
+                        "BattleNetChatDisplayScrollBarTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ChatDisplayEditBox",
+                    "child": [
+                        "BattleNetChatDisplayEditBoxTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 81,
+                    "type": "BACKDROP",
+                    "name": "BattleNetChatDisplayBackdropTemplate",
+                    "inherits": "BattleNetControlBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 82,
+                    "type": "SCROLLBAR",
+                    "name": "BattleNetChatDisplayScrollBarTemplate",
+                    "inherits": "BattleNetScrollBarTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 83,
+                    "type": "EDITBOX",
+                    "name": "BattleNetChatDisplayEditBoxTemplate",
+                    "inherits": "BattleNetEditBoxTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 84,
+            "type": "DIALOG",
+            "name": "BattleNetDialogTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.60,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.40,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,0.015,,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DialogBackdrop",
+                    "child": [
+                        "BattleNetDialogBackdropTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 85,
+                    "type": "BACKDROP",
+                    "name": "BattleNetDialogBackdropTemplate",
+                    "inherits": "BattleNetHeavyBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 86,
+            "type": "FRAME",
+            "name": "BattleNetFrameTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "MasterFont,",
+                        "0.015,",
+                        ","
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ]
+]

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Warcraft 3 Frames - Position定位</title>
+</head>
+<body>
+<h2>Position定位</h2>
+<p>定位是UI-Frame的重要继承,war3使用4:3比例的屏幕,坐标系统因此也是4:3的.</p>
+<p>坐标系的原点0.0/0.0在屏幕的左下角小地图,0.8/0.6在右上角.Frame的大小(Size)也是使用这些坐标值划分的,转换为像素大小需要一定的数学运算.</p>
+<img src="../img/Coords Image 56.jpg" alt="Coordinates" height="400" width="600">
+<img src="../img/warcraft 3 coord system 3.jpg" alt="Coordinates2" height="400" width="600">
+    
+<p>可以将Frames看做具有定位和大小的矩形.另外每个Frame使用一个FramePoint作为Frame扩展方向的划分.<br>FramePoint如下:
+<ul><li>LEFT只会在x轴向右扩展x->.</li>
+<li>RIGHT只会在x轴向左扩展x<-.</li>
+<li>CENTER可以在4个方向扩展<-></li>
+<li>TOP只会在y轴向下扩展</li>
+<li>BOTTOM只会在y轴向上扩展.​</li>
+</ul>
+<br>使用不同的FramePoint可以得到不同结果.
+</p>
+<p>自定义创建的Frame不可以离开游戏屏幕,如果有部分在游戏屏幕外,将会得到一个不规则的.TEXT-Frame会裁剪多余的文字 .BACKDROP和Buttons中的图片将会自动缩小等.<br>SimpleFrames则可以脱离这些限制</p>
+<p>One can free Frames from that 4:3 limitation by creating them for a different Parent then GAME_UI, in Reforged such a Parent could be ("ConsoleUIBackdrop",0). Through that don't comes with a price. Using ("ConsoleUIBackdrop",0) as parent pushes them to a lower Layer, below SimpleFrames.
+One also could use BlzGetFrameByName("Leaderboard", 0) or BlzGetFrameByName("Multiboard", 0). This are above SimpleFrames but one has to create them first with the none Frame api.
+Your custom Frames can also be a child's child of that other Parents, the 4:3 Limitation is still gone.</p>
+
+<p>FDF中定义的Frame可以定位,有以下几种定位几种:
+<ul><li>SetPoint FramePoint-Own, FrameName, FramePoint-FrameName, xOffset , yOffset,</li>
+<li>SetAllPoints,</li>
+<li>Anchor FramePoint, x, y, (仅用在String/Texure)​</li></ul>
+SetPoint和Anchor可以使用如下的Points:
+<ul><li>TOPLEFT</li>
+<li>TOP</li>
+<li>TOPRIGHT</li>
+<li>LEFT</li>
+<li>CENTER</li>
+<li>RIGHT</li>
+<li>BOTTOMLEFT</li>
+<li>BOTTOM</li>
+<li>BOTTOMRIGHT</li>
+</ul>
+
+SetPoint可以看做是`DzFrameSetPoint(self, FramePoint-Own,DzGetFrameByName(FrameName, 0), FramePoint-FrameName, x, y)`
+<br>SetAllPoints则等价于`DzFrameSetAllPoints(self, parent)`.
+<br>Anchor等价于`BlzFrameSetPoint(self, point, parent, point, x, y)`
+</p>
+</body>
+</html>

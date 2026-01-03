@@ -1,0 +1,763 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "String",
+            "name": "ReplayPanelStringTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.001",
+                        "-0.001,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Font",
+                    "child": [
+                        "MasterFont,0.008,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "SIMPLEFRAME",
+            "name": "SimpleReplayPanel",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 2,
+                    "type": "Layer",
+                    "name": "BACKGROUND",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 3,
+                            "type": "Texture",
+                            "name": "SimpleReplayPanelBackdrop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "File",
+                                    "child": [
+                                        "ReplayPanelBackdrop,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.256,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.256,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Anchor",
+                                    "child": [
+                                        "BOTTOMRIGHT,0.008,-0.0025,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 4,
+                    "type": "String",
+                    "name": "ReplayVisionLabel",
+                    "inherits": "ReplayPanelStringTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOPLEFT,",
+                                "0.002,",
+                                "0.001,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "REPLAY_VISION,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 5,
+                    "type": "POPUPMENU",
+                    "name": "ReplayVisionMenu",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.164,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.024,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "PopupButtonInset",
+                            "child": [
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ReplayVisionLabel,",
+                                "BOTTOMLEFT,",
+                                "0,",
+                                "0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "ReplayVisionMenuBackdrop,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlDisabledBackdrop",
+                            "child": [
+                                "ReplayVisionMenuDisabledBackdrop,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "PopupTitleFrame",
+                            "child": [
+                                "ReplayVisionMenuTitle,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "PopupArrowFrame",
+                            "child": [
+                                "ReplayVisionMenuArrow,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "PopupMenuFrame",
+                            "child": [
+                                "ReplayVisionPopupMenu,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 6,
+                            "type": "BACKDROP",
+                            "name": "ReplayVisionMenuBackdrop",
+                            "inherits": "EscMenuButtonBackdropTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropCornerSize",
+                                    "child": [
+                                        "0.0125,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundSize",
+                                    "child": [
+                                        "0.128,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundInsets",
+                                    "child": [
+                                        "0.004",
+                                        "0.004",
+                                        "0.004",
+                                        "0.004,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 7,
+                            "type": "BACKDROP",
+                            "name": "ReplayVisionMenuDisabledBackdrop",
+                            "inherits": "EscMenuButtonDisabledBackdropTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropCornerSize",
+                                    "child": [
+                                        "0.0125,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundSize",
+                                    "child": [
+                                        "0.128,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundInsets",
+                                    "child": [
+                                        "0.004",
+                                        "0.004",
+                                        "0.004",
+                                        "0.004,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 8,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "ReplayVisionMenuTitle",
+                            "inherits": "EscMenuPopupMenuTitleTemplate",
+                            "fields": [],
+                            "child": []
+                        },
+                        {
+                            "fid": 9,
+                            "type": "BUTTON",
+                            "name": "ReplayVisionMenuArrow",
+                            "inherits": "EscMenuPopupMenuArrowTemplate",
+                            "fields": [],
+                            "child": []
+                        },
+                        {
+                            "fid": 10,
+                            "type": "MENU",
+                            "name": "ReplayVisionPopupMenu",
+                            "inherits": "EscMenuPopupMenuMenuTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FrameFont",
+                                    "child": [
+                                        "EscMenuTextFont,0.011,,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "MenuItemHeight",
+                                    "child": [
+                                        "0.012,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "MenuBorder",
+                                    "child": [
+                                        "0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlBackdrop",
+                                    "child": [
+                                        "EscMenuPopupMenuMenuBackdropTemplate,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 11,
+                                    "type": "BACKDROP",
+                                    "name": "EscMenuPopupMenuMenuBackdropTemplate",
+                                    "inherits": "EscMenuButtonBackdropTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "DecorateFileNames,",
+                                            "child": []
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.0125,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.128,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "EscMenuEditBoxBackground,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 12,
+                    "type": "SIMPLESTATUSBAR",
+                    "name": "ReplayStatusBar",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,ReplayVisionMenu,BOTTOMLEFT,",
+                                "0.003,",
+                                "-0.017,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.158,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.012,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BarTexture",
+                            "child": [
+                                "SimpleBuildTimeIndicator,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 13,
+                            "type": "SIMPLEFRAME",
+                            "name": "ReplayStatusBarBorder",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetAllPoints,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 14,
+                                    "type": "Layer",
+                                    "name": "ARTWORK",
+                                    "fields": [],
+                                    "child": [
+                                        {
+                                            "fid": 15,
+                                            "type": "Texture",
+                                            "name": "{",
+                                            "inherits": "",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "File",
+                                                    "child": [
+                                                        "SimpleBuildTimeIndicatorBorder,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        },
+                                        {
+                                            "fid": 16,
+                                            "type": "String",
+                                            "name": "ReplayElapsedTimeLabel",
+                                            "inherits": "ReplayPanelStringTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPLEFT,",
+                                                        "ReplayVisionLabel,",
+                                                        "BOTTOMLEFT,",
+                                                        "0,",
+                                                        "-0.028,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "FontJustificationH",
+                                                    "child": [
+                                                        "JUSTIFYLEFT,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "ELAPSED_TIME,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        },
+                                        {
+                                            "fid": 17,
+                                            "type": "String",
+                                            "name": "ReplayElapsedTime",
+                                            "inherits": "ReplayPanelStringTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "LEFT,",
+                                                        "ReplayElapsedTimeLabel,",
+                                                        "RIGHT,",
+                                                        "0.002,",
+                                                        "0,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "FontColor",
+                                                    "child": [
+                                                        "1.0",
+                                                        "1.0",
+                                                        "1.0",
+                                                        "1.0,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "FontJustificationH",
+                                                    "child": [
+                                                        "JUSTIFYLEFT,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        },
+                                        {
+                                            "fid": 18,
+                                            "type": "String",
+                                            "name": "ReplaySpeedAtLabel",
+                                            "inherits": "ReplayPanelStringTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "LEFT,",
+                                                        "ReplayElapsedTimeLabel,",
+                                                        "RIGHT,",
+                                                        "0.04,",
+                                                        "0,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "FontJustificationH",
+                                                    "child": [
+                                                        "JUSTIFYLEFT,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "REPLAY_SPEED_AT,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        },
+                                        {
+                                            "fid": 19,
+                                            "type": "String",
+                                            "name": "ReplaySpeedMultiplier",
+                                            "inherits": "ReplayPanelStringTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "LEFT,",
+                                                        "ReplaySpeedAtLabel,",
+                                                        "RIGHT,",
+                                                        "0.002,",
+                                                        "0,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "FontColor",
+                                                    "child": [
+                                                        "1.0",
+                                                        "1.0",
+                                                        "1.0",
+                                                        "1.0,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "FontJustificationH",
+                                                    "child": [
+                                                        "JUSTIFYLEFT,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        },
+                                        {
+                                            "fid": 20,
+                                            "type": "String",
+                                            "name": "ReplaySpeedLabel",
+                                            "inherits": "ReplayPanelStringTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "LEFT,",
+                                                        "ReplaySpeedMultiplier,",
+                                                        "RIGHT,",
+                                                        "0.002,",
+                                                        "0,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "FontColor",
+                                                    "child": [
+                                                        "1.0",
+                                                        "1.0",
+                                                        "1.0",
+                                                        "1.0,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "FontJustificationH",
+                                                    "child": [
+                                                        "JUSTIFYLEFT,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "SPEED,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 21,
+                    "type": "SIMPLECHECKBOX",
+                    "name": "ReplayFogCheckBox",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,SimpleReplayPanel,BOTTOMLEFT,0,0.04,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.02,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.02,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "NormalTexture",
+                            "child": [
+                                "ReplayCheckBoxNormal,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "PushedTexture",
+                            "child": [
+                                "ReplayCheckBoxPressed,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "CheckedTexture",
+                            "child": [
+                                "ReplayCheckBoxCheck,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 22,
+                    "type": "Layer",
+                    "name": "ARTWORK",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 23,
+                            "type": "String",
+                            "name": "ReplayFogString",
+                            "inherits": "ReplayPanelStringTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Anchor",
+                                    "child": [
+                                        "BOTTOMLEFT,0.025,0.045,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYLEFT,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "FOG_OF_WAR,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

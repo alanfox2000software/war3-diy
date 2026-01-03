@@ -1,0 +1,673 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "BACKDROP",
+            "name": "SkirmishPopupMenuBackdropTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.14675,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.026125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBlendAll,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropMirrored,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "BackdropBackground",
+                    "child": [
+                        "UI\\Widgets\\Glues\\GlueScreen-Button-BorderShort.blp,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "POPUPMENU",
+            "name": "SkirmishPopupMenuTemplate",
+            "inherits": "StandardPopupMenuTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.15,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.025,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "PopupMenuBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "PopupMenuDisabledBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupTitleFrame",
+                    "child": [
+                        "PopupMenuTitle,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupArrowFrame",
+                    "child": [
+                        "PopupMenuArrow,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 2,
+                    "type": "BACKDROP",
+                    "name": "PopupMenuBackdrop",
+                    "inherits": "StandardButtonBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "BACKDROP",
+                    "name": "PopupMenuDisabledBackdrop",
+                    "inherits": "StandardButtonDisabledBackdropTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 4,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "PopupMenuTitle",
+                    "inherits": "StandardPopupMenuTitleTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 5,
+                    "type": "BUTTON",
+                    "name": "PopupMenuArrow",
+                    "inherits": "StandardPopupMenuArrowTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 6,
+            "type": "FRAME",
+            "name": "Skirmish",
+            "inherits": "StandardFrameTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "TabFocusPush,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 7,
+                    "type": "TEXT",
+                    "name": "GameSettingsLabel",
+                    "inherits": "StandardTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "Skirmish,",
+                                "TOPLEFT,",
+                                "0.020625,",
+                                "-0.03125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "GAME_SETTINGS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 8,
+                    "type": "FRAME",
+                    "name": "MapListContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.31675,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.13375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "Skirmish,",
+                                "TOPLEFT,",
+                                "0.163125,",
+                                "-0.019375,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 9,
+                    "type": "FRAME",
+                    "name": "TeamSetupContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.46375,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.39,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "Skirmish,",
+                                "BOTTOMLEFT,",
+                                "0.015,",
+                                "0.0225,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 10,
+                    "type": "FRAME",
+                    "name": "MapInfoPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 11,
+                            "type": "FRAME",
+                            "name": "MapInfoPaneContainer",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.234375,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.2875,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,",
+                                        "Skirmish,",
+                                        "TOPRIGHT,",
+                                        "-0.025625,",
+                                        "-0.05625,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 12,
+                            "type": "BACKDROP",
+                            "name": "MapInfoBackdrop",
+                            "inherits": "StandardMenuSingleLargeButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,Skirmish,TOPRIGHT,",
+                                        "-0.015,",
+                                        "-0.358,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 13,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "MapInfoButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.187,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,MapInfoBackdrop,TOPRIGHT,",
+                                                "-0.032,",
+                                                "-0.015625,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "O,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "CreateGameButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "MapInfoButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 14,
+                                            "type": "TEXT",
+                                            "name": "MapInfoButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_ADVANCED_OPTIONS,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 15,
+                    "type": "FRAME",
+                    "name": "AdvancedOptionsPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 16,
+                            "type": "FRAME",
+                            "name": "AdvancedOptionsPaneContainer",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.234375,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.2875,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,",
+                                        "Skirmish,",
+                                        "TOPRIGHT,",
+                                        "-0.025625,",
+                                        "-0.05625,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 17,
+                            "type": "BACKDROP",
+                            "name": "AdvancedOptionsBackdrop",
+                            "inherits": "StandardMenuSingleLargeButtonBaseBackdrop",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,Skirmish,TOPRIGHT,",
+                                        "-0.015,",
+                                        "-0.358,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 18,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "AdvancedOptionsButton",
+                                    "inherits": "StandardButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.187,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,AdvancedOptionsBackdrop,TOPRIGHT,",
+                                                "-0.032,",
+                                                "-0.015625,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "M,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "CreateGameButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "AdvancedOptionsButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 19,
+                                            "type": "TEXT",
+                                            "name": "AdvancedOptionsButtonText",
+                                            "inherits": "StandardButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_MAP_INFO,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 20,
+                    "type": "BACKDROP",
+                    "name": "PlayGameBackdrop",
+                    "inherits": "StandardMenuButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.24,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,Skirmish,BOTTOMRIGHT,",
+                                "-0.015,",
+                                "0.074,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 21,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "PlayGameButton",
+                            "inherits": "StandardButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.168,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,PlayGameBackdrop,TOPRIGHT,",
+                                        "-0.012,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "S,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusDefault,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "CancelButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "PlayGameButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 22,
+                                    "type": "TEXT",
+                                    "name": "PlayGameButtonText",
+                                    "inherits": "StandardButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_START_GAME,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 23,
+                    "type": "BACKDROP",
+                    "name": "CancelBackdrop",
+                    "inherits": "StandardMenuButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.24,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMRIGHT,Skirmish,BOTTOMRIGHT,",
+                                "-0.015,",
+                                "0.0225,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 24,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "CancelButton",
+                            "inherits": "StandardButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.168,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,CancelBackdrop,TOPRIGHT,",
+                                        "-0.012,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "A,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "CancelButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 25,
+                                    "type": "TEXT",
+                                    "name": "CancelButtonText",
+                                    "inherits": "StandardButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_CANCEL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

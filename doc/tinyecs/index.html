@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>tiny-ecs API</title>
+    <link rel="stylesheet" href="./css/ldoc_fixed.css" type="text/css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="product">
+            <div id="product_logo"></div>
+            <div id="product_name"><big><b></b></big></div>
+            <div id="product_description"></div>
+        </div> <!-- id="product" -->
+
+
+        <div id="main">
+
+
+            <!-- Menu -->
+
+            <div id="navigation">
+                <br>
+                <h1>tiny-ecs</h1>
+
+
+                <h2>Contents</h2>
+                <ul>
+                    <li><a href="#Filter_functions">Filter functions </a></li>
+                    <li><a href="#System_functions">System functions </a></li>
+                    <li><a href="#World_functions">World functions </a></li>
+                </ul>
+
+
+                <h2>Modules</h2>
+                <ul class="$(kind==&#39;Topics&#39; and &#39;&#39; or &#39;nowrap&#39;">
+                    <li><strong>tiny-ecs</strong></li>
+                </ul>
+
+            </div>
+
+            <div id="content">
+
+                <h1>Module <code>tiny-ecs</code></h1>
+                <p>
+
+                </p>
+                <p>
+
+                </p>
+                <h3>Info:</h3>
+                <ul>
+                    <li><strong>Copyright</strong>: 2016</li>
+                    <li><strong>License</strong>: MIT</li>
+                    <li><strong>Author</strong>: Calvin Rose</li>
+                    <li><strong>源代码</strong>: <a href="https://github.com/bakpakin/tiny-ecs">tiny-ecs</a> </li>
+                    <li><strong>Demo</strong>: <a href="https://github.com/bakpakin/tiny-ecs/tree/demo-commandokibbles">tiny-ecs-love2d-demo</a> </li>
+                    <li><strong>源文档</strong>: <a href="http://bakpakin.github.io/tiny-ecs/doc/">tiny-ecs-docs</a> </li>
+                </ul>
+
+
+                <h2><a href="#Filter_functions">Filter functions </a></h2>
+                <table class="function_list">
+                    <tbody>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.requireAll">tiny.requireAll (...)</a></td>
+                            <td class="summary">创建一个选择器,筛选包含参数中所有Component的Entity</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.requireAny">tiny.requireAny (...)</a></td>
+                            <td class="summary">创建一个选择器，筛选至少包含参数中任何一个Component的Entity</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.rejectAll">tiny.rejectAll (...)</a></td>
+                            <td class="summary">创建一个选择器，拒绝包含参数中所有Component的Entity</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.rejectAny">tiny.rejectAny (...)</a></td>
+                            <td class="summary">创建一个选择器，拒绝包含参数中任何一个Component的Entity</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.filter">tiny.filter (pattern)</a></td>
+                            <td class="summary">从字符串创建一个选择器</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2><a href="#System_functions">System functions </a></h2>
+                <table class="function_list">
+                    <tbody>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.system">tiny.system (table)</a></td>
+                            <td class="summary">使用table创建一个System</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.processingSystem">tiny.processingSystem
+                                    (table)</a></td>
+                            <td class="summary">创建一个ProcessSystem</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.sortedSystem">tiny.sortedSystem (table)</a></td>
+                            <td class="summary">创建一个SortedSystem</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a
+                                    href="#tiny.sortedProcessingSystem">tiny.sortedProcessingSystem (table)</a></td>
+                            <td class="summary">创建一个sortedProcessSystem</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2><a href="#World_functions">World functions </a></h2>
+                <table class="function_list">
+                    <tbody>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.world">tiny.world (...)</a></td>
+                            <td class="summary">创建一个World</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.addEntity">tiny.addEntity (world, entity)</a></td>
+                            <td class="summary">添加Entity到World</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.addSystem">tiny.addSystem (world, system)</a></td>
+                            <td class="summary">添加System到World</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.add">tiny.add (world, ...)</a></td>
+                            <td class="summary">快捷添加多个Entity和System到World</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.removeEntity">tiny.removeEntity (world,
+                                    entity)</a></td>
+                            <td class="summary">删除World的一个Entity</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.removeSystem">tiny.removeSystem (world,
+                                    system)</a></td>
+                            <td class="summary">删除World的一个SYstem</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.remove">tiny.remove (world, ...)</a></td>
+                            <td class="summary">快捷删除Wolrd的多个System或Entity</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.refresh">tiny.refresh (world)</a></td>
+                            <td class="summary">Manages Entities and Systems marked for deletion or addition.</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.update">tiny.update (world, dt, filter)</a></td>
+                            <td class="summary">Updates the World by dt (delta time).</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.clearEntities">tiny.clearEntities (world)</a></td>
+                            <td class="summary">删除World中所有Entity</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.clearSystems">tiny.clearSystems (world)</a></td>
+                            <td class="summary">删除World中所有System</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.getEntityCount">tiny.getEntityCount (world)</a>
+                            </td>
+                            <td class="summary">获取World中Entity数量</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.getSystemCount">tiny.getSystemCount (world)</a>
+                            </td>
+                            <td class="summary">获取World中System数量</td>
+                        </tr>
+                        <tr>
+                            <td class="name" nowrap=""><a href="#tiny.setSystemIndex">tiny.setSystemIndex (world,
+                                    system, index)</a></td>
+                            <td class="summary">设置System在World的优先级.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <br>
+
+                <h2 class="section-header has-description"><a name="Filter_functions"></a>Filter functions </h2>
+
+                <div class="section-description">
+
+                    <p>Filter函数是System用来筛选操作的Entity.<br>
+                        Filter接受两个参数(system,entity),返回一个boolean值.<br>
+                        true表示System会对Entity进行处理,false反之.</p>
+
+                    <p> Filter通常设置位到System的<a href="index.html#tiny.filter">filter</a>字段.<br>
+                        Filter作为选择器,可以同时被多个System使用.</p>
+
+                    <pre><code>local f1 = tiny.requireAll("position", "velocity", "size")
+local f2 = tiny.requireAny("position", "velocity", "size")
+
+local e1 = {
+    position = {2, 3},
+    velocity = {3, 3},
+    size = {4, 4}
+}
+
+local entity2 = {
+    position = {4, 5},
+    size = {4, 4}
+}
+
+local e3 = {
+    position = {2, 3},
+    velocity = {3, 3}
+}
+
+print(f1(nil, e1), f1(nil, e2), f1(nil, e3)) -- prints true, false, false
+print(f2(nil, e1), f2(nil, e2), f2(nil, e3)) -- prints true, true, true
+</code></pre>
+
+                    <p> Filter还可以作为参数传递给其他Filter<br>
+                        通常用来根据简单的Filter创建自定义的复杂的Filter
+                    </p>
+
+                    <pre><code>-- Selects Entities with an "image" Component, but not Entities with a
+-- "Player" or "Enemy" Component.
+filter = tiny.requireAll("image", tiny.rejectAny("Player", "Enemy"))
+</code></pre>
+
+
+                </div>
+                <dl class="function">
+                    <dt>
+                        <a name="tiny.requireAll"></a>
+                        <strong>tiny.requireAll (...)</strong>
+                    </dt>
+                    <dd>
+                        创建一个选择器,筛选包含参数中所有Component的Entity
+                    </dd>
+                    <dt>
+                        <a name="tiny.requireAny"></a>
+                        <strong>tiny.requireAny (...)</strong>
+                    </dt>
+                    <dd>
+                        创建一个选择器，筛选至少包含参数中任何一个Component的Entity
+                    </dd>
+                    <dt>
+                        <a name="tiny.rejectAll"></a>
+                        <strong>tiny.rejectAll (...)</strong>
+                    </dt>
+                    <dd>
+                        创建一个选择器，拒绝包含参数中所有Component的Entity
+                    </dd>
+                    <dt>
+                        <a name="tiny.rejectAny"></a>
+                        <strong>tiny.rejectAny (...)</strong>
+                    </dt>
+                    <dd>
+                        创建一个选择器，拒绝包含参数中任何一个Component的Entity
+                    </dd>
+                    <dt>
+                        <a name="tiny.filter"></a>
+                        <strong>tiny.filter (pattern)</strong>
+                    </dt>
+                    <dd>
+
+                        <p>从字符串创建一个选择器</p>
+
+                        <ul>
+                            <li>字符串序列表示筛选的Component</li>
+                            <li>可以使用 |, &amp;, ()组合多个筛选.</li>
+                            <li>可以使用!表示反选.</li>
+                        </ul>
+
+                        <p> Examples are best:</p>
+                        <pre><code>'a|b|c' - Matches entities with an 'a' OR 'b' OR 'c'.
+'a&amp;!b&amp;c' - Matches entities with an 'a' AND NOT 'b' AND 'c'.
+'a|(b&amp;c&amp;d)|e - Matches 'a' OR ('b' AND 'c' AND 'd') OR 'e'
+</code></pre>
+
+
+                    </dd>
+                </dl>
+                <h2 class="section-header has-description"><a name="System_functions"></a>System functions </h2>
+
+                <div class="section-description">
+
+                        <p>System通常包含操作Entity的回调函数.<br>
+                           System实现为包含至少一个update回调函数的table<br></p>
+
+                    <ul>
+                        <li><code>function system:update(dt)</code>.</li>
+                    </ul>
+
+                    <p> 其他的可选的回调函数</p>
+
+                    <ul>
+                        <li><code>function system:filter(entity)</code> - 筛选entity</li>
+                        <li><code>function system:onAdd(entity)</code> - system添加entity触发</li>
+                        <li><code>function system:onRemove(entity)</code> - system删除entity触发</li>
+                        <li><code>function system:onModify(dt)</code> -systen添加和删除时触发.</li>
+                        <li><code>function system:onAddToWorld(world)</code> -system添加到world时触发.</li>
+                        <li><code>function system:onRemoveFromWorld(world)</code> - system被world移除时触发.</li>
+                        <li><code>function system:preWrap(dt)</code> - 在其他system调用update前触发</li>
+                        <li><code>function system:postWrap(dt)</code> -在其他system调用update后触发 
+                        </li>
+                        <li><code>preWrap</code>和<code>postWrap</code> 可以用来修改其他system的行为<br>
+                            Say there is a DrawingSystem, which draws sprites to the screen, and a
+                            PostProcessingSystem, that adds some blur and bloom effects. In the preWrap
+                            method of the PostProcessingSystem, the System could set the drawing target
+                            for the DrawingSystem to a special buffer instead the screen. In the postWrap
+                            method, the PostProcessingSystem could then modify the buffer and render it
+                            to the screen. In this setup, the PostProcessingSystem would be added to the
+                            World after the drawingSystem (A similar but less flexible behavior could
+                            be accomplished with a single custom update function in the DrawingSystem).</li>
+                    </ul>
+
+                    <p> filter通常使用内置的<a href="index.html#tiny.requireAll">tiny.requireAll</a> or
+                        <a href="index.html#tiny.requireAny">tiny.requireAny</a>,
+                       也可以使用自定义的filter:</p>
+                    <pre><code>system.filter = tiny.requireAll("a", "b", "c")
+</code></pre>
+                    <p>或者</p>
+                    <pre><code>function system:filter(entity)
+    return entity.myRequiredComponentName ~= nil
+end
+</code></pre>
+                    <ul>
+                        <li>System的initialized字段,用来在Wolrd添加一个System进行初始化处理</li>  
+                        <li>System的<a href="index.html#tiny.world">world</a> 字段指向System添加到的World.<br>
+                            用来调用World的相关函数比如addenrity和removeentity</li>
+                        <li>System的<code>active</code>字段用来标记System是否字段是否自动调用update函数在每个周期<br> <code>system:update(dt)</code>.默认为true.
+                        </li>
+                        <li>System的<code>entities</code>字段包含一个Entity列表.用来快速遍历System可操作的Entity.</li>
+                        <li>System的<code>interval</code>字段用来设置System自动更新调用周期</li>
+                        <li>System的<code>index</code>字段是System在World索引,越小的越提前执行update回调<br>
+                            <code>index</code>是个只读字段,修改System的index,使用<code>tiny.setSystemIndex(world, system)</code>.
+                        </li>
+                        <li>System的<code>indices</code>字段是一个Entity的索引字段,通常不用处理
+                        </li>
+                        <li>System的<code>modified</code>字段表示System是否在上个update中被修改.<br>
+                            如果修改,则在下个update中会触发onModify回调.通常不用处理</li>
+                    </ul>
+
+                    <p> There is another option to (hopefully) increase performance in systems that
+                        have items added to or removed from them often, and have lots of entities in
+                        them. Setting the <code>nocache</code> field of the system might improve performance.
+                        It is still experimental. There are some restriction to systems without
+                        caching, however.</p>
+
+                    <ul>
+                        <li>There is no <code>entities</code> table.</li>
+                        <li>Callbacks such onAdd, onRemove, and onModify will never be called</li>
+                        <li>Noncached systems cannot be sorted (There is no entities list to sort).</li>
+                    </ul>
+
+
+                </div>
+                <dl class="function">
+                    <dt>
+                        <a name="tiny.system"></a>
+                        <strong>tiny.system (table)</strong>
+                    </dt>
+                    <dd>
+                        使用<a href="http://www.lua.org/manual/5.2/manual.html#6.5">table</a>创建一个System 
+                    </dd>
+                    <dt>
+                        <a name="tiny.processingSystem"></a>
+                        <strong>tiny.processingSystem (table)</strong>
+                    </dt>
+                    <dd>
+                        创建一个ProcessSystem.通常包含下面3个回调<p></p>
+
+                        <pre><code> function system:preProcess(dt) -- Called before iteration.
+ function system:process(entity, dt) -- Process each entity.
+ function system:postProcess(dt) -- Called after iteration.
+</code></pre>
+
+                        <p> Processing Systems 实现了自己的update来调用process回调<a href="index.html#tiny.update">update</a> method, 不要实现update函数
+
+                        </p>
+                        <h3>See also:</h3>
+                        <ul>
+                            <a href="index.html#tiny.system">system</a>
+                        </ul>
+
+                    </dd>
+                    <dt>
+                        <a name="tiny.sortedSystem"></a>
+                        <strong>tiny.sortedSystem (table)</strong>
+                    </dt>
+                    <dd>
+                        创建一个SortedSystem,
+                        <br>根据用户定义的 <code>system:compare(e1, e2)</code>,进行排序,
+                        <br>true表示e1在e2前面,反之亦然<br>
+                        Sorted Systems 重写了System's <code>onModify</code> callback, 不要实现onModify回调<code>tiny.sortedProcessingSystem(table)</code>.
+                        <h3>See also:</h3>
+                        <ul>
+                            <a href="index.html#tiny.system">system</a>
+                        </ul>
+
+                    </dd>
+                    <dt>
+                        <a name="tiny.sortedProcessingSystem"></a>
+                        <strong>tiny.sortedProcessingSystem (table)</strong>
+                    </dt>
+                    <dd>
+                        创建一个sortedProcessSystem,包含上面2个处理回调
+                        <h3>See also:</h3>
+                        <ul>
+                            <li><a href="index.html#tiny.system">system</a></li>
+                            <li><a href="index.html#tiny.processingSystem">processingSystem</a></li>
+                            <li><a href="index.html#tiny.sortedSystem">sortedSystem</a></li>
+                        </ul>
+
+
+                    </dd>
+                </dl>
+                <h2 class="section-header has-description"><a name="World_functions"></a>World functions </h2>
+
+                <div class="section-description">
+                    <p></p>World是用来管理Entity和System的容器,通常只使用一个World</p>
+                    <p> 除了 <code>tiny.world(...)</code>,其他的函数都可以使用2种方式书写,<br>
+                        <code>tiny.add(world, e1, e2, e3)</code> 等价于<code>world:add(e1, e2, e3)</code>.
+                    </p>
+                </div>
+                <dl class="function">
+                    <dt>
+                        <a name="tiny.world"></a>
+                        <strong>tiny.world (...)</strong>
+                    </dt>
+                    <dd>
+                        创建一个World,可以传入默认的Entity和System    
+                    </dd>
+                    <dt>
+                        <a name="tiny.addEntity"></a>
+                        <strong>tiny.addEntity (world, entity)</strong>
+                    </dt>
+                    <dd>
+                        添加Entity到World
+                    </dd>
+                    <dt>
+                        <a name="tiny.addSystem"></a>
+                        <strong>tiny.addSystem (world, system)</strong>
+                    </dt>
+                    <dd>
+                        添加System到World
+
+                    </dd>
+                    <dt>
+                        <a name="tiny.add"></a>
+                        <strong>tiny.add (world, ...)</strong>
+                    </dt>
+                    <dd>
+                        快捷添加多个Entity和System到World
+                    </dd>
+                    <dt>
+                        <a name="tiny.removeEntity"></a>
+                        <strong>tiny.removeEntity (world, entity)</strong>
+                    </dt>
+                    <dd>
+                        删除World的一个Entity
+
+                    </dd>
+                    <dt>
+                        <a name="tiny.removeSystem"></a>
+                        <strong>tiny.removeSystem (world, system)</strong>
+                    </dt>
+                    <dd>
+                        删除World的一个SYstem
+
+
+                    </dd>
+                    <dt>
+                        <a name="tiny.remove"></a>
+                        <strong>tiny.remove (world, ...)</strong>
+                    </dt>
+                    <dd>
+                        快捷删除Wolrd的多个System或Entity
+
+                    </dd>
+                    <dt>
+                        <a name="tiny.refresh"></a>
+                        <strong>tiny.refresh (world)</strong>
+                    </dt>
+                    <dd>
+                        Manages Entities and Systems marked for deletion or addition. Call this
+                        before modifying Systems and Entities outside of a call to <a
+                            href="index.html#tiny.update">tiny.update</a>.
+                        Do not call this within a call to <a href="index.html#tiny.update">tiny.update</a>.
+
+
+                    </dd>
+                    <dt>
+                        <a name="tiny.update"></a>
+                        <strong>tiny.update (world, dt, filter)</strong>
+                    </dt>
+                    <dd>
+                        Updates the World by dt (delta time). Takes an optional parameter, <a
+                            href="index.html#tiny.filter">filter</a>,
+                        which is a Filter that selects Systems from the World, and updates only those
+                        Systems. If <a href="index.html#tiny.filter">filter</a> is not supplied, all Systems are
+                        updated. Put this
+                        function in your main loop.
+
+                    </dd>
+                    <dt>
+                        <a name="tiny.clearEntities"></a>
+                        <strong>tiny.clearEntities (world)</strong>
+                    </dt>
+                    <dd>
+                        删除World中所有Entity
+
+                    </dd>
+                    <dt>
+                        <a name="tiny.clearSystems"></a>
+                        <strong>tiny.clearSystems (world)</strong>
+                    </dt>
+                    <dd>
+                        删除World中所有System
+
+
+                    </dd>
+                    <dt>
+                        <a name="tiny.getEntityCount"></a>
+                        <strong>tiny.getEntityCount (world)</strong>
+                    </dt>
+                    <dd>
+                        获取World中Entity数量
+
+
+
+
+                    </dd>
+                    <dt>
+                        <a name="tiny.getSystemCount"></a>
+                        <strong>tiny.getSystemCount (world)</strong>
+                    </dt>
+                    <dd>
+                        获取World中System数量
+
+
+
+
+                    </dd>
+                    <dt>
+                        <a name="tiny.setSystemIndex"></a>
+                        <strong>tiny.setSystemIndex (world, system, index)</strong>
+                    </dt>
+                    <dd>
+                        设置System在World的优先级
+
+                    </dd>
+                </dl>
+
+
+            </div> <!-- id="content" -->
+        </div> <!-- id="main" -->
+        <div id="about">
+            <i>generated by <a href="http://github.com/stevedonovan/LDoc">LDoc 1.4.3</a></i>
+            <i style="float:right;">Last updated 2016-08-10 21:48:45 </i>
+        </div> <!-- id="about" -->
+        
+    </div> <!-- id="container" -->
+
+</body>
+
+</html>

@@ -1,0 +1,3552 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "GLUEBUTTON",
+            "name": "IconicButtonTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.038,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.038,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlStyle",
+                    "child": [
+                        "AUTOTRACK|HIGHLIGHTONFOCUS|HIGHLIGHTONMOUSEOVER,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlFocusHighlight",
+                    "child": [
+                        "IconicButtonFocusHighlightTemplate,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlMouseOverHighlight",
+                    "child": [
+                        "IconicButtonMouseOverHighlightTemplate,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "HIGHLIGHT",
+                    "name": "IconicButtonFocusHighlightTemplate",
+                    "inherits": "BattleNetButtonFocusHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "HIGHLIGHT",
+                    "name": "IconicButtonMouseOverHighlightTemplate",
+                    "inherits": "BattleNetButtonMouseOverHighlightTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 3,
+            "type": "FRAME",
+            "name": "BattleNetChatPanel",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 4,
+                    "type": "SPRITE",
+                    "name": "ButtonBarBackground",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackgroundArt",
+                            "child": [
+                                "UI\\Glues\\BattleNet\\BattlenetChatGlue\\CenterPanel.mdl,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 5,
+                    "type": "FRAME",
+                    "name": "ControlLayer",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 6,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "StandardGameButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.153,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.038,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "BattleNetChatPanel,",
+                                        "TOPLEFT,",
+                                        "0.222,",
+                                        "-0.103,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "P,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusDefault,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "StandardTeamGameButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "StandardGameButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 7,
+                                    "type": "TEXT",
+                                    "name": "StandardGameButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_PLAY_GAME,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 8,
+                            "type": "GLUEBUTTON",
+                            "name": "StandardTeamGameButton",
+                            "inherits": "IconicButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "StandardGameButton,",
+                                        "RIGHT,",
+                                        "0.052,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "T,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "CustomGameButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlBackdrop",
+                                    "child": [
+                                        "CustomTeamButtonBackdropTemplate,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlPushedBackdrop",
+                                    "child": [
+                                        "CustomTeamButtonPushedBackdropTemplate,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlDisabledBackdrop",
+                                    "child": [
+                                        "CustomTeamButtonDisabledBackdropTemplate,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 9,
+                                    "type": "BACKDROP",
+                                    "name": "CustomTeamButtonBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-customteam-up.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 10,
+                                    "type": "BACKDROP",
+                                    "name": "CustomTeamButtonPushedBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-customteam-down.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Down.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 11,
+                                    "type": "BACKDROP",
+                                    "name": "CustomTeamButtonDisabledBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-customteam-disabled.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Disabled.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 12,
+                            "type": "GLUEBUTTON",
+                            "name": "CustomGameButton",
+                            "inherits": "IconicButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "StandardTeamGameButton,",
+                                        "RIGHT,",
+                                        "0.02,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "G,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "LadderButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlBackdrop",
+                                    "child": [
+                                        "UserGameButtonBackdropTemplate,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlPushedBackdrop",
+                                    "child": [
+                                        "UserGameButtonPushedBackdropTemplate,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlDisabledBackdrop",
+                                    "child": [
+                                        "UserGameButtonDisabledBackdropTemplate,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 13,
+                                    "type": "BACKDROP",
+                                    "name": "UserGameButtonBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-usermadegame-up.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 14,
+                                    "type": "BACKDROP",
+                                    "name": "UserGameButtonPushedBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-usermadegame-down.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Down.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 15,
+                                    "type": "BACKDROP",
+                                    "name": "UserGameButtonDisabledBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-usermadegame-disabled.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Disabled.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 16,
+                            "type": "GLUEBUTTON",
+                            "name": "LadderButton",
+                            "inherits": "IconicButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "CustomGameButton,",
+                                        "RIGHT,",
+                                        "0.0185,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "L,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "ChannelNameField,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlBackdrop",
+                                    "child": [
+                                        "LadderButtonBackdropTemplate,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlPushedBackdrop",
+                                    "child": [
+                                        "LadderButtonPushedBackdropTemplate,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlDisabledBackdrop",
+                                    "child": [
+                                        "LadderButtonDisabledBackdropTemplate,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 17,
+                                    "type": "BACKDROP",
+                                    "name": "LadderButtonBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-ladder-up.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 18,
+                                    "type": "BACKDROP",
+                                    "name": "LadderButtonPushedBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-ladder-down.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Down.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 19,
+                                    "type": "BACKDROP",
+                                    "name": "LadderButtonDisabledBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-ladder-disabled.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Disabled.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 20,
+                            "type": "GLUEBUTTON",
+                            "name": "TournamentGameButton",
+                            "inherits": "IconicButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "CustomGameButton,",
+                                        "RIGHT,",
+                                        "0.02,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "R,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "FriendsButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlBackdrop",
+                                    "child": [
+                                        "TournamentButtonBackdropTemplate,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlPushedBackdrop",
+                                    "child": [
+                                        "TournamentButtonPushedBackdropTemplate,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlDisabledBackdrop",
+                                    "child": [
+                                        "TournamentButtonDisabledBackdropTemplate,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 21,
+                                    "type": "BACKDROP",
+                                    "name": "TournamentButtonBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-tournament-up.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 22,
+                                    "type": "BACKDROP",
+                                    "name": "TournamentButtonPushedBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-tournament-down.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Down.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 23,
+                                    "type": "BACKDROP",
+                                    "name": "TournamentButtonDisabledBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-tournament-disabled.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Disabled.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 24,
+                            "type": "GLUEBUTTON",
+                            "name": "FriendsButton",
+                            "inherits": "IconicButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "TournamentGameButton,",
+                                        "RIGHT,",
+                                        "0.051,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "F,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "ClansButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlBackdrop",
+                                    "child": [
+                                        "FriendsButtonBackdropTemplate,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlPushedBackdrop",
+                                    "child": [
+                                        "FriendsButtonPushedBackdropTemplate,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlDisabledBackdrop",
+                                    "child": [
+                                        "FriendsButtonDisabledBackdropTemplate,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 25,
+                                    "type": "BACKDROP",
+                                    "name": "FriendsButtonBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-friends-up.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 26,
+                                    "type": "BACKDROP",
+                                    "name": "FriendsButtonPushedBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-friends-down.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Down.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 27,
+                                    "type": "BACKDROP",
+                                    "name": "FriendsButtonDisabledBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-friends-disabled.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Disabled.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 28,
+                            "type": "GLUEBUTTON",
+                            "name": "ClansButton",
+                            "inherits": "IconicButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "FriendsButton,",
+                                        "RIGHT,",
+                                        "0.02,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "S,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "LadderButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlBackdrop",
+                                    "child": [
+                                        "ClansButtonBackdropTemplate,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlPushedBackdrop",
+                                    "child": [
+                                        "ClansButtonPushedBackdropTemplate,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlDisabledBackdrop",
+                                    "child": [
+                                        "ClansButtonDisabledBackdropTemplate,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 29,
+                                    "type": "BACKDROP",
+                                    "name": "ClansButtonBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-clans-up.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 30,
+                                    "type": "BACKDROP",
+                                    "name": "ClansButtonPushedBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-clans-down.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Down.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 31,
+                                    "type": "BACKDROP",
+                                    "name": "ClansButtonDisabledBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-clans-disabled.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Disabled.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 32,
+                            "type": "GLUEBUTTON",
+                            "name": "OptionsButton",
+                            "inherits": "IconicButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "LadderButton,",
+                                        "RIGHT,",
+                                        "0.02,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "O,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TabFocusNext",
+                                    "child": [
+                                        "ChatChannelButton,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlBackdrop",
+                                    "child": [
+                                        "OptionsButtonBackdropTemplate,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlPushedBackdrop",
+                                    "child": [
+                                        "OptionsButtonPushedBackdropTemplate,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlDisabledBackdrop",
+                                    "child": [
+                                        "OptionsButtonDisabledBackdropTemplate,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 33,
+                                    "type": "BACKDROP",
+                                    "name": "OptionsButtonBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-options-up.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 34,
+                                    "type": "BACKDROP",
+                                    "name": "OptionsButtonPushedBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-options-down.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Down.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 35,
+                                    "type": "BACKDROP",
+                                    "name": "OptionsButtonDisabledBackdropTemplate",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackground",
+                                            "child": [
+                                                "UI\\Widgets\\BattleNet\\bnet-mainmenu-options-disabled.blp,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerFlags",
+                                            "child": [
+                                                "UL|UR|BL|BR|T|L|B|R,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropCornerSize",
+                                            "child": [
+                                                "0.016,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundSize",
+                                            "child": [
+                                                "0.032,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropBackgroundInsets",
+                                            "child": [
+                                                "0.004",
+                                                "0.004",
+                                                "0.004",
+                                                "0.004,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropEdgeFile",
+                                            "child": [
+                                                "UI\\Widgets\\Glues\\GlueScreen-Button2-BackdropBorder-Disabled.blp,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 36,
+                            "type": "FRAME",
+                            "name": "ChatPanel",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 37,
+                                    "type": "BACKDROP",
+                                    "name": "ChatChannelBackdrop",
+                                    "inherits": "BattleNetMenuSmallButtonBaseBackdrop",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.2325,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.0525,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropMirrored,",
+                                            "child": []
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "BattleNetChatPanel,",
+                                                "TOPLEFT,",
+                                                "0.011,",
+                                                "-0.1475,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 38,
+                                            "type": "GLUETEXTBUTTON",
+                                            "name": "ChatChannelButton",
+                                            "inherits": "BattleNetButtonTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Width",
+                                                    "child": [
+                                                        "0.1165,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Height",
+                                                    "child": [
+                                                        "0.025,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPLEFT,ChatChannelBackdrop,TOPLEFT,",
+                                                        "0.01,",
+                                                        "-0.013,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "TabFocusNext",
+                                                    "child": [
+                                                        "BattleNetChatEditBox,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "ControlShortcutKey",
+                                                    "child": [
+                                                        "H,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "ButtonText",
+                                                    "child": [
+                                                        "ChatChannelButtonText,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 39,
+                                                    "type": "TEXT",
+                                                    "name": "ChatChannelButtonText",
+                                                    "inherits": "BattleNetButtonTextTemplate",
+                                                    "fields": [
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "Text",
+                                                            "child": [
+                                                                "KEY_CHANNEL,"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 40,
+                                    "type": "TEXT",
+                                    "name": "ChatChannelNameLabel",
+                                    "inherits": "BattleNetTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.31125,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.025625,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "BattleNetChatPanel,",
+                                                "TOPLEFT,",
+                                                "0.16625,",
+                                                "-0.161875,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontJustificationH",
+                                            "child": [
+                                                "JUSTIFYLEFT,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 41,
+                                    "type": "TEXTAREA",
+                                    "name": "ChatTextArea",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "DecorateFileNames,",
+                                            "child": []
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FrameFont",
+                                            "child": [
+                                                "MasterFont,",
+                                                "0.011,",
+                                                ","
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TextAreaLineHeight",
+                                            "child": [
+                                                "0.01,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TextAreaLineGap",
+                                            "child": [
+                                                "0.0015,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TextAreaInset",
+                                            "child": [
+                                                "0.005,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TextAreaMaxLines",
+                                            "child": [
+                                                "128,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.335,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.465625,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "BattleNetChatPanel,",
+                                                "TOPLEFT,",
+                                                "0.01125,",
+                                                "-0.201875,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TextAreaScrollBar",
+                                            "child": [
+                                                "BattleNetTextAreaScrollBarTemplate,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 42,
+                                            "type": "SCROLLBAR",
+                                            "name": "BattleNetTextAreaScrollBarTemplate",
+                                            "inherits": "BattleNetScrollBarTemplate",
+                                            "fields": [],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 43,
+                                    "type": "EDITBOX",
+                                    "name": "BattleNetChatEditBox",
+                                    "inherits": "BattleNetEditBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.044375,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.465625,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "BattleNetChatPanel,",
+                                                "BOTTOMLEFT,",
+                                                "0.01125,",
+                                                "0.02125,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "EnterChatButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "EditTextFrame",
+                                            "child": [
+                                                "ChatEditBoxText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 44,
+                                            "type": "TEXT",
+                                            "name": "ChatEditBoxText",
+                                            "inherits": "BattleNetEditBoxTextTemplate",
+                                            "fields": [],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 45,
+                                    "type": "FRAME",
+                                    "name": "TabbedPanel",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.346875,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.2725,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,",
+                                                "BattleNetChatPanel,",
+                                                "TOPRIGHT,",
+                                                "-0.011875,",
+                                                "-0.16,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 46,
+                                            "type": "BACKDROP",
+                                            "name": "UserlistTabBackdrop",
+                                            "inherits": "",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Height",
+                                                    "child": [
+                                                        "0.02,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Width",
+                                                    "child": [
+                                                        "0.13625,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackground",
+                                                    "child": [
+                                                        "UI\\Widgets\\BattleNet\\bnet-tab-up.blp,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBlendAll,",
+                                                    "child": []
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPLEFT,",
+                                                        "TabbedPanel,",
+                                                        "TOPLEFT,",
+                                                        "0.0,",
+                                                        "0.0,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 47,
+                                                    "type": "TEXT",
+                                                    "name": "UserListTabLabel",
+                                                    "inherits": "BattleNetLabelTextTemplate",
+                                                    "fields": [
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "Height",
+                                                            "child": [
+                                                                "0.01625,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "Width",
+                                                            "child": [
+                                                                "0.13625,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "SetPoint",
+                                                            "child": [
+                                                                "BOTTOM,",
+                                                                "UserlistTabBackdrop,",
+                                                                "BOTTOM,",
+                                                                "0.0,",
+                                                                "0.0025,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "FontJustificationH",
+                                                            "child": [
+                                                                "JUSTIFYCENTER,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "FontJustificationV",
+                                                            "child": [
+                                                                "JUSTIFYBOTTOM,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "ControlShortcutKey",
+                                                            "child": [
+                                                                "E,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "Text",
+                                                            "child": [
+                                                                "KEY_CHANNEL_TAB,"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "child": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "fid": 48,
+                                            "type": "BACKDROP",
+                                            "name": "FriendsTabBackdrop",
+                                            "inherits": "",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Height",
+                                                    "child": [
+                                                        "0.02,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Width",
+                                                    "child": [
+                                                        "0.13625,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBackground",
+                                                    "child": [
+                                                        "UI\\Widgets\\BattleNet\\bnet-tab-down.blp,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "BackdropBlendAll,",
+                                                    "child": []
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "LEFT,",
+                                                        "UserlistTabBackdrop,",
+                                                        "RIGHT,",
+                                                        "0.0,",
+                                                        "0.0,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 49,
+                                                    "type": "TEXT",
+                                                    "name": "FriendsTabLabel",
+                                                    "inherits": "BattleNetLabelTextTemplate",
+                                                    "fields": [
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "Height",
+                                                            "child": [
+                                                                "0.01625,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "Width",
+                                                            "child": [
+                                                                "0.13625,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "SetPoint",
+                                                            "child": [
+                                                                "BOTTOM,",
+                                                                "FriendsTabBackdrop,",
+                                                                "BOTTOM,",
+                                                                "0.0,",
+                                                                "0.0025,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "FontJustificationH",
+                                                            "child": [
+                                                                "JUSTIFYCENTER,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "FontJustificationV",
+                                                            "child": [
+                                                                "JUSTIFYBOTTOM,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "ControlShortcutKey",
+                                                            "child": [
+                                                                "F,"
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "Text",
+                                                            "child": [
+                                                                "KEY_FRIENDS_TAB,"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "child": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "fid": 50,
+                                            "type": "FRAME",
+                                            "name": "TabbedContentContainer",
+                                            "inherits": "",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Height",
+                                                    "child": [
+                                                        "0.32453125,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Width",
+                                                    "child": [
+                                                        "0.2725,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "BOTTOM,",
+                                                        "TabbedPanel,",
+                                                        "BOTTOM,",
+                                                        "0.0,",
+                                                        "0.0,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 51,
+                                    "type": "BACKDROP",
+                                    "name": "ChatQuitBattleNetBackdrop",
+                                    "inherits": "BattleNetMenuLargeButtonBaseBackdrop",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.275,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.053,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMRIGHT,BattleNetChatPanel,BOTTOMRIGHT,",
+                                                "-0.013,",
+                                                "0.014,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 52,
+                                            "type": "FRAME",
+                                            "name": "ChatQuitBattleNetButtonContainer",
+                                            "inherits": "",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Width",
+                                                    "child": [
+                                                        "0.1945,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Height",
+                                                    "child": [
+                                                        "0.026,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPRIGHT,ChatQuitBattleNetBackdrop,TOPRIGHT,",
+                                                        "-0.0425,",
+                                                        "-0.012,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        },
+                                        {
+                                            "fid": 53,
+                                            "type": "GLUETEXTBUTTON",
+                                            "name": "HelpButton",
+                                            "inherits": "BattleNetButtonTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Width",
+                                                    "child": [
+                                                        "0.03,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Height",
+                                                    "child": [
+                                                        "0.02375,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "LEFT,",
+                                                        "ChatQuitBattleNetButtonContainer,",
+                                                        "RIGHT,",
+                                                        "0.0,",
+                                                        "0.0,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "ButtonText",
+                                                    "child": [
+                                                        "HelpButtonText,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 54,
+                                                    "type": "TEXT",
+                                                    "name": "HelpButtonText",
+                                                    "inherits": "BattleNetButtonTextTemplate",
+                                                    "fields": [
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "Text",
+                                                            "child": [
+                                                                "HELP_BUTTON,"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 55,
+                            "type": "FRAME",
+                            "name": "ChannelPanel",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 56,
+                                    "type": "TEXT",
+                                    "name": "ChannelTitle",
+                                    "inherits": "BattleNetTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "BattleNetChatPanel,",
+                                                "TOPLEFT,",
+                                                "0.0235,",
+                                                "-0.16625,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "BNET_CHANNEL_TITLE,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 57,
+                                    "type": "TEXT",
+                                    "name": "AvailableChannelLabel",
+                                    "inherits": "BattleNetLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "ChannelTitle,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.01,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_AVAILABLE_CHANNELS,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 58,
+                                    "type": "FRAME",
+                                    "name": "AvailableChannelContainer",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "AvailableChannelLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.002,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.2125,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.440625,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 59,
+                                    "type": "TEXT",
+                                    "name": "ChannelInfoText",
+                                    "inherits": "BattleNetInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "AvailableChannelContainer,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.0075,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.4375,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontJustificationH",
+                                            "child": [
+                                                "JUSTIFYLEFT,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontJustificationV",
+                                            "child": [
+                                                "JUSTIFYTOP,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "BNET_CHANNEL_INFO,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 60,
+                                    "type": "TEXT",
+                                    "name": "ChannelNameLabel",
+                                    "inherits": "BattleNetLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "ChannelInfoText,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.02,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_CHANNEL_NAME,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 61,
+                                    "type": "EDITBOX",
+                                    "name": "ChannelNameField",
+                                    "inherits": "BattleNetEditBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.24375,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "ChannelNameLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "-0.002,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "JoinChannelButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "EditTextFrame",
+                                            "child": [
+                                                "ChannelNameEditBoxText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 62,
+                                            "type": "TEXT",
+                                            "name": "ChannelNameEditBoxText",
+                                            "inherits": "BattleNetEditBoxTextTemplate",
+                                            "fields": [],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 63,
+                                    "type": "BACKDROP",
+                                    "name": "JoinChannelBackdrop",
+                                    "inherits": "BattleNetMenuButtonBaseBackdrop",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.22,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "BackdropMirrored,",
+                                            "child": []
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,ChannelNameField,",
+                                                "RIGHT,",
+                                                "0.002,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 64,
+                                            "type": "GLUETEXTBUTTON",
+                                            "name": "JoinChannelButton",
+                                            "inherits": "BattleNetButtonTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Width",
+                                                    "child": [
+                                                        "0.15425,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPRIGHT,JoinChannelBackdrop,TOPRIGHT,",
+                                                        "-0.055125,",
+                                                        "-0.0165,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "ControlShortcutKey",
+                                                    "child": [
+                                                        "J,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "TabFocusNext",
+                                                    "child": [
+                                                        "BackButton,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "ButtonText",
+                                                    "child": [
+                                                        "JoinChannelButtonText,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 65,
+                                                    "type": "TEXT",
+                                                    "name": "JoinChannelButtonText",
+                                                    "inherits": "BattleNetButtonTextTemplate",
+                                                    "fields": [
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "Text",
+                                                            "child": [
+                                                                "KEY_JOIN_CHANNEL,"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 66,
+                                    "type": "BACKDROP",
+                                    "name": "BackBackdrop",
+                                    "inherits": "BattleNetMenuButtonBaseBackdrop",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.24,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,BattleNetChatPanel,BOTTOMRIGHT,",
+                                                "-0.014375,",
+                                                "0.099375,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 67,
+                                            "type": "GLUETEXTBUTTON",
+                                            "name": "BackButton",
+                                            "inherits": "BattleNetButtonTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Width",
+                                                    "child": [
+                                                        "0.168,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPRIGHT,BackBackdrop,TOPRIGHT,",
+                                                        "-0.012,",
+                                                        "-0.0165,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "ControlShortcutKey",
+                                                    "child": [
+                                                        "B,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "TabFocusNext",
+                                                    "child": [
+                                                        "ChatChannelButton,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "ButtonText",
+                                                    "child": [
+                                                        "BackButtonText,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 68,
+                                                    "type": "TEXT",
+                                                    "name": "BackButtonText",
+                                                    "inherits": "BattleNetButtonTextTemplate",
+                                                    "fields": [
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "Text",
+                                                            "child": [
+                                                                "KEY_BACK,"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 69,
+                            "type": "FRAME",
+                            "name": "WelcomePanel",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 70,
+                                    "type": "TEXT",
+                                    "name": "WelcomeChannelNameLabel",
+                                    "inherits": "BattleNetTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.31125,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.025625,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "BattleNetChatPanel,",
+                                                "TOPLEFT,",
+                                                "0.16625,",
+                                                "-0.161875,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontJustificationH",
+                                            "child": [
+                                                "JUSTIFYLEFT,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "BNET_WELCOME,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 71,
+                                    "type": "TEXT",
+                                    "name": "WelcomeNewsLabel",
+                                    "inherits": "BattleNetInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "BattleNetChatPanel,",
+                                                "TOPLEFT,",
+                                                "0.026,",
+                                                "-0.2075,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontJustificationH",
+                                            "child": [
+                                                "JUSTIFYLEFT,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "BNET_NEWS,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 72,
+                                    "type": "TEXT",
+                                    "name": "WelcomeNewItemCount",
+                                    "inherits": "BattleNetInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "WelcomeNewsLabel,",
+                                                "RIGHT,",
+                                                "0.005,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontJustificationH",
+                                            "child": [
+                                                "JUSTIFYLEFT,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "0.0",
+                                                "0.0",
+                                                "1.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 73,
+                                    "type": "FRAME",
+                                    "name": "NewsBoxContainer",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.34625,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.4475,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "BattleNetChatPanel,",
+                                                "BOTTOMLEFT,",
+                                                "0.021875,",
+                                                "0.031,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 74,
+                                    "type": "TEXT",
+                                    "name": "WelcomeMOTDText",
+                                    "inherits": "BattleNetLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.254375,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.25,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMRIGHT,",
+                                                "BattleNetChatPanel,",
+                                                "BOTTOMRIGHT,",
+                                                "-0.01875,",
+                                                "0.15625,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontJustificationH",
+                                            "child": [
+                                                "JUSTIFYLEFT,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontJustificationV",
+                                            "child": [
+                                                "JUSTIFYTOP,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 75,
+                                    "type": "TEXT",
+                                    "name": "WelcomeMOTDLabel",
+                                    "inherits": "BattleNetInfoTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "WelcomeMOTDText,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.01,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "BNET_MOTD,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 76,
+                                    "type": "BACKDROP",
+                                    "name": "EnterChatBackdrop",
+                                    "inherits": "BattleNetMenuButtonBaseBackdrop",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.24,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,BattleNetChatPanel,BOTTOMRIGHT,",
+                                                "-0.014375,",
+                                                "0.124375,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 77,
+                                            "type": "GLUETEXTBUTTON",
+                                            "name": "EnterChatButton",
+                                            "inherits": "BattleNetButtonTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Width",
+                                                    "child": [
+                                                        "0.168,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPRIGHT,EnterChatBackdrop,TOPRIGHT,",
+                                                        "-0.012,",
+                                                        "-0.0165,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "TabFocusNext",
+                                                    "child": [
+                                                        "QuitBattleNetButton,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "ControlShortcutKey",
+                                                    "child": [
+                                                        "C,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "ButtonText",
+                                                    "child": [
+                                                        "EnterChatButtonText,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": [
+                                                {
+                                                    "fid": 78,
+                                                    "type": "TEXT",
+                                                    "name": "EnterChatButtonText",
+                                                    "inherits": "BattleNetButtonTextTemplate",
+                                                    "fields": [
+                                                        {
+                                                            "type": "Field",
+                                                            "name": "Text",
+                                                            "child": [
+                                                                "KEY_ENTER_CHAT,"
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "child": []
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 79,
+                                    "type": "BACKDROP",
+                                    "name": "WelcomeQuitBattleNetBackdrop",
+                                    "inherits": "BattleNetMenuButtonBaseBackdrop",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.24,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,EnterChatBackdrop,BOTTOMRIGHT,",
+                                                "0.0,",
+                                                "0.015,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 80,
+                                            "type": "FRAME",
+                                            "name": "WelcomeQuitBattleNetButtonContainer",
+                                            "inherits": "",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Width",
+                                                    "child": [
+                                                        "0.168,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Height",
+                                                    "child": [
+                                                        "0.031,"
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "Field",
+                                                    "name": "SetPoint",
+                                                    "child": [
+                                                        "TOPRIGHT,WelcomeQuitBattleNetBackdrop,TOPRIGHT,",
+                                                        "-0.012,",
+                                                        "-0.0165,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 81,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "QuitBattleNetButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.168,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,WelcomeQuitBattleNetBackdrop,TOPRIGHT,",
+                                        "-0.012,",
+                                        "-0.0165,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ControlShortcutKey",
+                                    "child": [
+                                        "X,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "QuitBattleNetButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 82,
+                                    "type": "TEXT",
+                                    "name": "QuitBattleNetButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "KEY_EXIT_BNET,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 83,
+                            "type": "FRAME",
+                            "name": "TeamInviteContainer",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.340625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.26475,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,",
+                                        "BattleNetChatPanel,",
+                                        "TOPRIGHT,",
+                                        "-0.01565,",
+                                        "-0.16,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 84,
+            "type": "DIALOG",
+            "name": "BattleNetHelpDialog",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.37375,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.5,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "DialogBackdrop",
+                    "child": [
+                        "HelpDialogBackdrop,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 85,
+                    "type": "BACKDROP",
+                    "name": "HelpDialogBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-background.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.064,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.128,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.01",
+                                "0.01",
+                                "0.01",
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\BattleNet\\bnet-dialoguebox-border.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 86,
+                    "type": "TEXT",
+                    "name": "HelpTitleText",
+                    "inherits": "BattleNetTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "BattleNetHelpDialog,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.025,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "BNET_HELP_TITLE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 87,
+                    "type": "TEXTAREA",
+                    "name": "HelpTextArea",
+                    "inherits": "BattleNetTextAreaTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.225,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.45,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "HelpTitleText,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.025,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 88,
+                    "type": "BACKDROP",
+                    "name": "HelpOKButtonBackdrop",
+                    "inherits": "BattleNetMenuSingleButtonBaseBackdrop",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "BattleNetHelpDialog,",
+                                "BOTTOM,",
+                                "-0.015,",
+                                "0.015,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 89,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "HelpOKButton",
+                            "inherits": "BattleNetButtonTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.159,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,HelpOKButtonBackdrop,TOPRIGHT,",
+                                        "-0.032,",
+                                        "-0.015625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "ButtonText",
+                                    "child": [
+                                        "HelpOKButtonText,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 90,
+                                    "type": "TEXT",
+                                    "name": "HelpOKButtonText",
+                                    "inherits": "BattleNetButtonTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "OK,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

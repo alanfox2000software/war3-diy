@@ -1,0 +1,747 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "POPUPMENU",
+            "name": "AdvancedPopupMenuTemplate",
+            "inherits": "StandardPopupMenuTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.032,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.14,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlBackdrop",
+                    "child": [
+                        "AdvancedPopupMenuBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "ControlDisabledBackdrop",
+                    "child": [
+                        "AdvancedPopupMenuDisabledBackdrop,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupTitleFrame",
+                    "child": [
+                        "AdvancedPopupMenuTitle,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "PopupArrowFrame",
+                    "child": [
+                        "AdvancedPopupMenuArrow,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "BACKDROP",
+                    "name": "AdvancedPopupMenuBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.004",
+                                "0.004",
+                                "0.004",
+                                "0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderedBackdropBorder.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "BACKDROP",
+                    "name": "AdvancedPopupMenuDisabledBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Button1-BackdropBackground-Disabled.blp,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.016,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.004",
+                                "0.004",
+                                "0.004",
+                                "0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "UI\\Widgets\\Glues\\GlueScreen-Button1-BorderedBackdropBorder-Disabled.blp,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "AdvancedPopupMenuTitle",
+                    "inherits": "StandardPopupMenuTitleTemplate",
+                    "fields": [],
+                    "child": []
+                },
+                {
+                    "fid": 4,
+                    "type": "BUTTON",
+                    "name": "AdvancedPopupMenuArrow",
+                    "inherits": "StandardPopupMenuArrowTemplate",
+                    "fields": [],
+                    "child": []
+                }
+            ]
+        }
+    ],
+    [
+        {
+            "fid": 5,
+            "type": "FRAME",
+            "name": "AdvancedOptionsPane",
+            "inherits": "",
+            "fields": [],
+            "child": [
+                {
+                    "fid": 6,
+                    "type": "HIGHLIGHT",
+                    "name": "DebugTestFrame",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightColor",
+                            "child": [
+                                "1.0",
+                                "0.0",
+                                "0.0",
+                                "0.2,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "HighlightType",
+                            "child": [
+                                "SHADE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 7,
+                    "type": "TEXT",
+                    "name": "AdvancedOptionsTitle",
+                    "inherits": "StandardTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "AdvancedOptionsPane,",
+                                "TOPLEFT,",
+                                "0.004,",
+                                "-0.004,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "ADVANCED_OPTIONS,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 8,
+                    "type": "TEXT",
+                    "name": "LockTeamsLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.024,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "AdvancedOptionsPane,",
+                                "TOPLEFT,",
+                                "0.004,",
+                                "-0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_LOCK_TEAMS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 9,
+                    "type": "TEXT",
+                    "name": "TeamsTogetherLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.024,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "LockTeamsLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_TEAMS_TOGETHER,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 10,
+                    "type": "TEXT",
+                    "name": "AdvSharedControlLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.024,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "TeamsTogetherLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_ADV_SHARED_CONTROL,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 11,
+                    "type": "TEXT",
+                    "name": "RandomRacesLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.024,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "AdvSharedControlLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_RANDOM_RACES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 12,
+                    "type": "TEXT",
+                    "name": "RandomHeroLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.024,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "RandomRacesLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_RANDOM_HERO,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 13,
+                    "type": "TEXT",
+                    "name": "ObserversLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "RandomHeroLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_OBSERVERS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 14,
+                    "type": "TEXT",
+                    "name": "MapVisibilityLabel",
+                    "inherits": "StandardLabelTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.032,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ObserversLabel,",
+                                "BOTTOMLEFT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_VISIBILITY,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 15,
+                    "type": "GLUECHECKBOX",
+                    "name": "LockTeamsCheckBox",
+                    "inherits": "StandardCheckBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "AdvancedOptionsPane,",
+                                "TOPRIGHT,",
+                                "-0.004,",
+                                "-0.03,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 16,
+                    "type": "GLUECHECKBOX",
+                    "name": "TeamsTogetherCheckBox",
+                    "inherits": "StandardCheckBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "LockTeamsCheckBox,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 17,
+                    "type": "GLUECHECKBOX",
+                    "name": "AdvSharedControlCheckBox",
+                    "inherits": "StandardCheckBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "TeamsTogetherCheckBox,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 18,
+                    "type": "GLUECHECKBOX",
+                    "name": "RandomRacesCheckBox",
+                    "inherits": "StandardCheckBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "AdvSharedControlCheckBox,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 19,
+                    "type": "GLUECHECKBOX",
+                    "name": "RandomHeroCheckBox",
+                    "inherits": "StandardCheckBoxTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "RandomRacesCheckBox,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 20,
+                    "type": "POPUPMENU",
+                    "name": "ObserversMenu",
+                    "inherits": "AdvancedPopupMenuTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "RandomHeroCheckBox,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "PopupMenuFrame",
+                            "child": [
+                                "ObserversPopupMenuMenu,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 21,
+                            "type": "MENU",
+                            "name": "ObserversPopupMenuMenu",
+                            "inherits": "StandardPopupMenuMenuTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "UseActiveContext,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "MenuItem",
+                                    "child": [
+                                        "FULL_OBSERVERS,",
+                                        "-2,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "MenuItem",
+                                    "child": [
+                                        "OBSERVERS_ON_DEFEAT,",
+                                        "-2,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "MenuItem",
+                                    "child": [
+                                        "NO_OBSERVERS,",
+                                        "-2,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 22,
+                    "type": "POPUPMENU",
+                    "name": "MapVisibilityMenu",
+                    "inherits": "AdvancedPopupMenuTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "ObserversMenu,",
+                                "BOTTOMRIGHT,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "PopupMenuFrame",
+                            "child": [
+                                "MapVisibilityPopupMenuMenu,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 23,
+                            "type": "MENU",
+                            "name": "MapVisibilityPopupMenuMenu",
+                            "inherits": "StandardPopupMenuMenuTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "UseActiveContext,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "MenuItem",
+                                    "child": [
+                                        "DEFAULT,",
+                                        "-2,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "MenuItem",
+                                    "child": [
+                                        "HIDE_TERRAIN,",
+                                        "-2,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "MenuItem",
+                                    "child": [
+                                        "MAP_EXPLORED,",
+                                        "-2,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "MenuItem",
+                                    "child": [
+                                        "ALWAYS_VISIBLE,",
+                                        "-2,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,66 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "InfoPanelItemDetail",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "TEXT",
+                    "name": "ItemNameValue",
+                    "inherits": "InfoPanelTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "InfoPanelItemDetail,",
+                                "TOP,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "TEXT",
+                    "name": "ItemDescriptionValue",
+                    "inherits": "InfoPanelDescriptionTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.188,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ItemNameValue,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.008,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type lightning</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type lightning</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> lightning</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#93">93</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">lightning</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf">
+<p><a href="Blizzard_j-variables.shtml">Blizzard.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#faffbf"></td><td bgcolor="#faffbf">
+<strong><a href="Blizzard_j-variables.shtml#bj_lastCreatedLightning">bj_lastCreatedLightning</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">lightning</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#AddLightning">AddLightning</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> codeName, <a href="BUILT_IN-types-boolean.shtml">boolean</a> checkVisibility, <a href="BUILT_IN-types-real.shtml">real</a> x1, <a href="BUILT_IN-types-real.shtml">real</a> y1, <a href="BUILT_IN-types-real.shtml">real</a> x2, <a href="BUILT_IN-types-real.shtml">real</a> y2<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-lightning.shtml">lightning</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#AddLightningEx">AddLightningEx</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> codeName, <a href="BUILT_IN-types-boolean.shtml">boolean</a> checkVisibility, <a href="BUILT_IN-types-real.shtml">real</a> x1, <a href="BUILT_IN-types-real.shtml">real</a> y1, <a href="BUILT_IN-types-real.shtml">real</a> z1, <a href="BUILT_IN-types-real.shtml">real</a> x2, <a href="BUILT_IN-types-real.shtml">real</a> y2, <a href="BUILT_IN-types-real.shtml">real</a> z2<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-lightning.shtml">lightning</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#AddLightningLoc">AddLightningLoc</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> codeName, <a href="common_j-types-location.shtml">location</a> where1, <a href="common_j-types-location.shtml">location</a> where2<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-lightning.shtml">lightning</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetLastCreatedLightningBJ">GetLastCreatedLightningBJ</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-lightning.shtml">lightning</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LoadLightningHandle">LoadLightningHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-lightning.shtml">lightning</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LoadLightningHandleBJ">LoadLightningHandleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-lightning.shtml">lightning</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">lightning</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#DestroyLightning">DestroyLightning</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#DestroyLightningBJ">DestroyLightningBJ</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetLightningColorA">GetLightningColorA</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetLightningColorABJ">GetLightningColorABJ</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetLightningColorB">GetLightningColorB</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetLightningColorBBJ">GetLightningColorBBJ</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetLightningColorG">GetLightningColorG</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetLightningColorGBJ">GetLightningColorGBJ</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetLightningColorR">GetLightningColorR</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetLightningColorRBJ">GetLightningColorRBJ</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MoveLightning">MoveLightning</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt, <a href="BUILT_IN-types-boolean.shtml">boolean</a> checkVisibility, <a href="BUILT_IN-types-real.shtml">real</a> x1, <a href="BUILT_IN-types-real.shtml">real</a> y1, <a href="BUILT_IN-types-real.shtml">real</a> x2, <a href="BUILT_IN-types-real.shtml">real</a> y2<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MoveLightningEx">MoveLightningEx</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt, <a href="BUILT_IN-types-boolean.shtml">boolean</a> checkVisibility, <a href="BUILT_IN-types-real.shtml">real</a> x1, <a href="BUILT_IN-types-real.shtml">real</a> y1, <a href="BUILT_IN-types-real.shtml">real</a> z1, <a href="BUILT_IN-types-real.shtml">real</a> x2, <a href="BUILT_IN-types-real.shtml">real</a> y2, <a href="BUILT_IN-types-real.shtml">real</a> z2<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#MoveLightningLoc">MoveLightningLoc</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt, <a href="common_j-types-location.shtml">location</a> where1, <a href="common_j-types-location.shtml">location</a> where2<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SaveLightningHandle">SaveLightningHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey, <a href="common_j-types-lightning.shtml">lightning</a> whichLightning<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SaveLightningHandleBJ">SaveLightningHandleBJ</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichLightning, <a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetLightningColor">SetLightningColor</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt, <a href="BUILT_IN-types-real.shtml">real</a> r, <a href="BUILT_IN-types-real.shtml">real</a> g, <a href="BUILT_IN-types-real.shtml">real</a> b, <a href="BUILT_IN-types-real.shtml">real</a> a<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetLightningColorBJ">SetLightningColorBJ</a></strong> <strong>(</strong><a href="common_j-types-lightning.shtml">lightning</a> whichBolt, <a href="BUILT_IN-types-real.shtml">real</a> r, <a href="BUILT_IN-types-real.shtml">real</a> g, <a href="BUILT_IN-types-real.shtml">real</a> b, <a href="BUILT_IN-types-real.shtml">real</a> a<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

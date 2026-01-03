@@ -1,0 +1,755 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "InfoPanelUnitDetail",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "TEXT",
+                    "name": "NameValue",
+                    "inherits": "InfoPanelTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "InfoPanelUnitDetail,",
+                                "TOP,",
+                                "0.0,",
+                                "0.0,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "SPRITE",
+                    "name": "HeroLevelBar",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "InfoPanelUnitDetail,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.014375,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "FRAME",
+                    "name": "UnitStatsPanel",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 4,
+                            "type": "SPRITE",
+                            "name": "ProgressIndicator",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "InfoPanelUnitDetail,",
+                                        "TOP,",
+                                        "0.0,",
+                                        "-0.014375,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 5,
+                            "type": "TEXT",
+                            "name": "ClassValue",
+                            "inherits": "InfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOP,",
+                                        "NameValue,",
+                                        "BOTTOM,",
+                                        "0.0,",
+                                        "-0.005625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYCENTER,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 6,
+                            "type": "TEXT",
+                            "name": "DefenseLabel",
+                            "inherits": "InfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "InfoPanelUnitDetail,",
+                                        "TOPLEFT,",
+                                        "0.001875,",
+                                        "-0.035625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_ARMOR,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 7,
+                            "type": "TEXT",
+                            "name": "DefenseValue",
+                            "inherits": "InfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "DefenseLabel,",
+                                        "LEFT,",
+                                        "0.04625,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 8,
+                            "type": "TEXT",
+                            "name": "AttackLabel1",
+                            "inherits": "InfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "DefenseLabel,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.001,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_DAMAGE,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 9,
+                            "type": "TEXT",
+                            "name": "AttackValue1",
+                            "inherits": "InfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "DefenseValue,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.001,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 10,
+                            "type": "TEXT",
+                            "name": "AttackLabel2",
+                            "inherits": "InfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "AttackLabel1,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.001,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_DAMAGE,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 11,
+                            "type": "TEXT",
+                            "name": "AttackValue2",
+                            "inherits": "InfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "AttackValue1,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.001,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 12,
+                            "type": "TEXT",
+                            "name": "SpeedTitle",
+                            "inherits": "InfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "DefenseLabel,",
+                                        "TOPLEFT,",
+                                        "0.1,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_SPEED,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 13,
+                            "type": "TEXT",
+                            "name": "SpeedValue",
+                            "inherits": "InfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "SpeedTitle,",
+                                        "TOPLEFT,",
+                                        "0.03875,",
+                                        "0.0,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 14,
+                            "type": "TEXT",
+                            "name": "RangeTitle1",
+                            "inherits": "InfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "SpeedTitle,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.001,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_RANGE,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 15,
+                            "type": "TEXT",
+                            "name": "RangeValue1",
+                            "inherits": "InfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "SpeedValue,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.001,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 16,
+                            "type": "TEXT",
+                            "name": "RangeTitle2",
+                            "inherits": "InfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "RangeTitle1,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.001,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "COLON_RANGE,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 17,
+                            "type": "TEXT",
+                            "name": "RangeValue2",
+                            "inherits": "InfoPanelLabelTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPLEFT,",
+                                        "RangeValue1,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "-0.001,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontColor",
+                                    "child": [
+                                        "1.0",
+                                        "1.0",
+                                        "1.0",
+                                        "1.0,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 18,
+                            "type": "BACKDROP",
+                            "name": "IconBackdrop1",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.032,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.032,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "HeroStrengthIcon,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMLEFT,",
+                                        "InfoPanelUnitDetail,",
+                                        "BOTTOMLEFT,",
+                                        "0.0,",
+                                        "0.00250,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 19,
+                                    "type": "TEXT",
+                                    "name": "IconValue1",
+                                    "inherits": "InfoPanelAttributeTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,",
+                                                "IconBackdrop1,",
+                                                "BOTTOMRIGHT,",
+                                                "-0.007625,",
+                                                "0.006875,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 20,
+                            "type": "BACKDROP",
+                            "name": "IconBackdrop2",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.032,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.032,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "HeroAgilityIcon,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "IconBackdrop1,",
+                                        "RIGHT,",
+                                        "0.00234375,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 21,
+                                    "type": "TEXT",
+                                    "name": "IconValue2",
+                                    "inherits": "InfoPanelAttributeTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,",
+                                                "IconBackdrop2,",
+                                                "BOTTOMRIGHT,",
+                                                "-0.007625,",
+                                                "0.006875,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 22,
+                            "type": "BACKDROP",
+                            "name": "IconBackdrop3",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.032,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.032,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "HeroIntelligenceIcon,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "IconBackdrop2,",
+                                        "RIGHT,",
+                                        "0.00234375,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 23,
+                                    "type": "TEXT",
+                                    "name": "IconValue3",
+                                    "inherits": "InfoPanelAttributeTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,",
+                                                "IconBackdrop3,",
+                                                "BOTTOMRIGHT,",
+                                                "-0.007625,",
+                                                "0.006875,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 24,
+                            "type": "BACKDROP",
+                            "name": "IconBackdrop4",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.032,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.032,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "HeroIntelligenceIcon,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "IconBackdrop3,",
+                                        "RIGHT,",
+                                        "0.00234375,",
+                                        "0.0,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 25,
+                                    "type": "TEXT",
+                                    "name": "IconValue4",
+                                    "inherits": "InfoPanelAttributeTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,",
+                                                "IconBackdrop4,",
+                                                "BOTTOMRIGHT,",
+                                                "-0.007625,",
+                                                "0.006875,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

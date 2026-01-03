@@ -1,0 +1,1146 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "TEXT",
+            "name": "EscMenuSaveDialogTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "FrameFont",
+                    "child": [
+                        "EscMenuTextFont,",
+                        "0.013,",
+                        ","
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationH",
+                    "child": [
+                        "JUSTIFYLEFT,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontJustificationV",
+                    "child": [
+                        "JUSTIFYMIDDLE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontFlags",
+                    "child": [
+                        "FIXEDSIZE,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontColor",
+                    "child": [
+                        "0.99",
+                        "0.827",
+                        "0.0705",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontHighlightColor",
+                    "child": [
+                        "1.0",
+                        "1.0",
+                        "1.0",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontDisabledColor",
+                    "child": [
+                        "0.5",
+                        "0.5",
+                        "0.5",
+                        "1.0,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowColor",
+                    "child": [
+                        "0.0",
+                        "0.0",
+                        "0.0",
+                        "0.9,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "FontShadowOffset",
+                    "child": [
+                        "0.002",
+                        "-0.002,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "FRAME",
+            "name": "EscMenuSaveGamePanel",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "TabFocusPush,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 2,
+                    "type": "FRAME",
+                    "name": "EscMenuSaveLoadContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.432,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.288,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 3,
+                            "type": "FRAME",
+                            "name": "SaveAndLoad",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 4,
+                                    "type": "FRAME",
+                                    "name": "FileListFrame",
+                                    "inherits": "",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "EscMenuSaveGamePanel,",
+                                                "TOP,",
+                                                "0.0,",
+                                                "-0.048,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.362,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.135,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 5,
+                            "type": "FRAME",
+                            "name": "LoadOnly",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 6,
+                                    "type": "TEXT",
+                                    "name": "LoadGameTitleText",
+                                    "inherits": "EscMenuTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "EscMenuSaveGamePanel,",
+                                                "TOP,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "LOAD_GAME,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 7,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "LoadGameLoadButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "EscMenuSaveGamePanel,",
+                                                "BOTTOMLEFT,",
+                                                "0.035,",
+                                                "0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.118,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "L,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "LoadGameCancelButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "LoadGameLoadButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 8,
+                                            "type": "TEXT",
+                                            "name": "LoadGameLoadButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_LOAD,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 9,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "LoadGameCancelButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "LoadGameLoadButton,",
+                                                "RIGHT,",
+                                                "0.128,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.118,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "A,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "LoadGameLoadButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "LoadGameCancelButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 10,
+                                            "type": "TEXT",
+                                            "name": "LoadGameCancelButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_CANCEL,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 11,
+                            "type": "FRAME",
+                            "name": "SaveOnly",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 12,
+                                    "type": "TEXT",
+                                    "name": "SaveGameTitleText",
+                                    "inherits": "EscMenuTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "EscMenuSaveGamePanel,",
+                                                "TOP,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "SAVE_GAME,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 13,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "SaveGameSaveButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "EscMenuSaveGamePanel,",
+                                                "BOTTOMLEFT,",
+                                                "0.035,",
+                                                "0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.118,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "S,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "SaveGameDeleteButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "SaveGameSaveButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 14,
+                                            "type": "TEXT",
+                                            "name": "SaveGameSaveButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_SAVE,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 15,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "SaveGameDeleteButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "SaveGameSaveButton,",
+                                                "RIGHT,",
+                                                "0.005,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.118,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "D,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "SaveGameCancelButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "SaveGameDeleteButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 16,
+                                            "type": "TEXT",
+                                            "name": "SaveGameDeleteButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_DELETE,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 17,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "SaveGameCancelButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "SaveGameDeleteButton,",
+                                                "RIGHT,",
+                                                "0.005,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.118,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "A,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "SaveGameFileEditBox,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "SaveGameCancelButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 18,
+                                            "type": "TEXT",
+                                            "name": "SaveGameCancelButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_CANCEL,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 19,
+                                    "type": "EDITBOX",
+                                    "name": "SaveGameFileEditBox",
+                                    "inherits": "EscMenuEditBoxTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.362,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.037,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOM,",
+                                                "SaveGameDeleteButton,",
+                                                "TOP,",
+                                                "0.0,",
+                                                "0.005,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusDefault,",
+                                            "child": []
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "SaveGameSaveButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "EditTextFrame",
+                                            "child": [
+                                                "SaveGameFileEditBoxText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 20,
+                                            "type": "TEXT",
+                                            "name": "SaveGameFileEditBoxText",
+                                            "inherits": "EscMenuEditBoxTextTemplate",
+                                            "fields": [],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 21,
+                    "type": "FRAME",
+                    "name": "EscMenuOverwriteContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.336,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.192,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 22,
+                            "type": "FRAME",
+                            "name": "OverwriteOnly",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 23,
+                                    "type": "TEXT",
+                                    "name": "OverwriteTitleText",
+                                    "inherits": "EscMenuTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "EscMenuSaveGamePanel,",
+                                                "TOP,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "OVERWRITE_SAVED_GAME,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 24,
+                                    "type": "TEXT",
+                                    "name": "OverwriteMessageText",
+                                    "inherits": "EscMenuSaveDialogTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "OverwriteTitleText,",
+                                                "BOTTOM,",
+                                                "0.0,",
+                                                "-0.005,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.26,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontJustificationH",
+                                            "child": [
+                                                "JUSTIFYCENTER,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 25,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "OverwriteOverwriteButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "EscMenuSaveGamePanel,",
+                                                "BOTTOMLEFT,",
+                                                "0.035,",
+                                                "0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.129,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "OverwriteCancelButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "O,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "OverwriteOverwriteButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 26,
+                                            "type": "TEXT",
+                                            "name": "OverwriteOverwriteButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_OVERWRITE,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 27,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "OverwriteCancelButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "OverwriteOverwriteButton,",
+                                                "RIGHT,",
+                                                "0.006,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.129,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "A,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "OverwriteOverwriteButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "OverwriteCancelButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 28,
+                                            "type": "TEXT",
+                                            "name": "OverwriteCancelButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_CANCEL,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 29,
+                    "type": "FRAME",
+                    "name": "EscMenuDeleteContainer",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.336,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.192,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 30,
+                            "type": "FRAME",
+                            "name": "DeleteOnly",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 31,
+                                    "type": "TEXT",
+                                    "name": "DeleteTitleText",
+                                    "inherits": "EscMenuTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "EscMenuSaveGamePanel,",
+                                                "TOP,",
+                                                "0.0,",
+                                                "-0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "1.0",
+                                                "1.0",
+                                                "1.0",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "DELETE_SAVED_GAME,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 32,
+                                    "type": "TEXT",
+                                    "name": "DeleteMessageText",
+                                    "inherits": "EscMenuSaveDialogTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOP,",
+                                                "DeleteTitleText,",
+                                                "BOTTOM,",
+                                                "0.0,",
+                                                "-0.005,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.26,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "FontJustificationH",
+                                            "child": [
+                                                "JUSTIFYCENTER,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 33,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "DeleteDeleteButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "EscMenuSaveGamePanel,",
+                                                "BOTTOMLEFT,",
+                                                "0.035,",
+                                                "0.03,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.129,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "DeleteCancelButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "D,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "DeleteDeleteButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 34,
+                                            "type": "TEXT",
+                                            "name": "DeleteDeleteButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_DELETE,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "fid": 35,
+                                    "type": "GLUETEXTBUTTON",
+                                    "name": "DeleteCancelButton",
+                                    "inherits": "EscMenuButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "LEFT,",
+                                                "DeleteDeleteButton,",
+                                                "RIGHT,",
+                                                "0.006,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.129,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "TabFocusNext",
+                                            "child": [
+                                                "DeleteDeleteButton,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ControlShortcutKey",
+                                            "child": [
+                                                "A,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "ButtonText",
+                                            "child": [
+                                                "DeleteCancelButtonText,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": [
+                                        {
+                                            "fid": 36,
+                                            "type": "TEXT",
+                                            "name": "DeleteCancelButtonText",
+                                            "inherits": "EscMenuButtonTextTemplate",
+                                            "fields": [
+                                                {
+                                                    "type": "Field",
+                                                    "name": "Text",
+                                                    "child": [
+                                                        "KEY_CANCEL,"
+                                                    ]
+                                                }
+                                            ],
+                                            "child": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

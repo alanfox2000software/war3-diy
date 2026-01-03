@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type multiboard</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type multiboard</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> <a href="common_j-types-agent.shtml">agent</a> <strong>&gt;</strong> multiboard</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#82">82</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">multiboard</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf">
+<p><a href="Blizzard_j-variables.shtml">Blizzard.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#faffbf"></td><td bgcolor="#faffbf">
+<strong><a href="Blizzard_j-variables.shtml#bj_lastCreatedMultiboard">bj_lastCreatedMultiboard</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">multiboard</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateMultiboard">CreateMultiboard</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-multiboard.shtml">multiboard</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CreateMultiboardBJ">CreateMultiboardBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> cols, <a href="BUILT_IN-types-integer.shtml">integer</a> rows, <a href="BUILT_IN-types-string.shtml">string</a> title<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-multiboard.shtml">multiboard</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetLastCreatedMultiboard">GetLastCreatedMultiboard</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-multiboard.shtml">multiboard</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LoadMultiboardHandle">LoadMultiboardHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-multiboard.shtml">multiboard</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LoadMultiboardHandleBJ">LoadMultiboardHandleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-multiboard.shtml">multiboard</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">multiboard</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#DestroyMultiboard">DestroyMultiboard</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#DestroyMultiboardBJ">DestroyMultiboardBJ</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> mb<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IsMultiboardDisplayed">IsMultiboardDisplayed</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#IsMultiboardMinimized">IsMultiboardMinimized</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardClear">MultiboardClear</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardDisplay">MultiboardDisplay</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb, <a href="BUILT_IN-types-boolean.shtml">boolean</a> show<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#MultiboardDisplayBJ">MultiboardDisplayBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> show, <a href="common_j-types-multiboard.shtml">multiboard</a> mb<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardGetColumnCount">MultiboardGetColumnCount</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardGetItem">MultiboardGetItem</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> row, <a href="BUILT_IN-types-integer.shtml">integer</a> column<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-multiboarditem.shtml">multiboarditem</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardGetRowCount">MultiboardGetRowCount</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardGetTitleText">MultiboardGetTitleText</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-string.shtml">string</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardMinimize">MultiboardMinimize</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb, <a href="BUILT_IN-types-boolean.shtml">boolean</a> minimize<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#MultiboardMinimizeBJ">MultiboardMinimizeBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> minimize, <a href="common_j-types-multiboard.shtml">multiboard</a> mb<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardSetColumnCount">MultiboardSetColumnCount</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> count<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#MultiboardSetItemColorBJ">MultiboardSetItemColorBJ</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> mb, <a href="BUILT_IN-types-integer.shtml">integer</a> col, <a href="BUILT_IN-types-integer.shtml">integer</a> row, <a href="BUILT_IN-types-real.shtml">real</a> red, <a href="BUILT_IN-types-real.shtml">real</a> green, <a href="BUILT_IN-types-real.shtml">real</a> blue, <a href="BUILT_IN-types-real.shtml">real</a> transparency<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#MultiboardSetItemIconBJ">MultiboardSetItemIconBJ</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> mb, <a href="BUILT_IN-types-integer.shtml">integer</a> col, <a href="BUILT_IN-types-integer.shtml">integer</a> row, <a href="BUILT_IN-types-string.shtml">string</a> iconFileName<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardSetItemsIcon">MultiboardSetItemsIcon</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb, <a href="BUILT_IN-types-string.shtml">string</a> iconPath<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardSetItemsStyle">MultiboardSetItemsStyle</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showValues, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showIcons<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#MultiboardSetItemStyleBJ">MultiboardSetItemStyleBJ</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> mb, <a href="BUILT_IN-types-integer.shtml">integer</a> col, <a href="BUILT_IN-types-integer.shtml">integer</a> row, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showValue, <a href="BUILT_IN-types-boolean.shtml">boolean</a> showIcon<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardSetItemsValue">MultiboardSetItemsValue</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb, <a href="BUILT_IN-types-string.shtml">string</a> value<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardSetItemsValueColor">MultiboardSetItemsValueColor</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> red, <a href="BUILT_IN-types-integer.shtml">integer</a> green, <a href="BUILT_IN-types-integer.shtml">integer</a> blue, <a href="BUILT_IN-types-integer.shtml">integer</a> alpha<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardSetItemsWidth">MultiboardSetItemsWidth</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb, <a href="BUILT_IN-types-real.shtml">real</a> width<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#MultiboardSetItemValueBJ">MultiboardSetItemValueBJ</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> mb, <a href="BUILT_IN-types-integer.shtml">integer</a> col, <a href="BUILT_IN-types-integer.shtml">integer</a> row, <a href="BUILT_IN-types-string.shtml">string</a> val<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#MultiboardSetItemWidthBJ">MultiboardSetItemWidthBJ</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> mb, <a href="BUILT_IN-types-integer.shtml">integer</a> col, <a href="BUILT_IN-types-integer.shtml">integer</a> row, <a href="BUILT_IN-types-real.shtml">real</a> width<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardSetRowCount">MultiboardSetRowCount</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> count<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardSetTitleText">MultiboardSetTitleText</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb, <a href="BUILT_IN-types-string.shtml">string</a> label<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MultiboardSetTitleTextColor">MultiboardSetTitleTextColor</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> lb, <a href="BUILT_IN-types-integer.shtml">integer</a> red, <a href="BUILT_IN-types-integer.shtml">integer</a> green, <a href="BUILT_IN-types-integer.shtml">integer</a> blue, <a href="BUILT_IN-types-integer.shtml">integer</a> alpha<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#MultiboardSetTitleTextColorBJ">MultiboardSetTitleTextColorBJ</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> mb, <a href="BUILT_IN-types-real.shtml">real</a> red, <a href="BUILT_IN-types-real.shtml">real</a> green, <a href="BUILT_IN-types-real.shtml">real</a> blue, <a href="BUILT_IN-types-real.shtml">real</a> transparency<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SaveMultiboardHandle">SaveMultiboardHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey, <a href="common_j-types-multiboard.shtml">multiboard</a> whichMultiboard<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SaveMultiboardHandleBJ">SaveMultiboardHandleBJ</a></strong> <strong>(</strong><a href="common_j-types-multiboard.shtml">multiboard</a> whichMultiboard, <a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

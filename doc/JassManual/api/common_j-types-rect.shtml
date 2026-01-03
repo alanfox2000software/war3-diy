@@ -1,0 +1,210 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type rect</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type rect</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> <a href="common_j-types-agent.shtml">agent</a> <strong>&gt;</strong> rect</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#22">22</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">rect</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf">
+<p><a href="Blizzard_j-variables.shtml">Blizzard.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#faffbf"></td><td bgcolor="#faffbf">
+<strong><a href="Blizzard_j-variables.shtml#bj_isUnitGroupInRectRect">bj_isUnitGroupInRectRect</a>,
+<a href="Blizzard_j-variables.shtml#bj_mapInitialCameraBounds">bj_mapInitialCameraBounds</a>,
+<a href="Blizzard_j-variables.shtml#bj_mapInitialPlayableArea">bj_mapInitialPlayableArea</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">rect</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetCameraBoundsMapRect">GetCameraBoundsMapRect</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-rect.shtml">rect</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetCurrentCameraBoundsMapRectBJ">GetCurrentCameraBoundsMapRectBJ</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-rect.shtml">rect</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetEntireMapRect">GetEntireMapRect</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-rect.shtml">rect</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetPlayableMapRect">GetPlayableMapRect</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-rect.shtml">rect</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetRectFromCircleBJ">GetRectFromCircleBJ</a></strong> <strong>(</strong><a href="common_j-types-location.shtml">location</a> center, <a href="BUILT_IN-types-real.shtml">real</a> radius<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-rect.shtml">rect</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetWorldBounds">GetWorldBounds</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-rect.shtml">rect</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LoadRectHandle">LoadRectHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-rect.shtml">rect</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LoadRectHandleBJ">LoadRectHandleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-rect.shtml">rect</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#OffsetRectBJ">OffsetRectBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="BUILT_IN-types-real.shtml">real</a> dx, <a href="BUILT_IN-types-real.shtml">real</a> dy<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-rect.shtml">rect</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#Rect">Rect</a></strong> <strong>(</strong><a href="BUILT_IN-types-real.shtml">real</a> minx, <a href="BUILT_IN-types-real.shtml">real</a> miny, <a href="BUILT_IN-types-real.shtml">real</a> maxx, <a href="BUILT_IN-types-real.shtml">real</a> maxy<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-rect.shtml">rect</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RectFromCenterSizeBJ">RectFromCenterSizeBJ</a></strong> <strong>(</strong><a href="common_j-types-location.shtml">location</a> center, <a href="BUILT_IN-types-real.shtml">real</a> width, <a href="BUILT_IN-types-real.shtml">real</a> height<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-rect.shtml">rect</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#RectFromLoc">RectFromLoc</a></strong> <strong>(</strong><a href="common_j-types-location.shtml">location</a> min, <a href="common_j-types-location.shtml">location</a> max<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-rect.shtml">rect</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">rect</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#AddWeatherEffect">AddWeatherEffect</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> where, <a href="BUILT_IN-types-integer.shtml">integer</a> effectID<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-weathereffect.shtml">weathereffect</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#AddWeatherEffectSaveLast">AddWeatherEffectSaveLast</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> where, <a href="BUILT_IN-types-integer.shtml">integer</a> effectID<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-weathereffect.shtml">weathereffect</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CompareRectsBJ">CompareRectsBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> A, <a href="common_j-types-rect.shtml">rect</a> B<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CompareRectsBJ">CompareRectsBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> A, <a href="common_j-types-rect.shtml">rect</a> B<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateFogModifierRect">CreateFogModifierRect</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> forWhichPlayer, <a href="common_j-types-fogstate.shtml">fogstate</a> whichState, <a href="common_j-types-rect.shtml">rect</a> where, <a href="BUILT_IN-types-boolean.shtml">boolean</a> useSharedVision, <a href="BUILT_IN-types-boolean.shtml">boolean</a> afterUnits<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-fogmodifier.shtml">fogmodifier</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CreateFogModifierRectBJ">CreateFogModifierRectBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> enabled, <a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-fogstate.shtml">fogstate</a> whichFogState, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-fogmodifier.shtml">fogmodifier</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#CreateFogModifierRectSimple">CreateFogModifierRectSimple</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-fogstate.shtml">fogstate</a> whichFogState, <a href="common_j-types-rect.shtml">rect</a> r, <a href="BUILT_IN-types-boolean.shtml">boolean</a> afterUnits<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-fogmodifier.shtml">fogmodifier</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#EnumDestructablesInRect">EnumDestructablesInRect</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter, <a href="BUILT_IN-types-code.shtml">code</a> actionFunc<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#EnumDestructablesInRectAll">EnumDestructablesInRectAll</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="BUILT_IN-types-code.shtml">code</a> actionFunc<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#EnumItemsInRect">EnumItemsInRect</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter, <a href="BUILT_IN-types-code.shtml">code</a> actionFunc<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#EnumItemsInRectBJ">EnumItemsInRectBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="BUILT_IN-types-code.shtml">code</a> actionFunc<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetRandomLocInRect">GetRandomLocInRect</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> whichRect<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-location.shtml">location</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetRectCenter">GetRectCenter</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> whichRect<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-location.shtml">location</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetRectCenterX">GetRectCenterX</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> whichRect<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetRectCenterY">GetRectCenterY</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> whichRect<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetRectHeightBJ">GetRectHeightBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetRectMaxX">GetRectMaxX</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> whichRect<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetRectMaxY">GetRectMaxY</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> whichRect<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetRectMinX">GetRectMinX</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> whichRect<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetRectMinY">GetRectMinY</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> whichRect<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetRectWidthBJ">GetRectWidthBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetUnitsInRectAll">GetUnitsInRectAll</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-group.shtml">group</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetUnitsInRectMatching">GetUnitsInRectMatching</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-group.shtml">group</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetUnitsInRectOfPlayer">GetUnitsInRectOfPlayer</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-player.shtml">player</a> whichPlayer<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-group.shtml">group</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GroupEnumUnitsInRect">GroupEnumUnitsInRect</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GroupEnumUnitsInRectCounted">GroupEnumUnitsInRectCounted</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> whichGroup, <a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter, <a href="BUILT_IN-types-integer.shtml">integer</a> countLimit<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#IsUnitGroupInRectBJ">IsUnitGroupInRectBJ</a></strong> <strong>(</strong><a href="common_j-types-group.shtml">group</a> g, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#MeleeGetLocWithinRect">MeleeGetLocWithinRect</a></strong> <strong>(</strong><a href="common_j-types-location.shtml">location</a> src, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-location.shtml">location</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MoveRectTo">MoveRectTo</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> whichRect, <a href="BUILT_IN-types-real.shtml">real</a> newCenterX, <a href="BUILT_IN-types-real.shtml">real</a> newCenterY<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#MoveRectToLoc">MoveRectToLoc</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> whichRect, <a href="common_j-types-location.shtml">location</a> newCenterLoc<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#NudgeObjectsInRect">NudgeObjectsInRect</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> nudgeArea<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#OffsetRectBJ">OffsetRectBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="BUILT_IN-types-real.shtml">real</a> dx, <a href="BUILT_IN-types-real.shtml">real</a> dy<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-rect.shtml">rect</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RandomDestructableInRectBJ">RandomDestructableInRectBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RandomDestructableInRectSimpleBJ">RandomDestructableInRectSimpleBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-destructable.shtml">destructable</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RandomItemInRectBJ">RandomItemInRectBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-boolexpr.shtml">boolexpr</a> filter<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RandomItemInRectSimpleBJ">RandomItemInRectSimpleBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-item.shtml">item</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RectContainsCoords">RectContainsCoords</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RectContainsItem">RectContainsItem</a></strong> <strong>(</strong><a href="common_j-types-item.shtml">item</a> whichItem, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RectContainsLoc">RectContainsLoc</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-location.shtml">location</a> loc<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#RectContainsUnit">RectContainsUnit</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="common_j-types-unit.shtml">unit</a> whichUnit<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#RegionAddRect">RegionAddRect</a></strong> <strong>(</strong><a href="common_j-types-region.shtml">region</a> whichRegion, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#RegionClearRect">RegionClearRect</a></strong> <strong>(</strong><a href="common_j-types-region.shtml">region</a> whichRegion, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#RemoveRect">RemoveRect</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> whichRect<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SaveRectHandle">SaveRectHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey, <a href="common_j-types-rect.shtml">rect</a> whichRect<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SaveRectHandleBJ">SaveRectHandleBJ</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> whichRect, <a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetBlightRect">SetBlightRect</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-rect.shtml">rect</a> r, <a href="BUILT_IN-types-boolean.shtml">boolean</a> addBlight<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetBlightRectBJ">SetBlightRectBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> addBlight, <a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetCameraBoundsToRect">SetCameraBoundsToRect</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetCameraBoundsToRectForPlayerBJ">SetCameraBoundsToRectForPlayerBJ</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetDoodadAnimationRect">SetDoodadAnimationRect</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> r, <a href="BUILT_IN-types-integer.shtml">integer</a> doodadID, <a href="BUILT_IN-types-string.shtml">string</a> animName, <a href="BUILT_IN-types-boolean.shtml">boolean</a> animRandom<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetDoodadAnimationRectBJ">SetDoodadAnimationRectBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> animName, <a href="BUILT_IN-types-integer.shtml">integer</a> doodadID, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetFogStateRect">SetFogStateRect</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> forWhichPlayer, <a href="common_j-types-fogstate.shtml">fogstate</a> whichState, <a href="common_j-types-rect.shtml">rect</a> where, <a href="BUILT_IN-types-boolean.shtml">boolean</a> useSharedVision<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetRect">SetRect</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> whichRect, <a href="BUILT_IN-types-real.shtml">real</a> minx, <a href="BUILT_IN-types-real.shtml">real</a> miny, <a href="BUILT_IN-types-real.shtml">real</a> maxx, <a href="BUILT_IN-types-real.shtml">real</a> maxy<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetRectFromLoc">SetRectFromLoc</a></strong> <strong>(</strong><a href="common_j-types-rect.shtml">rect</a> whichRect, <a href="common_j-types-location.shtml">location</a> min, <a href="common_j-types-location.shtml">location</a> max<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetStackedSoundBJ">SetStackedSoundBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> add, <a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#TriggerRegisterDestDeathInRegionEvent">TriggerRegisterDestDeathInRegionEvent</a></strong> <strong>(</strong><a href="common_j-types-trigger.shtml">trigger</a> trig, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#TriggerRegisterEnterRectSimple">TriggerRegisterEnterRectSimple</a></strong> <strong>(</strong><a href="common_j-types-trigger.shtml">trigger</a> trig, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-event.shtml">event</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#TriggerRegisterLeaveRectSimple">TriggerRegisterLeaveRectSimple</a></strong> <strong>(</strong><a href="common_j-types-trigger.shtml">trigger</a> trig, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-event.shtml">event</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

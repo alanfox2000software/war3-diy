@@ -1,0 +1,491 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>YDLua引擎</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../favicon.svg">
+                        <link rel="shortcut icon" href="../favicon.png">
+                <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+                <link rel="stylesheet" href="../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 快速开始</a></li><li class="chapter-item expanded "><a href="../quick/struct.html"><strong aria-hidden="true">2.</strong> 项目结构</a></li><li class="chapter-item expanded "><a href="../quick/command.html"><strong aria-hidden="true">3.</strong> SDK命令指引</a></li><li class="chapter-item expanded "><a href="../quick/update.html"><strong aria-hidden="true">4.</strong> 更新日志</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 功能库</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../lib/api.html"><strong aria-hidden="true">5.1.</strong> API</a></li><li class="chapter-item expanded "><a href="../lib/attr.html"><strong aria-hidden="true">5.2.</strong> 属性 Attr</a></li><li class="chapter-item expanded "><a href="../lib/japi.html"><strong aria-hidden="true">5.3.</strong> JAPI</a></li><li class="chapter-item expanded "><a href="../lib/hslk1.html"><strong aria-hidden="true">5.4.</strong> Slk入门</a></li><li class="chapter-item expanded "><a href="../lib/hslk2.html"><strong aria-hidden="true">5.5.</strong> Slk进阶</a></li><li class="chapter-item expanded "><a href="../lib/hslk_f6.html"><strong aria-hidden="true">5.6.</strong> Slk原生物编字段</a></li><li class="chapter-item expanded "><a href="../lib/hslk_misc.html"><strong aria-hidden="true">5.7.</strong> Slk与MISC数据</a></li><li class="chapter-item expanded "><a href="../lib/sync.html"><strong aria-hidden="true">5.8.</strong> Sync同步</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 例子</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../example/leaderBoard.html"><strong aria-hidden="true">6.1.</strong> 使用排行榜</a></li><li class="chapter-item expanded "><a href="../example/multiBoard.html"><strong aria-hidden="true">6.2.</strong> 使用多面板</a></li><li class="chapter-item expanded "><a href="../example/dialog.html"><strong aria-hidden="true">6.3.</strong> 难度选择对话框</a></li><li class="chapter-item expanded "><a href="../example/pickHero.html"><strong aria-hidden="true">6.4.</strong> 常见两种选英雄</a></li><li class="chapter-item expanded "><a href="../example/attack.html"><strong aria-hidden="true">6.5.</strong> 简单刷兵</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> 其他学习</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../other/jetbrain.html"><strong aria-hidden="true">7.1.</strong> Jetbrain设置</a></li><li class="chapter-item expanded "><a href="../other/q_a.html"><strong aria-hidden="true">7.2.</strong> 询问的技巧</a></li><li class="chapter-item expanded "><a href="../other/dz.html"><strong aria-hidden="true">7.3.</strong> 平台上线须知</a></li><li class="chapter-item expanded "><a href="../other/war3_tec.html"><strong aria-hidden="true">7.4.</strong> 魔兽作图小技巧</a></li><li class="chapter-item expanded "><a href="../other/war3_terrainArt.html"><strong aria-hidden="true">7.5.</strong> 魔兽地形贴图路径</a></li><li class="chapter-item expanded "><a href="../other/lua_engine.html" class="active"><strong aria-hidden="true">7.6.</strong> YDLua引擎</a></li><li class="chapter-item expanded "><a href="../other/ui_fdf.html"><strong aria-hidden="true">7.7.</strong> UI &amp; FDF</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> 小小专栏</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../xxqq/BV1nV411J7FB.html"><strong aria-hidden="true">8.1.</strong> 基础指令介绍</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1TK4y1Z7eB.html"><strong aria-hidden="true">8.2.</strong> hslk高级用法演示1</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1M64y117sB.html"><strong aria-hidden="true">8.3.</strong> hslk高级用法演示2</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1ZV411J7JJ.html"><strong aria-hidden="true">8.4.</strong> hslk高级用法演示3</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1iv411L7CP.html"><strong aria-hidden="true">8.5.</strong> UI之sync演示</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1Hy4y1s7cj.html"><strong aria-hidden="true">8.6.</strong> 构建酒馆与小地图UI显示头像</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1Lh411v7pR.html"><strong aria-hidden="true">8.7.</strong> 伤害排行榜</a></li><li class="chapter-item expanded "><a href="../xxqq/upscale.html"><strong aria-hidden="true">8.8.</strong> 高端演示</a></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                                                <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="ydwe-lua引擎使用说明"><a class="header" href="#ydwe-lua引擎使用说明">ydwe lua引擎使用说明</a></h2>
+<p><a href="https://github.com/actboy168/jass2lua/edit/master/lua-engine.md">来源 github/actboy168/jass2lua</a></p>
+<h3 id="简介"><a class="header" href="#简介">简介</a></h3>
+<p>ydwe lua引擎(以下简称lua引擎)是一个嵌入到《魔兽争霸III》(以下简称魔兽)中的一个插件，它可以让魔兽可以执行lua并且调用魔兽的导出函数(在common.j内定义的函数)
+，就像使用jass那样。本说明假定你已经掌握了jass和lua的相关语法，有关语法的问题不再另行解释。</p>
+<h3 id="入口"><a class="header" href="#入口">入口</a></h3>
+<p>在jass内调用 <code>call Cheat(&quot;exec-lua: hello&quot;)</code>，这等价于在lua里调用了 <code>require 'hello'</code> 。lua引擎已经把地图内的文件加载到搜索路径，所以地图内的hello.lua将会得到执行。</p>
+<h3 id="lua引擎对标准lua的修改"><a class="header" href="#lua引擎对标准lua的修改">lua引擎对标准lua的修改</a></h3>
+<p>为了适合在魔兽内使用lua引擎对lua略有修改。</p>
+<ol>
+<li>math.randomseed改为使用jass函数SetRandomSeed实现。</li>
+<li>math.random改为使用jass函数GetRandomReal实现。</li>
+<li>table元素随机化种子依赖于魔兽内部的随机种子。</li>
+<li>屏蔽了部分被认为不安全的函数</li>
+</ol>
+<h3 id="内置库"><a class="header" href="#内置库">内置库</a></h3>
+<p>lua引擎一共有12个内置库，可以通过&quot;require '库名'&quot;调用。</p>
+<ul>
+<li>jass.common</li>
+<li>jass.ai</li>
+<li>jass.globals</li>
+<li>jass.japi</li>
+<li>jass.hook</li>
+<li>jass.runtime</li>
+<li>jass.slk</li>
+<li>jass.console</li>
+<li>jass.debug</li>
+<li>jass.log</li>
+<li>jass.message</li>
+<li>jass.bignum</li>
+</ul>
+<h3 id="jasscommon"><a class="header" href="#jasscommon">jass.common</a></h3>
+<p>jass.common库包含common.j内注册的所有函数。 （不包括BJ）</p>
+<pre><code class="language-lua">	local jass = require 'jass.common'
+	print(jass.GetHandleId(jass.Player(0)))
+</code></pre>
+<h3 id="jassai"><a class="header" href="#jassai">jass.ai</a></h3>
+<p>jass.ai库包含common.ai内注册的所有函数。</p>
+<pre><code class="language-lua">	local jass = require 'jass.common'
+	local ai = require 'jass.ai'
+	print(ai.UnitAlive(jass.GetTriggerUnit()))
+</code></pre>
+<h3 id="jassglobals"><a class="header" href="#jassglobals">jass.globals</a></h3>
+<p>jass.globals库可以让你访问到jass内的全局变量。</p>
+<blockquote>
+<p>你可以使用此库访问预设在大地图的对象。</p>
+</blockquote>
+<pre><code class="language-lua">	local cg = require 'jass.globals'
+    print(cg.udg_i) --获取jass中定义的i整数
+</code></pre>
+<h3 id="jassjapi"><a class="header" href="#jassjapi">jass.japi</a></h3>
+<p>jass.japi库当前已经注册的所有japi函数。（包含dz函数）</p>
+<pre><code class="language-lua">	local jass = require 'jass.common'
+	local japi = require 'jass.japi'
+	japi.EXDisplayChat(jass.Player(0), 0, &quot;Hello!&quot;)
+</code></pre>
+<p>japi函数不同环境下可能会略有不同，你可以通过pairs遍历当前的所有japi函数</p>
+<pre><code class="language-lua">	for k, v in pairs(require 'jass.japi') do
+		print(k, v)
+	end
+</code></pre>
+<h3 id="jasshook"><a class="header" href="#jasshook">jass.hook</a></h3>
+<p>jass.hook库可以对common.j内注册的函数下钩子。注：jass.common库不会受到影响。</p>
+<p>同时，为了避免jass和lua之间传递浮点数时产生误差，通过jass.hook传递到lua中的浮点数，并不是number类型，而是userdata。当你需要<strong>精确</strong>地操纵浮点数时，也请注意这点。</p>
+<pre><code class="language-lua">	local hook = require 'jass.hook'
+	function hook.CreateUnit(pid, uid, x, y, face, realCreateUnit)
+		-- 当jass内调用CreateUnit时，就会被执行
+		print('CreateUnit')
+		print(type(x))
+		return realCreateUnit(pid, uid, x, y, face)
+	end
+</code></pre>
+<h3 id="jassslk"><a class="header" href="#jassslk">jass.slk</a></h3>
+<p>jass.slk库可以在地图运行时读取地图内的slk/w3*文件。</p>
+<pre><code class="language-lua">	local slk = require 'jass.slk'
+	print(slk.ability.AHbz.Name)
+</code></pre>
+<p>你也可以遍历一个表或者一个物体（不建议方式）</p>
+<pre><code class="language-lua">	local slk = require 'jass.slk'
+	for k, v in pairs(slk.ability) do
+		print(k, v)
+	end
+	for k, v in pairs(slk.ability.AHbz) do
+		print(k, v)
+	end
+</code></pre>
+<p>slk包含</p>
+<ul>
+<li>unit</li>
+<li>item</li>
+<li>destructable</li>
+<li>doodad</li>
+<li>ability</li>
+<li>buff</li>
+<li>upgrade</li>
+<li>misc</li>
+</ul>
+<p>与你物体编辑器中的项目一一对应。</p>
+<p>获取数据时使用的索引你可以在物体编辑器中通过Ctrl+D来查询到</p>
+<p>注意，当访问正确时返回值永远是字符串。如果你获取的是某个单位的生命值，你可能需要使用tonumber来进行转换。当访问不正确时将返回nil。</p>
+<h3 id="jassruntime"><a class="header" href="#jassruntime">jass.runtime</a></h3>
+<h4 id="jassruntime库可以在地图运行时获取lua引擎的信息或修改lua引擎的部分配置"><a class="header" href="#jassruntime库可以在地图运行时获取lua引擎的信息或修改lua引擎的部分配置">jass.runtime库可以在地图运行时获取lua引擎的信息或修改lua引擎的部分配置。</a></h4>
+<pre><code class="language-lua">	local runtime = require 'jass.runtime'
+</code></pre>
+<h5 id="runtimeconsole默认为false"><a class="header" href="#runtimeconsole默认为false">runtime.console(默认为false)</a></h5>
+<p>赋值为true后会打开一个cmd窗口，print与console.write函数可以输出到这里</p>
+<pre><code class="language-lua">	runtime.console = true
+</code></pre>
+<h5 id="runtimeversion"><a class="header" href="#runtimeversion">runtime.version</a></h5>
+<p>返回当前lua引擎的版本号</p>
+<pre><code class="language-lua">	print(runtime.version)
+</code></pre>
+<h5 id="runtimeerror_handle"><a class="header" href="#runtimeerror_handle">runtime.error_handle</a></h5>
+<p>当你的lua脚本出现错误时将会调用此函数。</p>
+<p>runtime.error_handle有一个默认值，等价于以下函数</p>
+<pre><code class="language-lua">	runtime.error_handle = function(msg)
+		print(&quot;Error: &quot;, msg, &quot;\n&quot;)
+	end
+</code></pre>
+<p>你也可以让它输出更多的信息，比如输出错误时的调用栈</p>
+<pre><code class="language-lua">	runtime.error_handle = function(msg)
+		print(&quot;---------------------------------------&quot;)
+		print(&quot;              LUA ERROR!!              &quot;)
+		print(&quot;---------------------------------------&quot;)
+		print(tostring(msg) .. &quot;\n&quot;)
+		print(debug.traceback())
+		print(&quot;---------------------------------------&quot;)
+	end
+</code></pre>
+<p>注意，注册此函数后lua脚本的效率会降低(即使并没有发生错误)。</p>
+<h5 id="runtimehandle_level默认为0"><a class="header" href="#runtimehandle_level默认为0">runtime.handle_level(默认为0)</a></h5>
+<p>lua引擎处理的handle的安全等级，有效值为0~2，注，等级越高，效率越低，安全性越高、</p>
+<h6 id="0-handle直接使用numberjass无法了解你在lua中对这个handle的引用情况也不会通过增加引用计数来保护这个handle"><a class="header" href="#0-handle直接使用numberjass无法了解你在lua中对这个handle的引用情况也不会通过增加引用计数来保护这个handle">0: handle直接使用number，jass无法了解你在lua中对这个handle的引用情况，也不会通过增加引用计数来保护这个handle</a></h6>
+<pre><code class="language-lua">	local t = jass.CreateTimer()
+	print(t) -- 1048000
+	type(t) -- &quot;number&quot;
+</code></pre>
+<h6 id="1-handle封装在lightuserdata中保证handle不能和整数相互转换同样不支持引用计数"><a class="header" href="#1-handle封装在lightuserdata中保证handle不能和整数相互转换同样不支持引用计数">1: handle封装在lightuserdata中，保证handle不能和整数相互转换，同样不支持引用计数</a></h6>
+<pre><code class="language-lua">	local t = jass.CreateTimer()
+	print(t) -- &quot;handle: 0x10005D&quot;
+	type(t) -- &quot;userdata&quot;
+	jass.TimerStart(t, 1, false, 0) -- ok
+</code></pre>
+<pre><code class="language-lua">	local t = jass.CreateTimer()
+	local h1 = jass.CreateTimer()
+	jass.DestroyTimer(h1)
+	jass.TimerStart(t, 1, false,
+		function()
+			local h2 = jass.CreateTimer()
+			print(h1) -- &quot;handle: 0x10005E&quot;
+			print(h2) -- &quot;handle: 0x10005E&quot;
+		end
+	)
+</code></pre>
+<h6 id="2-handle封装在userdata中lua持有该handle时将增加handle的引用计数lua释放handle时会释放handle的引用计数"><a class="header" href="#2-handle封装在userdata中lua持有该handle时将增加handle的引用计数lua释放handle时会释放handle的引用计数">2: handle封装在userdata中，lua持有该handle时将增加handle的引用计数。lua释放handle时会释放handle的引用计数。</a></h6>
+<pre><code class="language-lua">	local t = jass.CreateTimer()
+	local h1 = jass.CreateTimer()
+	jass.DestroyTimer(h1)
+	jass.TimerStart(t, 1, false,
+		function()
+			local h2 = jass.CreateTimer()
+			print(h1) -- &quot;handle: 0x10005E&quot;
+			print(h2) -- &quot;handle: 0x10005F&quot;
+		end
+	)
+</code></pre>
+<h5 id="runtimesleep默认为false"><a class="header" href="#runtimesleep默认为false">runtime.sleep(默认为false)</a></h5>
+<p>common.j中包含sleep操作的函数有4个，TriggerSleepAction/TriggerSyncReady/TriggerWaitForSound/SyncSelections。当此项为false时，lua引擎会忽略这4个函数的调用，并给予运行时警告。当此项为true时，这4个函数将会得到正确的执行。</p>
+<p>但请注意此项为true时将降低lua引擎的运行效率，即使你没有使用这4个函数。</p>
+<pre><code class="language-lua">	local trg = jass.CreateTrigger()
+	local a = 1
+	jass.TriggerAddAction(trg, function()
+		jass.TriggerSleepAction(0.2)
+		print(a) -- 2
+	end)
+	jass.TriggerExecute(trg)
+	a = 2
+</code></pre>
+<h5 id="runtimecatch_crash默认为true"><a class="header" href="#runtimecatch_crash默认为true">runtime.catch_crash(默认为true)</a></h5>
+<p>调用jass.xxx/japi.xxx发生崩溃时，会生产一个lua错误，并忽略这个崩溃。你可以注册jass.runtime.error_handle来获得这个错误。注：开启此项会略微增加运行时消耗（即使没有发生错误）。</p>
+<h5 id="runtimedebugger"><a class="header" href="#runtimedebugger">runtime.debugger</a></h5>
+<p>启动调试器并监听指定端口。需要使用<code>VSCode</code>并安装<a href="https://marketplace.visualstudio.com/items?itemName=actboy168.lua-debug">Lua Debug</a>。</p>
+<pre><code class="language-lua">	runtime.debugger = 4279
+</code></pre>
+<h3 id="jassconsole"><a class="header" href="#jassconsole">jass.console</a></h3>
+<h4 id="jassconsole与控制台相关"><a class="header" href="#jassconsole与控制台相关">jass.console与控制台相关</a></h4>
+<h5 id="consoleenable默认为false"><a class="header" href="#consoleenable默认为false">console.enable(默认为false)</a></h5>
+<p>赋值为true后会打开一个cmd窗口，print与console.write函数可以输出到这里</p>
+<pre><code class="language-lua">	console.enable = true
+</code></pre>
+<h5 id="consolewrite"><a class="header" href="#consolewrite">console.write</a></h5>
+<p>将utf8编码的字符串转化为ansi编码后输出到cmd窗口中，如果你需要输出魔兽中的中文，请使用该函数而不是print</p>
+<h5 id="consoleread"><a class="header" href="#consoleread">console.read</a></h5>
+<p>将控制台中的输入传入魔兽中(会自动转换编码)</p>
+<p>首次调用console.read后将允许用户在控制台输入，输入完成后按回车键提交输入。</p>
+<p>用户提交完成后，传入一个函数f来调用console.read，将会调用函数f，并将用户的输入作为参数传入(已转换为utf8编码)。</p>
+<p>推荐的做法是每0.1秒运行一次console.read，见下面的例子：</p>
+<pre><code class="language-lua">	local jass    = require 'jass.common'
+	local console = require 'jass.console'
+
+	console.write('测试开始...')
+
+	--开启计时器,每0.1秒检查输入
+	jass.TimerStart(jass.CreateTimer(), 0.1, true,
+		function()
+
+			--检查CMD窗口中的用户输入,如果用户有提交了的输入,则回调函数(按回车键提交输入).否则不做任何动作
+			console.read(
+				function(str)
+					--参数即为用户的输入.需要注意的是这个函数调用是不同步的(毕竟其他玩家不知道你输入了什么)
+					jass.DisplayTimedTextToPlayer(jass.Player(0), 0, 0, 60, '你在控制台中输入了:' .. str)
+				end
+			)
+		end
+	)
+</code></pre>
+<p>需要注意的是控制台输入是不同步的。</p>
+<h3 id="jassdebug"><a class="header" href="#jassdebug">jass.debug</a></h3>
+<p>jass.debug库能帮助你更深入地剖析lua引擎的内部机制。</p>
+<ul>
+<li>functiondef jass.common或者jass.japi函数的定义</li>
+</ul>
+<pre><code class="language-lua">	local jass = require 'jass.common'
+	local dbg = require 'jass.debug'
+	print(table.unpack(dbg.functiondef(jass.GetUnitX)))
+</code></pre>
+<ul>
+<li>
+<p>globaldef jass.globals内值的定义</p>
+</li>
+<li>
+<p>handledef handle对应对象的内部定义</p>
+</li>
+<li>
+<p>currentpos 当前jass执行到的位置</p>
+</li>
+<li>
+<p>handlemax jass虚拟机当前最大的handle</p>
+</li>
+<li>
+<p>handlecount jass虚拟机当前的handle数</p>
+</li>
+<li>
+<p>h2i/i2h handle和integer的转换，当你runtime.handle_level不是0时，你可能会需要它</p>
+</li>
+<li>
+<p>handle_ref 增加handle的引用</p>
+</li>
+<li>
+<p>handle_unref 减少handle的引用</p>
+</li>
+<li>
+<p><del>gchash</del>（已废弃） 指定一张table的gchash，gchash会决定了在其他table中这个table的排序次序
+在默认的情况下，lua对table的排序次序是由随机数决定的，不同玩家的lua生成的随机数不一致，所以下面的代码在不同的玩家上执行的次序是不一致的，这可能会引起不同步掉线</p>
+</li>
+</ul>
+<h3 id="jasslog"><a class="header" href="#jasslog">jass.log</a></h3>
+<p>日志库</p>
+<ul>
+<li>path 日志的输出路径</li>
+<li>level 日志的等级，指定等级以上的日志才会输出</li>
+<li>日志有6个等级 trace、debug、info、warn、error、fatal</li>
+</ul>
+<pre><code class="language-lua">	local log = require 'jass.log'
+	log.info('这是一行日志')
+	log.error('这是一行', '日志')
+</code></pre>
+<h3 id="jassmessage"><a class="header" href="#jassmessage">jass.message</a></h3>
+<ul>
+<li>keyboard 一张表，魔兽的键盘码</li>
+<li>mouse 本地玩家的鼠标坐标(游戏坐标)</li>
+<li>button 本地玩家技能按钮的状态</li>
+<li>hook 魔兽的消息回调，可以获得部分鼠标和键盘消息</li>
+<li>selection 获得本地玩家当前选中单位</li>
+<li>order_immediate 发布本地命令，无目标</li>
+<li>order_point 发布本地命令，点目标</li>
+<li>order_target 发布本地命令，单位目标</li>
+<li>order_enable_debug 开启后，会在控制台打印当前的本地命令，调试用</li>
+</ul>
+<h3 id="jassbignum"><a class="header" href="#jassbignum">jass.bignum</a></h3>
+<p>大数库</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../other/war3_terrainArt.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="../other/ui_fdf.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../other/war3_terrainArt.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="../other/ui_fdf.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+                <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>

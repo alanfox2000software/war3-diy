@@ -1,0 +1,45 @@
+
+<html>
+<head>
+<title>JASS Manual: Miscellaneous</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+
+
+<p><strong>Miscellaneous</strong>
+
+<p><strong>Comments</strong>
+
+<p>JASS Comments are identical to C++ and Java style line comments. Any
+text following a <code>//</code> is ignored until the end of the line.
+For example,
+
+<pre class="source">
+<span class="comment">// This is a comment</span>
+<span class="keyword">function</span> my_function <span class="keyword">takes</span> <span class="type">nothing</span> <span class="keyword">returns</span> <span class="type">nothing</span> <span class="comment">// This is a comment</span>
+<span class="keyword">     local</span> <span class="type">integer</span> foo <span class="comment">// This is a comment</span>
+     <span class="comment">// This is a comment</span>
+<span class="keyword">     set</span> foo = 10 <span class="comment">// This is a comment</span>
+<span class="keyword">endfunction</span>
+</pre>
+
+<p><strong>White Space</strong>
+
+<p>Except for newlines, all whitespace is ignored. In other words, the
+level of indentation of declarations and statements and number of spaces/tabs
+between words is irrelevant. 
+In addition, extra newlines are allowed anywhere (i.e., you can have empty
+blank lines).
+
+<p>However, each function signature and statement must span only one line. 
+There is no way to continue a statement on a second line. This may have
+been violated in some places in this manual to make code more readable, but
+should be maintained if you want a correct script.
+
+
+
+</body>
+</html>

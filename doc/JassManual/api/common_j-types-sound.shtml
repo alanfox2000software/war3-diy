@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - Type sound</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">Type sound</a></strong>
+<p align="center"><a href="#variables">Global Variables</a> | <a href="#ret">Functions That Return</a> | <a href="#params">Functions That Take</a>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#dddddd"><strong>Ancestor Types:</strong></td><td width=80% bgcolor="#dddddd"><a href="BUILT_IN-types-handle.shtml">handle</a> <strong>&gt;</strong> <a href="common_j-types-agent.shtml">agent</a> <strong>&gt;</strong> sound</td></tr><tr><td bgcolor="#dddddd"><strong>Children Types:</strong></td><td bgcolor="#dddddd">none</td></tr>
+<tr><td bgcolor="#dddddd"><strong>Location:</strong></td><td bgcolor="#dddddd">common.j, line <a href="common_j-source.shtml#24">24</a></td></tr>
+</table>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="variables">Global variables of type <span class="hi">sound</span>:</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#faffbf">
+<p><a href="Blizzard_j-variables.shtml">Blizzard.j</a>:<br>
+<table width=100% border=0 cellpadding=0 cellspacing=0>
+<tr><td width=20 bgcolor="#faffbf"></td><td bgcolor="#faffbf">
+<strong><a href="Blizzard_j-variables.shtml#bj_cineSceneLastSound">bj_cineSceneLastSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_dawnSound">bj_dawnSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_dayAmbientSound">bj_dayAmbientSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_defeatDialogSound">bj_defeatDialogSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_duskSound">bj_duskSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_lastPlayedSound">bj_lastPlayedSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_nightAmbientSound">bj_nightAmbientSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_questCompletedSound">bj_questCompletedSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_questDiscoveredSound">bj_questDiscoveredSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_questFailedSound">bj_questFailedSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_questHintSound">bj_questHintSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_questItemAcquiredSound">bj_questItemAcquiredSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_questSecretSound">bj_questSecretSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_questUpdatedSound">bj_questUpdatedSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_questWarningSound">bj_questWarningSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_rescueSound">bj_rescueSound</a>,
+<a href="Blizzard_j-variables.shtml#bj_victoryDialogSound">bj_victoryDialogSound</a>
+</strong></td></tr></table>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="ret">Functions that return type <span class="hi">sound</span> (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateMIDISound">CreateMIDISound</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> soundLabel, <a href="BUILT_IN-types-integer.shtml">integer</a> fadeInRate, <a href="BUILT_IN-types-integer.shtml">integer</a> fadeOutRate<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-sound.shtml">sound</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateSound">CreateSound</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> fileName, <a href="BUILT_IN-types-boolean.shtml">boolean</a> looping, <a href="BUILT_IN-types-boolean.shtml">boolean</a> is3D, <a href="BUILT_IN-types-boolean.shtml">boolean</a> stopwhenoutofrange, <a href="BUILT_IN-types-integer.shtml">integer</a> fadeInRate, <a href="BUILT_IN-types-integer.shtml">integer</a> fadeOutRate, <a href="BUILT_IN-types-string.shtml">string</a> eaxSetting<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-sound.shtml">sound</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateSoundFilenameWithLabel">CreateSoundFilenameWithLabel</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> fileName, <a href="BUILT_IN-types-boolean.shtml">boolean</a> looping, <a href="BUILT_IN-types-boolean.shtml">boolean</a> is3D, <a href="BUILT_IN-types-boolean.shtml">boolean</a> stopwhenoutofrange, <a href="BUILT_IN-types-integer.shtml">integer</a> fadeInRate, <a href="BUILT_IN-types-integer.shtml">integer</a> fadeOutRate, <a href="BUILT_IN-types-string.shtml">string</a> SLKEntryName<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-sound.shtml">sound</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#CreateSoundFromLabel">CreateSoundFromLabel</a></strong> <strong>(</strong><a href="BUILT_IN-types-string.shtml">string</a> soundLabel, <a href="BUILT_IN-types-boolean.shtml">boolean</a> looping, <a href="BUILT_IN-types-boolean.shtml">boolean</a> is3D, <a href="BUILT_IN-types-boolean.shtml">boolean</a> stopwhenoutofrange, <a href="BUILT_IN-types-integer.shtml">integer</a> fadeInRate, <a href="BUILT_IN-types-integer.shtml">integer</a> fadeOutRate<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-sound.shtml">sound</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetLastPlayedSound">GetLastPlayedSound</a></strong> <strong>(</strong><strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-sound.shtml">sound</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#LoadSoundHandle">LoadSoundHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-sound.shtml">sound</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#LoadSoundHandleBJ">LoadSoundHandleBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="common_j-types-sound.shtml">sound</a>
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a><p>
+<table align="center" width="100%" 
+       cellspacing="0" cellpadding="0" border="0">
+<tr><td bgcolor="black" width="100%"><img src="/images/transparent1x1.gif" 
+                          width="1" height="1" 
+alt="------------------------------------------------------------"></td></tr>
+</table>
+<p>
+<strong><a name="params">Functions that take type <span class="hi">sound</span> as a parameter (</strong><span style="background-color: #7FEFE8; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_j-functions.shtml">common.j</a>, <span style="background-color: #AAFFAA; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="common_ai-functions.shtml">common.ai</a>, <span style="background-color: #faffbf; border: 1px solid #bbbbbb; font-size: 60%;">&nbsp;&nbsp&nbsp;&nbsp;</span> <a href="Blizzard_j-functions.shtml">Blizzard.j</a><strong>):</a></strong>
+<p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#AttachSoundToUnit">AttachSoundToUnit</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="common_j-types-unit.shtml">unit</a> whichUnit<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#AttachSoundToUnitBJ">AttachSoundToUnitBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="common_j-types-unit.shtml">unit</a> whichUnit<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#DoTransmissionBasicsXYBJ">DoTransmissionBasicsXYBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-integer.shtml">integer</a> unitId, <a href="common_j-types-playercolor.shtml">playercolor</a> color, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-string.shtml">string</a> unitName, <a href="BUILT_IN-types-string.shtml">string</a> message, <a href="BUILT_IN-types-real.shtml">real</a> duration<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetSoundDuration">GetSoundDuration</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-integer.shtml">integer</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetSoundDurationBJ">GetSoundDurationBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetSoundIsLoading">GetSoundIsLoading</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#GetSoundIsPlaying">GetSoundIsPlaying</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetSoundIsPlayingBJ">GetSoundIsPlayingBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#GetTransmissionDuration">GetTransmissionDuration</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-integer.shtml">integer</a> timeType, <a href="BUILT_IN-types-real.shtml">real</a> timeVal<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-real.shtml">real</a>
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#KillSoundWhenDone">KillSoundWhenDone</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#KillSoundWhenDoneBJ">KillSoundWhenDoneBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#PlaySoundAtPointBJ">PlaySoundAtPointBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> volumePercent, <a href="common_j-types-location.shtml">location</a> loc, <a href="BUILT_IN-types-real.shtml">real</a> z<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#PlaySoundBJ">PlaySoundBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#PlaySoundFromOffsetBJ">PlaySoundFromOffsetBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> volumePercent, <a href="BUILT_IN-types-real.shtml">real</a> startingOffset<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#PlaySoundOnUnitBJ">PlaySoundOnUnitBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> volumePercent, <a href="common_j-types-unit.shtml">unit</a> whichUnit<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#RegisterStackedSound">RegisterStackedSound</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-boolean.shtml">boolean</a> byPosition, <a href="BUILT_IN-types-real.shtml">real</a> rectwidth, <a href="BUILT_IN-types-real.shtml">real</a> rectheight<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SaveSoundHandle">SaveSoundHandle</a></strong> <strong>(</strong><a href="common_j-types-hashtable.shtml">hashtable</a> table, <a href="BUILT_IN-types-integer.shtml">integer</a> parentKey, <a href="BUILT_IN-types-integer.shtml">integer</a> childKey, <a href="common_j-types-sound.shtml">sound</a> whichSound<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SaveSoundHandleBJ">SaveSoundHandleBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> whichSound, <a href="BUILT_IN-types-integer.shtml">integer</a> key, <a href="BUILT_IN-types-integer.shtml">integer</a> missionKey, <a href="common_j-types-hashtable.shtml">hashtable</a> table<strong>)</strong> <span class="keyword">returns</span> <a href="BUILT_IN-types-boolean.shtml">boolean</a>
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetCinematicSceneBJ">SetCinematicSceneBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-integer.shtml">integer</a> portraitUnitId, <a href="common_j-types-playercolor.shtml">playercolor</a> color, <a href="BUILT_IN-types-string.shtml">string</a> speakerTitle, <a href="BUILT_IN-types-string.shtml">string</a> text, <a href="BUILT_IN-types-real.shtml">real</a> sceneDuration, <a href="BUILT_IN-types-real.shtml">real</a> voiceoverDuration<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetSoundChannel">SetSoundChannel</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-integer.shtml">integer</a> channel<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetSoundConeAngles">SetSoundConeAngles</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> inside, <a href="BUILT_IN-types-real.shtml">real</a> outside, <a href="BUILT_IN-types-integer.shtml">integer</a> outsideVolume<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetSoundConeAnglesBJ">SetSoundConeAnglesBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> inside, <a href="BUILT_IN-types-real.shtml">real</a> outside, <a href="BUILT_IN-types-real.shtml">real</a> outsideVolumePercent<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetSoundConeOrientation">SetSoundConeOrientation</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="BUILT_IN-types-real.shtml">real</a> z<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetSoundDistanceCutoff">SetSoundDistanceCutoff</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> cutoff<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetSoundDistanceCutoffBJ">SetSoundDistanceCutoffBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> cutoff<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetSoundDistances">SetSoundDistances</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> minDist, <a href="BUILT_IN-types-real.shtml">real</a> maxDist<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetSoundDuration">SetSoundDuration</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-integer.shtml">integer</a> duration<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetSoundOffsetBJ">SetSoundOffsetBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-real.shtml">real</a> newOffset, <a href="common_j-types-sound.shtml">sound</a> soundHandle<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetSoundParamsFromLabel">SetSoundParamsFromLabel</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-string.shtml">string</a> soundLabel<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetSoundPitch">SetSoundPitch</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> pitch<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetSoundPitchBJ">SetSoundPitchBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> pitch<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetSoundPlayPosition">SetSoundPlayPosition</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-integer.shtml">integer</a> millisecs<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetSoundPosition">SetSoundPosition</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="BUILT_IN-types-real.shtml">real</a> z<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetSoundPositionLocBJ">SetSoundPositionLocBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="common_j-types-location.shtml">location</a> loc, <a href="BUILT_IN-types-real.shtml">real</a> z<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetSoundVelocity">SetSoundVelocity</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> x, <a href="BUILT_IN-types-real.shtml">real</a> y, <a href="BUILT_IN-types-real.shtml">real</a> z<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#SetSoundVolume">SetSoundVolume</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-integer.shtml">integer</a> volume<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetSoundVolumeBJ">SetSoundVolumeBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> volumePercent<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#SetStackedSoundBJ">SetStackedSoundBJ</a></strong> <strong>(</strong><a href="BUILT_IN-types-boolean.shtml">boolean</a> add, <a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="common_j-types-rect.shtml">rect</a> r<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#StartSound">StartSound</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#StartSoundForPlayerBJ">StartSoundForPlayerBJ</a></strong> <strong>(</strong><a href="common_j-types-player.shtml">player</a> whichPlayer, <a href="common_j-types-sound.shtml">sound</a> soundHandle<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#StopSound">StopSound</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-boolean.shtml">boolean</a> killWhenDone, <a href="BUILT_IN-types-boolean.shtml">boolean</a> fadeOut<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#StopSoundBJ">StopSoundBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-boolean.shtml">boolean</a> fadeOut<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#TransmissionFromUnitTypeWithNameBJ">TransmissionFromUnitTypeWithNameBJ</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> toForce, <a href="common_j-types-player.shtml">player</a> fromPlayer, <a href="BUILT_IN-types-integer.shtml">integer</a> unitId, <a href="BUILT_IN-types-string.shtml">string</a> unitName, <a href="common_j-types-location.shtml">location</a> loc, <a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-string.shtml">string</a> message, <a href="BUILT_IN-types-integer.shtml">integer</a> timeType, <a href="BUILT_IN-types-real.shtml">real</a> timeVal, <a href="BUILT_IN-types-boolean.shtml">boolean</a> wait<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#TransmissionFromUnitWithNameBJ">TransmissionFromUnitWithNameBJ</a></strong> <strong>(</strong><a href="common_j-types-force.shtml">force</a> toForce, <a href="common_j-types-unit.shtml">unit</a> whichUnit, <a href="BUILT_IN-types-string.shtml">string</a> unitName, <a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-string.shtml">string</a> message, <a href="BUILT_IN-types-integer.shtml">integer</a> timeType, <a href="BUILT_IN-types-real.shtml">real</a> timeVal, <a href="BUILT_IN-types-boolean.shtml">boolean</a> wait<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#TriggerWaitForSound">TriggerWaitForSound</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> s, <a href="BUILT_IN-types-real.shtml">real</a> offset<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#7FEFE8"><span class="keyword">native</span> <strong><a href="common_j-functions.shtml#UnregisterStackedSound">UnregisterStackedSound</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-boolean.shtml">boolean</a> byPosition, <a href="BUILT_IN-types-real.shtml">real</a> rectwidth, <a href="BUILT_IN-types-real.shtml">real</a> rectheight<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#WaitForSoundBJ">WaitForSoundBJ</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-real.shtml">real</a> offset<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+<tr><td bgcolor="#faffbf"><span class="keyword">function</span> <strong><a href="Blizzard_j-functions.shtml#WaitTransmissionDuration">WaitTransmissionDuration</a></strong> <strong>(</strong><a href="common_j-types-sound.shtml">sound</a> soundHandle, <a href="BUILT_IN-types-integer.shtml">integer</a> timeType, <a href="BUILT_IN-types-real.shtml">real</a> timeVal<strong>)</strong> <span class="keyword">returns</span> nothing
+</td></tr>
+</table>
+<p align="right" class="small"><a href="#top">BACK TO TOP</a>
+
+</body>
+</html>

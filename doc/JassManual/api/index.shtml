@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - API Browser: Types</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">API Browser: Types</a></strong>
+<p>This page is an index of all the types declared in the standard library files. Each type page will attempt to tell you the functions and global variables that are relevant when managing objects of that type. Use the links above to browse variables and functions.
+<p><strong>Native Types:</strong><p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><th width=7% bgcolor="#dddddd">Line</th><th width=93% bgcolor="#dddddd">Name</th></tr>
+<tr><td bgcolor="aaffe0"></td><td bgcolor="aaffe0"><strong><a href="BUILT_IN-types-boolean.shtml">boolean</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"></td><td bgcolor="#f5f9d4"><strong><a href="BUILT_IN-types-code.shtml">code</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"></td><td bgcolor="aaffe0"><strong><a href="BUILT_IN-types-handle.shtml">handle</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"></td><td bgcolor="#f5f9d4"><strong><a href="BUILT_IN-types-integer.shtml">integer</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"></td><td bgcolor="aaffe0"><strong><a href="BUILT_IN-types-real.shtml">real</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"></td><td bgcolor="#f5f9d4"><strong><a href="BUILT_IN-types-string.shtml">string</a></strong></td></tr>
+</table>
+<p><strong>common.j:</strong><p>
+<table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><th width=7% bgcolor="#dddddd">Line</th><th width=93% bgcolor="#dddddd">Name</th></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#12">12</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-ability.shtml">ability</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#5">5</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-agent.shtml">agent</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#39">39</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-aidifficulty.shtml">aidifficulty</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#30">30</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-alliancetype.shtml">alliancetype</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#89">89</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-attacktype.shtml">attacktype</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#67">67</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-blendmode.shtml">blendmode</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#23">23</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-boolexpr.shtml">boolexpr</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#13">13</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-buff.shtml">buff</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#76">76</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-button.shtml">button</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#61">61</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-camerafield.shtml">camerafield</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#62">62</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-camerasetup.shtml">camerasetup</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#25">25</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-conditionfunc.shtml">conditionfunc</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#90">90</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-damagetype.shtml">damagetype</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#79">79</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-defeatcondition.shtml">defeatcondition</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#10">10</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-destructable.shtml">destructable</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#75">75</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-dialog.shtml">dialog</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#48">48</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-dialogevent.shtml">dialogevent</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#69">69</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-effect.shtml">effect</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#70">70</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-effecttype.shtml">effecttype</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#6">6</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-event.shtml">event</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#41">41</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-eventid.shtml">eventid</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#34">34</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-fgamestate.shtml">fgamestate</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#26">26</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-filterfunc.shtml">filterfunc</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#74">74</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-fogmodifier.shtml">fogmodifier</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#73">73</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-fogstate.shtml">fogstate</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#14">14</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-force.shtml">force</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#85">85</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-gamecache.shtml">gamecache</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#52">52</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-gamedifficulty.shtml">gamedifficulty</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#42">42</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-gameevent.shtml">gameevent</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#51">51</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-gamespeed.shtml">gamespeed</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#32">32</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-gamestate.shtml">gamestate</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#53">53</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-gametype.shtml">gametype</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#15">15</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-group.shtml">group</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#97">97</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-hashtable.shtml">hashtable</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#33">33</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-igamestate.shtml">igamestate</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#95">95</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-image.shtml">image</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#11">11</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-item.shtml">item</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#28">28</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-itempool.shtml">itempool</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#87">87</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-itemtype.shtml">itemtype</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#81">81</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-leaderboard.shtml">leaderboard</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#93">93</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-lightning.shtml">lightning</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#46">46</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-limitop.shtml">limitop</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#20">20</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-location.shtml">location</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#58">58</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-mapcontrol.shtml">mapcontrol</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#57">57</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-mapdensity.shtml">mapdensity</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#54">54</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-mapflag.shtml">mapflag</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#56">56</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-mapsetting.shtml">mapsetting</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#55">55</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-mapvisibility.shtml">mapvisibility</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#82">82</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-multiboard.shtml">multiboard</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#83">83</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-multiboarditem.shtml">multiboarditem</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#94">94</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-pathingtype.shtml">pathingtype</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#64">64</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-placement.shtml">placement</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#7">7</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-player.shtml">player</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#63">63</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-playercolor.shtml">playercolor</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#43">43</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-playerevent.shtml">playerevent</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#37">37</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-playergameresult.shtml">playergameresult</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#36">36</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-playerscore.shtml">playerscore</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#59">59</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-playerslotstate.shtml">playerslotstate</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#35">35</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-playerstate.shtml">playerstate</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#44">44</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-playerunitevent.shtml">playerunitevent</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#77">77</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-quest.shtml">quest</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#78">78</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-questitem.shtml">questitem</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#29">29</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-race.shtml">race</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#31">31</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-racepreference.shtml">racepreference</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#66">66</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-raritycontrol.shtml">raritycontrol</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#22">22</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-rect.shtml">rect</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#21">21</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-region.shtml">region</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#24">24</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-sound.shtml">sound</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#92">92</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-soundtype.shtml">soundtype</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#65">65</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-startlocprio.shtml">startlocprio</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#72">72</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-terraindeformation.shtml">terraindeformation</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#68">68</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-texmapflags.shtml">texmapflags</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#88">88</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-texttag.shtml">texttag</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#19">19</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-timer.shtml">timer</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#80">80</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-timerdialog.shtml">timerdialog</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#84">84</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-trackable.shtml">trackable</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#16">16</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-trigger.shtml">trigger</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#18">18</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-triggeraction.shtml">triggeraction</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#17">17</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-triggercondition.shtml">triggercondition</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#96">96</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-ubersplat.shtml">ubersplat</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#9">9</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-unit.shtml">unit</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#45">45</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-unitevent.shtml">unitevent</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#27">27</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-unitpool.shtml">unitpool</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#38">38</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-unitstate.shtml">unitstate</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#49">49</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-unittype.shtml">unittype</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#86">86</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-version.shtml">version</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#60">60</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-volumegroup.shtml">volumegroup</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#91">91</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-weapontype.shtml">weapontype</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#71">71</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-weathereffect.shtml">weathereffect</a></strong></td></tr>
+<tr><td bgcolor="#f5f9d4"><a href="common_j-source.shtml#8">8</a></td><td bgcolor="#f5f9d4"><strong><a href="common_j-types-widget.shtml">widget</a></strong></td></tr>
+<tr><td bgcolor="aaffe0"><a href="common_j-source.shtml#47">47</a></td><td bgcolor="aaffe0"><strong><a href="common_j-types-widgetevent.shtml">widgetevent</a></strong></td></tr>
+</table>
+
+
+</body>
+</html>

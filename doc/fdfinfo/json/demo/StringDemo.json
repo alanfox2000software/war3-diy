@@ -1,0 +1,254 @@
+[
+    {
+        "name": "ReplayPanelStringTemplate",
+        "file": "ReplayPanel.fdf"
+    },
+    {
+        "name": "ReplayVisionLabel",
+        "file": "ReplayPanel.fdf"
+    },
+    {
+        "name": "ReplayElapsedTimeLabel",
+        "file": "ReplayPanel.fdf"
+    },
+    {
+        "name": "ReplayElapsedTime",
+        "file": "ReplayPanel.fdf"
+    },
+    {
+        "name": "ReplaySpeedAtLabel",
+        "file": "ReplayPanel.fdf"
+    },
+    {
+        "name": "ReplaySpeedMultiplier",
+        "file": "ReplayPanel.fdf"
+    },
+    {
+        "name": "ReplaySpeedLabel",
+        "file": "ReplayPanel.fdf"
+    },
+    {
+        "name": "ReplayFogString",
+        "file": "ReplayPanel.fdf"
+    },
+    {
+        "name": "ResourceBarTextTemplate",
+        "file": "ResourceBar.fdf"
+    },
+    {
+        "name": "ResourceBarGoldText",
+        "file": "ResourceBar.fdf"
+    },
+    {
+        "name": "ResourceBarLumberText",
+        "file": "ResourceBar.fdf"
+    },
+    {
+        "name": "ResourceBarSupplyText",
+        "file": "ResourceBar.fdf"
+    },
+    {
+        "name": "ResourceBarUpkeepText",
+        "file": "ResourceBar.fdf"
+    },
+    {
+        "name": "UpperButtonBarButtonTextTemplate",
+        "file": "UpperButtonBar.fdf"
+    },
+    {
+        "name": "UpperButtonBarButtonDisabledTextTemplate",
+        "file": "UpperButtonBar.fdf"
+    },
+    {
+        "name": "UpperButtonBarButtonHighlightTextTemplate",
+        "file": "UpperButtonBar.fdf"
+    },
+    {
+        "name": "SimpleInfoPanelTitleTextTemplate",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleInfoPanelTitleTextDisabledTemplate",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleInfoPanelDescriptionTextTemplate",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleInfoPanelDescriptionHighlightTextTemplate",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleInfoPanelDescriptionDisabledTextTemplate",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleInfoPanelLabelTextTemplate",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleInfoPanelLabelHighlightTextTemplate",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleInfoPanelLabelDisabledTextTemplate",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleInfoPanelValueTextTemplate",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleInfoPanelAttributeTextTemplate",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleInfoPanelAttributeDisabledTextTemplate",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "ResourceTextTemplate",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleNameValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleClassValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleHoldNameValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleHoldDescriptionValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleBuildingNameValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleBuildingDescriptionValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleBuildingActionLabel",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleItemNameValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "SimpleItemDescriptionValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconLevel",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconLabel",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconLevel",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconLabel",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconLevel",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconLabel",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconLevel",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconLabel",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconLevel",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconLabel",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconHeroStrengthLabel",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconHeroStrengthValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconHeroAgilityLabel",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconHeroAgilityValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconHeroIntellectLabel",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconHeroIntellectValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconAllyTitle",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconAllyGoldValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconAllyWoodValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconAllyFoodValue",
+        "file": "SimpleInfoPanel.fdf"
+    },
+    {
+        "name": "InfoPanelIconAllyUpkeep",
+        "file": "SimpleInfoPanel.fdf"
+    }
+]

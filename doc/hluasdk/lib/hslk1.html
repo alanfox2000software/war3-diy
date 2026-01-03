@@ -1,0 +1,414 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Slk入门</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../favicon.svg">
+                        <link rel="shortcut icon" href="../favicon.png">
+                <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+                <link rel="stylesheet" href="../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 快速开始</a></li><li class="chapter-item expanded "><a href="../quick/struct.html"><strong aria-hidden="true">2.</strong> 项目结构</a></li><li class="chapter-item expanded "><a href="../quick/command.html"><strong aria-hidden="true">3.</strong> SDK命令指引</a></li><li class="chapter-item expanded "><a href="../quick/update.html"><strong aria-hidden="true">4.</strong> 更新日志</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 功能库</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../lib/api.html"><strong aria-hidden="true">5.1.</strong> API</a></li><li class="chapter-item expanded "><a href="../lib/attr.html"><strong aria-hidden="true">5.2.</strong> 属性 Attr</a></li><li class="chapter-item expanded "><a href="../lib/japi.html"><strong aria-hidden="true">5.3.</strong> JAPI</a></li><li class="chapter-item expanded "><a href="../lib/hslk1.html" class="active"><strong aria-hidden="true">5.4.</strong> Slk入门</a></li><li class="chapter-item expanded "><a href="../lib/hslk2.html"><strong aria-hidden="true">5.5.</strong> Slk进阶</a></li><li class="chapter-item expanded "><a href="../lib/hslk_f6.html"><strong aria-hidden="true">5.6.</strong> Slk原生物编字段</a></li><li class="chapter-item expanded "><a href="../lib/hslk_misc.html"><strong aria-hidden="true">5.7.</strong> Slk与MISC数据</a></li><li class="chapter-item expanded "><a href="../lib/sync.html"><strong aria-hidden="true">5.8.</strong> Sync同步</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">6.</strong> 例子</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../example/leaderBoard.html"><strong aria-hidden="true">6.1.</strong> 使用排行榜</a></li><li class="chapter-item expanded "><a href="../example/multiBoard.html"><strong aria-hidden="true">6.2.</strong> 使用多面板</a></li><li class="chapter-item expanded "><a href="../example/dialog.html"><strong aria-hidden="true">6.3.</strong> 难度选择对话框</a></li><li class="chapter-item expanded "><a href="../example/pickHero.html"><strong aria-hidden="true">6.4.</strong> 常见两种选英雄</a></li><li class="chapter-item expanded "><a href="../example/attack.html"><strong aria-hidden="true">6.5.</strong> 简单刷兵</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">7.</strong> 其他学习</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../other/jetbrain.html"><strong aria-hidden="true">7.1.</strong> Jetbrain设置</a></li><li class="chapter-item expanded "><a href="../other/q_a.html"><strong aria-hidden="true">7.2.</strong> 询问的技巧</a></li><li class="chapter-item expanded "><a href="../other/dz.html"><strong aria-hidden="true">7.3.</strong> 平台上线须知</a></li><li class="chapter-item expanded "><a href="../other/war3_tec.html"><strong aria-hidden="true">7.4.</strong> 魔兽作图小技巧</a></li><li class="chapter-item expanded "><a href="../other/war3_terrainArt.html"><strong aria-hidden="true">7.5.</strong> 魔兽地形贴图路径</a></li><li class="chapter-item expanded "><a href="../other/lua_engine.html"><strong aria-hidden="true">7.6.</strong> YDLua引擎</a></li><li class="chapter-item expanded "><a href="../other/ui_fdf.html"><strong aria-hidden="true">7.7.</strong> UI &amp; FDF</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> 小小专栏</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../xxqq/BV1nV411J7FB.html"><strong aria-hidden="true">8.1.</strong> 基础指令介绍</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1TK4y1Z7eB.html"><strong aria-hidden="true">8.2.</strong> hslk高级用法演示1</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1M64y117sB.html"><strong aria-hidden="true">8.3.</strong> hslk高级用法演示2</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1ZV411J7JJ.html"><strong aria-hidden="true">8.4.</strong> hslk高级用法演示3</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1iv411L7CP.html"><strong aria-hidden="true">8.5.</strong> UI之sync演示</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1Hy4y1s7cj.html"><strong aria-hidden="true">8.6.</strong> 构建酒馆与小地图UI显示头像</a></li><li class="chapter-item expanded "><a href="../xxqq/BV1Lh411v7pR.html"><strong aria-hidden="true">8.7.</strong> 伤害排行榜</a></li><li class="chapter-item expanded "><a href="../xxqq/upscale.html"><strong aria-hidden="true">8.8.</strong> 高端演示</a></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                                                <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="hslk-使用入门"><a class="header" href="#hslk-使用入门">hslk 使用入门</a></h2>
+<blockquote>
+<p>hslk是h-lua的物编生成方式，只要在hslk目录中运用设定好的方法，即可创建物编</p>
+</blockquote>
+<h3 id="类型"><a class="header" href="#类型">类型</a></h3>
+<pre><code>unit(common/hero/courier) 单位
+item(common/synthesis) 物品
+ability(common/empty/ring) 技能
+buff(common) 魔法效果
+upgrade(common) 科技
+</code></pre>
+<h3 id="专属字段"><a class="header" href="#专属字段">专属字段</a></h3>
+<blockquote>
+<p>改不了的字段定义了也没效</p>
+</blockquote>
+<pre><code class="language-lua">_id = &quot;[改不了]自动生成的物编ID&quot;
+_id_force = &quot;[一般不用]自定义物编ID&quot;
+_class = &quot;[改不了]hslk数据类别&quot;
+_type = &quot;[一般不用]hslk数据形式&quot;
+_parent = &quot;模版物编ID&quot;
+_overlie = &quot;叠加&quot;
+_weight = &quot;重量&quot;
+_attr = &quot;属性&quot;
+_ring = &quot;光环&quot;
+_remarks = &quot;结尾灰字描述&quot;
+_cooldown = &quot;冷却时间&quot;
+_cooldownTarget = &quot;冷却技能目标&quot;
+_shadow = &quot;强制使用影子物品&quot;
+</code></pre>
+<h4 id="配置hslk"><a class="header" href="#配置hslk">配置hslk</a></h4>
+<blockquote>
+<p>hslk的数据配置在【你的项目】的hslk目录中，即可测试自动构建并读取</p>
+<p>支持默认程度的自定义配置，例如物编文本生成时的颜色等</p>
+<p>默认内置一套配置，使用conf方法全覆盖即可</p>
+</blockquote>
+<pre><code class="language-lua">hslk_conf({
+  courierSkill = {
+    -- 信使技能-名称、热键、图标位置、冷却
+    blink = {
+        Ubertip = &quot;闪烁到任何地方&quot;, Art = &quot;ReplaceableTextures\\CommandButtons\\BTNBlink.blp&quot;,
+        Hotkey = 'Q', Buttonpos_1 = 0, Buttonpos_2 = 2, Cool1 = 10
+    },
+    rangePickUp = {
+        Ubertip = &quot;将附近地上的物品拾取到身上&quot;, Art = &quot;ReplaceableTextures\\CommandButtons\\BTNPickUpItem.blp&quot;,
+        Hotkey = 'W', Buttonpos_1 = 1, Buttonpos_2 = 2, Cool1 = 5
+    },
+    separate = {
+        Ubertip = &quot;将合成或重叠的物品拆分成零件&quot;, Art = &quot;ReplaceableTextures\\CommandButtons\\BTNRepair.blp&quot;,
+        Hotkey = 'E', Buttonpos_1 = 2, Buttonpos_2 = 2, Cool1 = 5
+    },
+    deliver = {
+        Ubertip = &quot;将所有物品依照顺序传送给英雄，当你的英雄没有空余物品位置，物品会返回给信使&quot;, Art = &quot;ReplaceableTextures\\CommandButtons\\BTNLoadPeon.blp&quot;,
+        Hotkey = 'R', Buttonpos_1 = 3, Buttonpos_2 = 2, Cool1 = 5
+    },
+  },
+  -- 描述文本颜色,可配置 hcolor 里拥有的颜色函数，也可以配置 hex 6位颜色码
+  color = {
+    hotKey = &quot;ffcc00&quot;, -- 热键
+    itemCoolDown = &quot;ccffff&quot;, -- 物品冷却时间
+    itemAttr = &quot;b0f26e&quot;, -- 物品属性
+    itemOverlie = &quot;ff59ff&quot;, -- 物品叠加
+    itemWeight = &quot;ee82ee&quot;, -- 物品重量
+    itemRemarks = &quot;969696&quot;, -- 物品备注
+    itemFragment = hcolor.orange, -- 物品零部件
+    itemProfit = &quot;ffd88c&quot;, -- 物品合成品
+    abilityCoolDown = &quot;ccffff&quot;, -- 技能冷却时间
+    abilityAttr = &quot;b0f26e&quot;, -- 技能属性
+    abilityRemarks = &quot;969696&quot;, -- 技能备注
+    ringArea = &quot;99ccff&quot;, -- 光环范围
+    ringTarget = &quot;99ccff&quot;, -- 光环作用目标
+    heroWeapon = &quot;ff3939&quot;, -- 英雄攻击武器类型
+    heroAttack = &quot;ff8080&quot;, -- 英雄基础攻击
+    heroRange = &quot;99ccff&quot;, -- 英雄攻击范围
+    heroPrimary = &quot;ffff00&quot;, -- 英雄主属性
+    heroSecondary = &quot;ffffcc&quot;, -- 英雄主属性
+    heroMove = &quot;ccffcc&quot;, -- 英雄移动
+  }, 
+})
+</code></pre>
+<h3 id="配置物品合成公式一般完美支持hslk创建的注册物品"><a class="header" href="#配置物品合成公式一般完美支持hslk创建的注册物品">配置物品合成公式（一般完美支持hslk创建的注册物品）</a></h3>
+<blockquote>
+<p>必须提前配置公式，再调用hslk创建物品，否则物品说明文本不会自动协助合成补充</p>
+</blockquote>
+<pre><code>例子1 &quot;小刀割大树=小刀+大树&quot; 2个不一样的合1个
+例子2 &quot;三头地狱犬的神识=地狱狗头x3&quot; 3个一样的合1个
+例子3 &quot;精灵神水x2=精灵的眼泪x50&quot; 50个一样的合一种,但得到2个
+例子4 {
+    {&quot;小刀割大树&quot;,1},{&quot;小刀&quot;,1},{&quot;大树&quot;,1}
+}
+对象型配置第一项为结果物品(适合物品名称包含特殊字符的物品，如+/=影响公式的符号)
+</code></pre>
+<h3 id="支持多种公式配置当公式内存在这种破坏范式的名称时可使用table进行设定"><a class="header" href="#支持多种公式配置当公式内存在这种破坏范式的名称时可使用table进行设定">支持多种公式配置，当公式内存在+=这种破坏范式的名称时，可使用table进行设定</a></h3>
+<pre><code class="language-lua">hslk_item_synthesis({
+    &quot;璀璨精气球=精气球+璀璨&quot;,
+    &quot;重剑=铁剑x2&quot;,
+    &quot;刺客短剑=铁剑+闪避护符&quot;,
+    &quot;淬火剑=重剑+淬火石&quot;,
+    {
+        {&quot;小刀割大树&quot;,1},{&quot;小刀&quot;,1},{&quot;大树&quot;,1}
+    }
+})
+</code></pre>
+<h3 id="构建物编单位"><a class="header" href="#构建物编单位">构建物编单位</a></h3>
+<pre><code class="language-lua">hslk_unit({
+    Name = &quot;大步兵&quot;,
+    abilList = &quot;Avul,Apit,Aneu&quot;,
+    file = &quot;units\\human\\TheCaptain\\TheCaptain&quot;,
+    Art = &quot;ReplaceableTextures\\CommandButtons\\BTNTheCaptain.blp&quot;,
+    pathTex = &quot;PathTextures\\4x4SimpleSolid.tga&quot;,
+    modelScale = 1.10,
+    scale = 1.10,
+    HP = 100,
+    spd = 0,
+    sight = 800,
+    nsight = 800,
+    unitSound = &quot;HighElfSwordsman&quot;,
+    weapsOn = 0,
+    race = &quot;human&quot;,
+    UberSplat = &quot;HSMA&quot;,
+})
+</code></pre>
+<h3 id="构建物编物品"><a class="header" href="#构建物编物品">构建物编物品</a></h3>
+<pre><code class="language-lua">hslk_item({
+    Name = &quot;闪避护符&quot;,
+    Art = &quot;ReplaceableTextures\\CommandButtons\\BTNTalisman.blp&quot;,
+    goldcost = 3500,
+    lumbercost = 0,
+    powerup = 0,
+    sellable = 1,
+    pawnable = 1,
+    droppable = 1,
+    Hotkey = &quot;Q&quot;,
+    _remarks = &quot;戴上这个护符就能闪避，天下哪有那么神奇的事？！&quot;,
+    _weight= 0.4,
+    _attr = _attr({
+        avoid = &quot;+3&quot;,
+        xtras= {
+          {
+            on = CONST_EVENT.attack
+            action = &quot;triggerUnit.attr.attack_speed&quot;,
+            odds = 8,
+            val = 10,
+            during = 3,
+            effect = &quot;Abilities\\Spells\\NightElf\\Starfall\\StarfallTarget.mdl&quot;,
+          },
+       }
+    }),
+})
+</code></pre>
+<h3 id="构建fake光环技能"><a class="header" href="#构建fake光环技能">构建fake光环技能</a></h3>
+<pre><code class="language-lua">hslk_ability_ring({
+    Name = &quot;月神强击&quot;,
+    Hotkey = &quot;E&quot;,
+    race = &quot;human&quot;,
+    Art = &quot;ReplaceableTextures\\PassiveButtons\\PASBTNTrueShot.blp&quot;,
+    _ring = _ring({
+        effect = &quot;Abilities\\Spells\\NightElf\\TrueshotAura\\TrueshotAura.mdl&quot;,
+        effectTarget = &quot;Abilities\\Spells\\Other\\GeneralAuraTarget\\GeneralAuraTarget.mdl&quot;,
+        radius = 600,
+        target = &quot;air,ground,friend,self,vuln,invu&quot;,
+        attr = {
+            attack_green = &quot;+90&quot;,
+            aim = &quot;+20&quot;
+        }
+    }),
+})
+</code></pre>
+<h3 id="物品也可以嵌套光环技能"><a class="header" href="#物品也可以嵌套光环技能">物品也可以嵌套光环技能</a></h3>
+<pre><code class="language-lua">hslk_item({
+    Name = &quot;铁剑&quot;,
+    Art = &quot;ReplaceableTextures\\CommandButtons\\BTNSteelMelee.blp&quot;,
+    goldcost = 800,
+    lumbercost = 0,
+    powerup = 0,
+    sellable = 1,
+    pawnable = 1,
+    droppable = 1,
+    Hotkey = &quot;D&quot;,
+    _remarks = &quot;精铁铸造的大剑&quot;,
+    _attr = {
+        attack_green = &quot;+33&quot;,
+    },
+    _ring = {
+        effect = &quot;Abilities\\Spells\\Orc\\CommandAura\\CommandAura.mdl&quot;,
+        effectTarget = &quot;Abilities\\Spells\\NightElf\\BattleRoar\\RoarTarget.mdl&quot;,
+        attachTarget = &quot;overhead&quot;,
+        radius = 600,
+        target = &quot;air,ground,friend,self,vuln,invu&quot;,
+        attr = {
+            life = &quot;+50&quot;,
+        }
+    },
+})
+</code></pre>
+<h3 id="自定义物编模版"><a class="header" href="#自定义物编模版">自定义物编模版</a></h3>
+<pre><code class="language-lua">hslk_unit({
+  _parent = &quot;hpea&quot;
+})
+</code></pre>
+<h3 id="自定义物编id"><a class="header" href="#自定义物编id">自定义物编ID</a></h3>
+<pre><code class="language-lua">hslk_unit({
+  _id_force = &quot;U001&quot;
+})
+</code></pre>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../lib/japi.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="../lib/hslk2.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../lib/japi.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="../lib/hslk2.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+                <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+        
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+        
+                <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>

@@ -1,0 +1,2428 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "CampaignMenu",
+            "inherits": "StandardFrameTemplate",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "SetAllPoints,",
+                    "child": []
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "SPRITE",
+                    "name": "CampaignBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "SPRITE",
+                    "name": "SlidingDoors",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "BackgroundArt",
+                            "child": [
+                                "UI\\Glues\\SinglePlayer\\Campaign-Fade\\Campaign-Fade.mdl,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "BackButton",
+                    "inherits": "CampaignButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.168,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPRIGHT,",
+                                "CampaignMenu,",
+                                "BOTTOMRIGHT,",
+                                "-0.04,",
+                                "0.05,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlShortcutKey",
+                            "child": [
+                                "B,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "BackButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 4,
+                            "type": "TEXT",
+                            "name": "BackButtonText",
+                            "inherits": "StandardButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "KEY_BACK,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 5,
+                    "type": "FRAME",
+                    "name": "MissionSelectFrame",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 6,
+                            "type": "TEXT",
+                            "name": "MissionName",
+                            "inherits": "StandardTitleTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOM,",
+                                        "CampaignMenu,",
+                                        "BOTTOM,",
+                                        "-0.15,",
+                                        "0.04,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FrameFont",
+                                    "child": [
+                                        "MasterFont,",
+                                        "0.024,",
+                                        ","
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYCENTER,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationV",
+                                    "child": [
+                                        "JUSTIFYMIDDLE,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "EMPTY_STRING,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 7,
+                            "type": "TEXT",
+                            "name": "MissionNameHeader",
+                            "inherits": "StandardSmallTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOM,",
+                                        "MissionName,",
+                                        "TOP,",
+                                        "0.0,",
+                                        "0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FrameFont",
+                                    "child": [
+                                        "MasterFont,",
+                                        "0.015,",
+                                        ","
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationH",
+                                    "child": [
+                                        "JUSTIFYCENTER,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FontJustificationV",
+                                    "child": [
+                                        "JUSTIFYMIDDLE,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "EMPTY_STRING,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 8,
+                            "type": "FRAME",
+                            "name": "Mission13Frame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 9,
+                                    "type": "TEXT",
+                                    "name": "Mission13Label",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "BackButton,",
+                                                "TOPLEFT,",
+                                                "-0.03,",
+                                                "0.04,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 10,
+                                    "type": "TEXT",
+                                    "name": "Mission13Desc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "Mission13Label,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 11,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission13Button",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,Mission13Label,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 12,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission13CameraButton",
+                                    "inherits": "CampaignCameraButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,Mission13Button,CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 13,
+                            "type": "FRAME",
+                            "name": "Mission12Frame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 14,
+                                    "type": "TEXT",
+                                    "name": "Mission12Label",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "Mission13Label,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 15,
+                                    "type": "TEXT",
+                                    "name": "Mission12Desc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "Mission12Label,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 16,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission12Button",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,Mission12Label,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 17,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission12CameraButton",
+                                    "inherits": "CampaignCameraButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,Mission12Button,CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 18,
+                            "type": "FRAME",
+                            "name": "Mission11Frame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 19,
+                                    "type": "TEXT",
+                                    "name": "Mission11Label",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "Mission12Label,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 20,
+                                    "type": "TEXT",
+                                    "name": "Mission11Desc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "Mission11Label,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 21,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission11Button",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,Mission11Label,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 22,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission11CameraButton",
+                                    "inherits": "CampaignCameraButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,Mission11Button,CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 23,
+                            "type": "FRAME",
+                            "name": "Mission10Frame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 24,
+                                    "type": "TEXT",
+                                    "name": "Mission10Label",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "Mission11Label,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 25,
+                                    "type": "TEXT",
+                                    "name": "Mission10Desc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "Mission10Label,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 26,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission10Button",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,Mission10Label,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 27,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission10CameraButton",
+                                    "inherits": "CampaignCameraButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,Mission10Button,CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 28,
+                            "type": "FRAME",
+                            "name": "Mission9Frame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 29,
+                                    "type": "TEXT",
+                                    "name": "Mission9Label",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "Mission10Label,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 30,
+                                    "type": "TEXT",
+                                    "name": "Mission9Desc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "Mission9Label,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 31,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission9Button",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,Mission9Label,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 32,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission9CameraButton",
+                                    "inherits": "CampaignCameraButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,Mission9Button,CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 33,
+                            "type": "FRAME",
+                            "name": "Mission8Frame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 34,
+                                    "type": "TEXT",
+                                    "name": "Mission8Label",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "Mission9Label,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 35,
+                                    "type": "TEXT",
+                                    "name": "Mission8Desc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "Mission8Label,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 36,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission8Button",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,Mission8Label,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 37,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission8CameraButton",
+                                    "inherits": "CampaignCameraButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,Mission8Button,CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 38,
+                            "type": "FRAME",
+                            "name": "Mission7Frame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 39,
+                                    "type": "TEXT",
+                                    "name": "Mission7Label",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "Mission8Label,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 40,
+                                    "type": "TEXT",
+                                    "name": "Mission7Desc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "Mission7Label,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 41,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission7Button",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,Mission7Label,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 42,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission7CameraButton",
+                                    "inherits": "CampaignCameraButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,Mission7Button,CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 43,
+                            "type": "FRAME",
+                            "name": "Mission6Frame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 44,
+                                    "type": "TEXT",
+                                    "name": "Mission6Label",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "Mission7Label,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 45,
+                                    "type": "TEXT",
+                                    "name": "Mission6Desc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "Mission6Label,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 46,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission6Button",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,Mission6Label,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 47,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission6CameraButton",
+                                    "inherits": "CampaignCameraButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,Mission6Button,CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 48,
+                            "type": "FRAME",
+                            "name": "Mission5Frame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 49,
+                                    "type": "TEXT",
+                                    "name": "Mission5Label",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "Mission6Label,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 50,
+                                    "type": "TEXT",
+                                    "name": "Mission5Desc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "Mission5Label,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 51,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission5Button",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,Mission5Label,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 52,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission5CameraButton",
+                                    "inherits": "CampaignCameraButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,Mission5Button,CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 53,
+                            "type": "FRAME",
+                            "name": "Mission4Frame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 54,
+                                    "type": "TEXT",
+                                    "name": "Mission4Label",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "Mission5Label,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 55,
+                                    "type": "TEXT",
+                                    "name": "Mission4Desc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "Mission4Label,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 56,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission4Button",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,Mission4Label,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 57,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission4CameraButton",
+                                    "inherits": "CampaignCameraButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,Mission4Button,CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 58,
+                            "type": "FRAME",
+                            "name": "Mission3Frame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 59,
+                                    "type": "TEXT",
+                                    "name": "Mission3Label",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "Mission4Label,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 60,
+                                    "type": "TEXT",
+                                    "name": "Mission3Desc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "Mission3Label,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 61,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission3Button",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,Mission3Label,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 62,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission3CameraButton",
+                                    "inherits": "CampaignCameraButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,Mission3Button,CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 63,
+                            "type": "FRAME",
+                            "name": "Mission2Frame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 64,
+                                    "type": "TEXT",
+                                    "name": "Mission2Label",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "Mission3Label,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 65,
+                                    "type": "TEXT",
+                                    "name": "Mission2Desc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "Mission2Label,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 66,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission2Button",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,Mission2Label,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 67,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission2CameraButton",
+                                    "inherits": "CampaignCameraButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,Mission2Button,CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 68,
+                            "type": "FRAME",
+                            "name": "Mission1Frame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 69,
+                                    "type": "TEXT",
+                                    "name": "Mission1Label",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "Mission2Label,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 70,
+                                    "type": "TEXT",
+                                    "name": "Mission1Desc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "Mission1Label,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 71,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission1Button",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,Mission1Label,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 72,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission1CameraButton",
+                                    "inherits": "CampaignCameraButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,Mission1Button,CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 73,
+                            "type": "FRAME",
+                            "name": "Mission0Frame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 74,
+                                    "type": "TEXT",
+                                    "name": "Mission0Label",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "Mission1Label,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.023,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 75,
+                                    "type": "TEXT",
+                                    "name": "Mission0Desc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "Mission0Label,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "EMPTY_STRING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 76,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission0Button",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,Mission0Label,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 77,
+                                    "type": "TEXTBUTTON",
+                                    "name": "Mission0CameraButton",
+                                    "inherits": "CampaignCameraButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "CENTER,Mission0Button,CENTER,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 78,
+                    "type": "FRAME",
+                    "name": "CampaignSelectFrame",
+                    "inherits": "",
+                    "fields": [],
+                    "child": [
+                        {
+                            "fid": 79,
+                            "type": "SPRITE",
+                            "name": "WarCraftIIILogo",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "BackgroundArt",
+                                    "child": [
+                                        "UI\\Glues\\MainMenu\\WarCraftIIILogo\\WarCraftIIILogo.mdl,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "TOPRIGHT,",
+                                        "CampaignMenu,",
+                                        "TOPRIGHT,",
+                                        "0.08,",
+                                        "0.04,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        },
+                        {
+                            "fid": 80,
+                            "type": "BACKDROP",
+                            "name": "CampaignDifficultyBackdrop",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.090f,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.265f,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "BOTTOMLEFT,",
+                                        "CampaignMenu,",
+                                        "BOTTOMLEFT,",
+                                        "0.022,",
+                                        "0.076,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropTileBackground,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackground",
+                                    "child": [
+                                        "EscMenuEditBoxBackground,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropCornerFlags",
+                                    "child": [
+                                        "UL|UR|BL|BR|T|L|B|R,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropCornerSize",
+                                    "child": [
+                                        "0.0125,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundSize",
+                                    "child": [
+                                        "0.256,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBackgroundInsets",
+                                    "child": [
+                                        "0.005",
+                                        "0.005",
+                                        "0.005",
+                                        "0.005,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropEdgeFile",
+                                    "child": [
+                                        "EscMenuEditBoxBorder,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "BackdropBlendAll,",
+                                    "child": []
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 81,
+                                    "type": "POPUPMENU",
+                                    "name": "DifficultySelect",
+                                    "inherits": "CampaignPopupMenuTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMRIGHT,",
+                                                "CampaignDifficultyBackdrop,",
+                                                "BOTTOMRIGHT,",
+                                                "-0.007,",
+                                                "0.007,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Height",
+                                            "child": [
+                                                "0.036,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.145,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 82,
+                                    "type": "TEXT",
+                                    "name": "DifficultySelectLabel",
+                                    "inherits": "StandardLabelTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "CampaignDifficultyBackdrop,",
+                                                "TOPLEFT,",
+                                                "0.01,",
+                                                "-0.01,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "SELECT_DIFFICULTY_LEVEL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 83,
+                                    "type": "TEXT",
+                                    "name": "DifficultyDescriptionText",
+                                    "inherits": "StandardSmallTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "Width",
+                                            "child": [
+                                                "0.245,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "DifficultySelectLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0,",
+                                                "0.001,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "DIFFICULTY_TEXT,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 84,
+                            "type": "FRAME",
+                            "name": "NightElfFrame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 85,
+                                    "type": "TEXT",
+                                    "name": "NightElfCampaignLabel",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "BackButton,",
+                                                "TOPLEFT,",
+                                                "-0.03,",
+                                                "0.11,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_NIGHT_ELF_CAMPAIGN,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 86,
+                                    "type": "TEXT",
+                                    "name": "NightElfCampaignDesc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "NightElfCampaignLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "ETERNITYS_END,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 87,
+                                    "type": "TEXTBUTTON",
+                                    "name": "NightElfButton",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,NightElfCampaignLabel,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 88,
+                            "type": "FRAME",
+                            "name": "OrcFrame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 89,
+                                    "type": "TEXT",
+                                    "name": "OrcCampaignLabel",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "NightElfCampaignLabel,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.05,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_ORC_CAMPAIGN,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 90,
+                                    "type": "TEXT",
+                                    "name": "OrcCampaignDesc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "OrcCampaignLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "THE_INVASION_OF_KALIMDOR,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 91,
+                                    "type": "TEXTBUTTON",
+                                    "name": "OrcButton",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,OrcCampaignLabel,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 92,
+                            "type": "FRAME",
+                            "name": "UndeadFrame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 93,
+                                    "type": "TEXT",
+                                    "name": "UndeadCampaignLabel",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "OrcCampaignLabel,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.05,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_UNDEAD_CAMPAIGN,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 94,
+                                    "type": "TEXT",
+                                    "name": "UndeadCampaignDesc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "UndeadCampaignLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "PATH_OF_THE_DAMNED,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 95,
+                                    "type": "TEXTBUTTON",
+                                    "name": "UndeadButton",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,UndeadCampaignLabel,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 96,
+                            "type": "FRAME",
+                            "name": "HumanFrame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 97,
+                                    "type": "TEXT",
+                                    "name": "HumanCampaignLabel",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "UndeadCampaignLabel,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.05,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_HUMAN_CAMPAIGN,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 98,
+                                    "type": "TEXT",
+                                    "name": "HumanCampaignDesc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "HumanCampaignLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "THE_SCOURGE_OF_LORDAERON,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 99,
+                                    "type": "TEXTBUTTON",
+                                    "name": "HumanButton",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,HumanCampaignLabel,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "fid": 100,
+                            "type": "FRAME",
+                            "name": "TutorialFrame",
+                            "inherits": "",
+                            "fields": [],
+                            "child": [
+                                {
+                                    "fid": 101,
+                                    "type": "TEXT",
+                                    "name": "TutorialCampaignLabel",
+                                    "inherits": "StandardSmallTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "BOTTOMLEFT,",
+                                                "HumanCampaignLabel,",
+                                                "TOPLEFT,",
+                                                "0.0,",
+                                                "0.05,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "COLON_TUTORIAL,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 102,
+                                    "type": "TEXT",
+                                    "name": "TutorialCampaignDesc",
+                                    "inherits": "StandardTitleTextTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "FontColor",
+                                            "child": [
+                                                "0.764",
+                                                "0.764",
+                                                "0.764",
+                                                "1.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPLEFT,",
+                                                "TutorialCampaignLabel,",
+                                                "BOTTOMLEFT,",
+                                                "0.0,",
+                                                "0.0,"
+                                            ]
+                                        },
+                                        {
+                                            "type": "Field",
+                                            "name": "Text",
+                                            "child": [
+                                                "THRALLS_TRAINING,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                },
+                                {
+                                    "fid": 103,
+                                    "type": "TEXTBUTTON",
+                                    "name": "TutorialButton",
+                                    "inherits": "CampaignArrowButtonTemplate",
+                                    "fields": [
+                                        {
+                                            "type": "Field",
+                                            "name": "SetPoint",
+                                            "child": [
+                                                "TOPRIGHT,TutorialCampaignLabel,TOPLEFT,",
+                                                "-0.004,",
+                                                "0.005,"
+                                            ]
+                                        }
+                                    ],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+]

@@ -1,0 +1,286 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "Texture",
+            "name": "ResourceBarIconTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.01640625,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.01640625,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 1,
+            "type": "String",
+            "name": "ResourceBarTextTemplate",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Font",
+                    "child": [
+                        "MasterFont,0.01,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.01640625,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "TextLength",
+                    "child": [
+                        "8,"
+                    ]
+                }
+            ],
+            "child": []
+        }
+    ],
+    [
+        {
+            "fid": 2,
+            "type": "SIMPLEFRAME",
+            "name": "ResourceBarFrame",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "DecorateFileNames,",
+                    "child": []
+                },
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.33828125,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.0218,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 3,
+                    "type": "Texture",
+                    "name": "",
+                    "inherits": "ResourceBarIconTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOPLEFT,",
+                                "0.0000,",
+                                "-0.003125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "GoldIcon,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 4,
+                    "type": "String",
+                    "name": "ResourceBarGoldText",
+                    "inherits": "ResourceBarTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOPRIGHT,",
+                                "-0.26484375,",
+                                "-0.003125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 5,
+                    "type": "Texture",
+                    "name": "",
+                    "inherits": "ResourceBarIconTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOPLEFT,",
+                                "0.0859375,",
+                                "-0.003125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "LumberIcon,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 6,
+                    "type": "String",
+                    "name": "ResourceBarLumberText",
+                    "inherits": "ResourceBarTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOPRIGHT,",
+                                "-0.178125,",
+                                "-0.003125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 7,
+                    "type": "Texture",
+                    "name": "",
+                    "inherits": "ResourceBarIconTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOPLEFT,",
+                                "0.17265625,",
+                                "-0.003125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "File",
+                            "child": [
+                                "SupplyIcon,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 8,
+                    "type": "String",
+                    "name": "ResourceBarSupplyText",
+                    "inherits": "ResourceBarTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOPRIGHT,",
+                                "-0.09140625,",
+                                "-0.003125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYRIGHT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 9,
+                    "type": "String",
+                    "name": "ResourceBarUpkeepText",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Anchor",
+                            "child": [
+                                "TOPRIGHT,",
+                                "-0.003125,",
+                                "-0.003125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Font",
+                            "child": [
+                                "MasterFont,0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.07578125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.01640625,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

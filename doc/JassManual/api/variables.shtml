@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>JASS Manual: API Browser - API Browser: Global Variables</title>
+<link rel="stylesheet" href="../style.css" type="text/css">
+</head>
+
+<body>
+
+
+<p align="right" class="small"><a href="index.shtml">TYPES</a> |
+<a href="functions.shtml">FUNCTIONS</a> |
+<a href="variables.shtml">VARIABLES</a>
+
+<p><strong><a name="top">API Browser: Global Variables</a></strong>
+<p>This page is an index of all the global variables declared in the standard library files.
+<p><table border=0 cellspacing=2 cellpadding=5 width=100%>
+<tr><td bgcolor="#7FEFE8"><strong><a href="common_j-variables.shtml">common.j</a></strong></td></tr>
+<tr><td bgcolor="#AAFFAA"><strong><a href="common_ai-variables.shtml">common.ai</a></strong></td></tr>
+<tr><td bgcolor="#faffbf"><strong><a href="Blizzard_j-variables.shtml">Blizzard.j</a></strong></td></tr>
+</table>
+
+
+</body>
+</html>

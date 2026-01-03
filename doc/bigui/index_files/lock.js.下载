@@ -1,0 +1,44 @@
+!(function ($, window, document, _undefined) {
+	'use strict';
+
+	XF.VindITPastebinLock = XF.Element.newHandler({
+		options: { lockUrl: '' },
+
+		init: function () {
+			const lockUrl = this.options.lockUrl;
+			const lock = () => {
+				XF.ajax('get', lockUrl, null, (data) => {}, {
+					skipDefault: true,
+				});
+			};
+			setInterval(lock, 10000);
+		},
+	});
+
+	XF.VindITPastebinEditLock = XF.Element.newHandler({
+		options: { lockUrl: '' },
+
+		init: function () {
+			const lockUrl = this.options.lockUrl;
+
+			this.$target.on('click', (evt) => {
+				evt.preventDefault();
+				XF.ajax(
+					'get',
+					lockUrl,
+					null,
+					() => (window.location.href = this.$target.attr('href')),
+					{
+						skipDefaultSuccess: true,
+					}
+				);
+			});
+		},
+	});
+
+	XF.Element.register('vindit-pastebin-lock', 'XF.VindITPastebinLock');
+	XF.Element.register(
+		'vindit-pastebin-edit-lock',
+		'XF.VindITPastebinEditLock'
+	);
+})(jQuery, window, document);

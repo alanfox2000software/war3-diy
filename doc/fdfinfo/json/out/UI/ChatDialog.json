@@ -1,0 +1,807 @@
+[
+    [
+        {
+            "fid": 0,
+            "type": "FRAME",
+            "name": "ChatDialog",
+            "inherits": "",
+            "fields": [
+                {
+                    "type": "Field",
+                    "name": "Width",
+                    "child": [
+                        "0.384f,"
+                    ]
+                },
+                {
+                    "type": "Field",
+                    "name": "Height",
+                    "child": [
+                        "0.432f,"
+                    ]
+                }
+            ],
+            "child": [
+                {
+                    "fid": 1,
+                    "type": "BACKDROP",
+                    "name": "ChatBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetAllPoints,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuBackground,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.048,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.128,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.01",
+                                "0.01",
+                                "0.01",
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "EscMenuBorder,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 2,
+                    "type": "TEXT",
+                    "name": "ChatTitle",
+                    "inherits": "EscMenuTitleTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ChatDialog,",
+                                "TOP,",
+                                "0.0,",
+                                "-0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYCENTER,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "MESSAGING,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 3,
+                    "type": "GLUECHECKBOX",
+                    "name": "ChatPlayerRadioButton",
+                    "inherits": "EscMenuRadioButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOPLEFT,",
+                                "ChatDialog,",
+                                "TOPLEFT,",
+                                "0.035,",
+                                "-0.070375,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 4,
+                    "type": "GLUECHECKBOX",
+                    "name": "ChatAlliesRadioButton",
+                    "inherits": "EscMenuRadioButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ChatPlayerRadioButton,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.012,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 5,
+                    "type": "GLUECHECKBOX",
+                    "name": "ChatObserversRadioButton",
+                    "inherits": "EscMenuRadioButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ChatAlliesRadioButton,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 6,
+                    "type": "GLUECHECKBOX",
+                    "name": "ChatEveryoneRadioButton",
+                    "inherits": "EscMenuRadioButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ChatObserversRadioButton,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.002,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 7,
+                    "type": "TEXT",
+                    "name": "ChatPlayerLabel",
+                    "inherits": "EscMenuInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "0.99",
+                                "0.827",
+                                "0.0705",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "ChatPlayerRadioButton,",
+                                "RIGHT,",
+                                "0.005,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "COLON_SEND_TO_PLAYER,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 8,
+                    "type": "TEXT",
+                    "name": "ChatAlliesLabel",
+                    "inherits": "EscMenuInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "0.99",
+                                "0.827",
+                                "0.0705",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "ChatAlliesRadioButton,",
+                                "RIGHT,",
+                                "0.005,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "SEND_TO_ALLIES,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 9,
+                    "type": "TEXT",
+                    "name": "ChatObserversLabel",
+                    "inherits": "EscMenuInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "0.99",
+                                "0.827",
+                                "0.0705",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "ChatObserversRadioButton,",
+                                "RIGHT,",
+                                "0.005,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "SEND_TO_OBSERVERS,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 10,
+                    "type": "TEXT",
+                    "name": "ChatEveryoneLabel",
+                    "inherits": "EscMenuInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "0.99",
+                                "0.827",
+                                "0.0705",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "LEFT,",
+                                "ChatEveryoneRadioButton,",
+                                "RIGHT,",
+                                "0.005,",
+                                "0.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "SEND_TO_EVERYONE,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 11,
+                    "type": "POPUPMENU",
+                    "name": "ChatPlayerMenu",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.19625,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "PopupButtonInset",
+                            "child": [
+                                "0.01,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "RIGHT,",
+                                "ChatDialog,",
+                                "TOPRIGHT,",
+                                "-0.031,",
+                                "-0.0765,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlBackdrop",
+                            "child": [
+                                "EscMenuPopupMenuBackdropTemplate,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ControlDisabledBackdrop",
+                            "child": [
+                                "EscMenuPopupMenuDisabledBackdropTemplate,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "PopupTitleFrame",
+                            "child": [
+                                "PopupMenuTitleTemplate,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "PopupArrowFrame",
+                            "child": [
+                                "PopupMenuArrowTemplate,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "PopupMenuFrame",
+                            "child": [
+                                "PopupMenuMenuTemplate,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 12,
+                            "type": "BACKDROP",
+                            "name": "EscMenuPopupMenuBackdropTemplate",
+                            "inherits": "EscMenuButtonBackdropTemplate",
+                            "fields": [],
+                            "child": []
+                        },
+                        {
+                            "fid": 13,
+                            "type": "BACKDROP",
+                            "name": "EscMenuPopupMenuDisabledBackdropTemplate",
+                            "inherits": "EscMenuButtonDisabledBackdropTemplate",
+                            "fields": [],
+                            "child": []
+                        },
+                        {
+                            "fid": 14,
+                            "type": "GLUETEXTBUTTON",
+                            "name": "PopupMenuTitleTemplate",
+                            "inherits": "EscMenuPopupMenuTitleTemplate",
+                            "fields": [],
+                            "child": []
+                        },
+                        {
+                            "fid": 15,
+                            "type": "BUTTON",
+                            "name": "PopupMenuArrowTemplate",
+                            "inherits": "EscMenuPopupMenuArrowTemplate",
+                            "fields": [],
+                            "child": []
+                        },
+                        {
+                            "fid": 16,
+                            "type": "MENU",
+                            "name": "PopupMenuMenuTemplate",
+                            "inherits": "EscMenuPopupMenuMenuTemplate",
+                            "fields": [],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 17,
+                    "type": "GLUETEXTBUTTON",
+                    "name": "ChatAcceptButton",
+                    "inherits": "EscMenuButtonTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.13,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "ChatDialog,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "0.03,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "ButtonText",
+                            "child": [
+                                "ChatAcceptButtonText,"
+                            ]
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 18,
+                            "type": "TEXT",
+                            "name": "ChatAcceptButtonText",
+                            "inherits": "EscMenuButtonTextTemplate",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Text",
+                                    "child": [
+                                        "OK,"
+                                    ]
+                                }
+                            ],
+                            "child": []
+                        }
+                    ]
+                },
+                {
+                    "fid": 19,
+                    "type": "BACKDROP",
+                    "name": "ChatHistoryDisplayBackdrop",
+                    "inherits": "",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.32,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Height",
+                            "child": [
+                                "0.1475,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOM,",
+                                "ChatAcceptButton,",
+                                "TOP,",
+                                "0.0,",
+                                "0.04875,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "DecorateFileNames,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropTileBackground,",
+                            "child": []
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackground",
+                            "child": [
+                                "EscMenuEditBoxBackground,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerFlags",
+                            "child": [
+                                "UL|UR|BL|BR|T|L|B|R,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropCornerSize",
+                            "child": [
+                                "0.0125,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundSize",
+                            "child": [
+                                "0.256,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBackgroundInsets",
+                            "child": [
+                                "0.005",
+                                "0.005",
+                                "0.005",
+                                "0.005,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropEdgeFile",
+                            "child": [
+                                "EscMenuEditBoxBorder,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "BackdropBlendAll,",
+                            "child": []
+                        }
+                    ],
+                    "child": [
+                        {
+                            "fid": 20,
+                            "type": "TEXTAREA",
+                            "name": "ChatHistoryDisplay",
+                            "inherits": "",
+                            "fields": [
+                                {
+                                    "type": "Field",
+                                    "name": "Height",
+                                    "child": [
+                                        "0.1325,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "Width",
+                                    "child": [
+                                        "0.30675,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "SetPoint",
+                                    "child": [
+                                        "LEFT,",
+                                        "ChatHistoryDisplayBackdrop,",
+                                        "LEFT,",
+                                        "0.00725,",
+                                        "-0.000625,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "DecorateFileNames,",
+                                    "child": []
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "FrameFont",
+                                    "child": [
+                                        "MasterFont,",
+                                        "0.011,",
+                                        ","
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaLineGap",
+                                    "child": [
+                                        "0.0015,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaMaxLines",
+                                    "child": [
+                                        "128,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaLineHeight",
+                                    "child": [
+                                        "0.01,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaInset",
+                                    "child": [
+                                        "0.002,"
+                                    ]
+                                },
+                                {
+                                    "type": "Field",
+                                    "name": "TextAreaScrollBar",
+                                    "child": [
+                                        "ChatHistoryScrollBar,"
+                                    ]
+                                }
+                            ],
+                            "child": [
+                                {
+                                    "fid": 21,
+                                    "type": "SCROLLBAR",
+                                    "name": "ChatHistoryScrollBar",
+                                    "inherits": "EscMenuScrollBarTemplate",
+                                    "fields": [],
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fid": 22,
+                    "type": "TEXT",
+                    "name": "ChatHistoryLabel",
+                    "inherits": "EscMenuInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "0.99",
+                                "0.827",
+                                "0.0705",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "BOTTOMLEFT,",
+                                "ChatHistoryDisplayBackdrop,",
+                                "TOPLEFT,",
+                                "0.0,",
+                                "0.005,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "CHAT_HISTORY,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                },
+                {
+                    "fid": 23,
+                    "type": "TEXT",
+                    "name": "ChatInfoText",
+                    "inherits": "EscMenuInfoTextTemplate",
+                    "fields": [
+                        {
+                            "type": "Field",
+                            "name": "Width",
+                            "child": [
+                                "0.32,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "SetPoint",
+                            "child": [
+                                "TOP,",
+                                "ChatHistoryDisplayBackdrop,",
+                                "BOTTOM,",
+                                "0.0,",
+                                "-0.00825,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontColor",
+                            "child": [
+                                "1.0",
+                                "1.0",
+                                "1.0",
+                                "1.0,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "FontJustificationH",
+                            "child": [
+                                "JUSTIFYLEFT,"
+                            ]
+                        },
+                        {
+                            "type": "Field",
+                            "name": "Text",
+                            "child": [
+                                "CHAT_INFO_TEXT,"
+                            ]
+                        }
+                    ],
+                    "child": []
+                }
+            ]
+        }
+    ]
+]

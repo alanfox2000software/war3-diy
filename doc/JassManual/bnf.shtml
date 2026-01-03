@@ -1,0 +1,268 @@
+<html>
+<head>
+<title>JASS Manual: Formal Syntax Definition</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+
+
+<p><strong>Formal Syntax Definition</strong>
+
+<p>This is a semi-formal definition of the JASS language
+(extended Backus-Naur Form).
+
+<p>This definition is assumed to be applied after all comments
+are stripped from the program (<code>comment := '//' .* '\n'</code>) Except for
+newlines, tokens are delimited by whitespace and/or non-alphanumeric
+characters.
+
+<p>Definitions (from least to highest precedence):
+
+<pre class="source">
+a := b    - production; a reduces to b
+a | b     - union; matches a or b
+a b       - concatenation; matches a followed by b
+a*        - kleen-closure; matches zero or more of a
+a+        - matches one or more of a
+a?        - matches zero or one of a
+a{n}      - matches exactly n a's
+(a b)     - parenthesis
+[abc]     - character class; matches 'a' or 'b' or 'c'
+            (a-z means all characters from 'a' to 'z')
+.         - matches any character except '\n'
+'a'       - matches the literal 'a'
+</pre>
+
+<p>The starting non-terminal is <code>program</code>.
+
+<pre class="source">
+//----------------------------------------------------------------------
+// Global Declarations
+//----------------------------------------------------------------------
+
+program         := file+
+
+file            := newline? (declr newline)* func*
+
+declr           := typedef | globals | native_func
+
+typedef         := 'type' id 'extends' ('handle' | id) 
+
+globals         := 'globals' newline global_var_list 'endglobals' 
+
+global_var_list := ('constant' type id '=' expr newline 
+                   | var_declr newline)*
+
+native_func     := 'constant'? 'native' func_declr
+
+func_declr      := id 'takes' ('nothing' | param_list) 
+                   'returns' (type | 'nothing')
+
+param_list      := type id (',' type id)*
+
+func            := 'constant'? 'function' func_declr newline 
+                   local_var_list statement_list 'endfunction' newline
+
+//----------------------------------------------------------------------
+// Local Declarations
+//----------------------------------------------------------------------
+
+local_var_list  := ('local' var_declr newline)*
+
+var_declr       := type id ('=' expr)? | type 'array' id 
+
+//----------------------------------------------------------------------
+// Statements
+//----------------------------------------------------------------------
+
+statement_list  :=  (statement newline)*
+
+statement       := set | call | ifthenelse | loop | exitwhen | return 
+                   | debug
+
+set             := 'set' id '=' expr | 'set' id '[' expr ']' '=' expr 
+
+call            := 'call' id '(' args? ')'
+
+args            := expr (',' expr)*
+
+ifthenelse      := 'if' expr 'then' newline statement_list 
+                   else_clause? 'endif' 
+
+else_clause     := 'else' newline statement_list 
+                   | 'elseif' expr 'then' newline statement_list
+else_clause?
+
+loop            := 'loop' newline statement_list 'endloop'
+
+exitwhen        := 'exitwhen' expr 
+                // must appear in a loop
+
+return          := 'return' expr?
+
+debug           := 'debug' (set | call | ifthenelse | loop)
+
+//----------------------------------------------------------------------
+// Expressions
+//----------------------------------------------------------------------
+
+expr            := binary_op | unary_op | func_call | array_ref | func_ref 
+                   | id | const | parens
+
+binary_op       := expr ([+-*/><]|'=='|'!='|'>='|'<='|'and'|'or') expr
+
+unary_op        := ('+'|'-'|'not') expr
+                // expr must be integer or real when used with unary '+'
+
+func_call       := id '(' args? ')'
+
+array_ref       := id '[' expr ']'
+
+func_ref        := 'function' id
+
+const           := int_const | real_const | bool_const | string_const | 'null'
+
+int_const       := decimal | octal | hex | fourcc
+
+decimal         := [1-9][0-9]*
+
+octal           := '0'[0-7]*
+
+hex             := '$'[0-9a-fA-F]+ | '0'[xX][0-9a-fA-F]+
+
+fourcc          := ''' .{4} '''
+
+real_const      := [0-9]+'.'[0-9]* | '.'[0-9]+
+
+bool_const      := 'true' | 'false'
+
+string_const    := '"' .* '"'
+                // any double-quotes in the string must be escaped with \
+
+parens          := '(' expr ')'
+
+//----------------------------------------------------------------------
+// Base RegEx
+//----------------------------------------------------------------------
+
+type            := id | 'code' | 'handle' | 'integer' | 'real' | 'boolean' 
+                   | 'string'
+
+id              := [a-zA-Z]([a-zA-Z0-9_]* [a-zA-Z0-9])?
+
+newline         := '\n'+
+
+<!-- OLD Version: before 02/07/2003
+//----------------------------------------------------------------------
+// Global Declarations
+//----------------------------------------------------------------------
+
+program         := newline? (declr newline)+ newline?
+
+declr           := typedef | globals | native_func | func
+
+typedef         := 'type' type 'extends' type
+
+globals         := 'globals' newline global_var_list 'endglobals'
+
+global_var_list := ('constant'? var_declr newline)*
+
+native_func     := 'constant'? 'native' func_declr
+
+func_declr      := id 'takes' ('nothing' | param_list) 
+                   'returns' (type | 'nothing')
+
+param_list      := (type id ',')* 
+                // the comma is ommitted from the last param
+
+func            := 'function' func_declr newline 
+                   local_var_list statement_list 'endfunction'
+
+//----------------------------------------------------------------------
+// Local Declarations
+//----------------------------------------------------------------------
+
+local_var_list  := ('local' var_declr newline)*
+
+var_declr       := type id ('=' expr)? | type 'array' id
+
+//----------------------------------------------------------------------
+// Statements
+//----------------------------------------------------------------------
+
+statement_list  := (statement newline)*
+
+statement       := set | call | ifthenelse | loop | exitwhen | return | debug
+
+set             := 'set' id '=' expr | 'set' id '[' expr ']' '=' expr
+
+call            := 'call' id '(' (expr ',')* ')'
+                // the comma is ommitted from the last arg
+
+ifthenelse      := 'if' expr 'then' newline statement_list else_clause 'endif'
+
+else_clause     := epsilon | 'else' newline statement_list | 
+                   'elseif' expr 'then' newline statement_list else_clause
+
+loop            := 'loop' newline statement_list 'endloop'
+
+exitwhen        := 'exitwhen' expr
+
+return          := 'return' expr?
+
+debug           := 'debug' statement
+
+//----------------------------------------------------------------------
+// Expressions
+//----------------------------------------------------------------------
+
+expr            := binary_op | unary_op | func_call | array_ref | func_ref | 
+                   id | const | parens
+
+binary_op       := expr ('+'|'-'|'*'|'/'|'=='|'!='|'>'|'>='|'<'|'<='|'and'|'or')
+                   expr
+
+unary_op        := ('-'|'not') expr
+
+func_call       := id '(' (expr ',')* ')'
+                // the comma is ommitted from the last arg
+
+array_ref       := id '[' expr ']'
+
+func_ref        := 'function' id
+
+const           := int_const | real_const | bool_const | string_const | 'null'
+
+int_const       := [0-9]+ | ''' [a-zA-Z0-9_]{4} '''
+
+real_const      := [0-9]+ '.' [0-9]+
+
+bool_const      := 'true' | 'false'
+
+string_const    := '"' .* '"'
+
+parens          := '(' expr ')'
+
+//----------------------------------------------------------------------
+// Base RegEx
+//----------------------------------------------------------------------
+
+type            := id | 'code' | 'handle' | 'integer' | 'real' | 'boolean' | 
+                   'string'
+
+id              := [a-zA-Z][a-zA-Z0-9_]*
+
+newline         := '\n' [ \r\t\n]+
+                // the longest matching sequence of a newline followed by 
+                // whitespace
+-->
+</pre>
+</td></tr>
+</table>
+
+
+
+</body>
+</html>

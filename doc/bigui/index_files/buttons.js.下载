@@ -1,0 +1,37 @@
+!(function ($, window, document, _undefined) {
+  "use strict";
+
+  XF.VindITFeatureButtons = XF.Element.newHandler({
+    options: {},
+
+    init: function () {
+      if (!this.$target.parents(".p-header").length) {
+        return;
+      }
+      window.addEventListener("resize", () => this.windowResize());
+      window.addEventListener("orientationchange", () => this.windowResize());
+      this.windowResize();
+    },
+
+    windowResize: function () {
+      const targetWidth = this.$target.width();
+      const thinChildCount = this.$target.find(
+        "> .vf-button > .vindit-feature-small > *"
+      ).length;
+      const childCount =
+        this.$target.find("> .vf-button").length -
+        Math.ceil(thinChildCount / 4) / 3;
+
+      // Find stable int
+      const childWidth = Math.min(
+        96,
+        Math.max(32, Math.floor(targetWidth / childCount / 8) * 8)
+      );
+
+      this.$target.css("--vf-button-sprite-dimension", childWidth + "px");
+      this.$target.css("--vf-button-sprite-dimension2", childWidth + "px");
+    },
+  });
+
+  XF.Element.register("vindit-feature-buttons", "XF.VindITFeatureButtons");
+})(jQuery, window, document);

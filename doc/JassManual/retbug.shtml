@@ -1,0 +1,117 @@
+
+<html>
+<head>
+<title>JASS Manual: Type casting</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+
+
+<p><strong>Type casting</strong>
+
+<p>Type casting is possible in JASS by making use of what is called the return bug.
+
+<p><strong>The return bug</strong>
+
+<p><b>Note: The return bug described in this page could be used to inject arbitrary code into warcraft III maps. 
+Blizzard have removed this bug after of this security vulnerability. And added the hashtable type to the API as a semi-replacement. This
+page is left as a legacy record and is no longer useful.</b></p>
+
+<p>Warcraft 3's JASS compiler and the world editor's parser allow return values different from the last return value of a function to be of any type no matter the return type it is supposed to return.
+
+<p>A classic example of the return bug is the following:
+
+<pre class="source">
+<span class="keyword">function</span> H2I <span class="keyword">takes</span> <span class="type">handle</span> h <span class="keyword">returns</span> <span class="type">integer</span>
+<span class="keyword">    return</span> h
+<span class="keyword">    return</span> 0
+<span class="keyword">endfunction</span>
+</pre>
+
+<p>As you should note, the return value of the function is integer, last return statement returns 0, but actually, the only return value the function will consider is return h , it will return the handle argument it just took.
+
+<p>This function will take a handle argument and return an integer that is the pointer to that handle.
+
+<pre class="source">
+<span class="keyword">function</span> I2H <span class="keyword">takes</span> <span class="type">integer</span> i <span class="keyword">returns</span> <span class="type">handle</span>
+<span class="keyword">    return</span> i
+<span class="keyword">    return</span> null
+<span class="keyword">endfunction</span>
+</pre>
+
+<p>This function will do the opposite it will take an integer and return the handle that is at the memory position the integer is pointing.
+
+It is also possible to type cast a handle value into a value of a handle descendant type:
+
+<pre class="source">
+<span class="keyword">function</span> Handle2Unit <span class="keyword">takes</span> <span class="type">handle</span> h <span class="keyword">returns</span> unit
+<span class="keyword">    return</span> h
+<span class="keyword">endfunction</span>
+</pre>
+
+<p>Note that in this case, an extra return statement is not required.
+
+<p>As for the handle type, you can retrieve a handle descendant type value from an integer.
+
+<pre class="source">
+<span class="keyword">function</span> I2Item <span class="keyword">takes</span> <span class="type">integer</span> i <span class="keyword">returns</span> item
+<span class="keyword">    return</span> i
+<span class="keyword">    return</span> null
+<span class="keyword">endfunction</span>
+</pre>
+
+<p>You can also type cast between different handle derived types, even if they don't share the same descendace tree.
+
+<pre class="source">
+<span class="keyword">function</span> Unit2Item <span class="keyword">takes</span> unit u <span class="keyword">returns</span> item
+<span class="keyword">    return</span> u
+<span class="keyword">    return</span> null
+<span class="keyword">endfunction</span></pre>
+
+<p>There is no logic for doing this unless you want to save a value of certain handle derived type in a variable of another handle derived type. Doing this for the arguments of native functions is the same as giving them null values.
+
+<p>Type casting also works between native types, with some considerations.
+
+<pre class="source">
+<span class="keyword">function</span> Real2Int <span class="keyword">takes</span> <span class="type">real</span> r <span class="keyword">returns</span> <span class="type">integer</span>
+<span class="keyword">    return</span> r
+<span class="keyword">    return</span> 0
+<span class="keyword">endfunction</span>
+</pre>
+
+<p>If you are familiar with JAVA, you would assume this opperation will trunc the real, but that's not the case. The return value is different from the argument, and you can retrieve the real back with the inverse of this function, but it will crash if you give it a wron value.
+
+<pre class="source">
+<span class="keyword">function</span> String2Int <span class="keyword">takes</span> <span class="type">string</span> s <span class="keyword">returns</span> <span class="type">integer</span>
+<span class="keyword">    return</span> s
+<span class="keyword">    return</span> 0
+<span class="keyword">endfunction</span>
+</pre>
+
+<p>Will return the pointer to the given string. Be careful with this operation, it seems that strings are recycled when they are no longer used by variables, and it won't consider typecasted integers. The inverse function will crash if you give it a wrong value.
+
+<p>Type casting between boolean and integer, will represent 1 for true and 0 for false,
+
+<p>Also, consider that the function that performs the type casting does not have to follow the patern of the functions stated here to work. The only thing required is the return value bug abuse.
+
+<p> For 例子
+
+<pre class="source">
+<span class="keyword">function</span> GetArrayMemberAsUnit <span class="keyword">takes</span> <span class="type">integer</span> i <span class="keyword">returns</span> unit
+<span class="keyword">    return</span> udg_IntegerArray[i]
+<span class="keyword">    return</span> null
+<span class="keyword">endfunction</span>
+
+<span class="keyword">function</span> GetDyingDestructable <span class="keyword">takes</span> <span class="type">nothing</span> <span class="keyword">returns</span> destructable
+<span class="keyword">    return</span> GetTriggerWidget()
+<span class="keyword">endfunction</span>
+</pre>
+
+<p>Also take advantage of the return bug. As a matter of fact GetDyingDestructable is a function from blizzard.j.
+
+
+
+</body>
+</html>

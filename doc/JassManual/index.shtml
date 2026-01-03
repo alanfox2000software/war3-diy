@@ -1,0 +1,221 @@
+<html>
+<head>
+<title>JASS Manual</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+
+
+<p><strong>JASS Manual</strong>
+
+<p>This is a semi-formal, unofficial manual for the JASS scripting language
+used for scripting Maps and AI files in Blizzard Entertainment's 
+<a href="http://www.blizzard.com/war3/">Warcraft III</a>. Because it is
+unofficial, there are bound to be some errors and it may be incomplete.
+Please report errors and send suggestions for additions to
+<a href="mailto:vexorian@gmail.com">vexorian@gmail.com</a>.
+
+<p>This manual is <strong>not</strong> a programming tutorial nor an 
+introduction to the JASS language for non-programmers. It is not a JASS
+FAQ or a JASS primer. For introductory material, individuals unfamiliar with
+a programming language are directed to the discussion forums and FAQs at
+<a href="http://www.wc3c.ney/forums/">Warcraft III Campaigns</a>
+and <a href="http://www.wc3jass.com">The JASS vault</a>. Any
+questions related to JASS should be directed there as well. 
+<p>
+You can download a copy of this manual <a href="jass-manual.zip">here</a>.
+
+<p>This manual is divided into the following sections:
+
+<ul>
+<li><a href="globals.shtml">Global Declarations</a>
+<li><a href="types.shtml">Types</a>
+<li><a href="functions.shtml">Functions</a>
+<li><a href="statements.shtml">Statements</a>
+<li><a href="expressions.shtml">Expressions</a>
+<li><a href="misc.shtml">Miscellaneous</a>
+<li><a href="retbug.shtml">Type Casting</a>
+<li><a href="library.shtml">Library Functions</a>
+<li><a href="api/index.shtml">API Browser</a>
+<li><a href="bnf.shtml">Formal Syntax Definition</a>
+</ul>
+
+<p><img src="/images/transparent1x1.gif" width="1" height="50"
+        alt="   "></p>
+
+
+
+<table border=0 cellpadding=10 width="100%">
+<tr><td bgcolor="#eeeeee" width="100%" align="left">
+<pre>
+<strong>ChangeLog</strong>
+
+This is a list of the changes to this document that have been made recently.
+
+Nov 19, 2011
+  - The API has been updated with the additions to common.j and Blizzard.j from patch 1.23 only two years after
+    the patch was included.
+  - The page about type casting has been updated to remind you that the bug that allowed it has been fixed.
+  - The link to wc3campaigns.com has been replaced with one to wc3c.net.  
+  - It has been six years already? Wow.
+
+May 06, 2005
+  - Added Type casting (return bug) document.
+  - Updated email reference.
+  - Updated the perl script for the API browser, it will now allow some descriptions on the types and variables
+    sections. At this moment the pages concerning the types damagetype, integer, attacktype, weapontype, string,
+    boolean and real were updated, more stuff will come later. Also changed the colors.
+  - Updated references for sites.
+  - Updated the library functions document, just a note about the only 3 ai natives that may work in common.j
+
+Apr 25, 2005
+  - API docs updated to 1.18
+
+Mar 1, 2004
+  - API docs updated to include functions and globals in 1.14
+
+Nov 17, 2003
+  - native functions that take strings work in AI scripts, ExecuteFunc does not
+    from: http://www.wc3campaigns.com/forums/showthread.php?s=&threadid=36905
+
+Nov 13, 2003
+  - dataangel provided a correction to the statement that 'there is no way
+    to look inside a group' without callbacks:
+    There is an exception to this. You can look inside unit groups directly 
+    and compare groups without the need for global variables ;) The secret is 
+    the use of the common.j function FirstOfGroup(). Check out the following 
+    function in the JASS Vault that I wrote:
+    http://kattana.users.whitehat.dk/viewfunc.php?id=25
+
+Jul 23, 2003
+  - added note about custom scripts in the tft trigger editor from brett:
+    http://www.battle.net/forums/thread.aspx?FN=war3-maps&T=37086
+
+Jul 1, 2003
+  - Removed note that there is a max number of clauses per if-then-else.
+    (fixed in ROC 1.10)
+  - API Browser now reflects library files from ROC/TFT 1.10.
+
+Jun 29, 2003
+  - Noted that there is a max of 26 elseif clauses per if-then-else block.
+
+Jun 15, 2003
+  - Added some basic (more "tutorial") notes to the intro to the globals
+    section.
+  - Added note in the library section that native functions using callbacks 
+    in common.j do not work in AI scripts.
+
+Jun 14, 2003
+  - API Browser now _really_ uses data files from 1.06. The last update
+    accidently used the files from the latest TFT beta. Thanks for AIAndy
+    for the heads up.
+
+Jun 3, 2003
+  - Updated API Browser to use data files from ROC 1.06
+  - Arrays can now hold up to 8192 elements
+
+Apr 7, 2003
+  - Note that 'code array's are illegal (or will be in the near future)
+
+Mar 19, 2003
+  - Fixed typo in Library-&gt;Filters where it said 'filter', should be
+    'filterfunc'. Fix courtesy of PitzerMike.
+
+Mar 17, 2003
+  - incorporated Bob Fitch's clarifications on threads in 
+    Library Functions-&gt;Threads
+
+Mar 16, 2003
+  - added pretty printed versions of the library files in the api browser
+    (click on a line number)
+  - fixed function line numbers in api browser
+
+Mar 15, 2003
+  - added a simple API browser for the standard library api (BETA!)
+
+Mar 13, 2003
+  - added AIAndy's note about max # threads
+  - fixed a couple typos found by John
+
+Mar 1, 2003
+  - Added some clarification on argument passing in the Functions section
+
+Feb 28, 2003
+  - This addition courtesy of weaaddar
+  - added the following verbiage to Types-&gt;Arrays:
+    Although you can store an element in any index of an array (from 0 to the 
+    maximum positive integer value), you can only store up to 
+    JASS_MAX_ARRAY_SIZE = 1024 elements total in a given array (defined in 
+    common.j). In other words, an array is more like a sparse hashtable with 
+    a fixed size of 1024. (Note: I have not verified this)
+
+Feb 14, 2003
+  - pretty printed jass code to make it easier to read
+
+Feb 7, 2003
+  - These corrections courtesy of Bob Fitch (BFitch at blizzard dot com):
+  - hex, octal notation for integers
+  - unary + identity operator
+  - real const can start with just .
+  - user defined functions can be declared 'constant'
+  - constant variables must be assigned a value
+  - id type regex should be: [a-zA-Z]([a-zA-Z0-9_]* [a-zA-Z0-9])?
+  - debug can only be used with set, call, ifthenelse, loop
+  - bnf more correct now
+
+Jan 16, 2003
+  - made it more explicit that null can be assigned to code values
+    (function pointers)
+
+Jan 14, 2003
+  - added section on enumerations and filters in library
+
+Jan 12, 2003
+  - command queue is actually a stack. Thanks for the heads up by AIAndy
+
+Jan 10, 2003
+  - added note about the 'return' type bug
+  - only one (or zero) 'globals' section is allowed per file
+  - the globals section and type declarations must be before user-defined
+    function declarations
+  - foward references of functions are illegal (must be declared before use); 
+    but self-referential functions are legal (e.g., recursion)
+
+Jan 9, 2003
+   - verified: integer range, thread shared state, only new handle types
+
+Jan 8, 2003
+   - added statements section
+   - added expressions section
+   - added library section
+   - various typos fixed
+
+Jan 7, 2003
+   - initial version of manual started
+   - sections: globals, types, functions, misc, bnf done
+
+</pre>
+</td></tr>
+</table>
+<p>
+
+
+<table border=0 cellpadding=10 width="100%">
+<tr><td bgcolor="#eeeeee" width="100%" align="left">
+<p>Copyright (c) 2003 Jeff Pang<br>
+Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.2
+or any later version published by the Free Software Foundation;
+with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+A copy of the license is included in the section entitled 
+<a href="license.shtml">"GNU
+Free Documentation License"</a>.
+</td></tr>
+</table>
+
+
+
+</body>
+</html>
